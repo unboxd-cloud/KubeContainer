@@ -573,6 +573,22 @@ cultural, and political weaves can be *built upon* without being
 thing that keeps its word, and every scale above it is that promise,
 kept again.
 
+And one law holds the whole structure sound, in both senses of the
+word: the graph must resolve. As reference — every edge must reach a
+node that answers: every identity resolvable without asking a center,
+every delegation chain terminating in a named principal, every
+provenance arriving at an origin, every contract at a party, every face
+at its kube, every query at an answer or a recorded absence — a
+dangling edge is a promise made to no one, and the fabric admits none:
+nothing points at nothing. And as music — the way a chord resolves:
+every difference the fabric holds (intent against fact, model against
+record, claim against evidence) is a dissonance under obligation,
+sustained only on its way to consonance through the reconciliatory
+flows — tension is permitted, *unresolvable* tension is not. A graph
+that resolves in both senses is the charter's whole soundness in one
+line: every reference lands, every difference settles — nothing
+dangling, nothing discordant, the weave ringing true.
+
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the

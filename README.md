@@ -158,11 +158,19 @@ everything the name resolves to: the addressee, the contract, the
 delegation chain terminating in a human, the answerability. An
 artifact with identity acts for someone and answers to someone, and
 that is the whole definition of an agent; strip the identity and the
-same artifact is freight — intact, capable, and nobody's. Agency is
-not built into things; it is conferred by resolution — which is why
-the graph must resolve, why every box is named, and why the question
-on the lid is the question that makes the product possible at all.
-That is the product. The
+same artifact is freight — intact, capable, and nobody's. And the equation has its
+completion: artifact + governance = agent. Identity says whose it is;
+governance says under what law it acts — the policy at its gates, the
+audit on its conduct, the bounds on its autonomy, the consequences it
+answers to. Identity without governance is a named thing running wild;
+governance without identity is law with no subject. The full formula:
+artifact + identity + governance = agent — a thing, owned by someone,
+acting under rules — which is just the charter compressed to
+arithmetic. Agency is not built into things; it is conferred by
+resolution and bounded by law — which is why the graph must resolve,
+why every box is named and gated, and why the question on the lid is
+the question that makes the product possible at all. That is the
+product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

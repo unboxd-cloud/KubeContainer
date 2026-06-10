@@ -14,6 +14,22 @@ the reference implementation of the
 want; the kube makes it true, keeps it true, proves it was true, and
 answers for it.
 
+And KubeContainer is the box — the plain, graspable thing every
+metaphor here reduces to. A declared boundary with work inside it,
+whole and indivisible, stackable and packable, opaque about its
+internals and contractual at its surface. The shipping container
+organized the physical economy by making every cargo the same shape to
+every crane; the KubeContainer does the same for work — one schema to
+every fabric, one contract to every operator. unboxd, because the value
+was never the box: it is what declaring the box sets free. And the box
+is real: v0.1.0 ships it — an actual image, with digests, carrying its
+own evidence — work that crossed the surface and held. Yet the box
+alone is meaningless: an empty container moves nothing, and a full one
+unmanifested is just freight nobody can claim. The box means something
+only woven in — declared to a fabric, kept by a loop, answering at a
+face, owed to a principal. The container needed the shipping system;
+the kube needs the weave; the box is the unit, never the point.
+
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer

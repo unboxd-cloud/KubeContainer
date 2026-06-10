@@ -110,7 +110,13 @@ observe, compare, act, record — until declared and actual meet; and it
 closes the loop with its principal — delivered, evidenced, accounted,
 done only by verdict. The box and the agent were one subject all along:
 an agent is a promise that can act; a box is a promise that can ship;
-a kube is both — and that is the product. The
+a kube is both — who reconciles to desired state: that is the whole
+definition in five words, and the answer to "who does the work" at
+every scale. The box reconciles its contents to its lid; the operator
+reconciles the cluster to the declaration; the fabric reconciles the
+worlds to the record; and each of them is the same answer to the same
+question — not "what is it" but "who keeps it true." That is the
+product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

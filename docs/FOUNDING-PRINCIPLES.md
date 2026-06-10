@@ -361,6 +361,16 @@ meaning, many institutions, many autonomous loops, many lawful conditions a
 world may be in (each state declared, each transition recorded, no state
 illegitimate that the contract names), composing without merging;
 
+**governed each by its own sustainable model** — no single corporate form
+is imposed: a member may be a company, a cooperative, a foundation, a
+public-benefit corporation, a DAO-like collective — any governance model
+qualifies that clears the same two bars every structure on the fabric must
+clear: *governable* (legible authority, accountable decisions, auditable
+conduct — governance the member can actually exercise) and *sustainable*
+(an economic and operational model that can keep its promises across time,
+not just across a funding round). Plurality of governance models, equality
+before the bar;
+
 **federated and treaty-bound** — for contracts between sovereigns have
 always been called treaties: the federation's agreements are international
 law for the fabric, entered freely, binding because chosen, enforced by

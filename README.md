@@ -86,7 +86,17 @@ standard for the purpose (CloudEvents, CNCF graduated), so any
 authorized listener can follow the box's journey in real time without
 ever seeing inside it. The manifest is the history; the stream is the
 present tense; and both speak a wire anyone can subscribe to and no one
-had to invent. The
+had to invent. The box has identity — its own name, unique and
+independently resolvable, borrowed from no parent and surrendered to no
+carrier: the name on the manifest, the subject of every event, the
+party to its contract, the bearer of its reputation — and the name
+survives the box, because the record remembers what the fabric has
+released. And the box has bridges — it is not a cell but a port: every
+opening in its walls is a declared crossing with a keeper — the face
+where it serves, the stream where it speaks, the gate where it is
+asked, the seam where it is unboxed — so that being sealed and being
+connected are the same discipline: nothing crosses except over a
+bridge, and every bridge is on the manifest. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

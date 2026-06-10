@@ -49,3 +49,18 @@ deterministic work); unmetered usage is recorded as `usage: unmetered`
 rather than omitted — an absent field is ambiguity, a recorded absence
 is a fact. Existing era-frozen tasks are not backfilled (append-only);
 the schema binds new tasks from era v0.2.0 onward.
+
+## The registry defines the contract
+
+A contract on the fabric is not prose in a drawer; it is a registry
+entry: the declared outcome, the world-test named in advance, the
+provenance schema, the price — recorded, identified, and resolvable.
+What the registry can record and verdict is what can be contracted;
+what it cannot, cannot — the registry's schema is therefore the legal
+language of the fabric, and registering is how a promise becomes
+binding. This cuts both ways: a seller cannot offer what the registry
+cannot check (no unverdictable promises), and a buyer cannot claim what
+was never registered (no retroactive expectations). Discovery and
+definition are the same act — to be findable in the registry is to be
+offered on exact terms, and the entry that advertises the capability is
+the same entry that defines what keeping it means.

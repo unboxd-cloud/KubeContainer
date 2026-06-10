@@ -609,7 +609,33 @@ forever, every step still landed, every measure still green. And
 *brilliance*, because that is what the path is *to*: not adequacy, not
 throughput, but work the principal is proud to have asked for and the
 agent proud to have signed — excellence (the ladder's fifth rung) reached
-by the one road that arrives;
+by the one road that arrives. But all paths always open: the critical
+path is a *priority*, never a prison — the alternatives stay lit and
+walkable (no lock-in applies to routes as much as to vendors), explorers
+may take the long way on their own budget (unorganized work, contained),
+the second-best route is rehearsed because today's detour is tomorrow's
+critical path when the bridge fails, and openness is itself what keeps
+the critical path honest: a fastest road that fears comparison is
+already not the fastest. One path gets the priority; every path keeps
+the right of way. And recovery is a loop — not an event, not a heroic
+exception, but the same level-triggered circle every other outcome rides:
+failure is just distance from declared state, and the loop that closes
+that distance on a good day closes it on the worst one — re-derive from
+the record (lose the process, lose nothing), reconverge one landed step
+at a time, no special disaster mode because the normal mode *is* the
+disaster mode rehearsed continuously. A platform that recovers by loop
+needs no miracle and keeps no graveyard shift: it wakes, reads what is
+true, walks toward what is declared — same as every other morning. For
+reconciliation runs in a loop, and the loop is the whole liturgy: observe
+the world as it is, compare it to the world as declared, act on the
+difference, record what was done — then return to the top, forever. Every
+doctrine in this charter is that circle wearing different clothes:
+healing is the loop, scaling is the loop, recovery is the loop, the twin
+rehearses the loop, the measures gauge the loop, governance bounds it,
+the axiom records it, and excellence is the loop run so well it looks
+like stillness. The fabric has one heartbeat — *observe, compare, act,
+record* — and everything this document promises is kept one beat at a
+time;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and

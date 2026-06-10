@@ -545,6 +545,27 @@ designed to survive the gap — idempotent, compensable, checked at the
 moment of touch — because the surface is met as it *is*, under a theory of
 how it *was*;
 
+**real is at surface level — everything tangible** — the converse law that
+keeps the metaphysics honest: *real* lives only at the surface, and at the
+surface everything is tangible. Below it, all is representation —
+declarations, models, twins, projections, theories of the edge — useful
+exactly because they are *not* the thing; above the line, nothing is
+abstract: a delivery is received or it is not, a payment settles or it
+does not, a workload answers or it does not, a principal is served or is
+not. No layer may launder representation into reality by renaming it —
+"done" in a model is a forecast, "done" at the surface is a fact — and
+the platform's honesty is precisely the refusal to confuse the two:
+evidence is the surface reporting back, the record is its custody, and
+everything else, however intelligent, is theory awaiting touch. And the
+intangible is a state of mind — not a lesser realm but a *located* one:
+plans, models, possibilities, values, the multiverse of maybe — all of it
+real *as thought* and resident where thought lives (mind, the only
+substrate), tangible only when a mind carries it across the surface as
+action. The two laws together close the loop the epilogue opened: what is
+real is tangible at the surface; what is intangible is mind at work; and
+the platform is the disciplined passage between them — intent crossing
+one way to become fact, evidence crossing back to become understanding;
+
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
 everything it needs to serve — tools, model, memory, contract, identity —

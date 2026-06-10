@@ -678,7 +678,19 @@ ocean between them, trade by ship and treaty rather than by land-bridge
 annexation — and the surface of the real world is exactly the
 archipelago's map: solid where someone answers for the ground, liquid
 where cargo moves under flag, and every coastline a contract drawn
-where land meets water. As long as it is not
+where land meets water. The coastline also names the last identity
+plainly: the surface is the real edge — the charter's two boundary
+words were always one thing seen from two sides, *surface* from within
+(the face presented: stable, contractual) and *edge* from without (the
+rim where rehearsal ends and consequence begins) — and it sets the last
+discipline: the surface area of attack is to be minimized. Every harbor
+is a door and every door is a risk, so the coastline stays as short as
+sovereignty allows — few harbors, well-guarded (the agent at every
+gate), nothing listening that is not contracted to answer, no port open
+by default or forgotten by drift (the record knows every door it has) —
+because the same area that serves is the area that can be attacked, and
+a platform minimizes the second without shrinking the first by one
+rule: *expose exactly the contract, and not one socket more.* As long as it is not
 *wet* — for wetness is a state, and the physics is exact: water is not
 wet; wetness is what water does to whatever it touches and soaks into
 uninvited. So with data: data in its lake, its ocean, its contracted

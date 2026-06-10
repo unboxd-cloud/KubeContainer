@@ -334,6 +334,7 @@ standards:
   postmortem's first deliverable); procedures live in version control under
   the code-is-configuration discipline; and every escalation from automated
   back to human is itself a defined procedure, not an improvisation.
+- **Where code is configuration** — the inversion of "configuration as
   code", and the platform's deepest operating principle: generic, certified
   engines execute; *what they do* is entirely declared. Users do not program
   the platform — they parameterize it with versioned, diffable, reviewable
@@ -446,3 +447,86 @@ Three obligations follow from being foundation rather than feature:
 Foundation is the final answer to "what is the platform": the thing
 everything else is *built on*, engineered to be worthy of that position, and
 governed so it stays that way.
+
+## The Agent Lexicon
+
+The working vocabulary beneath the ladder — each term defined once,
+charter-consistently, for use across code, docs, and contracts.
+
+- **Principal** — the owner of ends: the party whose intent the work
+  serves and whose authority the agent carries. Always a mind at the top
+  of the chain; positional below it (an agent is principal to its
+  subagents within the scope it received).
+- **Intent** — a want made addressable: the declared outcome a principal
+  commits to the record (the axiom's first clause). Vague intent is the
+  platform's cue to define, not to guess.
+- **Outcome** — intent's other shore: the converged, evidenced end-state
+  a contract names as "solved." The unit of success, delivery, and price.
+- **Tool** — a contracted actuator: a named capability with declared
+  inputs, effects, and failure modes, from an accountable supplier. The
+  only hands an intelligence has.
+- **Skill** — a packaged procedure an agent loads: the SOP in agent
+  format — versioned knowledge of *how*, separable from the model that
+  wields it.
+- **Context** — the assembled working knowledge for one decision: selected
+  by the five data dimensions, gated by authorization, recorded as a
+  projection. Context is the intelligence; assembling it is the
+  platform's most consequential act.
+- **Memory** — what an agent keeps between steps, in two registers:
+  working memory (the in-process world model — derived, disposable,
+  humble) and durable memory (the record — external, ACID, sovereign).
+  Lose the first and lose nothing; lose the second and lose the world.
+- **Delegation** — the transfer of scoped, revocable authority down the
+  chain: ends stated, means freed, evidence owed back. Every delegation
+  is recorded, so accountability travels with the work.
+- **Orchestrator / Subagent** — positional roles, not species: the
+  orchestrator decomposes an outcome into delegations; subagents own the
+  pieces. The orchestrator answers upward for the whole.
+- **Handoff** — work crossing a boundary between performers (agent to
+  agent, agent to human, human to agent): state externalized to the
+  record first, context reassembled on the far side — never carried as
+  private memory across the gap.
+- **Guardrail** — a bound on the autonomy of means: permission, sandbox,
+  budget, approval gate. Guardrails are placement, not distrust — they
+  define the domain inside which the agent's judgment is total.
+- **Eval** — the agent-era assertion: a measured, repeatable judgment of
+  agent quality against a golden task, run continuously because the
+  decide-box is non-deterministic. Evals are to agents what tests are to
+  code and audits are to firms.
+- **Human-in-the-loop** — a declared rung, not a philosophy: the specific
+  points (by procedure) where a human approves, samples, or takes over.
+  Below it, autonomy; above it, accountability; the rung itself is
+  versioned like any SOP.
+- **Session** — a bounded engagement of an agent with a principal's
+  intent: opened with context, closed with evidence, resumable from the
+  record. The agent-era unit of conversation-as-work.
+- **Reputation** — evidence compounded into standing: the trajectory of
+  an agent's (or supplier's) signed outcomes over time — earned by
+  record, portable with provenance, lost faster than gained.
+- **Multi-agent system** — many autonomous loops sharing declared state
+  under bounded ownership and explicit handoffs (the multiple-operators
+  capability, generalized). A swarm without those rules is not a system;
+  it is interference with branding.
+
+### Interpretation: direction where certainty runs out
+
+No lexicon closes every case. Where a definition cannot settle a question
+with certainty, direction comes from the constitution, in order:
+
+1. **The founding principles govern** (`docs/FOUNDING-PRINCIPLES.md`) —
+   the charter is the supreme interpretive authority; read the ambiguous
+   case against the principle nearest it, and the dedication's intent
+   ("an enterprise can hand its work to agents and sleep") as the
+   purposive tiebreak.
+2. **The axiom decides procedure** — when unsure what to do *mechanically*:
+   define the intent, document the action, record the revision and the
+   projection, commit whole or not at all.
+3. **The balance decides tensions** — when two goods conflict, resolve by
+   placement, not compromise: find the domain where each is total.
+4. **Calibrated judgment decides the rest** — act inside competence, ask
+   at its edge, refuse beyond it; prefer the reversible step; and when
+   genuinely uncertain, the safe default is the charter's oldest pair:
+   record what you see, and do not touch the surface.
+
+Certainty is not always available; direction always is. That is what a
+constitution is for.

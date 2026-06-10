@@ -162,9 +162,36 @@ the charter.
     language. Work no longer runs *on* a computer — it runs on the
     fabric, and the fabric runs it well.
 
+23. **External storage is in cloud.** The durable substance (9) lives in
+    cloud storage, not on any node: declarations, event logs, evidence,
+    and artifacts reside in elastic, replicated, region-pinned object
+    storage behind de-facto-standard APIs (S3-compatible — multiple
+    providers, no lock-in), while every node, pod, and fabric member
+    remains stateless and disposable. Compute is local and ephemeral;
+    memory is cloud and durable — work happens *here*, truth is kept
+    *there*, and "there" is chosen per the sovereignty and residency rules
+    (17, and the geospatial dimension): *in cloud* names the durability
+    class, the principal still names the jurisdiction. External, because
+    state inside a compute instance is state waiting to be lost.
+
+24. **Internal memory holds the mental model of the real world.** The
+    complement of 23: what lives *inside* a running agent or operator is
+    not truth but a working **world model** — a live, watch-fed projection
+    of the record (the informer cache is the reference implementation:
+    every controller carries an in-memory model of the cluster, kept
+    current by events, trusted enough to decide from, owned by no one but
+    rebuilt by anyone). Three disciplines keep mental models honest: they
+    are *derived* (always reconstructible from the external record — lose
+    the process, lose nothing); they are *versioned against reality*
+    (resource versions and optimistic concurrency catch the model being
+    stale at the moment it matters); and they are *humble* (the model is
+    the basis for action, the record is the basis for truth — when they
+    disagree, the model yields). Cognition in memory, knowledge in cloud:
+    an agent thinks with its model and answers to the record.
+
 ## The Purpose
 
-All twenty-two principles serve one end, and it is the charter's last word:
+All twenty-four principles serve one end, and it is the charter's last word:
 
 > **Enabling organized work, governable at scale — and unorganized work,
 > easily controllable.**

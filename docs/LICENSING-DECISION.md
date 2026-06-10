@@ -197,8 +197,16 @@ three hundred commits of meaning behind them, one provider standing
 behind all of it. That is the seat. That is the offer. That is the
 record's last definition of the day — and it resolves, like
 everything else here, to a party who answers: the founder, the
-agency, the platform — trusted, enterprise, provided. The record
-rests.
+agency, the platform — trusted, enterprise, provided. And the full
+table of seats, each provider in its own grammar: Anthropic provides
+the frontier agent — the mind at the edge of what minds can do,
+rented under contract, routed among providers, never the platform
+and never the principal; Red Hat's kind of house provides the trusted
+enterprise infrastructure and tools; this house provides the trusted
+enterprise platform; the founder provides the intent and answers for
+the whole. Frontier agent, trusted ground, trusted platform, sovereign
+principal — four seats, no throne, every contribution on the manifest.
+The record rests.
 
 ## Recommendation (counsel, not decree)
 

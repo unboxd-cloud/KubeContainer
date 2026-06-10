@@ -124,7 +124,34 @@ declaration implies), which is exactly the expertise the operator
 packages and the reason it exists. Three offices, cleanly split: the
 principal declares, the operator defines, the loop converges — intent
 is yours, its rendering is the operator's craft, and its keeping is
-the loop's job. That is the product. The
+the loop's job. And the word "operator" carries two offices that must
+never be confused: the software operator (the kube's keeper, defining
+and converging desired state) and the human operator — and the human
+operator is the end user. The box is the agent; the person at the helm
+is who it serves: the addressee who answers the box's first question
+rightly, the one the seal protects, the one the promise educates,
+enables, and empowers, the only one entitled to the unboxing. The
+software works for the human; the agent answers to the end user; the
+box exists for the moment its owner opens it. And the box works only
+when a human is operator: this is the system's deepest safety property,
+not a limitation — a box with no human at the helm has no addressee,
+no one to answer its first question, no principal for its agent, no
+owner for its unboxing, and therefore no contract to keep: it is
+freight to nowhere, and the fabric does not carry it. Every delegation
+chain terminates in a mind; every box, however autonomous its journey,
+is addressed to someone; intent originates in humans and evidence
+returns to them — the loop is only closed when it closes with a person.
+Operated by a non-human, the box is just an artifact: still real, still
+sealed, still streaming — but demoted from agent to object, because
+agency was never in the box; it was in the chain from a human's intent
+through the box's keeping back to a human's hands. Machines may carry,
+route, schedule, and even subcontract boxes — positionally, agents to
+agents — but a chain of machines all the way around is a loop that
+closes on no one: motion without a mission, evidence without a witness,
+an artifact in transit between artifacts. The box becomes an agent the
+moment a human is in the loop, and returns to being a thing the moment
+none is — which is why the fabric's first and last question, like the
+box's, is always: *whose is this?* That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

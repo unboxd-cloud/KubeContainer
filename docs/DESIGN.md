@@ -226,3 +226,22 @@ and implementable out of the box**:
 4. **v1beta2** — shipped Gatekeeper `ConstraintTemplates` (`config/policies/`);
    OpenFGA fine-grained authorization webhook (optional, off by default) with
    the published relationship model.
+5. *Kube-native delivery* — the release process becomes what everything
+   else here already is: declared state reconciled by an operator. The
+   evolution, each step replacing a CI-host dependency with a cluster-native
+   one:
+   - `release/REQUEST` (today: a file triggering a GitHub workflow) becomes
+     a `Release` CRD: `spec{tag, target, gauntlet}` declared with
+     `kubectl apply`, reconciled by a release controller — status conditions
+     report the gauntlet verdicts, the published image digest, and the
+     bundle location; the release *is* a kube.
+   - The gauntlet runs as in-cluster `Jobs`; image builds via in-cluster
+     BuildKit/kaniko-class builders — no Docker daemon dependency anywhere.
+   - Distribution via OCI artifacts (install bundle and eval evidence pushed
+     to the registry alongside the image, per the supply-chain policy), and
+     deployment via GitOps (Argo CD / Flux — both CNCF graduated), so the
+     cluster pulls declared releases rather than CI pushing them.
+   - CI hosts remain only as untrusted compute the operator may rent — the
+     control plane of delivery lives where the charter says all control
+     planes live: in the cluster, as declared state, under the same RBAC,
+     audit, and drift protocols as everything else.

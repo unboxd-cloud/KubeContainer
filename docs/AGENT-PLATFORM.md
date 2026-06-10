@@ -612,6 +612,31 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Provenance is the product** — the business thesis in four words:
+  what the platform ultimately sells is not the software (open), not the
+  compute (anyone's), not even the outcome alone (a commodity once
+  achieved) — but the *demonstrable history* of the outcome: who asked,
+  who acted, what was checked, what it cost, and who stands behind it,
+  attached to the deliverable and resolvable forever. Everything else
+  in the catalog is provenance wearing a use case: assurance is
+  provenance underwritten, audit-readiness is provenance retrieved,
+  certification is provenance institutionalized, reputation is
+  provenance compounded, and the release itself ships its evidence as a
+  first-class asset. The proof is v0.1.0: the binary is replicable by
+  anyone — the *record* of how it earned its way out is ours alone, and
+  it is the part the customer cannot get elsewhere.
+- **Compliance by the path** — compliance as a property of the route
+  traveled, not of a review survived: when the governed path is the only
+  path (19), *having arrived is itself the proof* — the artifact's
+  history is its certificate, and the receipts (verdicts, provenance,
+  evidence reports) are byproducts of moving, not products of auditing.
+  The contrast is compliance-by-inspection: act first, check some of it
+  later, hope the sample generalizes — which scales with auditors,
+  while compliance by the path scales with traffic. The release
+  pipeline is the working instance: nothing reaches the registry or the
+  world except through the gauntlet, so every shipped artifact is
+  compliant *by construction*, and the question "was this checked?" is
+  answered by the fact that it exists.
 - **Real-work rule** — the platform builds the database through real
   work: every record is the byproduct of something actually performed —
   a task done, a verdict returned, a contract kept — never of data entry

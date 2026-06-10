@@ -648,7 +648,24 @@ converges nowhere, contested fields oscillate, lost records forget the
 goal, jumped steps land outside the map, closed paths deadlock); keep
 them all and convergence is not an achievement but a consequence. The
 platform does not *make* the worlds converge; it makes convergence
-natural — that is the whole engineering, and the whole bet;
+natural — that is the whole engineering, and the whole bet. And the
+theorem has a corollary for everything written here: every
+well-documented and protected theory is designable and deliverable just
+by changing the operating model. A theory that is *well-documented*
+(defined intent, named terms, recorded revisions — the axiom applied to
+ideas) and *protected* (owned, attributed, governed — sovereignty applied
+to knowledge) is already a latent product: nothing further must be
+invented, only the operating model around it must change — attach
+contracts and it is sellable (14), attach loops and it is operable,
+attach measures and it is assurable (15), attach the partner network and
+it is delivered (12). The distance from theory to delivery is not
+discovery but *operating model* — which is why the fabric treats
+documentation as inventory, not overhead; why protection is what makes
+sharing safe rather than what prevents it; and why this charter, by its
+own corollary, is not a manifesto but a backlog: every stanza
+well-documented, every term protected by the record — each one
+deliverable the day an operating model is wrapped around it. The
+constitution, read correctly, is the roadmap.
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and

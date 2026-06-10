@@ -496,6 +496,42 @@ artifacts of history, and any fabric can be rewoven from its own
 description: the platform can rebuild itself from what it remembers,
 which is the practical meaning of indestructible;
 
+**serverless, not stateless** — the two words the industry conflated,
+pried apart: *serverless* is true of the fabric — no member owns, names,
+patches, or pets a server; compute is summoned by the event, sized by the
+work, and released at the outcome (the purest form of ephemeral vapor,
+principle 23) — but *stateless* is not: the work is soaked in state —
+intent, context, history, evidence, the five-dimensional data a decision
+needs — and pretending otherwise just smuggles state into queues, retries,
+and other people's databases where it drifts unowned (a substream by
+another name). The resolution is the memory architecture already decreed:
+state is real, sovereign, and total — it simply does not live in servers.
+Compute carries no state worth saving; the record carries all of it;
+*serverless* names where state is forbidden, not whether it exists. For
+state is real — of everything in the middle layers, state alone holds
+the rank the surface holds at the rim: it is what the work has
+irreversibly become so far — value accrued, obligations standing,
+history sealed — and losing it is not a rehearsal mishap but a real
+loss, which is why state gets the real world's own protections (ACID
+commits, durable custody, sovereign ownership, bitemporal memory) while
+mere computation gets none of them and needs none of them. The fabric's
+ontology is thus exactly two kinds of real — the surface, where reality
+is *touched*, and state, where what was touched is *kept* — and
+everything else is gloriously, deliberately disposable. And when a
+server does appear, see it for what it is: the server is the digital
+twin of the provider — not the tenant's asset but the provider's
+self-model made rentable, the provider's capacity, geography, failure
+domains, and promises projected into an addressable shape. That is the
+deepest reason the fabric refuses to let anyone pet one: you cannot own
+another sovereign's twin, only contract with it — so the server belongs
+to the provider's world (their state, their record, their surface to
+keep true), the tenant's world holds only the contract and its evidence
+(class promised, capacity delivered, SLO held), and "serverless" gains
+its final meaning: not that servers vanished, but that they returned to
+being what they always were — the provider's representation of itself,
+behind a published contract, in a federation where every member keeps
+its own twins honest;
+
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,
 mind — and every layer may be virtualized, replicated, staged, simulated,

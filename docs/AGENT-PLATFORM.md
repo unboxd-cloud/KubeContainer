@@ -1,0 +1,448 @@
+# The Agent Ladder: From Definition to Mission
+
+A definitional ladder for agent systems, distilled from first principles. Each
+rung builds on the one below it; the ladder ends in a mission statement for the
+platform that makes trustworthy agents an economy. The KubeContainer operator
+in this repository serves as the running worked example: Kubernetes controllers
+are agent engineering avant la lettre, and most of the ladder's ideas were
+proven there first.
+
+## 1. Agent (the standard definition)
+
+> An **agent** is a program that acts autonomously on behalf of a principal,
+> deployed because the work must happen **where the principal isn't** (a remote
+> host, a cluster, a user's machine) or must continue **when the principal is
+> gone** (background loops, autonomous goal pursuit). Otherwise it would just
+> be a function call.
+
+Supporting vocabulary:
+
+- **Actor** — the unit of concurrent computation: private state, asynchronous
+  message passing, no shared memory. Reactive plumbing; works for no one.
+  Agents are often *implemented* with actors, but an agent has a goal and a
+  principal, and may act unprompted.
+- **Contract** — mutual obligations at an interface: preconditions,
+  postconditions, invariants. (Here: the CRD schema and its CEL rules.)
+- **Assertion** — one executable claim that a condition holds at runtime; the
+  enforcement instrument for contracts. (Here: the envtest suite.)
+
+In one sentence: actors carry the messages, agents pursue the goals, contracts
+define what everyone owes each other, assertions catch the moment anyone breaks
+the deal.
+
+## 2. Agent Architecture
+
+The internal structure that lets a program act autonomously. Every architecture
+must answer four questions: how the agent **perceives**, how it **decides**,
+how it **acts**, and what it **remembers**.
+
+Families: reactive (condition→action), deliberative (world model + planning,
+e.g. BDI), hybrid/layered, the modern LLM stack (model + tools + loop + memory
++ guardrails), and the **operator/controller architecture** used here:
+perception via watches and an informer cache, decisions in a level-triggered
+reconcile loop, idempotent API mutations as actions, and memory externalized
+into the environment itself (spec and status). *Stateless agent, stateful
+environment* is the defining trick: the agent can crash and resume with
+nothing lost.
+
+## 3. Agent Engineering
+
+The discipline of building agents whose autonomy is safe, reliable, and
+verifiable. Six concerns:
+
+1. **Goal & contract design** — specifying intent precisely enough to pursue
+   and to grade.
+2. **Tool/actuator design** — small, idempotent, well-described actions.
+3. **Loop & orchestration** — retry, stop, and escalate-to-human decisions.
+4. **Memory & context engineering** — what the agent carries vs. what lives in
+   the environment.
+5. **Guardrails & permissions** — autonomy granted per-action, never wholesale.
+6. **Evaluation & observability** — evals for non-deterministic behavior,
+   traces for every decision.
+
+## 4. Agent Governance
+
+The layer above engineering: which agents may exist, what each may do, on whose
+authority, and who answers when one misbehaves. It is the systematic answer to
+the principal-agent problem. Six functions: **identity**, **authorization**,
+**policy**, **audit**, **lifecycle**, **accountability** — an agent can be
+responsible for an action but never accountable for it.
+
+Kubernetes is the most complete agent-governance system in production use:
+ServiceAccounts, RBAC (see `config/rbac/role.yaml`), admission control, audit
+logs, and lifecycle control, all per-controller.
+
+## 5. Agent Excellence
+
+The standard of practice the layers below aim at: autonomy trusted by default,
+not managed as a risk. Six marks:
+
+1. **Convergence, not just correctness** — reaches the intended end-state, even
+   from partial failure.
+2. **Calibrated judgment** — acts inside its competence, asks at the edge,
+   refuses beyond.
+3. **Spirit over letter** — pursues what the principal meant; never games the
+   metric.
+4. **Economy** — least privilege exercised, fewest actions, lowest cost.
+5. **Legibility** — predictable before, observable during, reconstructable
+   after.
+6. **Graceful degradation** — fails informatively and reversibly.
+
+## 6. The Platform
+
+The **agent control plane**: the operational substrate where agent qualities
+stop being claims and become continuously **confirmed** evidence.
+
+| Pillar | Confirmed by |
+|---|---|
+| Engineering | CI gates: contract tests, regression evals, conformance suites |
+| Intelligence | Benchmarks and task evals against golden sets, re-run on every change |
+| Reliability | SLOs and error budgets: convergence rate, intervention rate, MTTR |
+| Governance | Identity, policy-as-code, immutable audit trails |
+| Cost efficiency | Metering per agent per outcome, with budgets and alerts |
+| Excellence | The composite scorecard, sustained over time — certification you can lose |
+
+A runtime runs agents; a platform can show you, at any moment, that its agents
+deserve to be running.
+
+## 7. The Agent Economy
+
+Confirmation is what makes the economy possible: markets run on trust between
+strangers, and the platform's evidence machinery is that trust. The value
+chain it must support, end to end:
+
+1. **Create** — SDKs, frameworks, contract/tool standards (MCP).
+2. **Distribute** — registries and marketplaces with provenance and signing
+   (the OCI-registry pattern applied to agents).
+3. **Transact** — identity strong enough to contract on, delegation chains,
+   pricing, machine-speed payment rails.
+4. **Operate** — the control plane itself: run, govern, evaluate, meter.
+5. **Consume** — humans and other agents hiring agents via declared intent.
+6. **Settle & account** — metering becomes billing, audit becomes dispute
+   resolution, the scorecard becomes reputation.
+
+## 8. Delivery
+
+- **Just-in-time** — the right intelligence routed to the work the instant the
+  work exists; no idle inventory. (Autoscaling is JIT compute; this is JIT
+  cognition.)
+- **Trusted frontier intelligence, from all providers** — provider-neutral
+  routing across the moving frontier; the platform's normalized evals are what
+  make heterogeneous providers comparable, and JIT becomes arbitrage.
+- **Best-in-class tools, from certified suppliers** — the actuator side.
+  Verification is a technical fact about an artifact (signatures, provenance,
+  SBOMs); **certification** is an institutional standing about a party —
+  audited, renewable, revocable (the Certified Kubernetes precedent). The full
+  trust stack: certified supplier → verified artifact → confirmed runtime
+  behavior.
+- **Through an open partner network** — membership gated by the certification
+  bar and nothing else; partners deliver as principals in their own right; the
+  platform's product is the trust fabric and routing, not the inventory. Open
+  networks scale with the ecosystem (Kubernetes vs. its single-vendor
+  predecessors is the existence proof).
+
+## Platform Capabilities
+
+Cross-cutting requirements the platform must satisfy, with their governing
+standards:
+
+- **Always on** — the platform has no closed sign: continuous operation with
+  no maintenance windows, rolling everything (upgrades, certificate
+  rotation, policy changes) under live traffic, surviving zone and provider
+  failure by redundancy rather than recovery heroics. This is the platform
+  keeping the agent definition's second promise — *work that continues when
+  the principal is gone* requires a substrate that never leaves either.
+  Mechanically: replicated control planes, leader election, level-triggered
+  reconciliation (a restarted component re-derives everything from declared
+  state — crash and resume with nothing lost), and SLOs with error budgets
+  as the governing arithmetic.
+- **Real-time** — event-driven, not poll-driven: intent changes, telemetry,
+  and confirmation verdicts propagate as they happen (watches, streams,
+  webhooks), and routing decisions (JIT delivery) are made against *current*
+  state. Kubernetes' watch/reconcile machinery is the proven pattern; batch
+  is a fallback, never the architecture.
+- **Real-time, not instantaneous — ACID, stable substance** — the precise
+  temperament of "real-time", in three corrections to the naive reading:
+  - *Bounded, not zero, latency* — real-time is the discipline of
+    **deadlines honored**, not the fantasy of no delay: every propagation
+    (event → decision → effect) carries a latency bound appropriate to its
+    class (soft real-time for routing, human-time for approvals), and the
+    bound is part of the contract — predictability over raw speed.
+  - *ACID where facts change* — state transitions are transactions:
+    atomic (intent applies wholly or not at all — no half-written specs),
+    consistent (validation and invariants hold at every commit), isolated
+    (concurrent writers serialize — optimistic concurrency, resource
+    versions), durable (committed means survives crash — the etcd/raft
+    discipline). Eventual consistency is acceptable *between* fabrics and
+    in derived views; the system of record itself commits or doesn't.
+  - *Stable substance* — the platform's essence is durable matter, not
+    froth: declarations, the event log, and confirmation evidence are the
+    stable substance that persists, while compute (pods, sessions, model
+    invocations) is deliberately ephemeral vapor condensed on demand.
+    Stability of the substance is what makes ephemerality of everything
+    else safe — you can evaporate any process because no truth lives in it.
+  - *Stable state* — the dynamic counterpart: the system's resting
+    condition is **converged equilibrium** — actual state matching declared
+    state with no pending work — and every control loop is a restoring
+    force toward it (disturb the system and it returns; the
+    thermostat/homeostasis property). Stability here is asymptotic, not
+    static: change arrives as a new declared equilibrium and the system
+    settles to it without oscillation (no thrashing, no fighting
+    controllers — the bounded-ownership rules are what guarantee
+    convergence is well-defined). A platform is *stable* when its substance
+    is durable and its state seeks equilibrium — matter that persists,
+    dynamics that settle.
+  that touches intelligence must work across heterogeneous models and
+  providers simultaneously — normalized evals for comparability, per-task
+  routing and failover, no API surface that assumes a single vendor's
+  semantics.
+- **Multi-tenant** — many principals share the platform without sharing
+  fate: isolation of workloads (namespaces, quotas), of identity and
+  authorization (per-tenant OpenFGA relationship graphs), of policy
+  (per-tenant OPA constraints), of metering and billing, and of blast radius.
+  Tenancy is enforced at the control plane, not promised by convention.
+- **Multiple operators** — the platform is a multi-agent system by design:
+  many autonomous control loops (operators, schedulers, autoscalers,
+  platform agents) act on shared state concurrently, and correctness comes
+  from coordination rules, not from pretending there is one controller:
+  - *Bounded ownership* — each operator owns a declared slice of state
+    (its CRDs, its children via owner references, its fields via
+    server-side-apply field managers); one field, one writer.
+  - *Non-interference protocols* — where ownership must be shared or handed
+    off, the boundary is explicit (this repo's rule that the HPA owns
+    `spec.replicas` and the reconciler must not write it is the canonical
+    miniature).
+  - *Blackboard coordination* — operators never call each other; they
+    communicate through the declared state itself (write status, watch
+    specs), which is what lets independently developed operators compose
+    without integration work — and lets one operator's CR be another
+    operator's child, stacking abstractions indefinitely.
+- **Policy & authorization, out of the box** — OPA (CNCF graduated) for
+  organizational policy-as-code; OpenFGA (CNCF incubating: supported, never
+  required) for relationship-based authorization and delegation chains. See
+  the corresponding sections in `docs/DESIGN.md` for the concrete
+  KubeContainer implementation.
+- **Multi-fabric (multi-thread, scaled out)** — each era's unit of
+  concurrency gave way to the next: threads sharing memory in one process →
+  processes sharing a kernel → containers sharing a node → operators sharing
+  a cluster — and now **fabrics sharing a platform**. A fabric (per the
+  earlier definition: many resources abstracted into one uniform surface —
+  a cluster, a data fabric, a network mesh, a provider's region) becomes the
+  schedulable unit, and the platform runs *across several at once*:
+  multi-cluster, multi-cloud, multi-region, multi-mesh. What changes at each
+  step up is the coordination medium — locks and shared memory gave way to
+  IPC, then to APIs, then to declared state — and at fabric scale it is
+  **contracts plus reconciliation**: fabrics are too far apart (in latency,
+  ownership, and failure domain) to lock, so they converge on declared
+  intent independently, each fabric an availability and sovereignty
+  boundary (the geospatial residency rule lands here: *which fabric* is a
+  policy decision). Multi-thread asked "how do I keep my threads from
+  corrupting shared memory"; multi-fabric asks "how do I keep my fabrics
+  honest against a shared declaration" — same problem, five layers up.
+- **No substreams, subgraphs, or sidecars** — the flatness constraint:
+  nothing rides alongside the declared path.
+  - *No sidecars* — no auxiliary containers injected beside workloads to
+    add platform behavior (mesh proxies being the classic case). Sidecars
+    double the moving parts per pod, hide platform logic inside tenant
+    workloads, and couple upgrades to restarts; the capability belongs in
+    the platform layer itself (node-level/eBPF, ambient-style mesh, or the
+    operator) — a pod contains exactly what the tenant declared, nothing
+    more. (KubeContainer already honors this: one workload container, zero
+    injected helpers.)
+  - *No substreams* — one stream of record per fact domain: no derivative,
+    semi-official data flows forked off to the side that consumers discover
+    too late. Derived views are fine — declared, named, and traceable to
+    the log they project — but the fork-and-drift pattern is banned.
+  - *No subgraphs* — no fragmentary partial views of the relationship/state
+    graph maintained as separate sources of truth. There is one graph;
+    scoping is done by *authorized queries over it* (OpenFGA relations,
+    field selectors), not by copying slices out to drift independently.
+
+  One rule under all three: every flow, view, and helper is either on the
+  published contract path — declared, owned, versioned — or it does not
+  exist. Hidden auxiliaries are where unowned state, silent drift, and
+  unaccountable behavior breed.
+- **All languages, all speaker pairs** — the platform carries meaning across
+  every combination of participants, each with its appropriate language
+  class:
+  - *Human ↔ Human* — natural languages: full internationalization and
+    localization; no privileged human language.
+  - *Human ↔ Machine* — intent languages: natural-language goals in, legible
+    status out; declarative specs (YAML/CRDs) as the precise dialect.
+  - *Machine ↔ Machine* — agent and service protocols: MCP, A2A-class
+    protocols, gRPC/REST with typed contracts.
+  - *System ↔ System* — interoperability standards: OCI, OpenAPI/JSON
+    Schema, CloudEvents — the schemas that let platforms compose.
+  - *System ↔ Information* — data languages: query (SQL/GraphQL),
+    serialization (JSON/Protobuf), and semantics (RDF-class) layers.
+
+  One rule binds them all: every boundary speaks a *published contract*
+  (grammar + schema + semantics), so translation between any two parties is
+  a platform service, not a per-integration negotiation. Tooling-wise this
+  is the Language Server Protocol insight generalized: define the language
+  once, get every editor/consumer for free.
+- **Peer communication over existing standard protocols** — point-to-point,
+  agent-to-agent, kube-to-kube: when two peers need to talk directly, they
+  do it over protocols that already exist and are already standards — HTTP,
+  gRPC, mTLS via the platform's identity, DNS-based discovery (headless
+  Services for direct pod addressing), MCP and A2A-class protocols at the
+  agent layer, CloudEvents for events. The platform invents **no proprietary
+  wire protocol**: its value is identity, discovery, authorization, and
+  observability *around* standard transports, never a bespoke channel
+  through them. Corollaries: peer traffic is end-to-end contract-typed (no
+  meaning smuggled in side headers), every hop is attributable to a
+  principal, and "direct" never means "off the record" — point-to-point is
+  a topology, not an exemption from governance.
+- **Event-triggered, outcome-focused, value-driven** — the design principle
+  governing when the platform acts, what it aims at, and why:
+  - *Event-triggered* — work begins because something happened (an intent
+    changed, a child drifted, a verdict landed), never because a clock
+    fired. Polling is the absence of design. One refinement, learned the
+    hard way by Kubernetes: **edge-triggered wake-up, level-based logic** —
+    the event is only the alarm; the action is computed from full current
+    state, so missed or duplicate events change nothing (this repo's
+    reconciler is the reference implementation).
+  - *Outcome-focused* — the unit of success is a converged end-state, not
+    activity performed: "the workload is available at this endpoint", not
+    "the deploy script ran". Declared outcomes are what specs state, what
+    status reports, what SLOs measure, and what the confirmation machinery
+    certifies; effort that moves no outcome is indistinguishable from
+    failure.
+  - *Value-driven* — among possible outcomes, pursue the one worth the
+    most to the principal per unit cost: metering ties every action to its
+    cost, outcomes tie cost to delivered value, and the routing/priority
+    decisions (JIT, arbitrage across providers) optimize value density —
+    excellence mark #4 (economy) elevated from virtue to scheduler input.
+
+  Read as one sentence: *wake on events, steer by outcomes, prioritize by
+  value* — the cadence, the compass, and the currency of every control
+  loop on the platform.
+- **Standard operating procedures** — operational knowledge is a platform
+  artifact, not tribal memory: every recurring situation (deploy, upgrade,
+  scale, incident, rollback, key rotation, certification renewal) has a
+  named, versioned, reviewed procedure — and procedures climb a maturity
+  ladder: *written* (runbook) → *drilled* (rehearsed, game-days) →
+  *assisted* (agent executes, human approves) → *automated* (control loop
+  executes, humans audit). The operator pattern is the ladder's top rung
+  made literal — CoreOS's original definition of a Kubernetes operator was
+  precisely "automated operational knowledge": the SOP compiled into a
+  reconcile loop (this repo encodes the deploy/expose/scale/heal SOP for
+  workloads). Agent-layer equivalent: skills and playbooks — SOPs agents
+  load and follow. Rules: the procedure is the contract for *how* state
+  changes (no snowflake interventions — emergency action means executing
+  the emergency SOP, and if one doesn't exist, writing it is the
+  postmortem's first deliverable); procedures live in version control under
+  the code-is-configuration discipline; and every escalation from automated
+  back to human is itself a defined procedure, not an improvisation.
+  code", and the platform's deepest operating principle: generic, certified
+  engines execute; *what they do* is entirely declared. Users do not program
+  the platform — they parameterize it with versioned, diffable, reviewable
+  declarations, and control loops make the declarations true. Consequences:
+  every change is a data change (auditable by construction, evaluable by
+  OPA, reversible by `git revert`); behavior is inspectable without reading
+  source; and the blast radius of change is bounded by schema validation
+  before anything executes. Where logic must live in the declaration, it is
+  embedded as constrained expression languages (CEL, Rego) — code admitted
+  into configuration on configuration's terms: sandboxed, terminating,
+  side-effect-free. KubeContainer is the working example: a running,
+  scaled, exposed workload is produced by twelve lines of YAML and zero
+  lines of user code.
+
+- **Data as intelligence** — the companion inversion to "code is
+  configuration": data on this platform is not inert record but the active
+  substance intelligence is made of, in both directions:
+  - *Data → intelligence (grounding):* models are frontier-capable but
+    context-blind; the platform's data — documents, state, telemetry —
+    delivered just-in-time (retrieval, context assembly) is what turns
+    general capability into situated intelligence. The same JIT discipline
+    applies: the right data, at the moment of need, under authorization
+    (OpenFGA relations gate what each principal's context may contain).
+  - *Exhaust → intelligence (the flywheel):* every confirmation artifact the
+    platform produces — eval scores, traces, metering, reliability history,
+    reputation — is itself data that drives the platform's own decisions:
+    routing, certification, pricing. The platform is its own first
+    decision-intelligence customer.
+
+  Governance corollary: if data is intelligence, then data governance *is*
+  intelligence governance — provenance, consent, and tenancy isolation on
+  data are upstream controls on what any agent can know or leak.
+
+  Two properties make this trustworthy:
+  - *Data is real* — data is the platform's anchor to reality: models
+    generate claims, data carries evidence. Anything asserted without a
+    data lineage behind it is opinion, and the confirmation machinery only
+    accepts evidence. Provenance is therefore not metadata garnish; it is
+    what makes a datum admissible.
+  - *Data is temporal* — every datum carries its time: when the event
+    happened, when it was recorded, and how long it remains valid
+    (bitemporality: what was true vs. what was known). Intelligence decays —
+    yesterday's cluster state answers no question about now — so freshness
+    is a first-class quality dimension, JIT delivery includes *temporal*
+    fitness, and the system of record is an immutable event log from which
+    current state is a derived view (the watch/reconcile pattern again:
+    status is always a projection of events, never a hand-edited fact).
+  - *Data is geospatial* — every datum also carries its *where*: the
+    location it describes, where it was produced, and where it may reside.
+    Three obligations follow: location as a queryable dimension (geo-indexed
+    retrieval, OGC/GeoJSON-class standards, not free-text place names);
+    place-aware delivery (route work to the data and the nearest capacity —
+    locality is the spatial half of JIT, latency its measure); and
+    residency as governance (sovereignty and jurisdiction are *where*
+    constraints — tenancy isolation has a geography, and policy must be
+    able to say "this data does not leave this region").
+  - *Data is multi-domain* — meaning lives inside a domain (medicine,
+    logistics, finance, code), each with its own vocabulary, ontology, and
+    rules — the domain-driven-design insight: a "claim" in insurance and a
+    "claim" in an argument are different objects. The platform therefore
+    keeps **bounded contexts** explicit: each domain's data is interpreted
+    under its own published contract (its language, per the all-languages
+    capability), cross-domain value comes from *deliberate, mapped joins*
+    rather than naive merging, and no single global schema is pretended.
+  - *Data is contextual* — the capstone property: a datum's meaning and
+    relevance depend on who is asking, for what task, under which domain,
+    when, and where. Context is therefore a first-class, *assembled* object
+    — the platform's JIT grounding is precisely context assembly: select by
+    realness (provenance), temporal fitness, spatial fitness, domain fit,
+    and authorization, then deliver. The five properties compose into one
+    question the platform must answer for every delivery: **what is true
+    (real), as of when (temporal), where (geospatial), in which world of
+    meaning (domain), for whom and for what (context)?**
+
+## The Mission Statement
+
+> **The platform is the control plane where agent engineering, intelligence,
+> reliability, governance, cost-efficiency, and excellence are continuously
+> converted from claims into confirmed evidence — supporting the agent economy
+> across the entire value chain, from creation and distribution through
+> transaction, operation, consumption, and settlement — by ensuring
+> just-in-time delivery of trusted frontier intelligence from all providers,
+> and best-in-class tools from certified suppliers, through an open partner
+> network delivery model.**
+
+What it is, whom it serves, how it wins, who delivers it.
+
+## Where the Platform Is the Foundation
+
+The closing posture: the platform is not a product among products but the
+**foundation** everything above it assumes — agents, tools, the economy, and
+the missions of those who build on it all transfer their load onto it the way
+a building transfers load onto ground that was engineered first.
+
+Three obligations follow from being foundation rather than feature:
+
+- **Bear load silently** — foundations are judged by what stands on them,
+  not by their own visibility: the platform succeeds when builders stop
+  thinking about it (paved roads, invisible when working, always-on by
+  definition).
+- **Be conservative below, liberal above** — the foundation moves slower and
+  promises harder than anything built on it: graduated standards, pinned
+  versions, ACID substance, backward compatibility — so that the layers
+  above can afford to move fast and experiment.
+- **Be stewarded like a foundation** — the other sense of the word is the
+  governance model: vendor-neutral, open membership gated by published
+  standards, certification over gatekeeping — an institution (the CNCF
+  pattern) rather than a landlord.
+
+Foundation is the final answer to "what is the platform": the thing
+everything else is *built on*, engineered to be worthy of that position, and
+governed so it stays that way.

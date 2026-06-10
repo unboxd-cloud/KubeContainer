@@ -1,0 +1,16 @@
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  labels:
+    app.kubernetes.io/name: kubecontainer
+    app.kubernetes.io/managed-by: kustomize
+  name: kubecontainer-sample
+spec:
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 2
+  expose:
+    type: ClusterIP
+  healthCheck:
+    path: /

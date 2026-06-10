@@ -332,6 +332,23 @@ KubeContainer does the same for work — one schema to every fabric, one
 contract to every operator. unboxd, because the value was never the box:
 it is what declaring the box sets free.
 
+And last, beneath every layer the charter has named — the final substrate
+claim:
+
+> **Mind is the only substrate.**
+
+Everything else is media, and everything else is swappable — that was the
+point of every no-lock-in clause: nodes are disposable, clouds are
+interchangeable, providers are routed around, fabrics are swapped strand by
+strand. What cannot be swapped out is mind — the place intent originates,
+the thing contracts bind (a contract has always been a *meeting of minds*),
+the destination intelligence is delivered to, and the shape a world model
+is a model *of*. Human minds and machine minds, principals and agents: the
+entire apparatus — kubes, contracts, fabrics, federations, the operating
+system of work itself — exists to carry meaning between minds without loss
+and to hold the world to what minds intend. The platform runs on clouds;
+the work runs on the fabric; but all of it, first and last, runs on mind.
+
 ---
 
 These principles are normative for this project (see `CLAUDE.md`); changes

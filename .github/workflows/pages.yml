@@ -3,6 +3,7 @@ name: Deploy website to GitHub Pages
 on:
   push:
     branches:
+      - main
       - claude/dreamy-darwin-wcepfb
     paths:
       - "site/**"

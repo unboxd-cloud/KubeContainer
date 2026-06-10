@@ -612,6 +612,24 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Open-enterprise** — a category of its own, named against its two
+  neighbors: not *open source* (that is a license, not a business
+  model) and not *open core* (free core, features held hostage in a
+  paid shell — openness as bait). Open-enterprise gates nothing:
+  everything is open — code, spec, charter, registry schema, the bar
+  itself — and what is commercial is the enterprise, not the artifact:
+  the standing, the underwriting, the certification, the operation.
+  An open enterprise is one that is open *and* commercial,
+  refusing the false trade between them: it runs on open standards with
+  exit always real (nothing it depends on can hold it hostage), shows
+  its work (provenance, audit-readiness, verdicts over claims), and
+  transacts commercially on exactly that openness — selling the
+  standing behind artifacts anyone could copy, buying only what it
+  could leave. Openness is its trust posture; commerce is its
+  sustainability; the two are one motion seen from the contract's two
+  sides. It is both what unboxd-agency is and what its customers
+  become: the agentic enterprise, made open — governable because
+  inspectable, trusted because checkable, profitable because trusted.
 - **Provenance is the product** — the business thesis in four words:
   what the platform ultimately sells is not the software (open), not the
   compute (anyone's), not even the outcome alone (a commodity once

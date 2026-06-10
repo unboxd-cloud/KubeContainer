@@ -5,6 +5,33 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); the
 project adheres to semantic versioning once released. Per the axiom, this
 file summarizes — the git history remains the record.
 
+## [Unreleased]
+
+### Changed
+
+- Organization renamed: unboxd-cloud → **unboxd-agency**. The reason,
+  in the founder's words: *because this is the agent — unboxd had the
+  agency*. "Cloud" was the wrong representation — it described where
+  the work ran; "agency" describes who the work serves and what a box
+  becomes when identity and governance are added to the artifact
+  (artifact + identity + governance = agent). The platform was never
+  about the cloud underneath; it was always about the agency conferred.
+  Public references (site, README, NOTICE, manifests) aligned. The Go
+  module path is unchanged for now (GitHub redirects); the API group
+  `kubecontainer.unboxd.cloud` is unchanged by design — it is the DNS
+  domain, and the compatibility corpus protects it.
+
+### Added
+
+- Product website (`site/`, GitHub Pages) with the v0.1.0 install
+  command and release links.
+- NOTICE: copyright claim, the record as proof, trademark reservation
+  (unboxd, KubeContainer, the Fabric, Kube), and the naming rationale.
+- Registry-defines-the-contract doctrine (eval/README).
+- Kube product specification (`docs/KUBE-SPEC.md`); the box doctrine and
+  agent equation on the front door; declared-release mechanism
+  (`release/REQUEST`).
+
 ## [0.1.0] — 2026-06-10
 
 ### Added — operator

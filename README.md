@@ -200,7 +200,7 @@ Nothing here asks to be believed; everything names its verdict:
 
 | Claim | Check it |
 |---|---|
-| It ships | [Release v0.1.0](https://github.com/unboxd-cloud/KubeContainer/releases/tag/v0.1.0) — image, install bundle, sha256 digests |
+| It ships | [Release v0.1.0](https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0) — image, install bundle, sha256 digests |
 | It works in real clusters | The e2e gate: a declared workload must converge and serve HTTP 200 in a live cluster — every push, in CI |
 | It will not break its word | The [golden compatibility corpus](internal/controller/testdata/compat/): era manifests must stay valid forever, CI-enforced |
 | It carries its evidence | `eval-report.json` ships as a release asset — the [evaluation registry](eval/README.md)'s verdicts, attached |

@@ -185,7 +185,16 @@ when — so that authenticity is never inherited from a brand but
 established per item, and the verifier's name is on the line beside
 the source's. The aggregator aggregates; the verifier answers for it;
 in this house they are the same party, and the record holds both
-signatures.
+signatures. One discipline completes the office: avoid duplication —
+the aggregator's second job is subtraction. Every fact admitted once
+is referenced thereafter, never copied (one custodian per truth;
+copies are staleness waiting to disagree); every source already
+verified is cited, not re-ingested; and where two sources say the
+same thing, the record holds one fact with two attestations rather
+than two facts pretending independence. Duplication is how registries
+rot — the same claim under different names, drifting apart until no
+one knows which is canonical. The aggregator who deduplicates is the
+one whose graph still resolves a decade in.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

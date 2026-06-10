@@ -530,7 +530,28 @@ keep true), the tenant's world holds only the contract and its evidence
 its final meaning: not that servers vanished, but that they returned to
 being what they always were — the provider's representation of itself,
 behind a published contract, in a federation where every member keeps
-its own twins honest;
+its own twins honest. And what the server *holds* is the service
+contract: serving is not a posture but a standing obligation, and the
+server is where the provider's side of that obligation lives — the
+endpoint that must answer, the class that must be honored, the SLO that
+must be kept, embodied at an address. *Server* and *service* were always
+the same word working: a server is a contract with a socket — which is
+why the stable surface is possible at all (the contract persists while
+the machinery behind it is swapped), why "is the server up?" has always
+secretly meant "is the contract being kept?", and why on this fabric the
+two questions are finally allowed to be one. And above every server and
+every service stands the platform as the provenance: the keeper of where
+everything came from — which supplier built the tool, which provider
+served the intelligence, which member performed the step, which
+revisions fed the projection, which contract authorized the touch — the
+unbroken chain of custody that turns artifacts into assets and claims
+into evidence (2). Provenance is the platform's deepest product: anyone
+can run a workload, only a provenance can make it *trustworthy after the
+fact* — auditable to origin, attributable to authors, portable with its
+history attached (sovereign exit means leaving *with your provenance*) —
+so the platform earns its place not by holding the work but by being
+able to answer, for every fact on the fabric, the only question trust
+ever asks: *where did this come from, and who stands behind it?*
 
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,

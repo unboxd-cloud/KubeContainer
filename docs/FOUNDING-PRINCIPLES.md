@@ -386,6 +386,15 @@ signs its outcomes with its evidence, builds its reputation on its record,
 and is *credited* — pride is what accountability feels like from the inside
 when the work is good;
 
+**compliant at all layers** — compliance is not a department, it is a
+property of every stratum at once: the schema validates, the API path
+authorizes, admission applies policy, the workload honors its contract,
+the member honors its governance model, the federation honors its
+treaties, and every layer above rests on a layer already compliant below —
+so an auditor (human or agent) can enter at any altitude and find the same
+answer: nothing running that was not permitted, nothing permitted that is
+not recorded;
+
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
 everything it needs to serve — tools, model, memory, contract, identity —

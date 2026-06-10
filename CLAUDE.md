@@ -13,7 +13,7 @@ changes.
 
 ## Terminology
 
-`docs/FOUNDING-PRINCIPLES.md` is the project's charter: fifteen founding
+`docs/FOUNDING-PRINCIPLES.md` is the project's charter: eighteen founding
 principles, normative for all design decisions; treat changes to them as
 constitutional. `docs/AGENT-PLATFORM.md` is the **normative source** for agent
 terminology in this project. When these terms appear in code, docs, or discussion, use its

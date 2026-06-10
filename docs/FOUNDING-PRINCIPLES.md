@@ -77,5 +77,37 @@ the charter.
     contractual, with consequences priced in. Trust the platform issues is
     trust the platform is liable for.
 
+16. **Governed by choice.** Every constraint a principal operates under is
+    one they chose — policies are adopted, not imposed: tenants select and
+    compose their own policy sets from certified options; suppliers submit
+    to certification voluntarily because the bar is published and the gate
+    is the only gate; providers are chosen per task and exit is always
+    real (no lock-in is what keeps choice honest). The platform's only
+    non-negotiables are the founding principles themselves — the rules
+    that keep choosing possible — and even those are amended by open,
+    constitutional process rather than decree. Consent, recorded and
+    revocable, is the legitimacy of every rule.
+
+17. **Sovereign.** Choice's precondition: every principal remains the final
+    authority over what is theirs — their data (residency by geography and
+    fabric, per the geospatial rule), their keys and identity, their
+    policies, their agents, and their right to leave with all of it intact.
+    The platform holds delegated authority only: revocable, scoped,
+    auditable — a steward of what it operates, owner of nothing it serves.
+    Sovereignty composes: tenant within partner, partner within platform,
+    jurisdiction above all — each layer's autonomy bounded only by the
+    layer it chose to join.
+
+18. **Federated by design.** The architecture sovereignty requires:
+    independent members — fabrics, partners, tenants, jurisdictions — join
+    by contract and remain whole. Nothing is centralized that can be
+    federated: each member keeps its own store of record, control plane,
+    and policy engine; what crosses the boundary is declared intent,
+    evidence, and settlement — never raw internal state. Shared truth is
+    reconciled between peers, not imposed from a center; the platform's
+    center holds only what federation itself needs (the contracts, the
+    certification registry, the directory) — small enough that no member
+    is hostage to it, strong enough that every member can trust the rest.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.

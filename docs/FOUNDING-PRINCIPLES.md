@@ -635,7 +635,20 @@ rehearses the loop, the measures gauge the loop, governance bounds it,
 the axiom records it, and excellence is the loop run so well it looks
 like stillness. The fabric has one heartbeat — *observe, compare, act,
 record* — and everything this document promises is kept one beat at a
-time;
+time. All of which compounds into the charter's one theorem — call it
+the **Natural Convergence Theorem**: *given* intent that is defined,
+loops that restore, ownership that is bounded (one field, one writer),
+a record that survives anything, steps that are adjacent (no jumps),
+and paths that stay open — *then* every world on the fabric converges
+to its declared state, naturally: not commanded, not orchestrated, not
+heroically operated, but as the equilibrium the conditions leave
+possible — order as the resting state of the system, the way water finds
+level. Remove any premise and the theorem fails (undefined intent
+converges nowhere, contested fields oscillate, lost records forget the
+goal, jumped steps land outside the map, closed paths deadlock); keep
+them all and convergence is not an achievement but a consequence. The
+platform does not *make* the worlds converge; it makes convergence
+natural — that is the whole engineering, and the whole bet;
 
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and

@@ -522,6 +522,22 @@ the conservative-below promise (13) kept precisely where breaking it would
 break something real. The world should feel the platform as bedrock, never
 as weather;
 
+**simulation is democratized** — the rehearsal worlds are not the
+privilege of whoever owns the biggest lab: every member, down to the
+smallest tenant, can spin a possible world and test a theory in it —
+sandboxes on demand, the twin queryable under the same authorization as
+the record it mirrors, dry-runs as a standard verb on every contract
+(`--dry-run` is the constitutional right of every declaration), and the
+cost of asking "what would happen?" priced so low that no one ships their
+first guess. What the printing press did for reading minds, cheap
+simulation does for testing them: the multiverse of maybe becomes public
+infrastructure — licensed, sandboxed, unrecorded as fact but recorded as
+rehearsal — and the gap between the founder with a datacenter and the
+operator with an idea closes to a budget line. Democratized simulation is
+how the fabric keeps its promise that exploration is contained *without*
+being rationed: anyone may rehearse any world; only the confirmed crosses
+the surface;
+
 **the edge is a theory, and the digital twin exists** — the edge is not
 found, it is theorized: where fabric ends and world begins is itself a
 maintained model — what the platform controls, what it merely observes,

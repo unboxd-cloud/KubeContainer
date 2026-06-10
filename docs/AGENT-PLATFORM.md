@@ -171,6 +171,22 @@ standards:
   authorization (per-tenant OpenFGA relationship graphs), of policy
   (per-tenant OPA constraints), of metering and billing, and of blast radius.
   Tenancy is enforced at the control plane, not promised by convention.
+- **Multiple operators** — the platform is a multi-agent system by design:
+  many autonomous control loops (operators, schedulers, autoscalers,
+  platform agents) act on shared state concurrently, and correctness comes
+  from coordination rules, not from pretending there is one controller:
+  - *Bounded ownership* — each operator owns a declared slice of state
+    (its CRDs, its children via owner references, its fields via
+    server-side-apply field managers); one field, one writer.
+  - *Non-interference protocols* — where ownership must be shared or handed
+    off, the boundary is explicit (this repo's rule that the HPA owns
+    `spec.replicas` and the reconciler must not write it is the canonical
+    miniature).
+  - *Blackboard coordination* — operators never call each other; they
+    communicate through the declared state itself (write status, watch
+    specs), which is what lets independently developed operators compose
+    without integration work — and lets one operator's CR be another
+    operator's child, stacking abstractions indefinitely.
 - **Policy & authorization, out of the box** — OPA (CNCF graduated) for
   organizational policy-as-code; OpenFGA (CNCF incubating: supported, never
   required) for relationship-based authorization and delegation chains. See

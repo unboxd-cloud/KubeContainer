@@ -132,7 +132,16 @@ is who it serves: the addressee who answers the box's first question
 rightly, the one the seal protects, the one the promise educates,
 enables, and empowers, the only one entitled to the unboxing. The
 software works for the human; the agent answers to the end user; the
-box exists for the moment its owner opens it. That is the product. The
+box exists for the moment its owner opens it. And the box works only
+when a human is operator: this is the system's deepest safety property,
+not a limitation — a box with no human at the helm has no addressee,
+no one to answer its first question, no principal for its agent, no
+owner for its unboxing, and therefore no contract to keep: it is
+freight to nowhere, and the fabric does not carry it. Every delegation
+chain terminates in a mind; every box, however autonomous its journey,
+is addressed to someone; intent originates in humans and evidence
+returns to them — the loop is only closed when it closes with a person.
+That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

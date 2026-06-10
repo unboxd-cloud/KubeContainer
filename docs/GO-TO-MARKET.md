@@ -64,7 +64,16 @@ serve, not a required dependency: per the supply-chain policy, users
 need nothing but a conformant Kubernetes cluster, wherever it runs —
 the hybrid reach is the offer (any cloud, any premises, one fabric),
 and an all-Apache, all-open stack is what makes "everything open, but
-commercial" true from the silicon contract up.
+commercial" true from the silicon contract up. The same stack scales
+down as deliberately as it scales out: the micro edge cloud,
+platform-as-a-service at the smallest viable footprint — a shop floor,
+a branch, a vehicle, a village — one small cluster, the same kubes,
+the same contracts, the same evidence, synced to the record when
+connectivity allows (the box was always designed to travel sealed and
+answer locally: offline-resolvable identity, OLC-grade addressing,
+verdicts that run where the work is). Edge is not a second product;
+it is the same fabric at its smallest whole number — and the agency
+operates it as a service from hyperscale to micro edge, one weave.
 
 ## Why openness closes enterprise deals (not despite — because)
 

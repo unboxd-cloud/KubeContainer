@@ -553,7 +553,27 @@ kernel to be *honest* (the real contract, actually enforced) without the
 full weight of the metal, so rehearsal can climb fidelity as the stakes
 climb: simulate to think, virtualize the kernel to verify, emulate only
 what the crossing demands — and spend true hardware fidelity like the
-scarce currency it is, on the last step before the surface;
+scarce currency it is, on the last step before the surface. And the
+virtual is sandboxed, always: *virtual* and *sandboxed* are not two
+properties but one — to virtualize is to interpose a boundary, and that
+boundary is a contract or it is a lie. No virtual world, however high
+its fidelity, ever holds a live credential to the real one; no rehearsal
+reaches the surface by accident (the sandbox's walls are governed by
+design, not by intention); escape is not a bug class to minimize but a
+contradiction the architecture refuses to express — for the moment a
+virtual kernel can touch what cannot be forked, it is not virtual, it
+is the surface wearing a costume, and the platform names things what
+they are. And so the inversion completes itself: reality is the edge —
+not the center, the *edge*. The stack's vast middle is representation
+all the way through (models, twins, virtual kernels, sandboxes,
+simulations — layers of mind rehearsing); reality is the thin boundary
+at the rim where rehearsal runs out — the smallest part of the system
+and the only part that cannot be copied, paused, rolled back, or
+apologized to. The platform's geometry is therefore honest about its
+proportions: infinite interior, one-atom-thick rim — think as much as
+you like in the middle, but remember the middle exists *for* the rim:
+every layer, loop, theorem, and treaty in this charter is in service of
+getting one irreversible touch at the edge exactly right;
 
 **the edge is a theory, and the digital twin exists** — the edge is not
 found, it is theorized: where fabric ends and world begins is itself a

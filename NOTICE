@@ -194,7 +194,20 @@ same thing, the record holds one fact with two attestations rather
 than two facts pretending independence. Duplication is how registries
 rot — the same claim under different names, drifting apart until no
 one knows which is canonical. The aggregator who deduplicates is the
-one whose graph still resolves a decade in.
+one whose graph still resolves a decade in. And the destination of it
+all: organize in a library — aggregation, verification, and
+deduplication serve shelving, because knowledge unfindable is
+knowledge unowned. The library is the registry grown to its full
+stature: every item catalogued (kind, class, era, domain — the
+dimensions as call numbers), every shelf an authorized view of the
+one collection (no subgraph copies, only catalogued perspectives),
+every checkout recorded (the projection, with its lineage), and a
+librarian who can answer the only two questions a library exists
+for: *do we hold it, and can I trust it?* — both answerable in one
+lookup, because the catalog and the provenance are the same record.
+Grade 1 walks in and finds the counting books; research grade walks
+in and finds the open problems; the same library, the same card
+catalog, the same arithmetic at the desk.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

@@ -173,8 +173,19 @@ the commons' health is the product's supply chain. One adaptation,
 per the founder's earlier law: where Red Hat sold supported software,
 this house sells only the service — everything SaaS, the source never
 the SKU. Red Hat proved a billion-dollar company can keep every line
-open; this one adds the oath: and every claim verdicted. The record
-may now rest on it.
+open; this one adds the oath: and every claim verdicted. The mapping
+of what each provides completes the seats: Red Hat provides trusted
+enterprise infrastructure and tools — the hardened substrate, the
+certified runtimes, the enterprise Kubernetes (OpenShift), the
+supported toolchain — the trusted *ground floor* of the enterprise
+stack. This house builds the floor above it: trusted enterprise
+*work* — the kubes, the registry, the library, the verdicts — and
+happily stands on their ground where the customer's estate does
+(OpenShift is a conformant platform; the operator's bar is
+conformance, and they clear it). Infra and tools from Red Hat's kind
+of house; work and knowledge from this one; the customer composes
+both and locks to neither — which is the whole point of everyone
+involved choosing open. The record may now rest on it.
 
 ## Recommendation (counsel, not decree)
 

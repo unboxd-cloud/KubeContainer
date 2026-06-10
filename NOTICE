@@ -61,7 +61,41 @@ is static files any host can serve, the images are OCI any registry
 can hold, the releases are artifacts with digests. Swap the host and
 nothing canonical moves; the provider serves the record, the record
 owes the provider nothing — the no-lock-in rule, applied first of all
-to ourselves.
+to ourselves. The same demotion holds for domains: KubeContainer.xyz
+is just a domain — a rented address, one profile among the many the
+identity wears — while KubeContainer is the repository: the record
+itself, whole in every clone. Domains point, repos are; a domain that
+lapses loses a signpost, never the canon (even the DID anchor is a
+resolution path, not the residence — the residence is the record).
+Addresses are leased; the thing addressed is owned. One honest
+dependency named: context is provided by the GitHub platform — the
+pull-request threads, reviews, check annotations, stars, the social
+weave around the record live on the host's side, not in git. The
+discipline that answers it is the axiom's own: decision-bearing
+context is absorbed into the canon as it happens — reasons in commit
+messages, rationale in the changelog, doctrine in the docs — so that
+losing the host loses conversation, never canon. The platform may
+keep the chatter; the record keeps the why. And the hosting contract
+is held by GitHub — like every layer of the stack, the host is a
+party with a contract of its own: terms of service, uptime, the
+account, the org name — GitHub holds its side as the hardware vendor
+holds the silicon contract and the registrar holds the domain lease.
+That is not a flaw; it is the stack-of-contracts working (contracts
+all the way down) — the discipline is only to know, at every layer,
+exactly which promises are ours, which are the host's, and which
+would need a new counterparty if the host failed its side. Ours: the
+canon, the claim, the evidence. Theirs: the serving of it. The
+difference is the exit.
+
+And so the conclusion holds, by the test rather than by assertion:
+the KubeContainer repository is truly open. Inspectable — public, the
+code with the charter, the prices' logic with the bar itself, nothing
+withheld. Implementable — Apache 2.0, stable upstream APIs, no
+permission asked, no fee owed. Leavable — every clone carries the
+whole canon, provenance included, host and domain both replaceable.
+Three legs, all standing; the first artifact to pass the triple test
+is the one that defined it — which is the only way a definition
+deserves to survive.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

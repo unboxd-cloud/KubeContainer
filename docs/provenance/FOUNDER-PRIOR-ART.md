@@ -14,6 +14,19 @@ delivered promises is exactly the standing this platform was built to
 make checkable. LinkedIn supplied the witnesses; this register gives
 them custody.
 
+And a third kind, the quietest and most telling: prior consistency —
+work from five years back and more, showing the same thought process
+held across time. Priority proves who was first; delivery proves who
+kept promises; consistency proves it was never a fashion: the same
+questions (why is the web disorganized, why is search hard), the same
+instincts (file it, prove it, name the payer), the same direction,
+years before the era made them obvious. A vision held for five years
+is conviction with a timestamp — and trajectory, as the measures
+doctrine says, is its own evidence: reputation rewards the curve, not
+just the point. Entries of this kind cite the old work, date it, and
+name the present doctrine it anticipated — the thought's own
+delegation chain, resolving backward to the same mind.
+
 Discipline (per the NOTICE's host doctrine): a link alone is provenance
 held by someone else's platform. Each entry must absorb the substance
 into the canon — URL, date, and the claim's text or faithful summary —

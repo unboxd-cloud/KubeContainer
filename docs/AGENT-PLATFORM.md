@@ -528,6 +528,17 @@ charter-consistently, for use across code, docs, and contracts.
   under bounded ownership and explicit handoffs (the multiple-operators
   capability, generalized). A swarm without those rules is not a system;
   it is interference with branding.
+- **Graceful exit** — an agent's termination, by design rather than by
+  luck: stop accepting work, land or release in-flight steps (stepwise
+  work always has a clean boundary to stop at), commit final state to the
+  record, hand the gate to a successor before it goes bare, close the
+  session with evidence. At the surface, grace is structural: crossings
+  are idempotent, compensable, and checked at the moment of touch, and
+  the record commits whole or not at all — so the agent may die abruptly,
+  but the crossing cannot be left half-made and the world cannot be left
+  half-told. Exit ends the acting, never the accountability: the name,
+  the reputation, and the attributions survive the process (the record
+  remembers what the fabric has released).
 
 ### Reality & drift vocabulary
 

@@ -227,6 +227,17 @@ keeping; open-enterprise, because everything in it is open and the
 enterprise itself is what is commercial; platform, because others
 build on it and it bears the load silently. Three words that took a
 constitution to earn — and a record that can prove each one.
+
+And the strategy, in the founder's own resolution of a lifelong
+question: fix search not by building another search — build the
+registry. Search is the cost of the unfiled; where things are
+registered — named, deduplicated, provenance-attached, catalogued —
+search collapses into lookup, and lookup needs no ranking, no
+guessing, no adversary. The precedents already won: DNS did not
+out-search anyone for hosts, package registries did not out-crawl the
+web for code — they filed the domain, and finding became resolving.
+The registry does not compete with the excavators; it shrinks the
+landfill, one registered domain of knowledge and work at a time.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

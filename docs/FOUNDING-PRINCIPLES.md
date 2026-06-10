@@ -67,5 +67,15 @@ the charter.
     metered price is tied to the outcome — a solution exists only where a
     contract says what "solved" means and confirmation shows it holds.
 
+15. **Assurance as a policy.** In both senses of the word: assurance is a
+    *standing policy*, not a periodic event — every guarantee is expressed
+    as machine-evaluated policy and verified continuously, so audit is a
+    property of operation rather than a season; and assurance is a
+    *policy underwritten* — because outcomes are contracted (14) and
+    evidence is continuous (2), the platform can stand behind what it
+    certifies the way an insurer stands behind a policy: confidence made
+    contractual, with consequences priced in. Trust the platform issues is
+    trust the platform is liable for.
+
 These principles are normative for this project (see `CLAUDE.md`); changes
 to them are constitutional changes and reviewed as such.

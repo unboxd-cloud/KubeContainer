@@ -548,6 +548,15 @@ that recorded every revision — and it ends, as fables do, with its moral
 already stated: *mind is the only substrate, and the record is how minds
 keep their word.*
 
+And if the whole charter must fit in a pocket, it is five words:
+
+> **Multi-step, single-store, stable-surface platform.**
+
+Work taken one recorded step at a time, without jumps; one store of record
+that every world answers to; one steady surface where the fabric meets the
+real world — bedrock, never weather. Everything else in this document is
+the working-out of those five words.
+
 ---
 
 These principles are normative for this project (see `CLAUDE.md`); changes

@@ -28,7 +28,13 @@ alone is meaningless: an empty container moves nothing, and a full one
 unmanifested is just freight nobody can claim. The box means something
 only woven in — declared to a fabric, kept by a loop, answering at a
 face, owed to a principal. The container needed the shipping system;
-the kube needs the weave; the box is the unit, never the point.
+the kube needs the weave; the box is the unit, never the point. But the
+unit is how value is counted — like a box of chocolates, worth derives
+from what the box holds and the size you choose: the kind says what is
+inside, the class says how fine, the count says how much, and the meter
+prices exactly that. With one improvement on the proverb: with this box,
+you always know what you are going to get — it is declared on the lid,
+checked at the gate, and evidenced on delivery.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1

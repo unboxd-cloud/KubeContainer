@@ -166,7 +166,8 @@ the charter.
 
 All twenty-two principles serve one end, and it is the charter's last word:
 
-> **Enabling organized work, governable at scale.**
+> **Enabling organized work, governable at scale — and unorganized work,
+> easily controllable.**
 
 Organized — not mere activity, but work under contract: declared outcomes,
 bounded ownership, legible delegation, evidence of completion. Governable —
@@ -178,9 +179,79 @@ providers, jurisdictions, and the agent economy's full value chain, where the
 units of work outnumber the humans by orders of magnitude and governance must
 therefore be a property of the system, not an effort of its operators.
 
+And the honest complement: not all work arrives organized, nor should it —
+exploration, improvisation, and emergence are where new value starts. The
+platform does not ban unorganized work; it **contains** it: born inside
+default boundaries (sandboxes, quotas, scoped identity, kill switches),
+observable even when unstructured (the audit trail does not require the work
+to be tidy), and offered a cheap on-ramp to organization the moment it proves
+worth repeating (the SOP ladder: improvisation → written → automated).
+Control is what the platform guarantees *before* organization exists;
+governance is what organization buys. The failure mode this clause forbids is
+the familiar one — where anything not formally organized becomes invisible,
+ungoverned shadow work — and the design answer is that even chaos here runs
+inside a contract about its blast radius.
+
 A platform succeeds at exactly this: when more work can be organized than any
-organization could organize, and governed better than any governor could
-govern it.
+organization could organize, governed better than any governor could govern
+it — and when the work that refuses organization still cannot escape control.
+
+Beneath both halves lies the platform's one absolute precondition — the axiom
+the whole charter stands on:
+
+> **Intent is defined. Action is documented. All revisions recorded.
+> All projections recorded. All transactions ACID.**
+
+The axiom has five clauses — the before, during, after, *as-seen*, and
+*as-committed* of every unit of work:
+
+*Intent is defined* — every action on the platform traces to a declared
+intent of a named principal: that is what specs declare, contracts bind,
+agents pursue, evidence confirms, and delegation chains carry. Organized
+work is intent fully contracted; unorganized work is intent still rough —
+but *undefined* intent is the one thing the platform cannot serve, because
+nothing can be delivered, governed, or controlled against a goal no one has
+stated. Where intent arrives vague, the platform's first act is therefore
+neither execution nor refusal but **definition**: elicit it, state it back,
+record it — natural language in, contract out.
+
+*Action is documented* — nothing executes off the record: every act writes
+its own account (who, what, on whose intent, with what result) as a
+by-product of acting, not as a chore afterward — the event log, status,
+and audit trail are the action's shadow, cast automatically. Undocumented
+action is indistinguishable from unaccountable action, so the design makes
+it unexpressible (19): the governed path documents itself.
+
+*All revisions recorded* — nothing true is ever overwritten: every state the
+system has held — every spec revision, every policy change, every
+generation of every contract and procedure — remains addressable
+(bitemporality: what was true, and when it was known). Rollback is
+re-declaration of a recorded version, never archaeology; history is the
+platform's memory, and a system that keeps all its revisions can be wrong
+without ever being lost.
+
+*All projections recorded* — derived views are facts about the viewing:
+every projection of the record — a status, a report, a dashboard, and above
+all the *assembled context delivered to an agent or human at the moment of
+decision* — is itself recorded with its lineage: projected from which
+revisions, by what query, for whom, when. Decisions are explained by what
+the decider saw; keep the projection and any judgment can be re-opened on
+its actual evidence base, not a reconstruction. No view without lineage, no
+decision without its view.
+
+*All transactions ACID* — the clause that makes the other four trustworthy:
+every change of record — intent declared, action logged, revision written,
+projection stamped, value settled — commits atomically (whole or not at
+all), consistently (invariants hold at every commit), in isolation
+(concurrent writers serialize), durably (committed survives anything). A
+half-recorded fact is worse than none; the platform's memory is admissible
+only because nothing enters it halfway. Between fabrics, settlement may be
+eventual — but each member's record commits ACID or it does not commit.
+
+Intent defined, action documented, revisions recorded, projections
+recorded, transactions ACID — declaration before, evidence during, memory
+after, the witness preserved, and every entry whole: where all work on the
+fabric begins, runs, remains, and can always be explained.
 
 ---
 

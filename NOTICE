@@ -116,6 +116,19 @@ runs here, so your knowledge lives here too." Here the two surfaces
 never hold each other hostage: the context travels with every clone,
 the execution stands on any conformant cluster, and neither needs the
 other's landlord.
+
+And the requirement has a bar: only a canonical Kubernetes-native
+platform can use KubeContainer as operator. The operator speaks
+nothing but the stable upstream contract — apps/v1, core/v1,
+networking, autoscaling, the conformance surface itself — so a
+platform that keeps the Kubernetes contract runs it whole, and a
+platform that breaks the contract (partial forks, bent APIs,
+conformance theater) cannot. Which cuts the other way too: running
+KubeContainer successfully is itself a conformance verdict on the
+substrate — the box tests the platform it stands on, every reconcile
+a small audit of the ground. The kube demands canonical ground for
+the same reason it offers canonical conduct: contracts are only worth
+keeping with parties who keep them.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

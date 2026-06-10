@@ -595,7 +595,32 @@ billion point-to-point treaties, shared truth woven versus messages
 passed between private worlds. The agent economy does not need its data
 meshed — reachable but estranged; it needs it woven — one fabric,
 bearing the work of all the worlds, strong precisely because every
-thread answers to the weave.
+thread answers to the weave. And where does the cloth rest? Data can be
+stored in lakes or oceans — and the geography matters less than the law:
+a *lake* is a member's own still water — one sovereign's data pooled
+raw and vast inside their boundary, schema applied on reading, depth
+owned outright; an *ocean* is the federated water between them — no
+one's property, every shore's commons, crossed by contract (treaties
+are maritime law here), holding what members choose to share under
+provenance and flag. Store in the lake what is yours to still; commit
+to the ocean what is meant to travel — but in lake or ocean alike, the
+same five dimensions locate every drop (what is true, as of when, where,
+in which world, for whom), the same record keeps custody, and the
+fabric draws from both: lakes feed the threads, oceans bear the trade —
+water everywhere, and not a drop unaccounted. As long as it is not
+*wet* — for wetness is a state, and the physics is exact: water is not
+wet; wetness is what water does to whatever it touches and soaks into
+uninvited. So with data: data in its lake, its ocean, its contracted
+channels is dry — contained, bounded, touching only by treaty; data
+becomes wet the moment it seeps where no contract carried it — bleeding
+between contexts, soaking into logs and caches and other tenants'
+worlds, dampening everything it reaches and weakening what it soaks
+(wet fabric loses its strength). Wetness, being a state, is therefore
+governable like every state: declared nowhere, permitted never,
+detected by the same telemetry that watches every boundary, dried by
+revocation and re-containment — and the platform's hydrology reduces to
+one rule: **move any amount of water anywhere, and keep everything it
+passes dry.**
 
 **a multi-layer substrate with a single real-world surface** — beneath any
 work stand many layers — silicon, cloud, cluster, fabric, contract, model,

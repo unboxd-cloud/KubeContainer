@@ -612,6 +612,37 @@ that redefines a word privately has already drifted.
 - **Registry** — the append-only store where tasks, verdicts, and
   provenance live; simultaneously the proof surface (sell from it) and
   the discovery surface (be found by it).
+- **Real-work rule** — the platform builds the database through real
+  work: every record is the byproduct of something actually performed —
+  a task done, a verdict returned, a contract kept — never of data entry
+  as a job. The proof is this repository's own history: the registry
+  grew from real fixes, the vocabulary from a real conversation, the
+  compat corpus from real manifests that really converged. Synthetic
+  data is rehearsal material and stays in rehearsal space; a database
+  built by filling fields instead of doing work is an inventory of
+  claims wearing a schema.
+- **Intelligence is not fabricated** — woven, never fabricated (the pun
+  is the principle: intelligence lives *on* the fabric precisely because
+  it is not *fabricated*). What the platform serves as intelligence is
+  data that earned its way in — real, timestamped, placed, verdicted —
+  assembled into context for a mind; nothing is invented to fill a gap
+  in knowledge, and a generated guess enters the record only after a
+  world-test makes it evidence. Where knowledge runs out, the honest
+  outputs are a recorded absence or a question — never a confident
+  fabrication, because an intelligence that fills its gaps with
+  invention is indistinguishable from one that knows nothing.
+- **Intelligence is provenance-gated** — the enforcement of the above:
+  nothing enters a context, and no output leaves as intelligence,
+  without its chain of custody attached and checked at the gate. Inbound
+  (context assembly): every datum admitted to a mind's working context
+  carries origin, freshness, place, domain, and authorization — the
+  five dimensions are the gate's checklist, and ungated context is how
+  poisoned data becomes confident answers. Outbound (delivery): every
+  insight ships with its sources resolvable, so the receiver can walk
+  any claim back to the record that bore it. The gate is the same at
+  both faces: *no provenance, no passage* — which makes provenance not
+  metadata about intelligence but the admission ticket intelligence
+  travels on.
 - **Here** — the indexical of place, made resolvable: *here* is the one
   kube at which the current work resolves — not a location on a map but
   a position in the fabric: the bounded ownership the speaker stands in,
@@ -619,7 +650,36 @@ that redefines a word privately has already drifted.
   Since the fabric resolves every point to exactly one kube, *here* is
   never ambiguous once the speaker is identified: here = this kube, its
   contract, its record. (Today, for this project, *here* resolves to
-  this repository — the fabric's one load-bearing kube.)
+  this repository — the fabric's one load-bearing kube.) And when *here*
+  is a place in the physical world (the geospatial dimension), it
+  resolves to and is stored as a Plus Code (Open Location Code): an
+  open-standard geocode computed by pure algorithm from coordinates —
+  derivable and decodable *offline*, no lookup service, no vendor in the
+  path, no network required at the edge where addresses matter most.
+  The encoding follows the **Open Location Code standard** exactly (the
+  published spec, not an approximation), and the codes resolve in Google
+  Maps and every other OLC-aware consumer for human display — the
+  division is deliberate: *storage* is the open code (offline,
+  algorithmic, no one's to revoke), *rendering* is anyone's adapter
+  (Google Maps being the ubiquitous one). The supply-chain principle
+  applied to geography: a *here* that needs someone else's server to
+  mean something is a *here* that can be taken away — so we store what
+  no one can take, and display through whoever is convenient. Every
+  person, agent, and kube therefore carries *their own* here — a billion
+  distinct values under one resolution rule: the meaning is universal,
+  the value is personal, and that is precisely what stops indexical
+  drift — no one owns a private *definition* of here, everyone owns
+  their own *position*.
+- **Plus Code (Open Location Code)** — an open-standard geocode: a short
+  alphanumeric code encoding a geographic area, computed from
+  coordinates by pure algorithm — encodable and decodable offline, no
+  lookup service, no license, no vendor in the path. The fabric's
+  storage format for physical place; renders in Google Maps and any
+  OLC-aware consumer.
+- **Open Location Code standard** — the published specification that
+  defines Plus Codes (grid, alphabet, precision levels, shortening
+  rules). Followed exactly, never approximated: an open standard
+  half-implemented is a proprietary format wearing a costume.
 - **This moment (now)** — the indexical of time, made resolvable: *now*
   is the latest committed revision plus the current beat of the running
   loop — transaction-time at HEAD. Every "now" is stamped (truth is

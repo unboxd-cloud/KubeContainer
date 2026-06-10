@@ -18,7 +18,7 @@ do not edit; define terms in their source documents.
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
-| Anti-drift protocols | `docs/AGENT-PLATFORM.md:634` |
+| Anti-drift protocols | `docs/AGENT-PLATFORM.md:694` |
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
 | Backward compatible | `docs/AGENT-PLATFORM.md:164` |
@@ -62,11 +62,13 @@ do not edit; define terms in their source documents.
 | Hallucination | `docs/AGENT-PLATFORM.md:592` |
 | Handoff | `docs/AGENT-PLATFORM.md:502` |
 | Hardening roadmap: | `docs/DESIGN.md:162` |
-| Here | `docs/AGENT-PLATFORM.md:615` |
+| Here | `docs/AGENT-PLATFORM.md:646` |
 | Human-in-the-loop | `docs/AGENT-PLATFORM.md:517` |
+| Intelligence is not fabricated | `docs/AGENT-PLATFORM.md:624` |
+| Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:634` |
 | Intent | `docs/AGENT-PLATFORM.md:477` |
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
-| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:711` |
+| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:771` |
 | Just-in-time | `docs/AGENT-PLATFORM.md:126` |
 | Memory | `docs/AGENT-PLATFORM.md:492` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
@@ -82,18 +84,21 @@ do not edit; define terms in their source documents.
 | Nothing rides alongside the declared path | `docs/FOUNDING-PRINCIPLES.md:87` |
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
 | One field, one writer | `docs/SOLID-STATE-DATABASE.md:75` |
+| Open Location Code standard | `docs/AGENT-PLATFORM.md:679` |
 | Open standards only | `docs/SOLID-STATE-DATABASE.md:82` |
 | Operational knowledge is an artifact | `docs/FOUNDING-PRINCIPLES.md:103` |
 | Orchestrator / Subagent | `docs/AGENT-PLATFORM.md:499` |
 | Outcome | `docs/AGENT-PLATFORM.md:480` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
+| Plus Code (Open Location Code) | `docs/AGENT-PLATFORM.md:673` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
 | Real-time, not instantaneous — ACID, stable substance | `docs/AGENT-PLATFORM.md:181` |
+| Real-work rule | `docs/AGENT-PLATFORM.md:615` |
 | Real-world model (RWM) | `docs/AGENT-PLATFORM.md:570` |
 | Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:564` |
 | Registry | `docs/AGENT-PLATFORM.md:612` |
@@ -118,7 +123,7 @@ do not edit; define terms in their source documents.
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
-| This moment (now) | `docs/AGENT-PLATFORM.md:623` |
+| This moment (now) | `docs/AGENT-PLATFORM.md:683` |
 | Through an Internet of Agents | `docs/FOUNDING-PRINCIPLES.md:366` |
 | Through an open partner network | `docs/AGENT-PLATFORM.md:138` |
 | Tool | `docs/AGENT-PLATFORM.md:482` |

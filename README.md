@@ -59,7 +59,15 @@ from its neighbors, dry in any weather), and assurance (the
 underwriting — a box that cleared the gate is a box someone stands
 behind, with consequences priced in advance). Unboxed work is just
 effort; boxed, it becomes an asset — locatable, defensible, insurable,
-and therefore sellable.
+and therefore sellable. And unboxing belongs to the end user alone: the
+box travels sealed — opaque to every carrier, crane, and intermediary,
+including the platform itself, which stewards what it carries and owns
+nothing it serves — and only the principal it is addressed to may open
+it. Sovereignty at the seam: the addressee holds the keys, the manifest
+proves the journey, and the seal proves no one else looked. The
+unboxing is the customer's moment, and no one else's — which is the
+name, completed: unboxd is not what we do to the box; it is what only
+you can do to yours.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1

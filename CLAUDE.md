@@ -13,8 +13,10 @@ changes.
 
 ## Terminology
 
-`docs/AGENT-PLATFORM.md` is the **normative source** for agent terminology in
-this project. When these terms appear in code, docs, or discussion, use its
+`docs/FOUNDING-PRINCIPLES.md` is the project's charter: thirteen founding
+principles, normative for all design decisions; treat changes to them as
+constitutional. `docs/AGENT-PLATFORM.md` is the **normative source** for agent
+terminology in this project. When these terms appear in code, docs, or discussion, use its
 definitions: *agent, actor, contract, assertion, agent architecture, agent
 engineering, agent governance, agent excellence, the platform (agent control
 plane), the agent economy*, and the platform mission statement.

@@ -172,8 +172,57 @@ config/                # CRD, RBAC, manager manifests (Kustomize)
 test/e2e/              # kind-based end-to-end tests
 ```
 
+## Authorization: OpenFGA Alignment
+
+Coarse-grained access is Kubernetes RBAC and always sufficient on its own (the
+supply-chain policy requires the operator to be fully functional with graduated
+standards alone). For fine-grained, relationship-based authorization the
+project is **OpenFGA-aligned and supports it out of the box** as an optional
+integration:
+
+- **Model** — a published OpenFGA authorization model shipping with the
+  project: types `user`, `team`, `namespace`, `kubecontainer` with relations
+  such as `owner`, `editor`, `viewer` and inheritance (team membership,
+  namespace ownership flowing down to workloads).
+- **Enforcement point** — an optional validating webhook that, when an OpenFGA
+  store is configured, answers admission with
+  `Check(principal, relation, kubecontainer)` in addition to RBAC. No store
+  configured → webhook admits and RBAC alone governs (fail-open to the
+  graduated baseline, never to nothing).
+- **Why ReBAC here** — delegation chains ("which principal authorized this
+  agent, which agent acted for that one") are relationship graphs; OpenFGA
+  evaluates them natively, which plain RBAC cannot. This implements
+  governance function #2 (authorization) of `docs/AGENT-PLATFORM.md` for the
+  workloads this operator manages.
+- **Status** — OpenFGA is CNCF incubating: per policy it is *supported out of
+  the box, never required*.
+
+## Policy: OPA Compliance
+
+Open Policy Agent is CNCF **graduated**, so unlike OpenFGA it may sit on the
+required side of the policy line where needed. The project is **OPA-compliant
+and implementable out of the box**:
+
+- **Policy-as-code surface** — every decision the operator makes is driven by
+  declarative object state (spec/status), so any KubeContainer is fully
+  evaluable by OPA/Gatekeeper at admission with no operator changes. This is
+  by construction: no imperative side channels.
+- **Shipped policies** — the project ships example Gatekeeper
+  `ConstraintTemplates` (under `config/policies/`, roadmap item) for the
+  obvious guardrails: allowed image registries for `spec.image`, mandatory
+  `resources.requests` when autoscaling, mandatory `healthCheck` in
+  designated namespaces, Ingress host domain allowlists.
+- **Division of labor** — three layers, innermost first: CEL validation on the
+  CRD enforces *structural invariants* (always on, no dependencies);
+  OPA/Gatekeeper enforces *organizational policy* (what is allowed here);
+  OpenFGA answers *relationship authorization* (who may do it). Governance
+  functions #3 and #2 of `docs/AGENT-PLATFORM.md`, respectively.
+
 ## Roadmap
 
 1. **v1alpha1** — scaffold, CRD, reconciler for Deployment + Service, status conditions, envtest coverage.
 2. **v1alpha2** — HPA + Ingress support, CEL validation, e2e suite.
 3. **v1beta1** — conversion webhook, defaulting webhook, image update policy (auto-rollout on digest change).
+4. **v1beta2** — shipped Gatekeeper `ConstraintTemplates` (`config/policies/`);
+   OpenFGA fine-grained authorization webhook (optional, off by default) with
+   the published relationship model.

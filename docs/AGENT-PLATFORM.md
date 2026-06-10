@@ -141,6 +141,32 @@ chain it must support, end to end:
   networks scale with the ecosystem (Kubernetes vs. its single-vendor
   predecessors is the existence proof).
 
+## Platform Capabilities
+
+Cross-cutting requirements the platform must satisfy, with their governing
+standards:
+
+- **Real-time** — event-driven, not poll-driven: intent changes, telemetry,
+  and confirmation verdicts propagate as they happen (watches, streams,
+  webhooks), and routing decisions (JIT delivery) are made against *current*
+  state. Kubernetes' watch/reconcile machinery is the proven pattern; batch
+  is a fallback, never the architecture.
+- **Multi-model** — "from all providers" made operational: every capability
+  that touches intelligence must work across heterogeneous models and
+  providers simultaneously — normalized evals for comparability, per-task
+  routing and failover, no API surface that assumes a single vendor's
+  semantics.
+- **Multi-tenant** — many principals share the platform without sharing
+  fate: isolation of workloads (namespaces, quotas), of identity and
+  authorization (per-tenant OpenFGA relationship graphs), of policy
+  (per-tenant OPA constraints), of metering and billing, and of blast radius.
+  Tenancy is enforced at the control plane, not promised by convention.
+- **Policy & authorization, out of the box** — OPA (CNCF graduated) for
+  organizational policy-as-code; OpenFGA (CNCF incubating: supported, never
+  required) for relationship-based authorization and delegation chains. See
+  the corresponding sections in `docs/DESIGN.md` for the concrete
+  KubeContainer implementation.
+
 ## The Mission Statement
 
 > **The platform is the control plane where agent engineering, intelligence,

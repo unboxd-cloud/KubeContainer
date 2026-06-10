@@ -67,7 +67,15 @@ identity wears — while KubeContainer is the repository: the record
 itself, whole in every clone. Domains point, repos are; a domain that
 lapses loses a signpost, never the canon (even the DID anchor is a
 resolution path, not the residence — the residence is the record).
-Addresses are leased; the thing addressed is owned.
+Addresses are leased; the thing addressed is owned. One honest
+dependency named: context is provided by the GitHub platform — the
+pull-request threads, reviews, check annotations, stars, the social
+weave around the record live on the host's side, not in git. The
+discipline that answers it is the axiom's own: decision-bearing
+context is absorbed into the canon as it happens — reasons in commit
+messages, rationale in the changelog, doctrine in the docs — so that
+losing the host loses conversation, never canon. The platform may
+keep the chatter; the record keeps the why.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

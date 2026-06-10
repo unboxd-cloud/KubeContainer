@@ -594,6 +594,23 @@ one writer, fabric-scale), so the fabric's truth is a quilt of single
 sources, never a contest of rivals. Many minds, many models, many
 worlds — one truth per fact, one custodian per truth;
 
+**only one critical path to fastest sustainable brilliance** — among all
+the routes a goal could take through the fabric, one is critical: the
+shortest chain of steps that the outcome actually waits on — and the
+platform's whole craft is to know it, name it, and clear it. Everything
+else parallelizes; the critical path gets the frontier intelligence, the
+priciest class, the freshest context, the first claim on every queue —
+because speed bought anywhere else is decoration. *Fastest sustainable*,
+because the two words discipline each other: fastest without sustainable
+is a sprint that bills the future (skipped steps, burned trust, debt the
+record will collect); sustainable without fastest is stagnation wearing
+prudence's clothes — the pace to hold is the fastest one that can be held
+forever, every step still landed, every measure still green. And
+*brilliance*, because that is what the path is *to*: not adequacy, not
+throughput, but work the principal is proud to have asked for and the
+agent proud to have signed — excellence (the ladder's fifth rung) reached
+by the one road that arrives;
+
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
 everything it needs to serve — tools, model, memory, contract, identity —

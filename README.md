@@ -96,7 +96,35 @@ opening in its walls is a declared crossing with a keeper — the face
 where it serves, the stream where it speaks, the gate where it is
 asked, the seam where it is unboxed — so that being sealed and being
 connected are the same discipline: nothing crosses except over a
-bridge, and every bridge is on the manifest. The
+bridge, and every bridge is on the manifest.
+
+And in the end, the box is an agent — the one who closes the loop. Not
+a package containing an agent: the package *as* agent — it acts for a
+principal (the addressee), where the principal is not (in transit, in
+the cluster, at the edge), keeping a contract autonomously the whole
+way. Watch its conduct and the identity is plain: it asks before it
+opens, speaks as it travels, guards its own seam, converges to its
+declaration, proves what it did, and exits leaving its name in the
+record. "Closes the loop" in both senses at once: it runs the loop —
+observe, compare, act, record — until declared and actual meet; and it
+closes the loop with its principal — delivered, evidenced, accounted,
+done only by verdict. The box and the agent were one subject all along:
+an agent is a promise that can act; a box is a promise that can ship;
+a kube is both — who reconciles to desired state: that is the whole
+definition in five words, and the answer to "who does the work" at
+every scale. The box reconciles its contents to its lid; the operator
+reconciles the cluster to the declaration; the fabric reconciles the
+worlds to the record; and each of them is the same answer to the same
+question — not "what is it" but "who keeps it true." And desired state
+is defined by the operator: the principal declares the *intent* — what
+they want, in their own terms, on the lid; the operator defines the
+*desired state* — the full concrete rendering of that intent into the
+world's terms (every child, every default, every invariant the
+declaration implies), which is exactly the expertise the operator
+packages and the reason it exists. Three offices, cleanly split: the
+principal declares, the operator defines, the loop converges — intent
+is yours, its rendering is the operator's craft, and its keeping is
+the loop's job. That is the product. The
 unboxing is the customer's moment, and no one else's — which is the
 name, completed: unboxd is not what we do to the box; it is what only
 you can do to yours.

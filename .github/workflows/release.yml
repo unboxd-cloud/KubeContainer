@@ -1,0 +1,58 @@
+name: Release
+
+# Cut on tag push (v*): run the gauntlet, build and push the multi-arch
+# manager image to GHCR, regenerate the install bundle pinned to the tag,
+# and publish a GitHub release carrying it. Tools come from the runner or
+# pinned actions only — no third-party release actions in the path.
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions: {}
+
+jobs:
+  release:
+    name: Run on Ubuntu
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    env:
+      IMG: ghcr.io/${{ github.repository_owner }}/kubecontainer:${{ github.ref_name }}
+    steps:
+      - name: Clone the code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Go
+        uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
+        with:
+          go-version-file: go.mod
+
+      - name: Gauntlet
+        run: |
+          make test
+          make lint
+          make vocab-check
+          make eval
+
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+
+      - name: Build and push image
+        run: |
+          docker build -t "$IMG" .
+          docker push "$IMG"
+
+      - name: Build install bundle pinned to the tag
+        run: make build-installer IMG="$IMG"
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ github.ref_name }}" dist/install.yaml dist/eval-report.json \
+            --title "${{ github.ref_name }}" \
+            --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $IMG. The eval report is the release's evidence record."

@@ -5,7 +5,7 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); the
 project adheres to semantic versioning once released. Per the axiom, this
 file summarizes — the git history remains the record.
 
-## [Unreleased] — v0.1.0 candidate
+## [0.1.0] — 2026-06-10
 
 ### Added — operator
 

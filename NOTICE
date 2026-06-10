@@ -86,6 +86,16 @@ exactly which promises are ours, which are the host's, and which
 would need a new counterparty if the host failed its side. Ours: the
 canon, the claim, the evidence. Theirs: the serving of it. The
 difference is the exit.
+
+And so the conclusion holds, by the test rather than by assertion:
+the KubeContainer repository is truly open. Inspectable — public, the
+code with the charter, the prices' logic with the bar itself, nothing
+withheld. Implementable — Apache 2.0, stable upstream APIs, no
+permission asked, no fee owed. Leavable — every clone carries the
+whole canon, provenance included, host and domain both replaceable.
+Three legs, all standing; the first artifact to pass the triple test
+is the one that defined it — which is the only way a definition
+deserves to survive.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

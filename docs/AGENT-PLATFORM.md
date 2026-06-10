@@ -161,7 +161,37 @@ standards:
   webhooks), and routing decisions (JIT delivery) are made against *current*
   state. Kubernetes' watch/reconcile machinery is the proven pattern; batch
   is a fallback, never the architecture.
-- **Multi-model** — "from all providers" made operational: every capability
+- **Real-time, not instantaneous — ACID, stable substance** — the precise
+  temperament of "real-time", in three corrections to the naive reading:
+  - *Bounded, not zero, latency* — real-time is the discipline of
+    **deadlines honored**, not the fantasy of no delay: every propagation
+    (event → decision → effect) carries a latency bound appropriate to its
+    class (soft real-time for routing, human-time for approvals), and the
+    bound is part of the contract — predictability over raw speed.
+  - *ACID where facts change* — state transitions are transactions:
+    atomic (intent applies wholly or not at all — no half-written specs),
+    consistent (validation and invariants hold at every commit), isolated
+    (concurrent writers serialize — optimistic concurrency, resource
+    versions), durable (committed means survives crash — the etcd/raft
+    discipline). Eventual consistency is acceptable *between* fabrics and
+    in derived views; the system of record itself commits or doesn't.
+  - *Stable substance* — the platform's essence is durable matter, not
+    froth: declarations, the event log, and confirmation evidence are the
+    stable substance that persists, while compute (pods, sessions, model
+    invocations) is deliberately ephemeral vapor condensed on demand.
+    Stability of the substance is what makes ephemerality of everything
+    else safe — you can evaporate any process because no truth lives in it.
+  - *Stable state* — the dynamic counterpart: the system's resting
+    condition is **converged equilibrium** — actual state matching declared
+    state with no pending work — and every control loop is a restoring
+    force toward it (disturb the system and it returns; the
+    thermostat/homeostasis property). Stability here is asymptotic, not
+    static: change arrives as a new declared equilibrium and the system
+    settles to it without oscillation (no thrashing, no fighting
+    controllers — the bounded-ownership rules are what guarantee
+    convergence is well-defined). A platform is *stable* when its substance
+    is durable and its state seeks equilibrium — matter that persists,
+    dynamics that settle.
   that touches intelligence must work across heterogeneous models and
   providers simultaneously — normalized evals for comparability, per-task
   routing and failover, no API surface that assumes a single vendor's

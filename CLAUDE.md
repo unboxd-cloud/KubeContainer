@@ -59,3 +59,8 @@ Standard Kubebuilder v4 layout: types in `api/v1alpha1/`, reconciler in
   source of truth — CI reads it via `go-version-file`). When bumping it, also
   update the `golang:` image tags in `Dockerfile` and
   `.devcontainer/devcontainer.json` to match.
+- **Vendor neutrality is policy** (see "Distribution & Supply-Chain Policy" in
+  `docs/DESIGN.md`): required dependencies and interfaces must be
+  CNCF-graduated standards; plain `kubectl apply` must always work; no
+  OLM/marketplace coupling; tools and images stay version-pinned and
+  upstream-sourced.

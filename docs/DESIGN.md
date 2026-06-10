@@ -138,6 +138,31 @@ Workload images (the `spec.image` users run *with* KubeContainer) are
 deliberately out of scope: the operator treats them as opaque references and
 never builds, scans, or mutates them.
 
+## Distribution & Supply-Chain Policy
+
+The project is **vendor-neutral by policy**: no vendor lock-in, no avoidable
+supply-chain dependency, no supply-chain risk. Concretely:
+
+- **CNCF-graduated standards only** for every required dependency and
+  interface: Kubernetes APIs (stable groups only — `apps/v1`, `core/v1`,
+  `networking.k8s.io/v1`, `autoscaling/v2`), OCI images and registries,
+  Prometheus metrics exposition, and Helm (CNCF graduated) if/when chart
+  packaging is added. Anything below graduated maturity (incubating/sandbox)
+  may be *supported*, never *required*.
+- **No ecosystem coupling for installation.** The canonical artifact is plain,
+  kubectl-applyable YAML (`dist/install.yaml`). OLM/OperatorHub bundles,
+  cloud-marketplace listings, and similar vendor channels are optional
+  add-ons that must never become the only path — the project must install on
+  any conformant Kubernetes cluster with `kubectl` alone.
+- **Minimal, pinned, upstream-only dependencies.** Go modules limited to
+  k8s.io/sigs.k8s.io libraries; build tools (kustomize, controller-gen,
+  golangci-lint, setup-envtest) pinned to exact versions in the Makefile and
+  fetched from upstream sources; base images pinned (`golang:1.25.7`,
+  distroless). The operator phones home to nothing.
+- **Hardening roadmap:** checksum verification for downloaded tools, image
+  signing and provenance attestations (Sigstore/SLSA) on release artifacts,
+  and SBOM publication.
+
 ## Project Layout (Kubebuilder standard)
 
 ```

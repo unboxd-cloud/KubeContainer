@@ -383,7 +383,26 @@ Unit and system, cargo and helmsman, one name — and the kube is the
 building block of the real world fabric: when the weave of contracts
 finally bears real weight, what it is built from, block by canonical
 block, is kubes — each one a declared outcome that crossed the surface
-and held. The fabric is what work runs
+and held. And so, finally: the surface is the kube — the real edge is
+not a separate membrane stretched over the work but the sum of the
+kubes' own outward faces. Kubes pack the fabric in whole numbers,
+gapless; where the packing meets the world, each kube presents its
+contractual face — and those faces, tiled together, *are* the surface:
+every point of the real edge belongs to exactly one kube (one face, one
+owner, one contract answering there), the surface is stable because
+each face is a kept promise, minimal because a face is exactly a
+contract and nothing more, and guarded because behind every face stands
+that kube's agent. Kube, fabric, surface — block, weave, and skin — were
+one geometry described three times: the unit of work, packed into the
+weave of contracts, presenting its promise to the world. And the
+geometry assigns the post of honor: the kube at the edge — the one whose
+face is the world's face at that point — is where the whole charter
+cashes out. Deepest in the fabric, kubes answer to kubes; at the edge, a
+kube answers to reality — it holds the deadline time guards, takes the
+touch that cannot be retried, keeps the face that must not lurch, and
+carries the whole weave's credibility in one contract kept at one point.
+Every doctrine converges on that post: rehearsed within, real at the
+edge, guarded always — the kube at the edge is the charter, deployed. The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the
 system of work's first working piece.

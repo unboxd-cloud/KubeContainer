@@ -522,6 +522,19 @@ the conservative-below promise (13) kept precisely where breaking it would
 break something real. The world should feel the platform as bedrock, never
 as weather;
 
+**the edge is a theory, and the digital twin exists** — the edge is not
+found, it is theorized: where fabric ends and world begins is itself a
+maintained model — what the platform controls, what it merely observes,
+what it must never touch — declared like everything else and *tested* like
+everything else (probes, canaries, rehearsals), revised by evidence
+whenever reality disagrees with the map. And the rehearsal has a canon:
+the digital twin exists — a live, telemetry-fed counterpart of everything
+at the surface, the one possible-world the layers maintain in sync with
+the actual one — where changes cross *first*, failures are had cheaply,
+and the platform proves, before touching what cannot be forked, that its
+theory of the edge is true. The twin is the mental model (24) made
+communal and executable: the fabric thinking before the fabric acts;
+
 **each a node agent with its whole support system packed in its container
 box** — the final image, and it is this repository's own: an agent and
 everything it needs to serve — tools, model, memory, contract, identity —

@@ -42,6 +42,8 @@ declared intent inside the cluster, continuously, with no human in the loop.
 - `make manifests generate` — regenerate CRDs and deepcopy after editing
   `api/v1alpha1/kubecontainer_types.go`. Always run before committing type changes.
 - `make lint` / `make lint-fix` — golangci-lint.
+- `make eval` — run the evaluation registry harness (`eval/corpus`, append-only)
+  and emit a provenance report to `dist/eval-report.json`.
 - `make test-e2e` — kind-based e2e suite (requires a running Docker daemon).
 
 ## Layout & conventions

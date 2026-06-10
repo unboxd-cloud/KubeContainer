@@ -120,6 +120,24 @@ all children live in the same namespace and are cleaned up by owner references.
 - Standard controller-runtime Prometheus metrics, plus `/healthz` and `/readyz` probes
   on the manager.
 
+## Image Artifacts
+
+The operator ships as a single OCI image built by the multi-stage `Dockerfile`:
+
+- **Build stage** — `golang:<pinned patch version>` (kept in sync with `go.mod`),
+  compiling a static manager binary with `CGO_ENABLED=0` for `TARGETOS/TARGETARCH`.
+- **Runtime stage** — `gcr.io/distroless/static:nonroot`: no shell or package
+  manager, runs as a non-root user; the image contains only the manager binary.
+- **Multi-arch** — `make docker-buildx` builds and pushes `linux/amd64` and
+  `linux/arm64` manifests via Docker Buildx.
+- **Tagging** — immutable semver tags (`vX.Y.Z`) matching git tags; `IMG` is
+  injected into the manager Deployment by Kustomize (`config/manager/`).
+  Mutable tags (`latest`) are not deployed.
+
+Workload images (the `spec.image` users run *with* KubeContainer) are
+deliberately out of scope: the operator treats them as opaque references and
+never builds, scans, or mutates them.
+
 ## Project Layout (Kubebuilder standard)
 
 ```

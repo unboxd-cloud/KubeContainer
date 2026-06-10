@@ -31,7 +31,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"k8s.io/client-go/tools/record"
+	"k8s.io/client-go/tools/events"
 	"k8s.io/utils/ptr"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
@@ -45,7 +45,7 @@ import (
 type KubeContainerReconciler struct {
 	client.Client
 	Scheme   *runtime.Scheme
-	Recorder record.EventRecorder
+	Recorder events.EventRecorder
 }
 
 // +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers,verbs=get;list;watch;create;update;patch;delete
@@ -72,7 +72,7 @@ func (r *KubeContainerReconciler) Reconcile(ctx context.Context, req ctrl.Reques
 
 	if err := r.reconcileChildren(ctx, kc); err != nil {
 		log.Error(err, "failed to reconcile children")
-		r.Recorder.Event(kc, corev1.EventTypeWarning, "ReconcileError", err.Error())
+		r.Recorder.Eventf(kc, nil, corev1.EventTypeWarning, "ReconcileError", "Reconcile", "%s", err.Error())
 		meta.SetStatusCondition(&kc.Status.Conditions, metav1.Condition{
 			Type:               kubecontainerv1alpha1.ConditionDegraded,
 			Status:             metav1.ConditionTrue,
@@ -336,12 +336,12 @@ func selectorLabels(kc *kubecontainerv1alpha1.KubeContainer) map[string]string {
 	}
 }
 
-func logChildOp(log logr.Logger, recorder record.EventRecorder, kc *kubecontainerv1alpha1.KubeContainer, kind string, op controllerutil.OperationResult) {
+func logChildOp(log logr.Logger, recorder events.EventRecorder, kc *kubecontainerv1alpha1.KubeContainer, kind string, op controllerutil.OperationResult) {
 	if op == controllerutil.OperationResultNone {
 		return
 	}
 	log.Info("reconciled child", "kind", kind, "operation", op)
-	recorder.Eventf(kc, corev1.EventTypeNormal, "Reconciled", "%s %s", kind, op)
+	recorder.Eventf(kc, nil, corev1.EventTypeNormal, "Reconciled", "Reconcile", "%s %s", kind, op)
 }
 
 // SetupWithManager sets up the controller with the Manager.

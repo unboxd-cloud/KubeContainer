@@ -181,7 +181,7 @@ func main() {
 	if err := (&controller.KubeContainerReconciler{
 		Client:   mgr.GetClient(),
 		Scheme:   mgr.GetScheme(),
-		Recorder: mgr.GetEventRecorderFor("kubecontainer-controller"),
+		Recorder: mgr.GetEventRecorder("kubecontainer-controller"),
 	}).SetupWithManager(mgr); err != nil {
 		setupLog.Error(err, "Failed to create controller", "controller", "kubecontainer")
 		os.Exit(1)

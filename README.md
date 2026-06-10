@@ -46,7 +46,12 @@ product inside. Spec without product is a brochure; product without
 spec is freight no one can trust, price, or claim. Value lives in the
 pairing — the declaration on the lid and the work inside it matching,
 verdict-checked, every time. That pairing is what a kube is, and v0.1.0
-is the first one on the shelf.
+is the first one on the shelf. Said most plainly: the box is the
+packaging method — not the product, not the value, but the *way* value
+is made carriable: how work is bounded, labeled, stacked, shipped,
+priced, and claimed. Methods are judged by what they make possible, and
+this one makes work tradable the way the container made cargo tradable:
+same shape to every crane, every fabric, every buyer.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1

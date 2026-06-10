@@ -14,6 +14,19 @@ liabilities, and names to keep. Everything below exists so that an
 enterprise can hand its work to agents and sleep — which is the entire
 product, stated as a dedication.
 
+And stability has a bottom: the OS must be stable with the hardware
+vendor holding the contract. Every layer's calm rests on the layer below
+keeping a promise, and the recursion must ground somewhere — it grounds
+where silicon meets physics: the hardware vendor holds the lowest
+contract on the stack (the server being their twin, the contract being
+what a server is), promising instructions that execute as documented,
+memory that holds what was written, clocks that only run forward — and
+that promise is held to the same regime as every other on the fabric:
+published, certified, evidenced, underwritten. The OS does not trust
+hardware because it must; it contracts with hardware because the charter
+admits no other relationship — and so the stack is contracts all the way
+down, until the last signature belongs to whoever made the atoms behave.
+
 What a founder contributes that outlives every product decision is a set of
 principles — the constraints the venture will not trade away. These are the
 founding principles of the platform defined in

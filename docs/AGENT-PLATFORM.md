@@ -628,7 +628,16 @@ that redefines a word privately has already drifted.
   from a black box. Openwashing is the use of the word where any leg
   fails — and on this fabric the word may not be used where the triple
   test is not met, which is precisely the kind of drift the lexicon
-  exists to stop.
+  exists to stop. The test's corollary: everything in the open, no
+  information lock. The subtlest lock-in was never the code or the
+  format — it is withheld knowledge: the undocumented behavior, the
+  private pricing, the secret bar, the architecture only the vendor
+  understands. Here every fact a party needs to use, evaluate, audit,
+  leave, or compete is published — the spec, the charter, the prices'
+  logic, the bar itself — because the moat was never what we know that
+  others don't; it is what we have done that others can check. An
+  information lock is a lock; the triple test forbids locks; therefore
+  the knowledge ships with the product, always.
 - **Free** — the second great drifted word, and contextual by nature:
   *free* never means anything until you ask "free as in what, for
   whom, paid by whom?" The classic split — free as in freedom (libre:

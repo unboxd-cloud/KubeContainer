@@ -32,9 +32,14 @@ the kube needs the weave; the box is the unit, never the point. But the
 unit is how value is counted — like a box of chocolates, worth derives
 from what the box holds and the size you choose: the kind says what is
 inside, the class says how fine, the count says how much, and the meter
-prices exactly that. With one improvement on the proverb: with this box,
-you always know what you are going to get — it is declared on the lid,
-checked at the gate, and evidenced on delivery.
+prices exactly that. And the meter reads to the piece: each
+chocolate is priced — every task, every outcome, every unit of work
+inside the box carries its own metered cost and its own receipt, so the
+bill is itemized to the same grain as the evidence, and paying for the
+box never means paying blind for what it holds. With one improvement on
+the proverb: with this box, you always know what you are going to get —
+it is declared on the lid, checked at the gate, evidenced on delivery,
+and priced by the piece.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1

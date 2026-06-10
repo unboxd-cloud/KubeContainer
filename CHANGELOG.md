@@ -9,8 +9,13 @@ file summarizes — the git history remains the record.
 
 ### Changed
 
-- Organization renamed: unboxd-cloud → **unboxd-agency** — cloud
-  described where the work ran; agency describes who the work serves.
+- Organization renamed: unboxd-cloud → **unboxd-agency**. The reason,
+  in the founder's words: *because this is the agent — unboxd had the
+  agency*. "Cloud" was the wrong representation — it described where
+  the work ran; "agency" describes who the work serves and what a box
+  becomes when identity and governance are added to the artifact
+  (artifact + identity + governance = agent). The platform was never
+  about the cloud underneath; it was always about the agency conferred.
   Public references (site, README, NOTICE, manifests) aligned. The Go
   module path is unchanged for now (GitHub redirects); the API group
   `kubecontainer.unboxd.cloud` is unchanged by design — it is the DNS

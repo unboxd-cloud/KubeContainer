@@ -51,7 +51,15 @@ packaging method — not the product, not the value, but the *way* value
 is made carriable: how work is bounded, labeled, stacked, shipped,
 priced, and claimed. Methods are judged by what they make possible, and
 this one makes work tradable the way the container made cargo tradable:
-same shape to every crane, every fabric, every buyer.
+same shape to every crane, every fabric, every buyer. And boxing is
+what adds the three things raw work can never carry loose: provenance
+(the manifest — where it came from, who touched it, every crossing
+stamped), protection (the walls — sealed against tampering, isolated
+from its neighbors, dry in any weather), and assurance (the
+underwriting — a box that cleared the gate is a box someone stands
+behind, with consequences priced in advance). Unboxed work is just
+effort; boxed, it becomes an asset — locatable, defensible, insurable,
+and therefore sellable.
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1

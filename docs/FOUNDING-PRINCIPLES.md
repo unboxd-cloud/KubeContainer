@@ -1,5 +1,19 @@
 # Founding Principles
 
+*For a stable OS for agentic enterprises.*
+
+That dedication is the whole document compressed: **stable** — substance
+that persists, state that settles, a surface that is bedrock and never
+weather; **OS** — the fabric as the intelligent operating system of work,
+scheduling, isolating, and governing what runs on it; **agentic** — run by
+agents in the charter's full sense: autonomous on behalf of principals,
+guardians of every gate, taking pride in measured work; **enterprises** —
+not demos and not experiments, but organizations staking real obligations
+on the fabric: sovereign members with governance models, treaties,
+liabilities, and names to keep. Everything below exists so that an
+enterprise can hand its work to agents and sleep — which is the entire
+product, stated as a dedication.
+
 What a founder contributes that outlives every product decision is a set of
 principles — the constraints the venture will not trade away. These are the
 founding principles of the platform defined in

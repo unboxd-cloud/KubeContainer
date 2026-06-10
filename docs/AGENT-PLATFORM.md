@@ -263,7 +263,23 @@ standards:
   meaning smuggled in side headers), every hop is attributable to a
   principal, and "direct" never means "off the record" — point-to-point is
   a topology, not an exemption from governance.
-- **Where code is configuration** — the inversion of "configuration as
+- **Standard operating procedures** — operational knowledge is a platform
+  artifact, not tribal memory: every recurring situation (deploy, upgrade,
+  scale, incident, rollback, key rotation, certification renewal) has a
+  named, versioned, reviewed procedure — and procedures climb a maturity
+  ladder: *written* (runbook) → *drilled* (rehearsed, game-days) →
+  *assisted* (agent executes, human approves) → *automated* (control loop
+  executes, humans audit). The operator pattern is the ladder's top rung
+  made literal — CoreOS's original definition of a Kubernetes operator was
+  precisely "automated operational knowledge": the SOP compiled into a
+  reconcile loop (this repo encodes the deploy/expose/scale/heal SOP for
+  workloads). Agent-layer equivalent: skills and playbooks — SOPs agents
+  load and follow. Rules: the procedure is the contract for *how* state
+  changes (no snowflake interventions — emergency action means executing
+  the emergency SOP, and if one doesn't exist, writing it is the
+  postmortem's first deliverable); procedures live in version control under
+  the code-is-configuration discipline; and every escalation from automated
+  back to human is itself a defined procedure, not an improvisation.
   code", and the platform's deepest operating principle: generic, certified
   engines execute; *what they do* is entirely declared. Users do not program
   the platform — they parameterize it with versioned, diffable, reviewable

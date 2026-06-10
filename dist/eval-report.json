@@ -1,9 +1,0 @@
-{
-  "registry": "eval/corpus",
-  "commit": "a99a0d797c443502f54f645270434fb67e7c30da",
-  "evaluated_at": "2026-06-10T20:36:26Z",
-  "tasks_total": 3,
-  "tasks_passed": 3,
-  "resolution_rate_percent": 100.00,
-  "results": [{"id":"task-001","task":"eval/corpus/task-001-deprecated-recorder.yaml","result":"pass"},{"id":"task-002","task":"eval/corpus/task-002-pin-kind-source.yaml","result":"pass"},{"id":"task-003","task":"eval/corpus/task-003-backward-compat-gate.yaml","result":"pass"}]
-}

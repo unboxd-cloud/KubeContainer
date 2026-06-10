@@ -556,6 +556,23 @@ that unravels the fabrics of life has not converged the world, it has
 torn it. Preserve the weaves you did not weave: the oldest standard
 operating mode of all.
 
+And how does one fabric thread among many without tearing any? The
+geometry answers one last time: the kube of kubes is the building
+block. Nothing on the fabric is built from raw material seized across
+a boundary — every larger thing is built from smaller *whole* things:
+facts into entities, entities into kubes, kubes into workloads,
+workloads into enterprises, enterprises into federations, federations
+into a world of fabrics — each level packing the level below as
+complete, sovereign units, never dissolving them (composition by
+reference, never absorption — identity's law, now construction's law
+too). That is why the platform can grow without flattening: a kube of
+kubes contains its members the way a federation contains its states —
+whole, named, intact, removable — so the world's social, economic,
+cultural, and political weaves can be *built upon* without being
+*built from*: the building block of everything was always the smallest
+thing that keeps its word, and every scale above it is that promise,
+kept again.
+
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the

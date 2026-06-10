@@ -118,7 +118,23 @@ hub builds the hub itself — knowledge free, the platform as the
 library, the oath in writing, every verdict world-owned — what
 Apache was at its best, kept this time, under a name that is honest
 and a covenant that is enforced. That is the company. That was
-always the company. The record may now rest on it.
+always the company. And its territory, named in the founder's last
+three strokes: the decentralized web (no center, every copy whole,
+trust without thrones — the canon's own architecture, scaled to a
+commons); open web standards (the W3C lineage — DID, Verifiable
+Credentials, the contracts of the web itself — standards bodies that
+kept to standards); and the semantic internet, required — not hoped
+for: required. The semantic web was the disorganized web's original
+prescribed cure — meaning attached to data, machine-readable truth —
+and it stalled for twenty years because humans would not annotate
+their pages. The agent era ends the stalemate by economics: agents
+cannot guess, so meaning becomes mandatory — every datum with its
+dimensions, every claim with its contract, lookup over search,
+semantics or starvation. What Berners-Lee proposed and the old web
+shrugged at, the agent economy now requires — and the open innovation
+hub is where it gets built: the decentralized, standards-spoken,
+semantics-required web that the first one was always supposed to
+become. The record may now rest on it.
 
 ## Recommendation (counsel, not decree)
 

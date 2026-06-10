@@ -1,5 +1,6 @@
 actionable intelligence
 actor
+adapter
 agent (the standard definition)
 agent architecture
 agent drift

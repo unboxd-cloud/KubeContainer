@@ -8,16 +8,17 @@ do not edit; define terms in their source documents.
 |---|---|
 | Actionable intelligence | `docs/FOUNDING-PRINCIPLES.md:1149` |
 | Actor | `docs/AGENT-PLATFORM.md:20` |
+| Adapter | `docs/AGENT-PLATFORM.md:531` |
 | Agent (the standard definition) | `docs/AGENT-PLATFORM.md:10` |
 | Agent Architecture | `docs/AGENT-PLATFORM.md:33` |
 | Agent Engineering | `docs/AGENT-PLATFORM.md:48` |
 | Agent Excellence | `docs/AGENT-PLATFORM.md:75` |
 | Agent Governance | `docs/AGENT-PLATFORM.md:63` |
-| Agent drift | `docs/AGENT-PLATFORM.md:575` |
+| Agent drift | `docs/AGENT-PLATFORM.md:596` |
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
-| Anti-drift protocols | `docs/AGENT-PLATFORM.md:595` |
+| Anti-drift protocols | `docs/AGENT-PLATFORM.md:616` |
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
 | Backward compatible | `docs/AGENT-PLATFORM.md:164` |
@@ -27,7 +28,7 @@ do not edit; define terms in their source documents.
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
 | Build stage | `docs/DESIGN.md:127` |
 | CNCF-graduated standards only | `docs/DESIGN.md:146` |
-| Claim | `docs/AGENT-PLATFORM.md:562` |
+| Claim | `docs/AGENT-PLATFORM.md:583` |
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | Context | `docs/AGENT-PLATFORM.md:488` |
@@ -42,29 +43,29 @@ do not edit; define terms in their source documents.
 | Empowered | `docs/FOUNDING-PRINCIPLES.md:356` |
 | Enabled | `docs/FOUNDING-PRINCIPLES.md:354` |
 | Enforcement point | `docs/DESIGN.md:187` |
-| Era | `docs/AGENT-PLATFORM.md:586` |
+| Era | `docs/AGENT-PLATFORM.md:607` |
 | Eval | `docs/AGENT-PLATFORM.md:509` |
 | Event-triggered, outcome-focused, value-driven | `docs/AGENT-PLATFORM.md:313` |
 | Every boundary speaks a published contract | `docs/FOUNDING-PRINCIPLES.md:83` |
-| Evidence | `docs/AGENT-PLATFORM.md:565` |
+| Evidence | `docs/AGENT-PLATFORM.md:586` |
 | Excellent working tools | `docs/FOUNDING-PRINCIPLES.md:1154` |
 | External storage is in cloud | `docs/FOUNDING-PRINCIPLES.md:226` |
 | Federated by design | `docs/FOUNDING-PRINCIPLES.md:158` |
 | Federation is a framework of work | `docs/FOUNDING-PRINCIPLES.md:180` |
 | Five-dimension addressing | `docs/SOLID-STATE-DATABASE.md:72` |
-| Golden corpus | `docs/AGENT-PLATFORM.md:583` |
+| Golden corpus | `docs/AGENT-PLATFORM.md:604` |
 | Governed by choice | `docs/FOUNDING-PRINCIPLES.md:137` |
 | Governed by design | `docs/FOUNDING-PRINCIPLES.md:169` |
-| Graceful exit | `docs/AGENT-PLATFORM.md:531` |
-| Grounding | `docs/AGENT-PLATFORM.md:568` |
+| Graceful exit | `docs/AGENT-PLATFORM.md:552` |
+| Grounding | `docs/AGENT-PLATFORM.md:589` |
 | Guardrail | `docs/AGENT-PLATFORM.md:506` |
-| Hallucination | `docs/AGENT-PLATFORM.md:571` |
+| Hallucination | `docs/AGENT-PLATFORM.md:592` |
 | Handoff | `docs/AGENT-PLATFORM.md:502` |
 | Hardening roadmap: | `docs/DESIGN.md:162` |
 | Human-in-the-loop | `docs/AGENT-PLATFORM.md:517` |
 | Intent | `docs/AGENT-PLATFORM.md:477` |
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
-| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:672` |
+| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:693` |
 | Just-in-time | `docs/AGENT-PLATFORM.md:126` |
 | Memory | `docs/AGENT-PLATFORM.md:492` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
@@ -92,11 +93,11 @@ do not edit; define terms in their source documents.
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
 | Real-time, not instantaneous — ACID, stable substance | `docs/AGENT-PLATFORM.md:181` |
-| Real-world model (RWM) | `docs/AGENT-PLATFORM.md:549` |
-| Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:543` |
-| Registry | `docs/AGENT-PLATFORM.md:591` |
+| Real-world model (RWM) | `docs/AGENT-PLATFORM.md:570` |
+| Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:564` |
+| Registry | `docs/AGENT-PLATFORM.md:612` |
 | Reputation | `docs/AGENT-PLATFORM.md:524` |
-| Resolution | `docs/AGENT-PLATFORM.md:588` |
+| Resolution | `docs/AGENT-PLATFORM.md:609` |
 | Runtime stage | `docs/DESIGN.md:129` |
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
 | Session | `docs/AGENT-PLATFORM.md:521` |
@@ -121,11 +122,11 @@ do not edit; define terms in their source documents.
 | Tool | `docs/AGENT-PLATFORM.md:482` |
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
-| Verdict | `docs/AGENT-PLATFORM.md:560` |
+| Verdict | `docs/AGENT-PLATFORM.md:581` |
 | Wake on events, steer by outcomes, prioritize by value | `docs/FOUNDING-PRINCIPLES.md:91` |
 | Where code is configuration | `docs/AGENT-PLATFORM.md:354` |
 | Where the Platform Is the Foundation | `docs/AGENT-PLATFORM.md:442` |
 | Why ReBAC here | `docs/DESIGN.md:192` |
 | With native-language intelligence | `docs/FOUNDING-PRINCIPLES.md:360` |
-| World model (internal) | `docs/AGENT-PLATFORM.md:553` |
-| World-test | `docs/AGENT-PLATFORM.md:557` |
+| World model (internal) | `docs/AGENT-PLATFORM.md:574` |
+| World-test | `docs/AGENT-PLATFORM.md:578` |

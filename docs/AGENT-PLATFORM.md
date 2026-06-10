@@ -528,6 +528,27 @@ charter-consistently, for use across code, docs, and contracts.
   under bounded ownership and explicit handoffs (the multiple-operators
   capability, generalized). A swarm without those rules is not a system;
   it is interference with branding.
+- **Adapter** — a contract-to-contract translator: the component that lets
+  a foreign system speak a boundary's published contract without either
+  side rebuilding itself — one face speaks the foreign native interface,
+  the other speaks the fabric's contract, and the conversion is total
+  with zero leakage of foreign semantics. The platform's kinds:
+  *provider adapters* (heterogeneous models behind one intelligence
+  contract — what makes multi-model real), *tool adapters* (foreign
+  actuators behind the tool contract — MCP servers are this), *protocol
+  adapters* (the translation service between speaker pairs that the
+  all-languages capability promised), *data adapters* (lake/ocean
+  ingestion under the five dimensions), and *world-test adapters*
+  (foreign judges — compilers, suites, clusters — harnessed as RWMs).
+  Three rules: an adapter *translates, never reinterprets* — one that
+  "improves" the message is a drift engine; adapters sit *on* the
+  declared path at the boundary they serve (an adapter riding alongside
+  is a sidecar by another name); and adapters are certified-supplier
+  goods, since every translation is trusted exactly as far as its
+  translator. The precedent that proves the pattern: CRI, CNI, and CSI —
+  the adapter contracts that let Kubernetes swap runtimes, networks, and
+  storage without moving a line of kubelet, which is why "no lock-in"
+  was achievable at all.
 - **Graceful exit** — an agent's termination, by design rather than by
   luck: stop accepting work, land or release in-flight steps (stepwise
   work always has a clean boundary to stop at), commit final state to the

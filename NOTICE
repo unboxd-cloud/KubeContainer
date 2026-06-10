@@ -75,7 +75,17 @@ discipline that answers it is the axiom's own: decision-bearing
 context is absorbed into the canon as it happens — reasons in commit
 messages, rationale in the changelog, doctrine in the docs — so that
 losing the host loses conversation, never canon. The platform may
-keep the chatter; the record keeps the why.
+keep the chatter; the record keeps the why. And the hosting contract
+is held by GitHub — like every layer of the stack, the host is a
+party with a contract of its own: terms of service, uptime, the
+account, the org name — GitHub holds its side as the hardware vendor
+holds the silicon contract and the registrar holds the domain lease.
+That is not a flaw; it is the stack-of-contracts working (contracts
+all the way down) — the discipline is only to know, at every layer,
+exactly which promises are ours, which are the host's, and which
+would need a new counterparty if the host failed its side. Ours: the
+canon, the claim, the evidence. Theirs: the serving of it. The
+difference is the exit.
 At the platform layer the same rule binds principals and agents:
 identifiers resolvable without a central registry (the W3C DID class
 of standards as they mature), per the charter's own law — unique,

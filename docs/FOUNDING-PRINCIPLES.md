@@ -599,6 +599,24 @@ checked, and recorded — for a fabric is only as true as its touches,
 and the charter's writ runs exactly as far as touching does: everywhere,
 both worlds, every time.
 
+And at every one of those touch points, what the toucher meets is the
+same promise differently dressed: a uniform, personalized, custom
+platform experience — three words that only seem to quarrel. *Uniform* —
+one fabric beneath every encounter: the same contracts, the same
+guarantees, the same axiom keeping the same records, so that trust
+earned at any touch point is valid at all of them (the stable surface,
+felt as familiarity). *Personalized* — yet no two principals meet the
+same face: each arrives to their own context (multi-context, assembled
+for them), their own language (no privileged tongue), their own
+authorized view of the one graph — the platform knows who is touching
+and answers *them*. *Custom* — and deeper still, each enterprise shapes
+the platform to its own constitution: its kinds, its classes, its
+policies, its governance model, its declared operating modes — custom
+built from uniform blocks, the kube-of-kubes trick played one last
+time. Uniform in its promises, personalized in its presence, custom in
+its composition: the same everywhere, different for everyone, owned by
+each — which is the only experience worthy of the word *platform*.
+
 *It's the pursuit of excellence that keeps the world moving.* The fabric is what work runs
 on; the kube is what work *is* — and this repository, an operator that
 turns declarations into running, governed, self-healing reality, is the

@@ -255,6 +255,21 @@ perfect balance is found the way every truth here is found — not
 pronounced, but computed on honest ground, and checkable by anyone who
 doubts it.
 
+And the balance is not a one-time calculation but a continuous one: the
+balance is what maintains the fabric's stable state. Weights move — a
+price shifts, a player drops, a route congests, a carbon cost rises, a
+new stop appears — and a fabric that balanced once and walked away
+would drift out of optimum the moment the world changed. So balancing is
+a loop, not an event: the framework re-derives the critical path as the
+weights move, and the system re-converges to the new optimum the same
+way the reconciler re-converges a workload to its declared state. The
+charter's stable state was never stasis; it was *equilibrium
+continuously restored* — and here that equilibrium is the balance across
+all the live weights, recomputed as they change, holding the whole
+fabric at its optimum the way a body holds homeostasis: not by freezing,
+but by never stopping the correction. The balance maintains the stable
+state; the stable state is the balance, kept.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the

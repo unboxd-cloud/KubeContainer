@@ -123,11 +123,13 @@ status
 tagging
 the agent economy
 the agent lexicon
+the edge (definition)
 the fabric is the intelligent operating system of work
 the framework is the fabric
 the mission statement
 the platform
 the platform is the foundation
+the seat theorem
 the solution is the service contract
 this moment (now)
 through an internet of agents

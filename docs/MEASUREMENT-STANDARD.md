@@ -221,6 +221,22 @@ chain could only claim:
   under which a market chooses the sustainable path on purpose. Measure
   it, itemize it, and the optimum can include it.
 
+And the generalization that makes this a platform and not a shipping
+calculator: every key concept has one or multiple paths. A supply chain
+is only the most literal instance. Any declared outcome — a hire, a
+diagnosis, a build, a settlement, a proof, an answer — is reached by a
+path through players and stops, each with measurable cost, time, and
+quality; and most outcomes have *many* candidate paths, not one. The
+fabric treats them uniformly: every concept is a graph (the players are
+nodes, the steps are edges, the constraints are the topology), every
+edge carries true weights (the measurement standard), every route is
+verdictable, and the optimum is computed the same way whether the cargo
+is chocolate or a contract or a cure. One path or many, the method is
+identical — make the weights honest, resolve the graph, find the
+critical path. This is why the platform is general: it does not solve
+supply chains; it solves *paths*, and everything of value is reached by
+one.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the

@@ -16,6 +16,15 @@ what the surface is tiled from, and what the fabric packs.
 One sentence for the buyer: *you declare what you want; the kube makes
 it true, keeps it true, proves it was true, and answers for it.*
 
+## 1a. Meaning and measurement
+
+A kube is a box with meaning (what it is) and a measurement (how much it
+is worth). Both are expressed in real-world, internationally accepted
+standards by default; where none exists, the contract holder defines and
+delivers the measure explicitly, marked as holder-defined. The BOM/SCM
+carries no prior transaction before the end-user touch point. Full rule:
+[MEASUREMENT-STANDARD.md](MEASUREMENT-STANDARD.md).
+
 ## 2. Anatomy
 
 Every kube consists of exactly five parts; remove any one and it is not

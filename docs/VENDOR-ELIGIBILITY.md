@@ -1,15 +1,6 @@
 # Minimum Eligibility Criteria — Enterprise Agent Vendors
 
-The published bar of the open partner network: membership is gated by
-this bar and nothing else. Eligibility is the right to be assessed;
-certification is having passed; both are standings the record can
-revoke. Every criterion names its verdict — a criterion without a
-check would be a claim, and claims are inputs here, never gates.
-
-A vendor is eligible to offer agents to enterprises on this fabric
-only if all ten hold:
-
-## The ten criteria
+All ten must hold.
 
 *E1 — Identity.* The vendor and every agent it offers are uniquely,
 independently identifiable — resolvable without asking the vendor
@@ -70,8 +61,6 @@ golden corpus.
 
 ## Standing
 
-Eligibility admits a vendor to assessment. Certification follows a
-passed assessment and is renewed on cadence, re-verified by the drift
-audit, and revoked on breach — E4 immediately, others by procedure.
-The bar may rise by recorded amendment; it never bends per vendor:
-plurality of vendors, equality before the bar.
+Eligibility admits to assessment. Certification is a passed
+assessment: renewed on cadence, revoked on breach (E4 immediately).
+The bar amends by record; it does not bend per vendor.

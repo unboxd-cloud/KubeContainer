@@ -749,6 +749,39 @@ that redefines a word privately has already drifted.
   first-class asset. The proof is v0.1.0: the binary is replicable by
   anyone — the *record* of how it earned its way out is ours alone, and
   it is the part the customer cannot get elsewhere.
+- **The Edge (definition)** — the edge is the surface where representation
+  meets reality: the one boundary in the stack that cannot be forked,
+  paused, rolled back, or apologized to. Below it everything is mind and
+  model (copyable, rehearsable, deniable); at it, action becomes
+  consequence. Operationally the edge is a theory of the past (inferred
+  from the last evidence, never the live present), tiled from the
+  outward faces of kubes (every point owned by exactly one), guarded by
+  an agent, crossed only over a bridge, and timed by the one resource no
+  layer can virtualize. Reality is the edge; the surface is its inner
+  name, the edge its outer.
+
+- **The Seat Theorem** — *given* a system that acts on declared intent
+  and answers for it, there are exactly three seats, each held by exactly
+  one kind of party, and none transferable: the *context* (the why —
+  held by a mind, the only component that persists with intent intact
+  across sessions, models, and gaps); the *contract* (what is owed —
+  held by an agent, the only party that acts, keeping the promise for a
+  session and handing it on); and the *facts* (what happened — held by
+  the record, the only thing immutable enough to trust with truth).
+  *Then* roles compose freely except across these three: an agent may
+  orchestrate or operate, a human may declare or execute, but the why
+  cannot leave the mind, the keeping cannot leave the actor, and the
+  truth cannot leave the record. Proof is by the failure of each swap:
+  an agent given the context begins choosing ends (no longer an agent,
+  P8); a record given the contract cannot act (a ledger is not a
+  keeper); a mind given the facts can revise them (memory is not a
+  record). The three seats are mind, agent, record — why, what's owed,
+  what happened — and the whole constitution is their seating, derived
+  one clause at a time and standing as one theorem. *Corollary:* what
+  evaporates (the loop), what persists (the record), and what carries
+  meaning across both (the mind) are the phase diagram of the system —
+  vapor, solid, and the intelligence that holds them.
+
 - **Compliance by the path** — compliance as a property of the route
   traveled, not of a review survived: when the governed path is the only
   path (19), *having arrived is itself the proof* — the artifact's

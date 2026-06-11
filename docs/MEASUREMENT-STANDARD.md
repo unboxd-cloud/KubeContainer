@@ -177,6 +177,18 @@ resolves (every player and route a node and edge), true edge weights
 route's claims checkable). Optimization over a graph of true weights is
 a solved class of problem the moment the weights stop lying — and making
 the weights stop lying is exactly what the measurement standard does.
+And this is the thesis in one line: finding the critical path is the key
+to success. Everything the fabric builds — clean identity, true
+measures, itemized stops, resolvable graphs, world-tested edges — exists
+so that the one path that matters can be found: the shortest, soundest,
+cheapest route from declared intent to delivered outcome, with the ideal
+players and no wasted stop. The platform does not promise to walk the
+path for you; it promises to make the path findable — and in a world
+where every competitor is guessing over lying weights, the one who can
+compute the real critical path wins, because they alone are optimizing
+the actual problem instead of a fiction. Success is not a secret; it is
+a critical path, and the critical path is computable the moment the
+ground stops lying.
 
 ## Why this is constitutional
 

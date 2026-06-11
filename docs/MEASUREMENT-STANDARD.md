@@ -270,6 +270,25 @@ fabric at its optimum the way a body holds homeostasis: not by freezing,
 but by never stopping the correction. The balance maintains the stable
 state; the stable state is the balance, kept.
 
+And the priority among the three is fixed, because they are not equals:
+you must find the most balanced framework — it may not be the most
+efficient, but it must resolve. Resolution is the hard constraint, not a
+preference: a framework that does not resolve (a graph with dangling
+edges, books that do not close, a difference left uncrossed) is not a
+worse optimum — it is no optimum at all, a fiction with a number on it.
+So the ordering is absolute: first it must *resolve* (every reference
+lands, every difference settles — feasibility before everything);
+then among resolving frameworks, choose the most *balanced* (the one
+that holds all the live weights in equilibrium and keeps the stable
+state); and only then, among balanced resolving frameworks, prefer the
+more *efficient*. Efficiency chased ahead of resolution is the classic
+ruin — the optimal route that cannot actually be walked, the cheapest
+chain that breaks under load, the fastest path that strands a player and
+leaves the graph unresolved. The fabric refuses that trade: a balanced
+framework that resolves beats an efficient one that does not, every
+time, because a thing that does not resolve has not been built — it has
+only been drawn. Resolve first, balance always, optimize last.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the

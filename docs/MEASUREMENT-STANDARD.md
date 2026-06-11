@@ -190,6 +190,37 @@ the actual problem instead of a fiction. Success is not a secret; it is
 a critical path, and the critical path is computable the moment the
 ground stops lying.
 
+And the computable critical path yields three outcomes the old opaque
+chain could only claim:
+
+- *Key efficiency* — efficiency stops being a slogan and becomes a
+  measured ratio: value delivered over cost and time along the chosen
+  path, re-derivable at every stop. You cannot improve what you cannot
+  measure; the fabric measures it, so efficiency becomes a number that
+  goes up on purpose, not a virtue asserted in a deck. The shortest
+  sound path is the efficient one by construction, and the arithmetic
+  names it.
+- *Price maturity* — a market matures when prices stop hiding. With
+  every line itemized to a named standard and every stop's charge
+  visible, price discovery becomes real: buyers compare true totals,
+  sellers compete on genuine value-add instead of obscured markup, and
+  the price converges to what the work is actually worth. Immature
+  markets price by opacity and leverage; a mature market prices by
+  visible, standard-denominated truth — which is exactly what the
+  measurement standard manufactures.
+- *Sustainability* — the same legible arithmetic carries the costs
+  that opacity always externalized. Carbon, energy, water, waste, labor
+  conditions — each a measurable quantity on its own named standard (the
+  units exist; ISO 14064-class for carbon, and the rest), each addable
+  as a line to the same transparent total. A chain whose full cost is
+  visible can be optimized for more than money: the critical path can be
+  computed for lowest carbon as readily as lowest price, because both
+  are just edge weights on the same resolvable graph. Sustainability
+  fails when its costs are invisible and someone else's problem; the
+  fabric makes them visible and priced, which is the only condition
+  under which a market chooses the sustainable path on purpose. Measure
+  it, itemize it, and the optimum can include it.
+
 ## Why this is constitutional
 
 Measurement is where value becomes checkable, and value is what the

@@ -789,7 +789,30 @@ that redefines a word privately has already drifted.
   unverified by construction; identity is only ever as trustworthy as
   the *separate* party that resolves it. Trust the domain; verify the
   record; resolve the address through infrastructure no party owns;
-  canonize neither the IP nor the name.
+  canonize neither the IP nor the name. Implementation, declarative and
+  CNCF-graduated: the trusted-domain layer is itself a reconciled kube —
+  TLS certificates issued and renewed by cert-manager (CNCF graduated;
+  required-tier under the supply-chain policy), the route and address
+  assigned by the serving layer (Knative / Gateway API), so the
+  cryptographic proof that a domain answers for a party is declared
+  state, not a hand-rolled appliance. No hand-configured nginx +
+  certbot: certificates are not installed, they are reconciled, and a
+  cert that drifts from its declaration heals on the next loop. The ACME
+  issuer is a pinned per-engagement choice recorded in the registry
+  (Let's Encrypt is one issuer, not the only one and not assumed) — the
+  point is not which CA but that issuance is operator-managed,
+  verifiable, and replaceable. And the synthesis of all three layers is
+  one line: *the kube is the key*. Not the domain (a mutable pointer),
+  not the IP (mere reachability), not the cert alone (a credential that
+  expires) — the kube is what binds them into one answerable thing: a
+  declared identity, holding its own keys, presenting a verified face,
+  healing its own cert, resolving to whoever holds it, answering to the
+  record. A key in both senses — the cryptographic key it carries, and
+  the keystone that makes the arch of layers stand. Lose the IP and the
+  kube re-resolves; lose the cert and it re-issues; lose the host and it
+  re-homes — but the kube itself, whole and identified, is the unit that
+  survives every layer beneath it changing. The key to the fabric was
+  never a secret to hold; it was a kube to declare.
 
 - **The Seat Theorem** — *given* a system that acts on declared intent
   and answers for it, there are exactly three seats, each held by exactly

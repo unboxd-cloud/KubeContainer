@@ -845,12 +845,17 @@ that redefines a word privately has already drifted.
 
 ### Anti-drift protocols
 
-Canonical upstream: the protocols below implement and extend the
-canonical Agent Constitution (AGenNextHub/Agent-Constitution — its ten
+Constitutional upstream — and a correction recorded the hour it was
+made: a constitution cannot be canonical. Canon is for facts (the
+record: settled, resolved-against); constitutions are law (living,
+amendable, consented — legitimate precisely because they can change by
+open process). To call law canon would freeze consent into decree. So
+the anchoring is stated rightly: the protocols below implement and
+extend the living Agent Constitution (AGenNextHub/Agent-Constitution — its ten
 principles: human primacy, safety first, truthfulness and transparency,
 accountability, privacy, fairness, human oversight, responsible
 autonomy, security by design, continuous improvement). Its core rule is
-adopted verbatim and absorbed here per the host doctrine: *no agent
+adopted by consent and absorbed here per the host doctrine: *no agent
 acts without constitutional context* — which hardens P1: re-grounding
 means loading the constitutional context (this corpus, and the
 canonical constitution it anchors to) before the first action, not

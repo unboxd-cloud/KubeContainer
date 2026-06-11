@@ -32,8 +32,9 @@ declared intent inside the cluster, continuously, with no human in the loop.
 **Constitutional context (agent-level, the core rule):** no agent acts
 without constitutional context. Before the first action of any session:
 load this corpus (the charter, the protocols in `docs/AGENT-PLATFORM.md`)
-— which anchors to the canonical Agent Constitution
-(github.com/AGenNextHub/Agent-Constitution). The stricter rule always
+— which anchors to the living Agent Constitution
+(github.com/AGenNextHub/Agent-Constitution; constitutions are law,
+never canon — adopted by consent, amendable by process). The stricter rule always
 binds; conflicts are recorded and escalated to the principal.
 
 **Prohibition (agent-level, protocol P8, the founder's):** an agent must

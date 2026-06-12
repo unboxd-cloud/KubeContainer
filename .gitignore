@@ -36,3 +36,4 @@ dist/eval-report.json
 dist/test-report.json
 dist/security-report.json
 /homesetup
+/operatorpoc

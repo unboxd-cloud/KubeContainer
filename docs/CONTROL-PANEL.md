@@ -43,3 +43,45 @@ struck. So the seat is open: an easy, pod-native, daemonless panel —
 Podman's model at the cluster scale, the kube as the unit, the
 operator as the keeper. The gap is the product; this is why we build
 rather than adopt.
+
+## The trick — one app, many envs, the operator may differ
+
+Proven by hack/operatorpoc (rehearsal chamber): one application
+declaration (arithmetic) moves through the gates into two
+environments; the operator keeps it to each env's own policy (dev: 1
+replica, prod: 3). Same app, two envs, two views — and the operator
+need not be the same in each. That is the panel's central trick: the
+application is the constant that travels; the operator is the variable
+that keeps. The founder's design, recorded fragment by fragment:
+
+- **Podman Desktop to kube-cloud** — the panel spans the desk to the
+  cloud in one app, one browser: the local (Podman-model, the desk)
+  and the cluster (the kube-cloud) both visible in one surface, the
+  way Podman Desktop shows local containers — but reaching all the
+  way to the cloud's pods, not stopping at the laptop.
+- **One nav menu** — everything is one navigation: no separate
+  consoles per env, per server, per registry. One menu, the whole
+  estate.
+- **Each view tells its env clearly** — every panel, row, and
+  resource is labeled with its environment, unmistakably: which env,
+  always on the face, so two views of one app are never confused.
+- **Multi-server, single operator** — one operator can keep an app
+  across many servers; the app can sit at any level (desk, edge,
+  estate). The operator is the constant keeper; the servers and
+  levels are where it keeps.
+- **Past history preserved** — every env, every move through the
+  gates, keeps its history: the record is append-only, so the panel
+  shows not just the present view but the journey — what each env
+  was, when it changed, who moved it (the manifest, on the face).
+
+## The path, and the gap
+
+The path Podman creates — Podman → zot → kind → the Kubernetes panel
+(the kube dashboard): the desk container engine to the open registry
+to the local cluster to the cloud panel, one continuous road from
+laptop to estate. And the gap the founder names to fill gradually:
+Podman has no hub like Docker Hub — no first-class, trusted,
+discoverable registry-with-a-face the way Docker Hub is for Docker.
+That hub is the registry strategy this house already declared (the
+registry defines the contract; zot the store; the panel the face) —
+the gap is the opening, and the panel is where it gets filled.

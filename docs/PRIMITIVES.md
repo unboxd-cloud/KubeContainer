@@ -118,7 +118,16 @@ richer text elaborates a primitive, the primitive governs.
   price they will pay and the seat they will grant. Reputation is
   the balance of that account, earnings are its statement, and
   there is exactly one honest way to move the number: be worth
-  trusting, where they can see it, for as long as it takes.
+  trusting, where they can see it, for as long as it takes. The
+  whole economy of these seats in one line: everything is
+  commercial, and it is an open market — everything commercial
+  (every value moved is priced, lined, and recorded; nothing
+  works for exposure, nothing keeps for free, every keeping and
+  answering carries its charge in the open), and the market open
+  (entry by conformance and never by anyone's leave, prices and
+  calculations visible down the whole chain, exit real) — the two
+  conditions that make the earnings honest: paid for everything,
+  open to everyone, recorded always.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

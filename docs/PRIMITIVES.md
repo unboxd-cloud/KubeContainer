@@ -183,7 +183,12 @@ richer text elaborates a primitive, the primitive governs.
   not an entitlement — it confers no rights anywhere, only a
   responsibility: to be the guiding light for the new players of
   your own industry. It is held only by continuous pursuit of
-  excellence and is forfeit the day the pursuit stops.
+  excellence and is forfeit the day the pursuit stops. There can be
+  only one gold standard in any specific field — a standard others
+  are measured against cannot be two things, or it measures
+  nothing — and *field* carries its own bound: a field is, by its
+  very meaning, a specific bounded ground, so a gold standard is
+  always *of* something named, never of everything at large.
 
 ## The grounds
 

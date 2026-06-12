@@ -192,7 +192,46 @@ arrangement — which is why this house's required dependencies are
 CNCF-graduated, why its eligibility bar reads like a conformance
 program, and why its open-enterprise category is, knowingly, the
 CNCF's balance extended from projects to the enterprises built on
-them.
+them. And the mechanism that holds the balance is named precisely:
+commercialization rights are protected by CNCF process maturity. The
+right to build a business on an open project is not protected by a
+license clause or a vendor's goodwill — both revocable, both
+gameable — but by the project's *process maturity*: graduation
+earned by adoption and conformance, neutral governance no single
+vendor can capture, a trademark held by the foundation rather than
+the incumbent, a published bar anyone can clear. That maturity is
+what lets a hundred companies commercialize the same project
+without any one of them being able to pull the rug — the rug is
+nailed down by process, not by promise. It is the maturity
+primitive applied to commerce: maturity is decided by others
+(here, the foundation and the community, never the vendor's
+self-assertion), and what their verdict protects is precisely the
+right to earn — every commercializer's accountability seat held
+safe because the ground beneath it answers to no one of them. Take
+the process maturity away and commercialization rights revert to
+whoever holds the trademark; keep it, and the right to build a
+business stays open to Any'One' who clears the bar. The balance is
+not a treaty between companies; it is a property of mature
+process — and that is why this house requires its dependencies
+graduated, not merely open. And beneath the process sits the
+deeper protection the founder names: original work auto-protects,
+by design. The record is the proof and the proof is automatic —
+every revision attributed, timestamped, append-only, content-
+addressed (git's own hashes the integrity); the first to declare
+a thing in an open, replicated record has a provenance no later
+claimant can forge, because forging it would require rewriting a
+history that lives whole in every clone. Originality does not need
+a guard hired to defend it — the way the work is recorded *is* the
+guard: provenance is the patent that issues itself, the priority
+date stamped by the commit, the prior art that cannot be
+backdated. This house already lives the proof (the founder's
+prior-art register, the release that preceded the claim by minutes
+on a decoded timestamp): originality protected not by lawyers
+after the fact but by the record at the moment of the act. Process
+maturity protects the right to commercialize; the open append-only
+record protects the originality itself — two guards, both
+structural, neither asking anyone's leave; what is truly yours and
+truly first is defended by how honestly it was written down.
 
 And inside the delivery walk itself, the founder marks where the
 same balance is struck mechanically: the supply-chain-risk step —

@@ -64,14 +64,16 @@ func main() {
 		"https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml",
 		"KubeContainer install bundle")
 	cleanSlate := flag.Bool("clean-slate", false,
-		"evict every undeclared tenant first: all Docker containers, volumes, the daemon itself, and any half-configured GitLab")
+		"evict undeclared tenants first: Docker containers, volumes, "+
+			"the daemon itself, and any half-configured GitLab")
 	flag.Parse()
 
 	if *cleanSlate {
 		_ = quiet("sh", "-c", "docker rm -f $(docker ps -aq) 2>/dev/null")
 		_ = quiet("sh", "-c", "docker system prune -af --volumes 2>/dev/null")
 		_ = quiet("systemctl", "disable", "--now", "docker", "docker.socket", "containerd")
-		_ = quiet("sh", "-c", "apt-get purge -y docker-ce docker-ce-cli docker-buildx-plugin docker-compose-plugin containerd.io 2>/dev/null")
+		_ = quiet("sh", "-c", "apt-get purge -y docker-ce docker-ce-cli "+
+			"docker-buildx-plugin docker-compose-plugin containerd.io 2>/dev/null")
 		_ = quiet("sh", "-c", "rm -rf /var/lib/docker /var/lib/containerd /etc/docker /etc/apt/sources.list.d/docker.list")
 		_ = quiet("sh", "-c", "apt-get purge -y gitlab-ce 2>/dev/null")
 		_ = quiet("sh", "-c", "rm -rf /etc/gitlab /var/opt/gitlab /opt/gitlab")

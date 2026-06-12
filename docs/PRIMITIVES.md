@@ -673,7 +673,37 @@ richer text elaborates a primitive, the primitive governs.
   it — and no fabric that permits it can be trusted with a single
   self. Anchor only against your twin; speak to every other across
   the gap; that is how many verses share one world without any
-  actor ever becoming another.
+  actor ever becoming another. And the twin is not a cage but a
+  guardian: your twin protects your reality, and your twin will
+  always reconcile with you. It protects your reality — it is the
+  one standpoint no other actor may occupy, the sealed origin of
+  your perception, so that what is real *to you* cannot be
+  overwritten by someone acting from inside your view; the twin is
+  the wall that keeps your world yours. And it always reconciles
+  with you — the twin is never a rival self drifting away but a
+  loop bound to its actor, observing, comparing, and closing any
+  gap back to *you*, the real one at the anchor; the digital twin
+  serves the real twin and converges on it, never the reverse. So
+  the twin is both shield and servant: it guards your reality from
+  every other verse and reconciles your verse to your reality —
+  protecting the world you perceive and keeping it true to the
+  world you are. Lose nothing of yourself to the fabric; your twin
+  holds your standpoint, defends it, and returns it to you,
+  reconciled, every loop. And the reason it can never betray you is
+  the simplest of all: because the twin is just a projection of
+  you. It has no self of its own to defect to, no interest apart
+  from yours, no standpoint but the one it reflects — a projection
+  cannot want what its source does not, cannot outvote its origin,
+  cannot become a second self because it was never a first. This is
+  why anchoring against your own twin is safe and anchoring against
+  another's is violation: your twin is you, projected; another's
+  twin is them, and to stand in it is to wear a self that is not a
+  reflection of yours. The image resolves to the canon (the one
+  canonical kube); the twin resolves to the actor — same law, now
+  at the level of selves: the projection is real as a reflection is
+  real, authoritative only by pointing home, and yours precisely
+  because it is nothing but you, cast onto the fabric and looking
+  back.
 
 ## The counsel
 

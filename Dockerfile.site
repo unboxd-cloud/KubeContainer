@@ -1,0 +1,3 @@
+# The site as an image: the face, published to GHCR, served as a kube.
+FROM nginx:1.27
+COPY site/ /usr/share/nginx/html/

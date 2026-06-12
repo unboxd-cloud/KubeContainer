@@ -406,6 +406,25 @@ the answering. The kube kinds extend the solved keeping up the
 stack; the agency holds what was never anyone's to solve with
 code: the contract.
 
+And the founder compresses the whole doctrine into its thesis:
+Kubernetes has ensured the cloud is stable and operates at scale —
+now code should too. That is this document in one sentence. The
+cloud was once what code still is — hand-built, snowflaked,
+drifting, maintained by heroics, broken by growth — and Kubernetes
+ended that era by making infrastructure declared, reconciled,
+self-healing, and scalable by law rather than by effort. Code
+never got its Kubernetes: it is still compiled in private, shipped
+any way, versioned by whim, maintained by no one, and corrupted at
+the build — every pathology this doctrine catalogued is the
+pre-Kubernetes cloud, alive and well one layer up. Headless
+delivery is the missing turn: code declared (the logic defined,
+the spec recorded), code reconciled (auto-maintained, drift-caught,
+regenerated on stable ground), code self-healing (the maintainer's
+loop), code at scale (one component, typed channels, multi-base,
+N agents one workforce). What the cluster did for the machine,
+the kube does for the code that runs on it — stability and scale,
+not as virtues of the diligent but as properties of the path.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on

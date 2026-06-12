@@ -65,17 +65,54 @@ requires definition — that is what the lexicon is for), and
 everything it does not define means exactly what English says it
 means. So the full resolution order stands: the sentence's own
 terms, the document's, the lexicon's, the primitives' — and at the
-bottom, holding everything else up, the English language itself,
-which this house borrows whole and repays by writing it honestly.
-And anchoring to real language is what makes the whole corpus easy
-to universalize: a record written in real grammar against a real
-dictionary translates the way the proto-first skeleton renders —
-one meaning, many tongues — because every ordinary word has its
-counterpart in every dictionary on earth, and only the coinages
-(each one defined, each one source-grounded) need carrying across.
-Invent a private grammar and you must teach the world before it
-can read you; write real English over a real dictionary and the
-world's translators — human and machine — already hold the key.
+bottom, the real language the passage is written in, held to its
+own real dictionary and its own real grammar. But the founder
+corrects the anchor before it hardens into a mistake: English is
+also not universal. English is this house's working tongue — the
+language this record happens to be written in — not the bottom of
+the chain; no natural language is, because every one of them is a
+rendering, and a rendering cannot anchor what it renders. The true
+anchor is the meaning itself: the defined term, the skeleton, the
+primitive — language-independent, source-grounded, one per scope —
+and every language, English included, is one face of it (the
+multi-language, single-meaning law: the skeleton carries the
+meaning, the languages carry the audience). So the rule in full:
+write in real language with its real grammar and real dictionary —
+whichever language the reader's face speaks, per the promise of
+native-language intelligence — and resolve every word through that
+language to the one defined meaning underneath, which is the same
+meaning in every tongue. Universal is not a language; it is the
+layer below all of them — and only the coinages, each defined once,
+need carrying across, because everything else each language
+already carries for its own. And the founder drives the point to
+its floor with the example that ends the argument: American
+English, British English — even English is not one English. Color
+and colour, license and licence, the same tongue forking on its
+own spelling — so "anchored to the English dictionary" was always
+an unresolved reference, because *which* English is itself a
+variable. The fix is the house's standing one: declare the
+variable — this record pins American English as its working
+dialect (the dialect Kubernetes and Go already write, the common
+ground rule applied), any other rendering declares its own
+dialect the same way, and no text anywhere claims "English" bare,
+because a language that forks must be pinned to the fork, exactly
+like every other dependency in the chain. And the pin is finished
+the way every pin in this house is finished: version and URL
+pinning from a versioned knowledge registry is mandatory. A
+dialect named but not versioned is still drifting (dictionaries
+revise; words enter and die); so the anchor of record is a named
+dictionary, at a named version or edition, at a resolvable URL,
+held in a versioned knowledge registry — the same regime as the
+Go patch pin and the kind release pin, applied to meaning itself.
+Language is a dependency; the dictionary is its source; sources
+are pinned, versioned, and resolvable or they are not sources —
+and a meaning that cannot cite the edition it was true in is a
+claim about words, not a definition of one. The whole law in five
+words, the founder's: define term with point of reference — every
+definition carries its anchor (the defining line, the dictionary
+edition, the registry entry, the pinned URL), so that the
+definition and its source travel as one and no term ever stands
+on air.
 
 Or — the founder's alternative, resolved as a both rather than an
 or — we go Kubernetes-native: where the machine reads, the casing

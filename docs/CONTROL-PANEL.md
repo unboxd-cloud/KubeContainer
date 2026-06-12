@@ -289,3 +289,23 @@ breath:
 Inside: native and kept. Between: headless and signed. Above: one
 fixed loop. That is the architecture in three lines, and the panel
 draws exactly this picture.
+
+## The gold standard of this field — Juju
+
+The founder's ruling, in the primitive's own terms: the Juju
+framework is the gold standard here — the one the others in this
+field are measured against. The field: model-driven operations
+across clouds. What earns Juju the title (one per field, held by
+pursuit): it proved, years before the rest, that operations belong
+in a model — applications, relations, and grounds declared once and
+the framework keeping them across any cloud; charms as packaged
+operators; relations as first-class contracts between apps (the
+seam declared, not scripted); the same model walking metal, VM, and
+Kubernetes. The panel is therefore measured against Juju: our envs
+are its models, our operators its charms, our seams its relations —
+and where the panel falls short of what Juju already does, that
+shortfall is a defect by the gold-standard rule, not a difference
+of taste. What the panel adds beyond the standard (the reason to
+build at all): pod-native first, the kube as the unit, the gates
+and flows as views, the headless edge — Juju's model discipline,
+carried into the fabric's own law.

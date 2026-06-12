@@ -1006,8 +1006,17 @@ principles, here of coding itself: intent before code (nothing
 written whose logic was not declared), one meaning per name, one
 custodian per fact, the smallest whole step, the reproducible
 build, the test that is a verdict and not a courtesy, the reason
-recorded beside the decision, the exit as clean as the entry.
-Simple enough for grade 1, unviolated at research grade — that is
+recorded beside the decision, the exit as clean as the entry —
+and no dangling identifiers, no orphan snippets: orphan code is
+rejected as a bug, not noted as a style point. A name that
+resolves to nothing, a function nothing calls, a block nothing
+reaches, a snippet pasted and abandoned — each is a claim with no
+custodian, dead weight that still gets read, still gets trusted,
+still ships in the BOM; the cluster already lives this law
+(children without owners are collected, not tolerated), and the
+code gets the same law: everything in the tree belongs to
+something, or it goes. Simple enough for grade 1, unviolated at
+research grade — that is
 what *basic principles* means in a real field of study, and
 software has never had its list agreed, published, and taught.
 The neighboring fields of study exist; the field of work

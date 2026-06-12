@@ -342,7 +342,19 @@ richer text elaborates a primitive, the primitive governs.
   is gone.
 - **Kube** — a declaration, a loop that keeps it, one face that
   answers for it, a record that survives it, and a contract that
-  binds it — whole, never a part of one.
+  binds it — whole, never a part of one. And there is only one
+  canonical kube in the fabric: for any declared outcome, exactly
+  one canonical kube holds it, and all the rest are images of it —
+  replicas, projections, instances, faces — each resolving back to
+  the one, none a second self. The canon is the kube the registry
+  records and the contract names; the images are how it is served,
+  cached, regenerated, and shown (uniform but unique, many faces of
+  one identity) — real as reflections are real, and authoritative
+  only by pointing home. This is the single-version-of-truth law
+  made flesh at the unit: copy the body as many times as the work
+  needs, but the canon is one, the custodian is one, and an image
+  that forgets it is an image has become the drift the whole fabric
+  exists to revert.
 - **Soul** — what the kube is to the thing it keeps: the part that
   makes it answerable, and the part that remains when the instance
   is gone.

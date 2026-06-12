@@ -59,11 +59,11 @@ jobs:
         run: |
           make test
           make test-report
-          make security-report
-          ./hack/check-promise.sh
           make lint
           make vocab-check
           make eval
+          make security-report
+          ./hack/check-promise.sh
 
       - name: Log in to GHCR
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
@@ -81,7 +81,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
-          gh release create "$TAG" dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
+          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 > SHA256SUMS && cd ..
+          gh release create "$TAG" dist/SHA256SUMS dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \
             --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $IMG. The eval report is the release's evidence record."

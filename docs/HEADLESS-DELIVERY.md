@@ -279,6 +279,21 @@ and a price line of its own is a profession; the ecosystem that
 seats the assembler beside the maker and the keeper is the one
 whose deliveries can finally be trusted whole.
 
+And the craft's true rank, stated last because it is the largest
+claim: assembly is actually what industrializes at scale. Parts do
+not scale — they multiply; invention does not scale — it repeats;
+what turned making into industry, every time it has happened, was
+the assembly: the line that composed standard parts into whole
+products faster than any artisan could make one, the discipline
+that let a thousand hands build one thing without one hand knowing
+the whole. Scale is an assembly property — which is why the
+fabric's own law reads as it does (scaling is packing, not
+rebuilding) and why the unrecognized craft is not a nicety being
+done a kindness but the engine being given its name: an industry
+that cannot assemble can only grow by heroics, and heroics are the
+one input that never scales. Software industrializes the day its
+assembly does — and not a day before.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the

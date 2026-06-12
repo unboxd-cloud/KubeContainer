@@ -479,7 +479,23 @@ anatomy (declaration, loop, face, record, contract) works the
 horizontal as the agent and the vertical as the box. That is why
 the kube is the building block of the real-world fabric — a brick
 that is also a bridge — and why filling either gap well has always
-meant building the other one too. The marketplace that does not exist is the missing peace
+meant building the other one too.
+
+And the form it takes when it works both gaps at once is the one §3
+already named: the kube can be the multi-tool operator — with the
+tools being the gates. Every tool on the operator's belt is a gate:
+admission is a gate (the schema, the CEL, the signature check),
+the gauntlet is a gate (deconstruct, reconstruct, test), the port
+is a gate (one service, one contract, the kernel's own refusal),
+the registry is a gate (conformance in, standing earned), unboxing
+is a gate (end user only), the edge itself is the gate of gates
+(one channel, signed blocks, nothing unsigned admitted). The
+operator does not carry tools that *do* and tools that *guard* as
+two kits — in this doctrine doing is guarding: to operate is to
+hold a gate, and the charter said it first — the agent is the
+guardian of all gates. The multi-tool operator is that line made
+mechanical: one kube, many gates, every gate a tool, every tool
+answering to the one contract. The marketplace that does not exist is the missing peace
 treaty: with contracts, registries, and a standard interoperable
 layer, a world could *buy* its neighbor's strength instead of
 besieging it — specialization returns, plates stay owned, and the

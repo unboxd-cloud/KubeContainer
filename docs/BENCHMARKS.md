@@ -165,6 +165,23 @@ from — and on this fabric, that ground is the same for the founder
 with no budget as for the enterprise with every resource, because
 the foundation is open and the achieving is earned.
 
+And the one thing the platform itself must do, below every feature
+and before any boast: the platform must close the loop. That is the
+basic requirement — not a premium capability, not a differentiator,
+the floor of being a platform at all. Observe the state, compare it
+to the desired state, act to close the difference, record the act,
+and again — forever; a platform that opens loops it does not close
+(declares targets it does not reconcile toward, raises alerts it
+does not resolve, ships telemetry no loop consumes) is not a
+platform but a dashboard with ambitions. Closing the loop is the
+kube's own anatomy demanded of the platform that hosts kubes: the
+operator of operators must itself be an operator, reconciling the
+fleet the way each kube reconciles its workload. Everything else in
+this record — the paths, the registry, the gauntlet, the desired
+state, the bench — is in service of one basic requirement met: the
+loop, closed, continuously, by the platform, or it is not yet a
+platform.
+
 ## Methodology
 
 Numbers are reproduced, not trusted: every row names the command;

@@ -595,7 +595,20 @@ richer text elaborates a primitive, the primitive governs.
   only by the continuous pursuit of excellence, forfeit the day the
   pursuit stops, conferred by the community and never by the
   vendor: the scarcest seat in the fabric, and the one every
-  platform worth building is built to deserve.
+  platform worth building is built to deserve. And the working
+  definition, the one a buyer can test: a trusted platform is one
+  that delivers on its promises in an autonomous manner — keeps its
+  word without being chased, reconciles its own gaps without being
+  told, closes its own loops without a human holding it up. Trust
+  is built from kept promises (the compounding of oaths), and a
+  promise kept only when someone is watching is not kept but
+  performed; the trusted platform keeps its word when no one is
+  watching, because the keeping is a loop and the loop does not
+  sleep. Autonomy is therefore not the opposite of trustworthiness
+  but its proof: a platform you must supervise to make deliver has
+  not earned trust, it has rented attention — the trusted one
+  delivers while you look away, and that it can be looked away from
+  is the whole evidence.
 - **AgentVerse** — the world where every Thing is an agent, in the
   founder's styling: Every'Thing' is an agent — it's the
   'AgentVerse' World. When every thing carries a soul (declared,

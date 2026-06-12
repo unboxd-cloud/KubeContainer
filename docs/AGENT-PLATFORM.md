@@ -805,6 +805,25 @@ that redefines a word privately has already drifted.
   was never in the org field to begin with. Simple by construction:
   one name, owned at the registrar, rendered everywhere, moved
   nowhere.
+- **Individual identity (a fundamental right)** — the founder's
+  completion of the identity law, four clauses in one: every
+  individual has their home — person, product, kube, thing: each
+  with its own name, its own anchor, its own site (KubeContainer is
+  a separate site — its own home, not a page of the org's; the
+  domain already in the record as the pointer, the repo as the
+  residence). The parent can be anyone — parenthood is a contract
+  seat above the individual, not the owner of its identity: orgs
+  rename, owners transfer, parents change, and the individual's
+  name, record, and home move not at all, because they were never
+  the parent's to move. And the whole of it stated as the right it
+  is: individual identity is a fundamental right — not granted by
+  the parent, not revocable by the platform, not absorbed by any
+  org chart; the charter's own law (unique and independently
+  identifiable at all layers) read at the level of the one. The
+  domain is the org for the org; each individual's home is its own
+  for itself; and the fabric holds families the only way families
+  hold: every member named in their own right, the parent a
+  relation, never a cage.
 - **The Metal Kube** — the name of the edge product: the kube
   bonded to the metal — a device whose immutable core is the kube
   (loop, record, contract, one signed channel) flashed onto the

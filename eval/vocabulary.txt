@@ -108,6 +108,7 @@ platform capabilities
 policy & authorization, out of the box
 policy-as-code surface
 principal
+proto-first
 provenance is the product
 provenance-native
 real-time
@@ -122,6 +123,7 @@ runtime stage
 serverless, not stateless
 session
 shipped policies
+signed building block
 single binary code
 skill
 soul (of a thing)

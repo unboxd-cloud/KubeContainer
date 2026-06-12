@@ -201,6 +201,31 @@ packet-protected channel of §6, so there is exactly one place where
 leaving is possible and that place keeps the record. What leaves
 through the edge is intent and signal — declarations, branches,
 telemetry — never built artifacts.
+
+And the unit that travels is specified: very lightweight, and
+proto-first — a building block with the entire structure pre-defined
+and signed by the user.
+
+- **Proto-first** — schema before content, at the wire: the structure
+  of everything that crosses the edge is pre-defined in a published
+  schema (the wire-level twin of the kube's Declaration — intent in
+  schema, validated before admission), so nothing free-form ever
+  travels. A message whose shape was not declared in advance is not
+  malformed — it is inadmissible.
+- **Signed building block** — the edge's unit of sending: a
+  lightweight, proto-first block carrying intent or signal, its whole
+  structure known before it is filled, and signed by the user — the
+  signature being how "the user controls all the faces" is enforced
+  rather than promised: no block leaves a face without its human's
+  key on it, and the edge admits nothing unsigned. Light enough to
+  stream, strict enough to audit, owned before it moves. And the
+  receiving side gets the same discipline: we receive one part, but
+  the complete skeleton — a block may fill only one field, yet the
+  receiver always holds the entire pre-defined structure it belongs
+  to, so partial data never means partial structure. Nothing arrives
+  shapeless; the skeleton is whole even when the flesh comes one
+  piece at a time — which is what lets streams be partial, audits be
+  total, and reassembly be a lookup instead of a guess.
 Build packs exist only cloud-side, born in the sandbox, certified by
 the guard, delivered at the ports. A surface or a face that emits
 build packs has reversed the reversed loop — it is the old world's

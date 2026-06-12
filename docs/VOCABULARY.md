@@ -116,6 +116,7 @@ do not edit; define terms in their source documents.
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
+| Proto-first | `docs/HEADLESS-DELIVERY.md:209` |
 | Provenance is the product | `docs/AGENT-PLATFORM.md:739` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
@@ -130,6 +131,7 @@ do not edit; define terms in their source documents.
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
 | Session | `docs/AGENT-PLATFORM.md:521` |
 | Shipped policies | `docs/DESIGN.md:210` |
+| Signed building block | `docs/HEADLESS-DELIVERY.md:215` |
 | Single Binary Code | `docs/HEADLESS-DELIVERY.md:29` |
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |

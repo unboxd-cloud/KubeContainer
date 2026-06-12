@@ -1,0 +1,49 @@
+# zot — the registry, self-hosted in k0s: CNCF, OCI-native, minimal.
+# One custodian for images on the entire stack. Pinned image; PVC for
+# the store (k0s ships a local-path provisioner by default).
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: registry
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: zot-data
+  namespace: registry
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 20Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zot
+  namespace: registry
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: zot}
+  template:
+    metadata:
+      labels: {app: zot}
+    spec:
+      containers:
+      - name: zot
+        image: ghcr.io/project-zot/zot-linux-amd64:v2.1.2
+        ports: [{containerPort: 5000}]
+        volumeMounts: [{name: data, mountPath: /var/lib/registry}]
+      volumes:
+      - name: data
+        persistentVolumeClaim: {claimName: zot-data}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zot
+  namespace: registry
+spec:
+  selector: {app: zot}
+  ports: [{port: 5000, targetPort: 5000}]

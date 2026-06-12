@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Panel — configure and download the package</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;color:#161616;line-height:1.5}
+h1{font-size:26px}h2{font-size:18px;margin-top:28px}
+label{display:block;margin:12px 0 4px;font-size:14px;color:#525252}
+input,select{width:100%;padding:9px;font-size:15px;border:1px solid #c6c6c6;box-sizing:border-box}
+.terms{margin:10px 0;padding:12px;background:#f4f4f4;font-size:13px}
+.terms label{display:inline-block;margin:2px 12px 2px 0;color:#161616}
+button{margin-top:18px;padding:12px 20px;font-size:16px;font-weight:650;background:#0f62fe;color:#fff;border:1px solid #0f62fe;cursor:pointer}
+button:disabled{background:#c6c6c6;border-color:#c6c6c6}
+pre{background:#101820;color:#d7e1ea;padding:14px;font-size:12px;overflow:auto;max-height:260px}
+small{color:#8d8d8d;display:block;margin-top:14px}
+.bad{color:#da1e28;font-size:13px;margin-top:8px}
+</style>
+</head>
+<body>
+<h1>The control panel</h1>
+<p>Everything configurable on UI, upon login. The picks become the
+declaration; the declaration is the package's spec — configure,
+sign, download.</p>
+
+<h2>Configure</h2>
+<label for="name">Agent name</label>
+<input id="name" placeholder="my-code-maintainer">
+<label for="bp">Blueprint</label>
+<select id="bp">
+<option value="code-maintainer">code-maintainer — keeps a thing true after it is built</option>
+<option value="issue-resolver">issue-resolver — every close a verdict</option>
+<option value="custom">custom — your own declaration, same skeleton, same gauntlet</option>
+</select>
+<label for="lang">Programming language (config at creation)</label>
+<input id="lang" value="go1.25.7">
+<label for="principal">Principal (you — the one who wants and answers)</label>
+<input id="principal" placeholder="founder@unboxd">
+
+<h2>The contract terms (all ten, acknowledged)</h2>
+<div class="terms" id="terms"></div>
+
+<h2>Signatures (three seats: wanting, building, hosting)</h2>
+<label for="sigp">Principal signs the intent</label>
+<input id="sigp" placeholder="your name — the intent">
+<label for="sigm">Maker signs the artifact</label>
+<input id="sigm" value="blueprint @ registry/blueprints — the artifact">
+<label for="sigh">Platform countersigns the ground</label>
+<input id="sigh" value="the fabric — ground stable, paths offered, drift caught, loop closed">
+
+<div class="bad" id="err"></div>
+<button id="dl" disabled>Download the package (the declaration)</button>
+<pre id="preview"></pre>
+<small>The download is the declaration — the dual-signed spec the
+package is built from. Validate and register it with
+<code>./structuredinstructions declaration.json -submit</code>; the
+sealed binary package is the pipeline's product, never the
+surface's. Surface-native, nothing installed, nothing executes here
+but this page — the edge as the UI ref.</small>
+<script>
+"use strict";
+const TERMS=["intent","constitutional-context","bounded-autonomy","total-record",
+"no-self-building","own-anchor-only","keeping","fail-safe","exit","standing"];
+const termsDiv=document.getElementById("terms");
+TERMS.forEach(t=>{termsDiv.insertAdjacentHTML("beforeend",
+`<label><input type="checkbox" class="term" value="${t}" checked> ${t}</label>`);});
+const $=id=>document.getElementById(id);
+function decl(){
+  const checked=[...document.querySelectorAll(".term:checked")].map(c=>c.value);
+  return {skeleton:"agent-declaration/v1",name:$("name").value.trim(),kind:"Agent",
+    principal:$("principal").value.trim(),
+    profile:($("principal").value.trim()||"")+" — one canonical identity, this its newest projection",
+    identityVerified:"verified — claim joined to its verdict",
+    blueprint:$("bp").value,language:$("lang").value.trim(),contractTerms:checked,
+    signatures:{principal:$("sigp").value.trim(),maker:$("sigm").value.trim(),platform:$("sigh").value.trim()}};
+}
+function render(){
+  const d=decl();const errs=[];
+  if(!d.name)errs.push("name");if(!d.principal)errs.push("principal");
+  if(!d.language)errs.push("language");if(!d.signatures.principal)errs.push("principal signature");
+  if(d.contractTerms.length!==TERMS.length)errs.push("all ten contract terms must be acknowledged");
+  $("err").textContent=errs.length?("inadmissible — missing: "+errs.join(", ")):"";
+  $("dl").disabled=errs.length>0;
+  $("preview").textContent=JSON.stringify(d,null,2);
+}
+document.body.addEventListener("input",render);
+$("dl").addEventListener("click",()=>{
+  const blob=new Blob([JSON.stringify(decl(),null,2)],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download=(decl().name||"declaration")+".json";
+  a.click();URL.revokeObjectURL(a.href);
+});
+render();
+</script>
+</body>
+</html>

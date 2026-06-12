@@ -33,3 +33,6 @@ go.work
 dist/eval-report.json
 /codecompiler
 /structuredinstructions
+dist/test-report.json
+dist/security-report.json
+/homesetup

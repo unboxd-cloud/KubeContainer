@@ -343,6 +343,24 @@ promised. The kube is the unit of that guarantee: if it compiled,
 the fabric has already agreed to run it — that is what admission
 meant all along.
 
+And the founder closes the whole method in three commands, the
+entire record reduced to its working loop:
+
+    use kube
+    define term
+    use term
+
+Use kube — the unit is the kube; everything built, shipped, owned,
+and kept is built, shipped, owned, and kept as one. Define term —
+nothing is named before it is defined, every definition anchored
+to its point of reference, within its scope. Use term — and only
+then, the defined word doing its work, the same meaning every
+time, everywhere this house writes. Three lines a child can
+follow and a fabric can run on: the kube as the body, the
+definition as the law, the use as the work — declare, then act;
+define, then speak; one unit, one meaning, one record. Everything
+else in this house is commentary on these three commands.
+
 ## Kubernetes-native casing
 
 Or — the founder's alternative, resolved as a both rather than an

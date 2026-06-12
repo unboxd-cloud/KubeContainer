@@ -333,6 +333,60 @@ principal, the breach named at its layer, the exit real. No layer
 gets obedience as a gift; every layer earns it by holding its side —
 contracts all the way down, kept all the way up.
 
+And the founder names the hole in the stack where it actually
+occurs: if one of them is self-hosting, no one holds the contract.
+Self-hosting puts the same party on both sides of a layer's
+bargain — the operator of the OS escalating OS breaches to itself,
+the keeper of the platform auditing its own keeping — and a
+contract with yourself is not a contract, because the breach has
+nowhere to go and the answering party is the breaching party
+wearing a second hat. Stated as the security finding it is: open
+source, self-hosted, is a vulnerability — not of the code (the
+artifact may be excellent, inspectable, the best of its kind) but
+of the seating: the layer runs with its contract seat vacant, no
+counterparty's standing behind it, no liability that lands
+anywhere, no one to hold the floor when the floor moves. The CVE
+is organizational, and scanners will never find it. This is the
+open-enterprise thesis arriving from the security side: open code
+is the strength, unheld contracts are the wound, and what must be
+bought is never the artifact but the answering — every layer of
+the stack operated by a party who holds that layer's contract and
+can be held to it. Self-host the code if you choose; never
+self-hold the contract — or know, in the record, that no one
+holds it.
+
+And the vacancy names its filler: open-source hosting needs an
+agency. Not a vendor (vendors sell artifacts, and the artifact was
+never the problem) and not a foundation (foundations hold
+trademarks and gates, not your uptime at 3 a.m.) — an agency: the
+party that operates the open artifact *for* a principal, holds the
+layer's contract in its own name, carries the liability, answers
+the escalation, and is paid precisely for that answering. This is
+the seat unboxd was built to take — the open cloud agency, the
+Red Hat operating model generalized: the code stays open and
+anyone's; the hosting becomes a held contract with a named
+counterparty; the enterprise gets open source with every seat
+filled — inspectable like a community project, answerable like a
+utility. Open source did not fail at code; it was never staffed
+for contracts. The agency is the staffing.
+
+And the incumbents are ruled out by their own terms of service:
+the cloud platforms are not doing the work. They host the open
+artifact and meter the hours, and their contract stops at the
+infrastructure line — the VM up, the disk attached, the network
+routed — while everything this doctrine calls the work sits above
+that line unowned: the paths unoffered, the drift uncaught, the
+loop unclosed, the BOM unwalked, the breach escalating to a ticket
+queue that answers in business days with a liability cap measured
+in service credits. A managed service manages the artifact's
+*availability*, never its *keeping* — open source on a hyperscaler
+is still self-hosting with better hardware: the contract seat above
+the infrastructure line is exactly as vacant as it was on-prem,
+only now the vacancy has a monthly bill. The platforms sell
+ground; the agency sells answering; and confusing the two is how
+enterprises came to believe they had bought a counterparty when
+they had rented a floor.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on

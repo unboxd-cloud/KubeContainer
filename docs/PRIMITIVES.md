@@ -90,8 +90,10 @@ richer text elaborates a primitive, the primitive governs.
   follows accountability or it is rent; the owner's earnings are
   the price of the node, paid because when it breaks, someone
   named already owed the fixing. And accountability itself has a
-  source, and it is not self-issued: accountability is by people's
-  trust — in your intent, and in your ability to deliver. Two
+  source, and it is not self-issued — no one can declare himself
+  accountable, any more than one can declare himself mature:
+  accountability is by people's trust — in your intent, and in
+  your ability to deliver. Two
   trusts, both required: that you mean what you declare (the
   intent, readable in the record, its reasons never withheld) and
   that you can do what you mean (the ability, proven in verdicts,

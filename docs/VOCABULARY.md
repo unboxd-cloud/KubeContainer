@@ -22,7 +22,7 @@ do not edit; define terms in their source documents.
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
-| Anti-drift protocols | `docs/AGENT-PLATFORM.md:995` |
+| Anti-drift protocols | `docs/AGENT-PLATFORM.md:1001` |
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
 | Backward compatible | `docs/AGENT-PLATFORM.md:164` |
@@ -45,7 +45,7 @@ do not edit; define terms in their source documents.
 | Code | `docs/PRIMITIVES.md:77` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | CodeCompiler | `docs/TOOLS.md:416` |
-| Compliance by the path | `docs/AGENT-PLATFORM.md:901` |
+| Compliance by the path | `docs/AGENT-PLATFORM.md:907` |
 | Constitution | `docs/DOCTRINE-MAP.md:50` |
 | Constraints | `docs/DOCTRINE-MAP.md:60` |
 | Context | `docs/AGENT-PLATFORM.md:488` |
@@ -95,14 +95,14 @@ do not edit; define terms in their source documents.
 | Hardening roadmap: | `docs/DESIGN.md:162` |
 | Harness | `docs/DOCTRINE-MAP.md:70` |
 | Headless delivery | `docs/HEADLESS-DELIVERY.md:24` |
-| Here | `docs/AGENT-PLATFORM.md:944` |
+| Here | `docs/AGENT-PLATFORM.md:950` |
 | Honest words | `docs/PRIMITIVES.md:148` |
 | Human-in-the-loop | `docs/AGENT-PLATFORM.md:517` |
-| Intelligence is not fabricated | `docs/AGENT-PLATFORM.md:922` |
-| Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:932` |
+| Intelligence is not fabricated | `docs/AGENT-PLATFORM.md:928` |
+| Intelligence is provenance-gated | `docs/AGENT-PLATFORM.md:938` |
 | Intent | `docs/AGENT-PLATFORM.md:477` |
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
-| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:1116` |
+| Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:1122` |
 | Just-in-time | `docs/AGENT-PLATFORM.md:126` |
 | Kube | `docs/PRIMITIVES.md:89` |
 | Kube — the soul of Any'Thing' | `docs/AGENT-PLATFORM.md:770` |
@@ -132,8 +132,8 @@ do not edit; define terms in their source documents.
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
 | One field, one writer | `docs/SOLID-STATE-DATABASE.md:75` |
 | Open | `docs/AGENT-PLATFORM.md:615` |
-| Open Location Code (OLC) | `docs/AGENT-PLATFORM.md:971` |
-| Open Location Code standard | `docs/AGENT-PLATFORM.md:980` |
+| Open Location Code (OLC) | `docs/AGENT-PLATFORM.md:977` |
+| Open Location Code standard | `docs/AGENT-PLATFORM.md:986` |
 | Open standards only | `docs/SOLID-STATE-DATABASE.md:82` |
 | Open-enterprise | `docs/AGENT-PLATFORM.md:721` |
 | Operational knowledge is an artifact | `docs/FOUNDING-PRINCIPLES.md:103` |
@@ -141,14 +141,14 @@ do not edit; define terms in their source documents.
 | Orchestrator / Subagent | `docs/AGENT-PLATFORM.md:499` |
 | Outcome | `docs/AGENT-PLATFORM.md:480` |
 | Owner | `docs/PRIMITIVES.md:23` |
-| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:1027` |
-| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:1035` |
-| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:1044` |
-| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:1052` |
-| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:1063` |
-| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:1073` |
-| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:1082` |
-| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1091` |
+| P1 — Re-grounding (state the world before touching it) | `docs/AGENT-PLATFORM.md:1033` |
+| P2 — Term resolution (no private vocabulary) | `docs/AGENT-PLATFORM.md:1041` |
+| P3 — Verdict before done (no unverdicted completion) | `docs/AGENT-PLATFORM.md:1050` |
+| P4 — Intent re-confirmation (the goal cannot be quietly reinterpreted) | `docs/AGENT-PLATFORM.md:1058` |
+| P5 — Record supremacy (when model and record disagree) | `docs/AGENT-PLATFORM.md:1069` |
+| P6 — Scheduled drift audit (entropy has a maintenance schedule) | `docs/AGENT-PLATFORM.md:1079` |
+| P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:1088` |
+| P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1097` |
 | Party | `docs/PRIMITIVES.md:17` |
 | Path | `docs/PRIMITIVES.md:65` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
@@ -169,7 +169,7 @@ do not edit; define terms in their source documents.
 | Real time | `docs/PRIMITIVES.md:145` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
 | Real-time, not instantaneous — ACID, stable substance | `docs/AGENT-PLATFORM.md:181` |
-| Real-work rule | `docs/AGENT-PLATFORM.md:913` |
+| Real-work rule | `docs/AGENT-PLATFORM.md:919` |
 | Real-world model (RWM) | `docs/AGENT-PLATFORM.md:570` |
 | Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:564` |
 | Reason | `docs/PRIMITIVES.md:46` |
@@ -202,11 +202,11 @@ do not edit; define terms in their source documents.
 | The Agent Economy | `docs/AGENT-PLATFORM.md:108` |
 | The Agent Lexicon | `docs/AGENT-PLATFORM.md:468` |
 | The Any' family | `docs/TOOLS.md:23` |
-| The Edge (definition) | `docs/AGENT-PLATFORM.md:814` |
+| The Edge (definition) | `docs/AGENT-PLATFORM.md:820` |
 | The Metal Kube | `docs/AGENT-PLATFORM.md:797` |
 | The Mission Statement | `docs/AGENT-PLATFORM.md:429` |
 | The Platform | `docs/AGENT-PLATFORM.md:91` |
-| The Seat Theorem | `docs/AGENT-PLATFORM.md:879` |
+| The Seat Theorem | `docs/AGENT-PLATFORM.md:885` |
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
 | The founder's styled coinages | `docs/TOOLS.md:48` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
@@ -217,7 +217,7 @@ do not edit; define terms in their source documents.
 | The tool equation | `docs/TOOLS.md:18` |
 | Theory | `docs/DOCTRINE-MAP.md:55` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
-| This moment (now) | `docs/AGENT-PLATFORM.md:984` |
+| This moment (now) | `docs/AGENT-PLATFORM.md:990` |
 | Through an Internet of Agents | `docs/FOUNDING-PRINCIPLES.md:366` |
 | Through an open partner network | `docs/AGENT-PLATFORM.md:138` |
 | Tier | `docs/DOCTRINE-MAP.md:34` |

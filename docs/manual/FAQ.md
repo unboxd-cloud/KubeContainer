@@ -1,17 +1,44 @@
 # FAQ — Per Component
 
-Part of the instruction manual. The founder's law of ownership: the
-FAQ is cloud responsibility — the platform seat owns the questions,
-because the question rule makes every question a defect report and
-the cloud is where defects converge, get answered, and amend the
-record. Sourcing honesty: this environment cannot browse forums; the
-questions below are the canonical patterns asked of every project of
-each component's kind (operators, CRDs, registries, licenses),
-folded with the questions already asked of this record — each answer
-anchored to its source. A question asked twice is a row missing
-here; file it and the row appears.
+Part of the instruction manual. The ownership, pinned by the
+founder: the FAQ is the platform's responsibility — the platform
+seat owns the questions, because the question rule makes every
+question a defect report and the platform is where defects converge,
+get answered, and amend the record.
 
-## KubeContainer (the operator)
+And the founder's laws of sourcing, binding on every row:
+
+- **The FAQ will not be fabricated.** Only questions actually asked,
+  by real askers, enter the FAQ — each with its provenance (where
+  asked, when, by whom or anonymized count). An invented question is
+  a fabricated fact wearing a helpful face, and this house does not
+  fabricate.
+- **The platform collates, unbiased, from the public forums** — the
+  questions gathered where users actually ask (the issue tracker,
+  the public forums, the discussions), collated without selection
+  bias: the awkward question collated beside the flattering one,
+  frequency counted honestly, nothing buried.
+- **Reviews and ratings, the same law** — the platform collates
+  real reviews and real ratings from their public sources,
+  provenance-attached, unbiased, never fabricated, never curated
+  into flattery: the verdicts of others are theirs to render and
+  the platform's only to carry whole (earnings reflect what people
+  think — and so the record of what they think is carried honestly
+  or not at all).
+
+Accordingly this document holds two kinds of content, labeled so
+neither wears the other's name: **questions actually asked of this
+record** (real, kept, provenance in the session record), and
+**anticipated questions** — pattern-based seeds written before
+collation existed, which are NOT an FAQ under the founder's law:
+they stand as draft answers awaiting real questions, and each is
+replaced by the real question's row (with provenance) as the
+platform's collation arrives. A seed that never gets asked is
+removed; a question asked that has no row becomes one.
+
+## Anticipated questions (not an FAQ — awaiting collation)
+
+### KubeContainer (the operator)
 
 - **Which Kubernetes versions are supported?** The tested minor:
   1.35 (envtest and e2e both run it). Conformant clusters at that
@@ -39,7 +66,7 @@ here; file it and the row appears.
   valid in a released era remain valid forever (the compat corpus
   is CI-enforced) — a breaking change here is a bug, not a policy.
 
-## The kube (the CRD and its declaration)
+### The kube (the CRD and its declaration)
 
 - **Why "inadmissible" instead of error messages at runtime?** The
   skeleton is declared before it is filled: a declaration missing a
@@ -49,7 +76,7 @@ here; file it and the row appears.
 - **Ingress or ClusterIP?** Declare `expose.type`; Ingress requires
   a host (CEL enforces it — the face must be addressable).
 
-## The tools (CodeCompiler, StructuredInstructions, SourceGround)
+### The tools (CodeCompiler, StructuredInstructions, SourceGround)
 
 - **What does CodeCompiler check?** Compile, vet, vocabulary — one
   verdict: does it compile, and does it conform.
@@ -61,7 +88,7 @@ here; file it and the row appears.
   before defining it. Define it as a `- **Term** —` entry (then
   `make vocab`) or unbold rhetoric — bold is coinage here.
 
-## The registry
+### The registry
 
 - **Can I re-register the same agent name?** No — one entry per
   fact, duplicates refused. New version, new declaration, recorded
@@ -71,7 +98,7 @@ here; file it and the row appears.
   ground being vouched; the signature names what vouches. The seat
   fills as the platform service ships.
 
-## Deployment (the ladder)
+### Deployment (the ladder)
 
 - **Can I try it on my laptop?** Yes — minikube fits the venv seat
   exactly (conformant, desk-grade). The same declaration then walks
@@ -82,7 +109,7 @@ here; file it and the row appears.
 - **Where do I find every spec and seam?** deploy/REFERENCES.md —
   each component and contract with its living source URL.
 
-## The license
+### The license
 
 - **Can I use it commercially?** Commercial rights are reserved to
   unboxd agency (the license's own NOTICE). Research, education,
@@ -92,7 +119,7 @@ here; file it and the row appears.
   OSI open source, and the record never claims otherwise (honest
   words).
 
-## Already asked of this record (and where they landed)
+## Questions actually asked of this record (the real FAQ, so far)
 
 What is critical path → docs/PERSONAL.md. Why Cinder and not Ceph
 or LXD → deploy/STACK.md. Does minikube fit → deploy/STACK.md.

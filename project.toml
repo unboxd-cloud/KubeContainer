@@ -1,0 +1,16 @@
+# Buildpack native — the image built from source by Cloud Native
+# Buildpacks (CNCF): no hand-authored Dockerfile in the path, the BOM
+# attached by the build itself. Builder pinned; pack pinned at use.
+[_]
+schema-version = "0.2"
+
+[io.buildpacks]
+builder = "paketobuildpacks/builder-jammy-tiny"
+
+[[io.buildpacks.group]]
+uri = "paketo-buildpacks/go"
+
+[build]
+[[build.env]]
+name = "BP_GO_TARGETS"
+value = "./cmd:./cmd/codecompiler:./cmd/structuredinstructions:./cmd/homesetup"

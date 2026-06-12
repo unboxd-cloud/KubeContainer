@@ -29,6 +29,22 @@ The reason is the doctrine's own: relocating the record to tidy it
 would break the references that make it one fabric — and a tidy that
 breaks the weave has failed the first principle to serve the second.
 
+## Tier
+
+- **Tier** — a level of binding force: how strongly a passage holds
+  the reader, and what it costs to cross it. A tier is not a topic, a
+  folder, or a quality grade — it is the *weight* a passage carries:
+  whether departing from it is a breach (to be answered), a debate
+  (to be argued), a failed gate (to be fixed), a judgment call (to be
+  defended), or a refused build (already stopped). Every passage in
+  the record sits at exactly one tier per clause, and the tier — not
+  the document it lives in — decides how the reader must treat it.
+  Tiers are ordered by force: Constitution binds hardest, Harness
+  acts hardest, and the rest range between; where a clause could be
+  read at two tiers, the stricter governs. The tier is the answer to
+  one question asked of every sentence in the corpus: *what happens
+  if I do not honor this?*
+
 ## The five tiers
 
 - **Constitution** — binding law: definitions that fix meaning,

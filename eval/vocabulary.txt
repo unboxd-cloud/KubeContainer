@@ -201,6 +201,7 @@ thing
 this moment (now)
 through an internet of agents
 through an open partner network
+tier
 tool
 trusted frontier intelligence, from all providers
 trusted insights

@@ -31,7 +31,7 @@ do not edit; define terms in their source documents.
 | Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:455` |
 | Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:459` |
 | Bear load silently | `docs/AGENT-PLATFORM.md:451` |
-| Best practice | `docs/DOCTRINE-MAP.md:49` |
+| Best practice | `docs/DOCTRINE-MAP.md:65` |
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
 | Box | `docs/PRIMITIVES.md:338` |
 | Breach | `docs/PRIMITIVES.md:306` |
@@ -45,8 +45,8 @@ do not edit; define terms in their source documents.
 | Code | `docs/PRIMITIVES.md:329` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
-| Constitution | `docs/DOCTRINE-MAP.md:34` |
-| Constraints | `docs/DOCTRINE-MAP.md:44` |
+| Constitution | `docs/DOCTRINE-MAP.md:50` |
+| Constraints | `docs/DOCTRINE-MAP.md:60` |
 | Context | `docs/AGENT-PLATFORM.md:488` |
 | Contract | `docs/AGENT-PLATFORM.md:24` |
 | Data as intelligence | `docs/AGENT-PLATFORM.md:369` |
@@ -92,7 +92,7 @@ do not edit; define terms in their source documents.
 | Hallucination | `docs/AGENT-PLATFORM.md:592` |
 | Handoff | `docs/AGENT-PLATFORM.md:502` |
 | Hardening roadmap: | `docs/DESIGN.md:162` |
-| Harness | `docs/DOCTRINE-MAP.md:54` |
+| Harness | `docs/DOCTRINE-MAP.md:70` |
 | Headless delivery | `docs/HEADLESS-DELIVERY.md:24` |
 | Here | `docs/AGENT-PLATFORM.md:907` |
 | Honest words | `docs/PRIMITIVES.md:448` |
@@ -204,11 +204,12 @@ do not edit; define terms in their source documents.
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
 | The reversed loop | `docs/HEADLESS-DELIVERY.md:2240` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
-| Theory | `docs/DOCTRINE-MAP.md:39` |
+| Theory | `docs/DOCTRINE-MAP.md:55` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
 | This moment (now) | `docs/AGENT-PLATFORM.md:947` |
 | Through an Internet of Agents | `docs/FOUNDING-PRINCIPLES.md:366` |
 | Through an open partner network | `docs/AGENT-PLATFORM.md:138` |
+| Tier | `docs/DOCTRINE-MAP.md:34` |
 | Tool | `docs/AGENT-PLATFORM.md:482` |
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |

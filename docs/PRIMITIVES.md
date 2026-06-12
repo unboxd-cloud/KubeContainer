@@ -89,7 +89,18 @@ richer text elaborates a primitive, the primitive governs.
   answering is the party entitled to charge for it. Revenue
   follows accountability or it is rent; the owner's earnings are
   the price of the node, paid because when it breaks, someone
-  named already owed the fixing.
+  named already owed the fixing. And accountability itself has a
+  source, and it is not self-issued: accountability is by people's
+  trust — in your intent, and in your ability to deliver. Two
+  trusts, both required: that you mean what you declare (the
+  intent, readable in the record, its reasons never withheld) and
+  that you can do what you mean (the ability, proven in verdicts,
+  delivery after delivery). Lose either and the accountability
+  hollows — good intent without ability is a kind promise breaking
+  on schedule; ability without trusted intent is a power no one
+  should pay to stand under. The node is granted by the people who
+  must rely on it, held by their continuing trust, and priced by
+  exactly that: intent they can read, delivery they can count.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

@@ -279,6 +279,60 @@ does not *become* the panel's authority. Every act through a tool
 is the principal's act, signed, recorded, on the path — hands at
 machine speed, authority exactly where the Seat Theorem left it.
 
+And above the single tool, the standing office of sequence: the
+agent as orchestrator of flows within a platform. Flows — the
+multi-step work the charter bound long ago (multi-step, without
+any jumps, one step at a time) — need a party who holds the whole
+sequence while each step runs: who knows what came before, what
+must come next, what the step's verdict permits, and where the
+flow stands when a step fails. The agent is that party — the
+orchestrator twin of §3 given its job description: sequencing
+steps along registered paths, holding state in the durable indexed
+memory, parallelizing only where the type split allows, resuming
+mid-flow after its own teleport because the flow's position lives
+in the record and not in the runner. And the bound is in the
+title: *within a platform* — the orchestrator conducts inside the
+ground it knows and is contracted to; flows that cross platforms
+cross a boundary between parties, and boundaries between parties
+are crossed by messengers under contract, never orchestrated over
+as if the far side were furniture. Conduct within; carry between;
+the two offices compose without ever blurring. The founder names
+the seat so the bound travels with the title:
+
+- **Platform-bound orchestrator** — the agent's orchestration office
+  with its jurisdiction in its name: conductor of multi-step flows
+  *within* one platform's ground — sequencing by registered paths,
+  state in the durable indexed memory, resumable across teleports,
+  no jumps — and constitutionally incapable of conducting across the
+  platform boundary, where orchestration ends and the messenger's
+  contract begins. The bound is not a limitation but the trust
+  model: a conductor you can admit precisely because it cannot
+  reach past the stage.
+- **OS-bound operation** — the same jurisdiction rule one floor
+  down: every operation the agent performs is bound to the OS it
+  runs on — through the kernel's own calls, under the kernel's own
+  refusals (the port bind, the permission, the native check), never
+  around them. An OS-bound operator inherits the ground's stability
+  contracts as its own operating envelope: what the OS guarantees,
+  the operation may rely on; what the OS forbids, no agent
+  cleverness re-permits. Bound to the platform for flows, bound to
+  the OS for acts — each layer's law worn by the worker inside it,
+  which is what makes a multi-agent device governable at all.
+
+And the bounds bind both ways: the platform and the OS must each
+hold their contracts. The agent's obedience is one half of a
+bargain — bound to the platform's paths only while the platform
+keeps the paths offered, the drift caught, the loop closed; bound
+to the OS's refusals only while the OS keeps its floor stable, its
+ports lawful, its checks running. A platform that drops its half
+(paths stale, drift unwatched) or an OS that drops its own (ground
+moving, refusals arbitrary) has broken the contract the agent's
+bound was priced against — and the stack-of-contracts rule already
+says what follows: conflicts are recorded and escalated to the
+principal, the breach named at its layer, the exit real. No layer
+gets obedience as a gift; every layer earns it by holding its side —
+contracts all the way down, kept all the way up.
+
 Two clauses sharpen the settlement. First, holding is not enough:
 the platform must *offer* the path — not a registry the agent must
 think to search, but the path presented at the moment of need, on

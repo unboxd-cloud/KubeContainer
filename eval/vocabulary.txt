@@ -94,6 +94,7 @@ open standards only
 open-enterprise
 operational knowledge is an artifact
 orchestrator / subagent
+os-bound operation
 outcome
 p1 — re-grounding (state the world before touching it)
 p2 — term resolution (no private vocabulary)
@@ -105,6 +106,7 @@ p7 — constitutional amendment (the rules change only by the rules)
 p8 — no self-building (the founder's prohibition)
 peer communication over existing standard protocols
 platform capabilities
+platform-bound orchestrator
 policy & authorization, out of the box
 policy-as-code surface
 principal

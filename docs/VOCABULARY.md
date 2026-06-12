@@ -26,10 +26,10 @@ do not edit; define terms in their source documents.
 | Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:459` |
 | Bear load silently | `docs/AGENT-PLATFORM.md:451` |
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
-| Browser as server | `docs/HEADLESS-DELIVERY.md:708` |
+| Browser as server | `docs/HEADLESS-DELIVERY.md:1150` |
 | Build stage | `docs/DESIGN.md:127` |
 | CNCF-graduated standards only | `docs/DESIGN.md:146` |
-| Capable guard | `docs/HEADLESS-DELIVERY.md:587` |
+| Capable guard | `docs/HEADLESS-DELIVERY.md:1029` |
 | Claim | `docs/AGENT-PLATFORM.md:583` |
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
@@ -86,13 +86,14 @@ do not edit; define terms in their source documents.
 | Multi-arch | `docs/DESIGN.md:131` |
 | Multi-base | `docs/HEADLESS-DELIVERY.md:116` |
 | Multi-fabric (multi-thread, scaled out) | `docs/AGENT-PLATFORM.md:242` |
-| Multi-face machine | `docs/HEADLESS-DELIVERY.md:727` |
+| Multi-face machine | `docs/HEADLESS-DELIVERY.md:1169` |
 | Multi-tenant | `docs/AGENT-PLATFORM.md:216` |
 | Multiple operators | `docs/AGENT-PLATFORM.md:221` |
 | No ecosystem coupling for installation. | `docs/DESIGN.md:152` |
 | No lock-in, no supply-chain risk | `docs/FOUNDING-PRINCIPLES.md:107` |
 | No substreams, subgraphs, or sidecars | `docs/AGENT-PLATFORM.md:259` |
 | Nothing rides alongside the declared path | `docs/FOUNDING-PRINCIPLES.md:87` |
+| OS-bound operation | `docs/HEADLESS-DELIVERY.md:311` |
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
 | One field, one writer | `docs/SOLID-STATE-DATABASE.md:75` |
 | Open | `docs/AGENT-PLATFORM.md:615` |
@@ -113,10 +114,11 @@ do not edit; define terms in their source documents.
 | P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1054` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
+| Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:302` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
-| Proto-first | `docs/HEADLESS-DELIVERY.md:772` |
+| Proto-first | `docs/HEADLESS-DELIVERY.md:1214` |
 | Provenance is the product | `docs/AGENT-PLATFORM.md:739` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
@@ -131,7 +133,7 @@ do not edit; define terms in their source documents.
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
 | Session | `docs/AGENT-PLATFORM.md:521` |
 | Shipped policies | `docs/DESIGN.md:210` |
-| Signed building block | `docs/HEADLESS-DELIVERY.md:778` |
+| Signed building block | `docs/HEADLESS-DELIVERY.md:1220` |
 | Single Binary Code | `docs/HEADLESS-DELIVERY.md:29` |
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
@@ -150,7 +152,7 @@ do not edit; define terms in their source documents.
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
-| The reversed loop | `docs/HEADLESS-DELIVERY.md:719` |
+| The reversed loop | `docs/HEADLESS-DELIVERY.md:1161` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
 | This moment (now) | `docs/AGENT-PLATFORM.md:947` |

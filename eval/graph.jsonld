@@ -822,6 +822,11 @@
     {
       "@id": "deploy/AGENT-STACK.md",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/SKELETON-SPACE.json"
+        }
+      ],
       "name": "deploy/AGENT-STACK.md"
     },
     {
@@ -2596,6 +2601,14 @@
     {
       "@id": "registry/SKELETON-SPACE.json",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Space"
+        },
+        {
+          "@id": "registry/spaces"
+        }
+      ],
       "name": "registry/SKELETON-SPACE.json"
     },
     {
@@ -2668,6 +2681,11 @@
       "@id": "registry/spaces",
       "@type": "CreativeWork",
       "name": "registry/spaces"
+    },
+    {
+      "@id": "registry/spaces/agennext-team.json",
+      "@type": "CreativeWork",
+      "name": "registry/spaces/agennext-team.json"
     },
     {
       "@id": "release/PROMISE",

@@ -79,3 +79,22 @@ headless. Consider the edge, and the stack does not grow a second
 architecture — it sheds, down to the one resident the edge was always
 for.
 
+
+## The AGenNextHub estate
+
+The founder's repositories, each holding one seat; this house records
+the map and builds only the non-agent seats (protocol P8: agent
+machinery is the principal's act alone):
+
+| Seat | Repository | State on the record |
+|---|---|---|
+| Law | AGenNextHub/Agent-Constitution | binding; loaded by every session here |
+| Boundary contract | AGenNextHub/Agent-Space | spec; implemented as `registry/SKELETON-SPACE.json` |
+| Files (Agent-Drive) | this house: FileFabric | built; image ships per release (the space drive, agennext.space) |
+| The room | AGenNextHub/Agent-IDE | active code (Theia workbench, orchestrator, governance); no releases yet; agent machinery — the principal's |
+| Research office | AGenNextHub/Agent-Converter | active code (deep-agent research, confidence-tagged); pre-release; agent machinery — the principal's |
+| Runtime | this house: KubeContainer on k3s | live on the founder's metal |
+
+The division is the prohibition applied as architecture: this house
+supplies the ground every agent stands on — runtime, storage, space
+contract, record — and never the agents themselves.

@@ -99,6 +99,13 @@ richer text elaborates a primitive, the primitive governs.
 
 - **Thing** — anything with a boundary and a name.
 - **Tool** — a thing used to act, that does nothing on its own.
+- **Code** — instructions written for machines and readable by
+  people; code in itself is always open — whoever holds it can read
+  it, because that is its nature, not anyone's grant.
+- **Open** — able to be seen and understood by anyone. Open is not
+  free, and open gives no one any right to use a thing for any
+  purpose they choose: seeing is the nature of the thing, using is
+  a grant from its contract, and the two are never the same act.
 - **Skeleton** — a structure declared before it is filled, so that
   what arrives can be assembled without guessing.
 - **Box** — a thing sealed together with its description and its

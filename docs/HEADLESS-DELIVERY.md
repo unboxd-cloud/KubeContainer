@@ -1094,7 +1094,22 @@ That is where the open problems live (the research grade of the
 curriculum), where the eligibility bar will move next, and where
 this fabric has chosen to work: not auto, not scale — auto at
 scale, the two words that are trivial apart and the entire
-frontier together. And over all the principles stands the structural
+frontier together. And beneath the frontier, the founder lays the
+floor: enabling at scale is now a basic requirement for
+auto-maintenance. A loop can only maintain itself if everything
+it needs is there when it reaches — the path offered at the
+moment of need to the millionth keeper as fast as to the first,
+the registry answering at lookup speed under the whole fleet's
+queries, the gauntlet that does not queue, the shared context
+that does not contend, the channel that does not saturate.
+Enablement at scale is not the achievement; it is the entry
+condition — the platform's basic duty before auto-maintenance can
+even begin, the promise's own word made infrastructure: all
+operators *enabled*, where the operators now number in the
+millions and most of them are loops. The frontier is crossed by
+the auto; the floor it stands on is the enabling — and a platform
+that cannot enable at scale has not fallen short of the frontier;
+it has not yet reached the starting line. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two

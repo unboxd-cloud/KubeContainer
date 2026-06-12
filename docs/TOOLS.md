@@ -490,6 +490,28 @@ name their intent; nothing removed, nothing duplicated.
   not one tool's habit but the rule every tool, platform, and kube
   is built under.
 
+## The command words
+
+The founder's orders are words, and words resolve within scope — so
+the command words of this house are pinned to their leaders'
+meanings, each unambiguous, none overlapping:
+
+- **push** — exactly what git means: send the recorded commits to
+  the remote, nothing more. Push moves the record; it does not
+  land, merge, or release anything (point of reference: git's own
+  documentation, the leader of its field).
+- **merge** — exactly what the pull request means: land the branch
+  into its base. Merge is its own word with its own seat; it is
+  never implied by push.
+- **release** — exactly what the pipeline means: the declared
+  request, the gauntlet, the tag, the artifacts with evidence.
+  Never implied by merge.
+
+Three commands, three meanings, no word doing another's work — the
+single-words rule applied to the channel the founder commands
+through, so that every order resolves without ambiguity, exactly as
+every other reference in this house must.
+
 ## The rule of the registry
 
 A tool enters by being built or declared here, with its two-word

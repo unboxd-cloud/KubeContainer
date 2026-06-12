@@ -95,6 +95,12 @@ Each body is named with its tier(s); the document stays where it is.
 | `internal/controller/testdata/compat/` | Harness + Constraints | The frozen golden corpus; the backward-compatibility constraint, mechanically enforced. |
 | `eval/corpus/`, `eval/harness.sh` | Harness | The world-tests and the runner. |
 | `docs/DOCTRINE-MAP.md` (this file) | Constitution + Harness | Constitution: it governs how the whole record is read, amendable only by process. Harness: it is the classifier itself — the index that catches orphans, including, now, its own. |
+| `docs/TOOLS.md` | Constitution + Constraints | The tool law, casing rule, command words, and reference doctrine bind; the registry rows are constraints (built/declared, owned or out). |
+| `docs/PERSONAL.md` | Theory + Constraints | The personal doctrine is theory; the agent's contract terms 1–10 and the flow's gate order are constraints. |
+| `deploy/` (STACK, VPS, REFERENCES, the declaration) | Constraints + Best practice | The pins, seams, and decision record are constraints; the runbooks are practice. |
+| `registry/` (SKELETON, blueprints, agents) | Harness + Constraints | The skeleton is the admission constraint; the registry is the machine that holds it; append-only, duplicates refused. |
+| `cmd/codecompiler`, `cmd/structuredinstructions`, `hack/deployrehearsal` | Harness | Tools and rehearsal: they do not argue, they check. |
+| `site/` (the front door, the arithmetic function) | Best practice | The face; it presents the record and computes its own experience — nothing here binds. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still

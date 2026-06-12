@@ -1,5 +1,2 @@
-# Declared release request: pushing a change to this file triggers the
-# release workflow, which creates the tag and release with its own
-# (privileged) token. Code is configuration — a release is declared.
-tag=v0.1.0
-target=5cfac3f0441c782722babba3f130ff0653940661
+tag=v0.2.0
+target=54f4b359a95c42beee6a42185e082dc40b6b68bd

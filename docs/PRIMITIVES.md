@@ -48,7 +48,10 @@ richer text elaborates a primitive, the primitive governs.
   itself, never separated from it; it is always written down because
   everyone has a right to reason — the right to be given the why,
   and the right to think it through for themselves, and the second
-  is impossible without the first.
+  is impossible without the first. And trust self-generates when
+  the reason is declared behind every decision: it is not asked
+  for, campaigned for, or spent — it grows on its own wherever the
+  why is never withheld.
 
 ## The bindings
 

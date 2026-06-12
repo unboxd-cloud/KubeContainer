@@ -284,7 +284,26 @@ built to be checked, by anyone, continuously — and we will earn
 your trust or lose it in public, on the record, like everyone
 else." A platform that called itself trusted would have broken,
 in its first sentence, the very law that makes trust mean
-anything.
+anything. And the founder sets the altitude honestly: a trusted
+platform is the gold standard — and there are hardly any. To be
+trusted, in the primitive's full weight, is to be the one others
+are measured against in your field, by their verdict and not your
+claim — and that title is rare for the reason gold standards are
+always rare: it is held only by the continuous pursuit of
+excellence, forfeit the day the pursuit stops, and conferred by a
+community that has watched you keep your word long enough to stop
+checking whether you will. Most platforms never reach it; many that
+reach it lose it (the ancestor that ranked community over code spent
+its reserve and drained); and the few that hold it hold it the way
+gold is held — by assay, any day, by anyone, found exactly what it
+claims all the way through. So the house states its standing as a
+direction, not a destination arrived at: a trusted platform is what
+we pursue, the gold standard of our field, knowing the title is the
+market's to grant and ours only to deserve — and knowing that
+deserving it, continuously, in public, is the entire job. The
+scarcity is not discouragement; it is the proof the title means
+something — and the only platforms worth building are the ones built
+to earn a thing that hardly anyone earns.
 
 And inside the delivery walk itself, the founder marks where the
 same balance is struck mechanically: the supply-chain-risk step —

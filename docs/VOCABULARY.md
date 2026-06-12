@@ -17,7 +17,7 @@ do not edit; define terms in their source documents.
 | Agent Excellence | `docs/AGENT-PLATFORM.md:75` |
 | Agent Governance | `docs/AGENT-PLATFORM.md:63` |
 | Agent drift | `docs/AGENT-PLATFORM.md:596` |
-| AgentVerse | `docs/PRIMITIVES.md:463` |
+| AgentVerse | `docs/PRIMITIVES.md:476` |
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
@@ -33,11 +33,11 @@ do not edit; define terms in their source documents.
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
 | Box | `docs/PRIMITIVES.md:338` |
 | Breach | `docs/PRIMITIVES.md:306` |
-| Browser as server | `docs/HEADLESS-DELIVERY.md:2118` |
+| Browser as server | `docs/HEADLESS-DELIVERY.md:2229` |
 | Build stage | `docs/DESIGN.md:127` |
 | Builder | `docs/PRIMITIVES.md:31` |
 | CNCF-graduated standards only | `docs/DESIGN.md:146` |
-| Capable guard | `docs/HEADLESS-DELIVERY.md:1997` |
+| Capable guard | `docs/HEADLESS-DELIVERY.md:2108` |
 | Claim | `docs/AGENT-PLATFORM.md:583` |
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code | `docs/PRIMITIVES.md:329` |
@@ -55,7 +55,7 @@ do not edit; define terms in their source documents.
 | Drift | `docs/PRIMITIVES.md:320` |
 | Duty | `docs/PRIMITIVES.md:305` |
 | Edge | `docs/PRIMITIVES.md:356` |
-| Edge is ingress | `docs/HEADLESS-DELIVERY.md:360` |
+| Edge is ingress | `docs/HEADLESS-DELIVERY.md:471` |
 | Educated | `docs/FOUNDING-PRINCIPLES.md:351` |
 | Empowered | `docs/FOUNDING-PRINCIPLES.md:356` |
 | Enabled | `docs/FOUNDING-PRINCIPLES.md:354` |
@@ -110,16 +110,16 @@ do not edit; define terms in their source documents.
 | Model | `docs/DESIGN.md:183` |
 | Multi-agent system | `docs/AGENT-PLATFORM.md:527` |
 | Multi-arch | `docs/DESIGN.md:131` |
-| Multi-base | `docs/HEADLESS-DELIVERY.md:388` |
+| Multi-base | `docs/HEADLESS-DELIVERY.md:499` |
 | Multi-fabric (multi-thread, scaled out) | `docs/AGENT-PLATFORM.md:242` |
-| Multi-face machine | `docs/HEADLESS-DELIVERY.md:2137` |
+| Multi-face machine | `docs/HEADLESS-DELIVERY.md:2248` |
 | Multi-tenant | `docs/AGENT-PLATFORM.md:216` |
 | Multiple operators | `docs/AGENT-PLATFORM.md:221` |
 | No ecosystem coupling for installation. | `docs/DESIGN.md:152` |
 | No lock-in, no supply-chain risk | `docs/FOUNDING-PRINCIPLES.md:107` |
 | No substreams, subgraphs, or sidecars | `docs/AGENT-PLATFORM.md:259` |
 | Nothing rides alongside the declared path | `docs/FOUNDING-PRINCIPLES.md:87` |
-| OS-bound operation | `docs/HEADLESS-DELIVERY.md:583` |
+| OS-bound operation | `docs/HEADLESS-DELIVERY.md:694` |
 | On time, every time | `docs/FOUNDING-PRINCIPLES.md:363` |
 | One field, one writer | `docs/SOLID-STATE-DATABASE.md:75` |
 | Open | `docs/AGENT-PLATFORM.md:615` |
@@ -145,13 +145,13 @@ do not edit; define terms in their source documents.
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
 | Platform | `docs/PRIMITIVES.md:460` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
-| Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:574` |
+| Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:685` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Port | `docs/PRIMITIVES.md:358` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
 | Promise | `docs/PRIMITIVES.md:302` |
-| Proto-first | `docs/HEADLESS-DELIVERY.md:2182` |
+| Proto-first | `docs/HEADLESS-DELIVERY.md:2293` |
 | Provenance | `docs/PRIMITIVES.md:410` |
 | Provenance is the product | `docs/AGENT-PLATFORM.md:739` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
@@ -170,7 +170,7 @@ do not edit; define terms in their source documents.
 | Serverless, not stateless | `docs/SOLID-STATE-DATABASE.md:79` |
 | Session | `docs/AGENT-PLATFORM.md:521` |
 | Shipped policies | `docs/DESIGN.md:210` |
-| Signed building block | `docs/HEADLESS-DELIVERY.md:2188` |
+| Signed building block | `docs/HEADLESS-DELIVERY.md:2299` |
 | Single Binary Code | `docs/HEADLESS-DELIVERY.md:29` |
 | Skeleton | `docs/PRIMITIVES.md:336` |
 | Skill | `docs/AGENT-PLATFORM.md:485` |
@@ -193,7 +193,7 @@ do not edit; define terms in their source documents.
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
-| The reversed loop | `docs/HEADLESS-DELIVERY.md:2129` |
+| The reversed loop | `docs/HEADLESS-DELIVERY.md:2240` |
 | The solution is the service contract | `docs/FOUNDING-PRINCIPLES.md:120` |
 | Thing | `docs/AGENT-PLATFORM.md:752` |
 | This moment (now) | `docs/AGENT-PLATFORM.md:947` |
@@ -202,6 +202,7 @@ do not edit; define terms in their source documents.
 | Tool | `docs/AGENT-PLATFORM.md:482` |
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
+| Trusted platform | `docs/PRIMITIVES.md:463` |
 | Truth | `docs/PRIMITIVES.md:289` |
 | Unit | `docs/PRIMITIVES.md:417` |
 | Verdict | `docs/AGENT-PLATFORM.md:581` |

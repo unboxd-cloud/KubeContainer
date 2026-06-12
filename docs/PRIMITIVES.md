@@ -460,6 +460,19 @@ richer text elaborates a primitive, the primitive governs.
 - **Platform** — what others stand on to work: it holds the paths,
   the records, the registry, and its own contract — and answers
   for all four.
+- **Trusted platform** — and the definition is this: a platform
+  that has earned, by others' continuing verdict, the standing to
+  be relied on without re-checking every time — the gold standard
+  of its field, and there are hardly any. It is not a platform that
+  declares itself trusted (no one may); it is one that became
+  checkable in every part, was checked, kept its word long enough
+  that the checkers stopped expecting otherwise, and so holds the
+  rare title the way gold is held — provable on assay any day, by
+  anyone, found exactly what it claims all the way through. Held
+  only by the continuous pursuit of excellence, forfeit the day the
+  pursuit stops, conferred by the community and never by the
+  vendor: the scarcest seat in the fabric, and the one every
+  platform worth building is built to deserve.
 - **AgentVerse** — the world where every Thing is an agent, in the
   founder's styling: Every'Thing' is an agent — it's the
   'AgentVerse' World. When every thing carries a soul (declared,

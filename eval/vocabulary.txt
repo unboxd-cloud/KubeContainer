@@ -194,6 +194,7 @@ through an open partner network
 tool
 trusted frontier intelligence, from all providers
 trusted insights
+trusted platform
 truth
 unboxd cloud platform
 unit

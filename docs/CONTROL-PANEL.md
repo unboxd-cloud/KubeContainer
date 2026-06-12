@@ -203,3 +203,19 @@ declared, the exit real at each.
   Cluster Management, Karmada — both CNCF) — one nav, many clouds,
   each env labeled clearly, the same trick at cloud scale: the app
   constant, the ground variable.
+
+## Or simply Apache CloudStack? — the verdict
+
+Yes for the ground, no for the gap. CloudStack is the IaaS that
+ships its own management panel (one management server, famously
+simpler to operate than OpenStack) and its CKS provisions conformant
+Kubernetes clusters — a strong candidate to take the substrate seat
+from OpenStack, deleting one panel the stack would otherwise need.
+Consuming an ASF project as substrate is lawful (the Apache exclusion
+was this house's own license, not its dependencies). But CloudStack's
+panel manages VMs and hypervisors — the ground's panel, not the
+fabric's: it does not fill the pod-native panel gap, which lives
+above the cluster line (envs, gates, flows, the operator trick). The
+seating: CloudStack as substrate candidate-to-pick (the founder's
+word flips it in deploy/STACK.md), our panel keeping the seat above —
+which remains the open market.

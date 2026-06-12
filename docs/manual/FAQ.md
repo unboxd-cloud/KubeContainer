@@ -24,7 +24,17 @@ And the founder's laws of sourcing, binding on every row:
   into flattery: the verdicts of others are theirs to render and
   the platform's only to carry whole (earnings reflect what people
   think — and so the record of what they think is carried honestly
-  or not at all).
+  or not at all). And the founder closes the loop with the only
+  lever the law leaves: there is only one way to higher ratings —
+  go talk to your customers, and resolve their issues on the
+  ground. Ratings carried whole cannot be polished, bought, or
+  curated upward; the single input that moves them is the work:
+  the question answered where it was asked, the issue resolved
+  where it hurts, the visit made to the ground where the product
+  actually runs. Which is the whole design: a platform forbidden
+  to fabricate its reputation has exactly one strategy left, and
+  it is the right one — be worth more, where they can see it, by
+  resolving what they actually face.
 
 Accordingly this document holds two kinds of content, labeled so
 neither wears the other's name: **questions actually asked of this

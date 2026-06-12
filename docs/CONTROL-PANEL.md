@@ -262,3 +262,30 @@ the app's: pick the env and you have picked the native rendering
 config follows), the panel showing both faces — the one intent and
 each env's native form of it — so the app stays portable precisely
 because it never wrote a native config itself.
+
+## The whole geography, the founder's one line
+
+Everywhere, go native: hardware-native at the core, core to runtime,
+headless from edge to edge — the operator inside the env, the
+orchestrator outside with a fixed loop. The complete seating in one
+breath:
+
+- Native everywhere downward — the kernel bonded to its metal, the
+  runtime native to its core, no shim between code and ground.
+- Headless edge to edge — every surface sealed, delivery only at
+  ports, the whole span between edges carrying signed blocks and
+  never executing payloads.
+- The operator lives inside the environment — each env keeps its own
+  apps with its own operator (the POC's proof: same app, the keeper
+  per env), native to that env's ground, speaking its native config.
+- The orchestrator stands outside, with a fixed loop — one
+  orchestrator above all envs, never inside any, walking one
+  unchanging loop (observe the envs, compare to the declared flow,
+  act through each env's operator, record) — fixed because the loop
+  that coordinates everything must itself never drift: the envs
+  vary, the operators vary, the grounds vary; the orchestrator's
+  loop is the one constant the variation hangs from.
+
+Inside: native and kept. Between: headless and signed. Above: one
+fixed loop. That is the architecture in three lines, and the panel
+draws exactly this picture.

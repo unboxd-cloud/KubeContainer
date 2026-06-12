@@ -118,6 +118,20 @@ code, single folder. Flexibility lives in the base, not the branch:
   base held in the cloud, every check recorded. The branch explores;
   the base certifies; the code never forks past the edge.
 
+And the venv's office is exact: the venv is for compilation and
+simulation. Two acts, both rehearsal, neither real: compilation —
+source becoming binary inside a declared, pinned, disposable
+environment (the answer to the scene of the crime: if the build
+chamber is a venv, the build is reproducible by construction,
+because the chamber itself is declared and discarded); and
+simulation — the democratized rehearsal the charter promised,
+running the world's model without touching the world. What the venv
+is *not* for is delivery, serving, or state: nothing real lives
+there, nothing that leaves it leaves unchecked, and tearing it down
+loses nothing but the rehearsal. Compile and simulate in the venv;
+certify in the cloud; deliver at the ports; live at the surface —
+each act in its own chamber, no chamber doing another's job.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 

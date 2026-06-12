@@ -490,7 +490,17 @@ fabric — five lines, given in one breath:
 3. *And a viable framework.* Original is not enough: it must
    resolve — declared, steppable, checkable; originality without
    viability is a dream, viability without originality is a copy,
-   and the fabric resolves for the framework that is both.
+   and the fabric resolves for the framework that is both. The
+   viability check is two tests and only two: conceptual coherence
+   (the framework does not contradict itself — its parts compose,
+   its loops do not fight, its claims hold together) and
+   availability of every component from at least one supplier (no
+   part of it depends on a thing that does not yet exist or that no
+   one will provide). Coherent in idea, sourceable in parts: pass
+   both and it is viable — buildable now, from things that are,
+   by a design that holds. You need not have built it to prove it
+   viable; you need only show it coheres and that nothing it
+   requires is missing from the world.
 4. *External validation is not required to start work.* The
    founder needs no one's approval — the title is conferred by the
    building — so the work begins on the strength of the framework

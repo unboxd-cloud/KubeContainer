@@ -112,7 +112,16 @@ words, the founder's: define term with point of reference — every
 definition carries its anchor (the defining line, the dictionary
 edition, the registry entry, the pinned URL), so that the
 definition and its source travel as one and no term ever stands
-on air.
+on air. And the point of reference must be real and currently,
+actively maintained — a living anchor, not a relic: the dictionary
+still edited, the registry still kept, the URL still answering,
+the source still owned by someone working (the owner rule applied
+to references — a point of reference whose keeper is gone is an
+empty seat wearing a citation, and a definition anchored to the
+unmaintained is drifting with no one to notice). Real, resolvable,
+and tended: the three tests every anchor must keep passing, not
+just pass once — because meaning pinned to a dead source is only
+embalmed, and this house anchors to the living.
 
 Or — the founder's alternative, resolved as a both rather than an
 or — we go Kubernetes-native: where the machine reads, the casing

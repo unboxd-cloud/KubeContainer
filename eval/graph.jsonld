@@ -276,6 +276,11 @@
       "name": "Dockerfile"
     },
     {
+      "@id": "Dockerfile.filefabric",
+      "@type": "CreativeWork",
+      "name": "Dockerfile.filefabric"
+    },
+    {
       "@id": "Dockerfile.site",
       "@type": "CreativeWork",
       "name": "Dockerfile.site"

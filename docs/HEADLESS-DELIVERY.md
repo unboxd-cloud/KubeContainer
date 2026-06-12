@@ -176,6 +176,53 @@ device, context that switches when the human does, the device
 finally knowing the one thing it always hosted and never held —
 what its person is doing.
 
+And the staffing requirement follows from the substrate: we need
+agents who know the environment they operate in. Not agents who
+assume an environment — trained on a generic world, guessing at
+this device, this OS, this port map, this user's faces — but
+agents whose first act is the constitutional one this house
+already legislated: load the context before acting. An agent that
+knows its environment knows which base it stands on, which ports
+are whose, which faces its user has turned on, what the shared
+context currently holds, and what it must not touch — and an agent
+that does not know these things is not under-informed, it is
+unfit for the seat: the environment is part of the contract, and
+operating blind in someone's device is operating without one. The
+shared context is what makes such knowing possible; the
+constitutional rule is what makes it mandatory; the two together
+are why the device of this doctrine can host agents at all.
+
+And knowing is the entry grade, not the job: the agent must
+evaluate and repair the environment it operates in. Evaluate —
+the environment gets world-tests like everything else: are the
+pins held, the ports lawfully owned, the faces sealed, the shared
+context fresh, the base conformant — run, scored, recorded, the
+drift audit pointed at the ground the agent stands on. And
+repair — what the evaluation finds, the loop fixes: the recovery
+loop and the reconciliation loop of the charter, aimed not only at
+the workload but at the world around it, one adjacent step at a
+time, every repair through the gauntlet, every repair in the
+record. An agent that knows its environment is a tenant; an agent
+that evaluates and repairs it is a keeper — and keeper is the only
+grade this doctrine hires for, because an environment nobody
+repairs becomes an environment nobody can know.
+
+But the keeper's hands are bound the lawful way: the agent cannot
+repair autonomously — it must know the path. Repair is never
+improvised authority: no agent diagnoses a wound and invents its
+own surgery on someone's device. The repair must already exist as
+a path — the standard operating procedure, declared, certified
+through the gauntlet, registered like every skeleton (§12) —
+and the agent's autonomy is exactly the freedom to *walk* a known
+path at machine speed, never the freedom to *cut* one. Where the
+evaluation finds damage with no registered path, the agent's whole
+authority is to stop, record, and escalate to the principal — the
+gap goes through the innovation cycle like every new structure,
+and only the certified path that comes back may ever be walked.
+Compliance by the path, at the repair bench: the path is the
+authorization, knowing it is the license, and an agent without
+either is just a stranger holding a scalpel.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 

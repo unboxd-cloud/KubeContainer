@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=150 edges=344
+# nodes=153 edges=349
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -121,6 +121,7 @@ config/rbac/kustomization.yaml -> config/rbac/role_binding.yaml
 config/rbac/kustomization.yaml -> config/rbac/service_account.yaml
 config/rbac/kustomization.yaml -> https://book.kubebuilder.io/reference/metrics.html
 config/samples/kustomization.yaml -> config/samples/kubecontainer_v1alpha1_kubecontainer.yaml
+deploy/AGENT-STACK.md -> registry/SKELETON-SPACE.json
 deploy/GITLAB.md -> https://docs.gitlab.com/install/
 deploy/GITLAB.md -> https://docs.gitlab.com/runner/install/
 deploy/GITLAB.md -> https://git.unboxd.cloud
@@ -249,6 +250,8 @@ docs/DOCTRINE-MAP.md -> eval/harness.sh
 docs/DOCTRINE-MAP.md -> hack/deployrehearsal
 docs/DOCTRINE-MAP.md -> hack/operatorpoc
 docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
+docs/DOCTRINE-MAP.md -> registry/SKELETON-SPACE.json
+docs/DOCTRINE-MAP.md -> registry/spaces
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
 docs/KUBE-SPEC.md -> docs/manual
 docs/TOOLS.md -> cmd/codecompiler/main.go
@@ -317,6 +320,8 @@ internal/controller/kubecontainer_controller_test.go -> http://www.apache.org/li
 internal/controller/suite_test.go -> http://onsi.github.io/ginkgo/
 internal/controller/suite_test.go -> http://www.apache.org/licenses/LICENSE-2.0
 registry/SKELETON-HOST.json -> registry/blueprints
+registry/SKELETON-SPACE.json -> https://github.com/AGenNextHub/Agent-Space
+registry/SKELETON-SPACE.json -> registry/spaces
 registry/SKELETON.json -> registry/agents
 registry/agents/first-code-maintainer.json -> registry/blueprints
 registry/blueprints/leap-micro.json -> deploy/LEAPMICRO.md

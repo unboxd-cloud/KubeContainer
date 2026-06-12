@@ -109,6 +109,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `cmd/recordgraph`, `eval/graph.txt`, `eval/graph.jsonld`, `eval/graph-planned.txt` | Harness | The record as a graph, extracted never hand-written; a broken reference fails the gate; the planned file is shrink-only. |
 | `cmd/schemakeeper` | Harness | The schema kept as a tool: the graph's JSON-LD validated against the pinned schema.org vocabulary; a dangling node fails the gate. |
 | `cmd/filefabric` | Harness + Theory | The VDFS seat built fresh (files known by content, one catalog across devices); v0 demonstrates, the full fabric is theory until grown. |
+| `registry/SKELETON-SPACE.json`, `registry/spaces/` | Harness + Constraints | The space contract (Agent-Space implemented): members by reference, agents only by the principal's hand; append-only like the rest of the registry. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still

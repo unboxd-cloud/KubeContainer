@@ -276,6 +276,11 @@
       "name": "Dockerfile"
     },
     {
+      "@id": "Dockerfile.filefabric",
+      "@type": "CreativeWork",
+      "name": "Dockerfile.filefabric"
+    },
+    {
       "@id": "Dockerfile.site",
       "@type": "CreativeWork",
       "name": "Dockerfile.site"
@@ -817,6 +822,11 @@
     {
       "@id": "deploy/AGENT-STACK.md",
       "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/SKELETON-SPACE.json"
+        }
+      ],
       "name": "deploy/AGENT-STACK.md"
     },
     {
@@ -1333,6 +1343,12 @@
         },
         {
           "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "registry/SKELETON-SPACE.json"
+        },
+        {
+          "@id": "registry/spaces"
         }
       ],
       "name": "docs/DOCTRINE-MAP.md"
@@ -2583,6 +2599,19 @@
       "name": "registry/SKELETON-HOST.json"
     },
     {
+      "@id": "registry/SKELETON-SPACE.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/AGenNextHub/Agent-Space"
+        },
+        {
+          "@id": "registry/spaces"
+        }
+      ],
+      "name": "registry/SKELETON-SPACE.json"
+    },
+    {
       "@id": "registry/SKELETON.json",
       "@type": "CreativeWork",
       "citation": [
@@ -2647,6 +2676,16 @@
         }
       ],
       "name": "registry/blueprints/microos.json"
+    },
+    {
+      "@id": "registry/spaces",
+      "@type": "CreativeWork",
+      "name": "registry/spaces"
+    },
+    {
+      "@id": "registry/spaces/agennext-team.json",
+      "@type": "CreativeWork",
+      "name": "registry/spaces/agennext-team.json"
     },
     {
       "@id": "release/PROMISE",

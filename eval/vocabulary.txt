@@ -48,6 +48,7 @@ declaration
 delegation
 deliver just-in-time, from everyone qualified
 delivery
+desk
 division of labor
 drift
 duty

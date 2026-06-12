@@ -67,7 +67,7 @@ do not edit; define terms in their source documents.
 | Evidence | `docs/AGENT-PLATFORM.md:586` |
 | Excellent working tools | `docs/FOUNDING-PRINCIPLES.md:1154` |
 | External storage is in cloud | `docs/FOUNDING-PRINCIPLES.md:226` |
-| Fabric | `docs/PRIMITIVES.md:174` |
+| Fabric | `docs/PRIMITIVES.md:192` |
 | Face | `docs/PRIMITIVES.md:127` |
 | Federated by design | `docs/FOUNDING-PRINCIPLES.md:158` |
 | Federation is a framework of work | `docs/FOUNDING-PRINCIPLES.md:180` |
@@ -76,6 +76,7 @@ do not edit; define terms in their source documents.
 | Free | `docs/AGENT-PLATFORM.md:652` |
 | Gap | `docs/PRIMITIVES.md:137` |
 | Gate | `docs/PRIMITIVES.md:92` |
+| Gold standard | `docs/PRIMITIVES.md:180` |
 | Golden corpus | `docs/AGENT-PLATFORM.md:604` |
 | Governed by choice | `docs/FOUNDING-PRINCIPLES.md:137` |
 | Governed by design | `docs/FOUNDING-PRINCIPLES.md:169` |
@@ -139,7 +140,7 @@ do not edit; define terms in their source documents.
 | Party | `docs/PRIMITIVES.md:27` |
 | Path | `docs/PRIMITIVES.md:90` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
-| Platform | `docs/PRIMITIVES.md:176` |
+| Platform | `docs/PRIMITIVES.md:194` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
 | Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:574` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |

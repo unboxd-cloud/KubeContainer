@@ -68,6 +68,7 @@ founder
 free
 gap
 gate
+gold standard
 golden corpus
 governed by choice
 governed by design

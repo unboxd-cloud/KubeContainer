@@ -169,7 +169,21 @@ richer text elaborates a primitive, the primitive governs.
   maturity is contextual: it is rendered for a domain, in a moment,
   by a community — mature here is not mature everywhere, mature
   once is not mature forever, and every claim of it must say
-  mature at what, judged by whom, as of when.
+  mature at what, judged by whom, as of when. Nor can anyone mature
+  at all aspects — the law itself bounds you, and even the core is
+  contextual: the core differs by the device it stands on — the
+  core is one, the native is many. Each industry defines its own
+  standards; choosing to cater to an industry means earning
+  maturity by that industry's standards, from the beginning, with
+  no credit carried in: maturity in one industry entitles you to
+  nothing in another.
+- **Gold standard** — the one others in an industry are measured
+  against; it can be held in your own industry while you stand at
+  lower grades by every other industry's requirements, and it is
+  not an entitlement — it confers no rights anywhere, only a
+  responsibility: to be the guiding light for the new players of
+  your own industry. It is held only by continuous pursuit of
+  excellence and is forfeit the day the pursuit stops.
 
 ## The grounds
 

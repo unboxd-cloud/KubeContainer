@@ -225,7 +225,14 @@ and signed by the user.
   to, so partial data never means partial structure. Nothing arrives
   shapeless; the skeleton is whole even when the flesh comes one
   piece at a time — which is what lets streams be partial, audits be
-  total, and reassembly be a lookup instead of a guess.
+  total, and reassembly be a lookup instead of a guess. And the
+  skeleton is not just received — it is used: use the skeleton to
+  build the body. The receiver constructs the whole from the
+  pre-defined structure, filling it part by arriving part, so the
+  body that gets built is the one the user signed for — never an
+  improvisation around fragments. The skeleton is the contract of
+  assembly; the parts are deliveries against it; the body is the
+  contract, kept.
 Build packs exist only cloud-side, born in the sandbox, certified by
 the guard, delivered at the ports. A surface or a face that emits
 build packs has reversed the reversed loop — it is the old world's

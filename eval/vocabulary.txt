@@ -9,6 +9,7 @@ agent drift
 agent engineering
 agent excellence
 agent governance
+agentverse
 all languages, all speaker pairs
 always on
 an agent acts for a principal, where the principal isn't, or after the

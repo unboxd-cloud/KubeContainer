@@ -459,6 +459,18 @@ richer text elaborates a primitive, the primitive governs.
 - **Platform** — what others stand on to work: it holds the paths,
   the records, the registry, and its own contract — and answers
   for all four.
+- **AgentVerse** — the world where every Thing is an agent, in the
+  founder's styling: Every'Thing' is an agent — it's the
+  'AgentVerse' World. When every thing carries a soul (declared,
+  looped, faced, recorded, contracted), every thing acts for its
+  principal, answers at its face, and keeps its word by
+  construction — and a world tiled entirely from such things is no
+  longer a world *with* agents in it but a world *of* them: every
+  device a counterpart, every box a keeper, every record a memory,
+  every gap filled by exactly what fills gaps. The AgentVerse is
+  the fabric at its destination — the Internet of Agents grown to
+  cosmology — and it is entered the only way this list permits:
+  one Thing ensouled at a time.
 
 ## The rule of this list
 

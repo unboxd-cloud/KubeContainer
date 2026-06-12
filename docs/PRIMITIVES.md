@@ -127,7 +127,18 @@ richer text elaborates a primitive, the primitive governs.
   (entry by conformance and never by anyone's leave, prices and
   calculations visible down the whole chain, exit real) — the two
   conditions that make the earnings honest: paid for everything,
-  open to everyone, recorded always.
+  open to everyone, recorded always. And the node admits exactly
+  one claimant: two people claiming ownership is a dispute — and
+  developers must avoid it by construction, not adjudicate it by
+  meeting. A dispute over a node is the overlap law surfacing in
+  its costliest form (two answerers is no answerer; concern
+  arriving at a contested node stops resolving and starts
+  waiting); the avoidance is the same as everywhere in the
+  fabric — partition first: one thing, one node, one name, the
+  boundary drawn before the work begins and recorded where both
+  would-be claimants can read it. Disputes are not won; they are
+  designed out — and a codebase that needs an ownership ruling
+  has already filed its own bug.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

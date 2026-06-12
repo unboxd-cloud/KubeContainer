@@ -159,6 +159,13 @@ richer text elaborates a primitive, the primitive governs.
   everything that arrived plus everything still held.
 - **Resolution** — a difference driven to zero and recorded as
   closed.
+- **Maturity** — when you look beyond your own clan to learn, and
+  grow in an autonomous manner: lessons taken from outside the
+  walls, growth driven from inside them — needing neither a rival's
+  pressure nor a parent's hand. Maturity is not by age — time spent
+  confers nothing by itself — and maturity is decided by others:
+  no one declares themselves mature; it is a verdict rendered by
+  those outside the clan, earned in their eyes or not at all.
 
 ## The grounds
 

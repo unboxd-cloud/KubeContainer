@@ -71,6 +71,26 @@ their own homes (kubecontainer.xyz points at its repo within), but
 the serving layer is the agency's seat and carries the agency's
 name.
 
+And the agency's faces multiply by function, each a subdomain under
+the one domain, the founder naming them as they are needed:
+
+- **git.unboxd.cloud** — the source host (GitLab CE, the record).
+- **developers.unboxd.cloud** — the developer portal: where Any'One'
+  building on the fabric arrives — the docs collated, the blueprints
+  to copy, the SDK and the handed-over binaries (HomeSetup and its
+  kin) to download, the control panel (the edge-as-UI-ref), the
+  references and the FAQ. The face the field of study and the field
+  of work meet at: study the docs, take the blueprint, download the
+  pack, build your home. It is the agency's seat (the contract is
+  the agency's), served by its own kube, behind the same cert-manager
+  issuer as every face — one more function subdomain, the domain
+  still the org.
+
+Each subdomain is a face of the one canonical identity (the resolution
+layers: the DID at unboxd.cloud, the subdomains its recorded
+projections), never a second org — git for the record, developers for
+the builders, more as functions are named, all resolving home.
+
 ## The walk (the founder's hand, paste-ready)
 
     # on the declared Ubuntu ground, per the official docs:

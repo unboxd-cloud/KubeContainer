@@ -26,6 +26,7 @@ box
 breach
 browser as server
 build stage
+builder
 capable guard
 claim
 claims become evidence
@@ -87,6 +88,7 @@ just-in-time
 kube
 kube — the soul of any'thing'
 loop
+maintainer
 measurement
 memory
 message

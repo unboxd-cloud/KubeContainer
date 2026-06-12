@@ -28,6 +28,17 @@ richer text elaborates a primitive, the primitive governs.
   be held to it.
 - **Operator** — the party who works a thing and answers for the
   working.
+- **Builder** — the party who makes a thing that was not there
+  before.
+- **Maintainer** — the party who keeps a thing true after it is
+  built; the one who builds must not maintain — the hands that made
+  a thing will forgive it, and keeping requires hands that won't.
+  This is separation of duty, and separation of duty is not
+  separation of concern: the builder and the maintainer hold the
+  same concern — the thing, kept true — divided between two parties
+  so that each can check the other; concerns divide inside the
+  work, duties divide between the parties, and confusing the two
+  produces both monoliths and monarchs.
 
 ## The statements
 

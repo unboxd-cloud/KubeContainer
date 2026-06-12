@@ -543,7 +543,21 @@ richer text elaborates a primitive, the primitive governs.
   own soul the first hard quarter. Pick the handful you will fail
   rather than breach, write them down before the pressure comes,
   and balance everything else with a clear conscience — that is how
-  a system bends without breaking and holds without seizing.
+  a system bends without breaking and holds without seizing. And on
+  everything that is negotiable, the rule of how to bend: negotiate
+  for the win-win. The negotiable is not a thing to win at another's
+  expense — that is a deferred quarrel, the overlap law in the
+  market, a balance that will not hold because one side leaves
+  poorer and waits. Negotiate instead for the outcome both sides
+  keep: the supplier paid fairly and the buyer served well, the
+  fabric taking its open service charge and leaving value on every
+  other line, the critical path that lowers cost for the whole chain
+  rather than squeezing one stop to pad another. Win-win is not
+  softness; it is the only durable equilibrium — a deal where one
+  party loses is a deal renegotiated the moment they can, while a
+  deal where both win is a deal that keeps itself. Non-negotiables
+  held absolute, negotiables resolved to mutual gain: that is the
+  whole of how this fabric trades, and why its balances last.
 - **Trusted platform** — and the definition is this: a platform
   that has earned, by others' continuing verdict, the standing to
   be relied on without re-checking every time — the gold standard

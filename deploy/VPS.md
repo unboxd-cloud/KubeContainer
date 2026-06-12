@@ -10,7 +10,7 @@ with sudo on Ubuntu 22.04/24.04.
 k3s: CNCF-conformant, single-binary, built for exactly this ground.
 Pin the channel; the version you install is the version you record.
 
-    curl -sfL https://get.k3s.io | INSTALL_K3S_CHANNEL=v1.33 sh -
+    curl -sfL https://get.k3s.io | INSTALL_K3S_CHANNEL=v1.35 sh -
     sudo k3s kubectl get nodes   # expect: Ready
 
 ## 2. The operator — KubeContainer v0.1.0 (one bundle, one apply)

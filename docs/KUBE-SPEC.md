@@ -182,6 +182,9 @@ lexicon before use, per protocol P2.
 
 ## 10. The instruction manual
 
+(The manual itself ships at `docs/manual/` — CONTRACTS, LICENSES,
+FAQ, HOW-TO-USE; this section is the law it fulfills.)
+
 The founder's shipping law: a product must be shipped with the
 instruction manual — containing everything related to its lifecycle,
 and the contacts of the people owning each aspect of its

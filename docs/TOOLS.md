@@ -404,9 +404,7 @@ record the few genuine forks rather than maintaining two full
 vocabularies. Common ground before compromise, compromise before
 conflict — the negotiation rule (win-win) applied to spelling, and
 the reason a single word usually serves the whole fabric without
-ever needing to change its coat at all. Or — and this is where the founder's three
-options resolve, the win-win found — we find the common ground,
-and it tur
+ever needing to change its coat at all.
 
 ## The registry
 

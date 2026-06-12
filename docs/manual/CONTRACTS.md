@@ -25,6 +25,22 @@ updated by the same gauntlet.
   declaration; owner references collect the children; the record
   survives the instance.
 
+## The contract is stack-independent
+
+The founder's law, recorded where the buyer reads: we uphold the
+contract irrespective of the stack — and the stack is an internal
+decision. What is promised to the holder (the guarantees, the
+warranty's conditions, the lifecycle, the answering) does not change
+when the ground beneath it does: swap the substrate, the storage
+body, the runtime, even the cloud, and the contract reads the same,
+because the promises were made against the conformance contract and
+the declaration, never against any vendor's floor. The candidates
+table (deploy/STACK.md) is therefore internal engineering, not
+contract terms: the holder may read it for transparency, but nothing
+in it amends what they were promised — re-pins happen on our side of
+the counter, the contract stays whole on theirs, and a stack change
+that would bend a promise is not a stack change we may make.
+
 ## The stack of contracts (every seam, its answerer)
 
 The full seam table with sources lives at deploy/STACK.md and

@@ -116,3 +116,25 @@ still binds as law. The reader resolves by clause, not by cover.
 The map protects the ecosystem by labeling it where it stands; the
 first principle is kept because nothing the map does could break a
 single reference in the record it indexes.
+
+## The question rule
+
+The founder's law for the whole corpus: if anyone is asking a
+question, we have lacked detailing it clearly — a question asked is
+an indication that the record is not clear enough. Questions are not
+interruptions; they are defect reports against the documentation,
+and they are handled the way every defect is handled here: the asker
+gets the answer, and the record gets the amendment, at the exact
+place the question arose — so the same question can never need
+asking twice. The proof this law already runs: "what is critical
+path," "why Cinder and not Ceph," "does minikube fit," "where should
+I put Keystone" — each was answered in conversation and landed in
+the corpus the same hour, which is the loop this rule makes
+mandatory: question in, answer out, record amended, clarity
+converged. A corpus that keeps receiving the same question has a
+failing world-test it refuses to write down; a corpus that treats
+every question as a patch grows clearer with every reader — and the
+destination is the record this house has aimed at from the first
+line: one where the questions run out not because askers gave up,
+but because the answers were already standing where the questions
+would have stood.

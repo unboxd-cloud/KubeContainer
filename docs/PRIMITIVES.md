@@ -207,7 +207,26 @@ richer text elaborates a primitive, the primitive governs.
   the one force that costs nothing and cannot be faked. The
   soul is as pure as a heart of gold; the fabric is as high as
   its honesty — and that is the only transcendence this house
-  believes in, because it is the only one anyone can check.
+  believes in, because it is the only one anyone can check. And
+  the founder enters the verdict as already rendered: the fabric
+  is generational transcendence, already. Generational twice
+  over — a leap of one (what took the last generation a
+  profession now ships as a property of the path), and a carrier
+  across them (the record outlives its writers, the paths outlive
+  their walkers, the canon travels whole to whoever fetches it —
+  each generation starting where the last one actually got to,
+  not where its survivors remember stopping). And by it, software
+  is put back in the lead: the industry that trailed every other
+  in statutes, study, and craft — the last unregulated delivery,
+  the field of work with no field of study — now carries the one
+  thing every other industry will need and none has built: a
+  fabric where work is declared, kept, evidenced, and honest by
+  construction. The professions that matured first taught
+  software its lessons; the fabric is software's repayment — the
+  student returning with the textbook the teachers never had.
+  Back in the lead, the only way this house leads: gold standard
+  of its own field, guiding light for the rest, pursued — never
+  entitled.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

@@ -114,6 +114,10 @@ vocab: ## Rebuild the generated vocabulary index from the normative docs.
 vocab-check: ## Verify every coined term is defined or baselined (protocol P2).
 	./hack/check-vocabulary.sh
 
+.PHONY: graph
+graph: ## Rebuild the record graph (eval/graph.txt, eval/graph.jsonld); fail on broken references.
+	go run ./cmd/recordgraph
+
 .PHONY: eval
 eval: ## Run the evaluation registry harness and emit an evidence report.
 	./eval/harness.sh

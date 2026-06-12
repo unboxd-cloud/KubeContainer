@@ -1,0 +1,567 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "AGENTS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/role.yaml"
+        }
+      ],
+      "name": "AGENTS.md"
+    },
+    {
+      "@id": "CHANGELOG.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/GO-TO-MARKET.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "docs/assessments"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
+      "name": "CHANGELOG.md"
+    },
+    {
+      "@id": "CLAUDE.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "api/v1alpha1"
+        },
+        {
+          "@id": "api/v1alpha1/kubecontainer_types.go"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/vocabulary-baseline.txt"
+        },
+        {
+          "@id": "eval/vocabulary.txt"
+        },
+        {
+          "@id": "internal/controller/kubecontainer_controller.go"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        }
+      ],
+      "name": "CLAUDE.md"
+    },
+    {
+      "@id": "README.md",
+      "@type": "CreativeWork",
+      "name": "README.md"
+    },
+    {
+      "@id": "deploy/AGENT-STACK.md",
+      "@type": "CreativeWork",
+      "name": "deploy/AGENT-STACK.md"
+    },
+    {
+      "@id": "deploy/GITLAB.md",
+      "@type": "CreativeWork",
+      "name": "deploy/GITLAB.md"
+    },
+    {
+      "@id": "deploy/KUBECONTAINER-HOME.md",
+      "@type": "CreativeWork",
+      "name": "deploy/KUBECONTAINER-HOME.md"
+    },
+    {
+      "@id": "deploy/LEAPMICRO.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/deploy.sh"
+        }
+      ],
+      "name": "deploy/LEAPMICRO.md"
+    },
+    {
+      "@id": "deploy/ORG-NAME.md",
+      "@type": "CreativeWork",
+      "name": "deploy/ORG-NAME.md"
+    },
+    {
+      "@id": "deploy/REFERENCES.md",
+      "@type": "CreativeWork",
+      "name": "deploy/REFERENCES.md"
+    },
+    {
+      "@id": "deploy/STACK.md",
+      "@type": "CreativeWork",
+      "name": "deploy/STACK.md"
+    },
+    {
+      "@id": "deploy/TOOLCHAIN.md",
+      "@type": "CreativeWork",
+      "name": "deploy/TOOLCHAIN.md"
+    },
+    {
+      "@id": "deploy/VPS.md",
+      "@type": "CreativeWork",
+      "name": "deploy/VPS.md"
+    },
+    {
+      "@id": "docs/AGENT-PLATFORM.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/rbac/role.yaml"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+        }
+      ],
+      "name": "docs/AGENT-PLATFORM.md"
+    },
+    {
+      "@id": "docs/BENCHMARKS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": ".github/workflows/drift-audit.yml"
+        },
+        {
+          "@id": ".github/workflows/release.yml"
+        }
+      ],
+      "name": "docs/BENCHMARKS.md"
+    },
+    {
+      "@id": "docs/CONTROL-PANEL.md",
+      "@type": "CreativeWork",
+      "name": "docs/CONTROL-PANEL.md"
+    },
+    {
+      "@id": "docs/DESIGN.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "config/manager"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "release/REQUEST"
+        }
+      ],
+      "name": "docs/DESIGN.md"
+    },
+    {
+      "@id": "docs/DOCTRINE-MAP.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/codecompiler"
+        },
+        {
+          "@id": "cmd/homesetup"
+        },
+        {
+          "@id": "cmd/recordgraph"
+        },
+        {
+          "@id": "cmd/structuredinstructions"
+        },
+        {
+          "@id": "deploy/AGENT-STACK.md"
+        },
+        {
+          "@id": "deploy/GITLAB.md"
+        },
+        {
+          "@id": "deploy/KUBECONTAINER-HOME.md"
+        },
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
+          "@id": "deploy/ORG-NAME.md"
+        },
+        {
+          "@id": "deploy/TOOLCHAIN.md"
+        },
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/BENCHMARKS.md"
+        },
+        {
+          "@id": "docs/CONTROL-PANEL.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/KUBE-SPEC.md"
+        },
+        {
+          "@id": "docs/LICENSING-DECISION.md"
+        },
+        {
+          "@id": "docs/MEASUREMENT-STANDARD.md"
+        },
+        {
+          "@id": "docs/PERSONAL.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "docs/VENDOR-ELIGIBILITY.md"
+        },
+        {
+          "@id": "docs/manual/CONTRACTS.md"
+        },
+        {
+          "@id": "docs/manual/FAQ.md"
+        },
+        {
+          "@id": "docs/manual/HOW-TO-USE.md"
+        },
+        {
+          "@id": "docs/manual/LICENSES.md"
+        },
+        {
+          "@id": "eval/corpus"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "eval/harness.sh"
+        },
+        {
+          "@id": "hack/deployrehearsal"
+        },
+        {
+          "@id": "hack/operatorpoc"
+        },
+        {
+          "@id": "internal/controller/testdata/compat"
+        }
+      ],
+      "name": "docs/DOCTRINE-MAP.md"
+    },
+    {
+      "@id": "docs/FOUNDING-PRINCIPLES.md",
+      "@type": "CreativeWork",
+      "name": "docs/FOUNDING-PRINCIPLES.md"
+    },
+    {
+      "@id": "docs/GO-TO-MARKET.md",
+      "@type": "CreativeWork",
+      "name": "docs/GO-TO-MARKET.md"
+    },
+    {
+      "@id": "docs/HEADLESS-DELIVERY.md",
+      "@type": "CreativeWork",
+      "name": "docs/HEADLESS-DELIVERY.md"
+    },
+    {
+      "@id": "docs/KUBE-SPEC.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/manual"
+        }
+      ],
+      "name": "docs/KUBE-SPEC.md"
+    },
+    {
+      "@id": "docs/LICENSING-DECISION.md",
+      "@type": "CreativeWork",
+      "name": "docs/LICENSING-DECISION.md"
+    },
+    {
+      "@id": "docs/MEASUREMENT-STANDARD.md",
+      "@type": "CreativeWork",
+      "name": "docs/MEASUREMENT-STANDARD.md"
+    },
+    {
+      "@id": "docs/PERSONAL.md",
+      "@type": "CreativeWork",
+      "name": "docs/PERSONAL.md"
+    },
+    {
+      "@id": "docs/PRIMITIVES.md",
+      "@type": "CreativeWork",
+      "name": "docs/PRIMITIVES.md"
+    },
+    {
+      "@id": "docs/RELEASE-SOP.md",
+      "@type": "CreativeWork",
+      "name": "docs/RELEASE-SOP.md"
+    },
+    {
+      "@id": "docs/SOLID-STATE-DATABASE.md",
+      "@type": "CreativeWork",
+      "name": "docs/SOLID-STATE-DATABASE.md"
+    },
+    {
+      "@id": "docs/TOOLS.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "cmd/codecompiler/main.go"
+        },
+        {
+          "@id": "cmd/recordgraph/main.go"
+        },
+        {
+          "@id": "cmd/structuredinstructions/main.go"
+        },
+        {
+          "@id": "docs/VOCABULARY.md"
+        },
+        {
+          "@id": "eval/graph-planned.txt"
+        },
+        {
+          "@id": "eval/graph.jsonld"
+        },
+        {
+          "@id": "eval/graph.txt"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        },
+        {
+          "@id": "hack/check-vocabulary.sh"
+        },
+        {
+          "@id": "registry/SKELETON.json"
+        },
+        {
+          "@id": "registry/agents"
+        },
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "docs/TOOLS.md"
+    },
+    {
+      "@id": "docs/VENDOR-ELIGIBILITY.md",
+      "@type": "CreativeWork",
+      "name": "docs/VENDOR-ELIGIBILITY.md"
+    },
+    {
+      "@id": "docs/VOCABULARY.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/DESIGN.md"
+        },
+        {
+          "@id": "docs/DOCTRINE-MAP.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/HEADLESS-DELIVERY.md"
+        },
+        {
+          "@id": "docs/PRIMITIVES.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        },
+        {
+          "@id": "docs/TOOLS.md"
+        },
+        {
+          "@id": "hack/build-vocabulary.sh"
+        }
+      ],
+      "name": "docs/VOCABULARY.md"
+    },
+    {
+      "@id": "docs/assessments/SWEBENCH-ALIGNMENT.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        }
+      ],
+      "name": "docs/assessments/SWEBENCH-ALIGNMENT.md"
+    },
+    {
+      "@id": "docs/assessments/XDM-ALIGNMENT.md",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "docs/AGENT-PLATFORM.md"
+        },
+        {
+          "@id": "docs/FOUNDING-PRINCIPLES.md"
+        },
+        {
+          "@id": "docs/SOLID-STATE-DATABASE.md"
+        }
+      ],
+      "name": "docs/assessments/XDM-ALIGNMENT.md"
+    },
+    {
+      "@id": "docs/manual/CONTRACTS.md",
+      "@type": "CreativeWork",
+      "name": "docs/manual/CONTRACTS.md"
+    },
+    {
+      "@id": "docs/manual/FAQ.md",
+      "@type": "CreativeWork",
+      "name": "docs/manual/FAQ.md"
+    },
+    {
+      "@id": "docs/manual/HOW-TO-USE.md",
+      "@type": "CreativeWork",
+      "name": "docs/manual/HOW-TO-USE.md"
+    },
+    {
+      "@id": "docs/manual/LICENSES.md",
+      "@type": "CreativeWork",
+      "name": "docs/manual/LICENSES.md"
+    },
+    {
+      "@id": "docs/provenance/FOUNDER-PRIOR-ART.md",
+      "@type": "CreativeWork",
+      "name": "docs/provenance/FOUNDER-PRIOR-ART.md"
+    },
+    {
+      "@id": "docs/provenance/PROMPTS-2026-06-12-session2.md",
+      "@type": "CreativeWork",
+      "name": "docs/provenance/PROMPTS-2026-06-12-session2.md"
+    },
+    {
+      "@id": "eval/README.md",
+      "@type": "CreativeWork",
+      "name": "eval/README.md"
+    },
+    {
+      "@id": "registry/SKELETON-HOST.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "registry/SKELETON-HOST.json"
+    },
+    {
+      "@id": "registry/SKELETON.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/agents"
+        }
+      ],
+      "name": "registry/SKELETON.json"
+    },
+    {
+      "@id": "registry/agents/first-code-maintainer.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "registry/blueprints"
+        }
+      ],
+      "name": "registry/agents/first-code-maintainer.json"
+    },
+    {
+      "@id": "registry/blueprints/code-maintainer.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/code-maintainer.json"
+    },
+    {
+      "@id": "registry/blueprints/issue-resolver.json",
+      "@type": "CreativeWork",
+      "name": "registry/blueprints/issue-resolver.json"
+    },
+    {
+      "@id": "registry/blueprints/leap-micro.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        }
+      ],
+      "name": "registry/blueprints/leap-micro.json"
+    },
+    {
+      "@id": "registry/blueprints/microos.json",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "deploy/LEAPMICRO.md"
+        }
+      ],
+      "name": "registry/blueprints/microos.json"
+    }
+  ]
+}

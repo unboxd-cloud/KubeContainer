@@ -175,6 +175,7 @@ do not edit; define terms in their source documents.
 | Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:564` |
 | Reason | `docs/PRIMITIVES.md:46` |
 | Record | `docs/PRIMITIVES.md:37` |
+| RecordGraph | `docs/TOOLS.md:433` |
 | Registry | `docs/AGENT-PLATFORM.md:612` |
 | Repair | `docs/PRIMITIVES.md:70` |
 | Reputation | `docs/AGENT-PLATFORM.md:524` |
@@ -190,7 +191,7 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
-| SourceGround | `docs/TOOLS.md:433` |
+| SourceGround | `docs/TOOLS.md:446` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
@@ -242,7 +243,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:574` |
 | World-test | `docs/AGENT-PLATFORM.md:578` |
-| merge | `docs/TOOLS.md:509` |
-| push | `docs/TOOLS.md:505` |
-| release | `docs/TOOLS.md:512` |
+| merge | `docs/TOOLS.md:522` |
+| push | `docs/TOOLS.md:518` |
+| release | `docs/TOOLS.md:525` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:693` |

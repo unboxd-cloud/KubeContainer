@@ -794,6 +794,17 @@ that redefines a word privately has already drifted.
   the soul flashed into the body, the edge edition wearing the
   brand's own grammar (the kube of the metal, as the kube was the
   soul of the Thing).
+- **The domain is the org** — the founder's simplification of
+  identity, total: unboxd.cloud is the name, and every platform's
+  organization handle is that domain rendered in the host's own
+  charset — GitHub forbids dots, so there it reads unboxd-cloud;
+  another host renders it its way; none of them is a second name.
+  One canon (the domain, where the DID and the API group already
+  live), every org handle an alias resolving home — and no org
+  rename can ever again be an identity event, because the identity
+  was never in the org field to begin with. Simple by construction:
+  one name, owned at the registrar, rendered everywhere, moved
+  nowhere.
 - **The Metal Kube** — the name of the edge product: the kube
   bonded to the metal — a device whose immutable core is the kube
   (loop, record, contract, one signed channel) flashed onto the

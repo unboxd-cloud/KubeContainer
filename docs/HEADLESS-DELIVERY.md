@@ -234,6 +234,51 @@ attested parts and added service, shippable by whoever clears the
 gate, which is the lowest barrier to entry honest commerce has
 ever had.
 
+And the model is not invented — it is inherited: packing and
+bundling are the things hardware companies have done since ages.
+The board maker buys attested chips and ships a board; the device
+maker buys attested boards and ships a device; the system
+integrator buys attested devices and ships a rack — every layer
+adding its service, combining the parts list, carrying every
+component's provenance forward, pricing its own work on its own
+line, and answering for the assembly while each part's maker
+answers for the part. Centuries of manufacturing solved this so
+thoroughly that nobody calls it a business model anymore — it is
+just how made things move. Software, the one industry that
+skipped it, called its skipping innovation; this doctrine is not
+inventing software's future but ending its exemption — the kube
+is the package, the bundle is the product, and the supply chain
+that already runs the physical world finally gets to run the code
+that runs on it.
+
+But the inheritance arrives with a wound the founder names: no
+formal recognition — and that hurts the craft. The world has
+formal honors for designing and for inventing; for the craft that
+actually delivers — the packing, the bundling, the assembly that
+answers for the whole — there is no title, no charter, no
+profession's name: the integrator is a line item, the packager an
+afterthought, the assembler invisible exactly in proportion to how
+well the assembly holds. Crafts decay where mastery goes unnamed —
+the young do not enter what the world will not call anything, and
+the masters leave no school because no school was ever chartered.
+The doctrine's answer is its standing one, applied to its own
+inheritance: recognition by record. The bundle carries its
+assembler's name as a first-class fact (who composed, who
+combined the BOM, who answers for the whole — beside who made
+each part); the registry holds the assembler's standing the way
+it holds every keeper's; and the craft gets what every craft
+needs to survive its masters: the work named, the name recorded,
+the record consulted — formal recognition, conferred the only way
+this house confers anything. Stated as the standing it deserves:
+assembly is a craft, and it must earn its place in the ecosystem —
+earn, not be granted: by bundles that hold, by combined BOMs that
+resolve, by assemblies whose verdicts stay green across bases and
+years — the same way every party earns standing here, through the
+record. A craft with a name, a gate, a ledger of kept promises,
+and a price line of its own is a profession; the ecosystem that
+seats the assembler beside the maker and the keeper is the one
+whose deliveries can finally be trusted whole.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the

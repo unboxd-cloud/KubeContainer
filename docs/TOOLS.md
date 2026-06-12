@@ -188,7 +188,38 @@ how lock-in is smuggled in as safety; the discipline is to pin
 the safest ref *per surface*, not to crown one ref over surfaces
 it was never built to reach. Kubernetes is the safest where
 Kubernetes runs — and the map of where it runs is part of the
-honesty, not a footnote to it.
+honesty, not a footnote to it. And where it does not run, the
+founder names the rule that replaces it: use the surface-native
+runtime and the core programming of that surface. Do not port a
+foreign runtime onto a small surface and call it coverage; reach
+each surface in the language and runtime that surface was built
+to speak — the microcontroller in its C and its bare-metal
+runtime, the browser in its JavaScript and its engine, the phone
+in its native core, each surface met as a native speaker, not a
+tourist (the messenger's law: enter every world as a citizen
+speaks). This is the Any'Surface axis made concrete: not one
+runtime everywhere — that is the lock-in disguised as portability
+the previous clause refused — but the *right native runtime per
+surface*, the single Thing (Kube+Code) re-rendered into each
+surface's core, its meaning constant and its body native. Surface-
+native runtime, surface-core programming: the kube travels, the
+runtime is local, and the code is written in what the metal
+already understands. And the bottom of the stack is fixed by the
+same principle, stated as the charter's dedication always meant
+it: the kernel is hardware-metal-native. The kernel is not
+portable and must not pretend to be — it is the one layer bonded
+to the silicon it runs on, written for that metal, holding that
+vendor's hardware contract; portability lives above the kernel, in
+the kube and its images, never in the kernel itself. This is why
+the stack has two hard surfaces and a fluid between (Single Binary
+Code's own shape): hardware-native kernel at the bottom, the
+contract surface at the top, and the portable kube flowing
+between them — anchored down to metal that does not move and up to
+a contract that does not bend. The kernel native to its metal, the
+runtime native to its surface, the kube native to nowhere and
+therefore at home everywhere: three layers, each honest about what
+it is bonded to, which is the whole architecture of reaching every
+surface without lying that any one layer reaches them all.
 
 ## Kubernetes-native casing
 

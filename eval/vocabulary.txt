@@ -149,7 +149,9 @@ platform-bound orchestrator
 policy & authorization, out of the box
 policy-as-code surface
 port
+primitives and lexicon terms
 principal
+principles
 promise
 proto-first
 provenance
@@ -193,6 +195,7 @@ the agent lexicon
 the any' family
 the edge (definition)
 the fabric is the intelligent operating system of work
+the founder's styled coinages
 the framework is the fabric
 the map is additive and append-only.
 the mission statement
@@ -209,6 +212,7 @@ through an internet of agents
 through an open partner network
 tier
 tool
+tools
 trusted frontier intelligence, from all providers
 trusted insights
 trusted platform

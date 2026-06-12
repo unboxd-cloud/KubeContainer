@@ -30,6 +30,68 @@ shaped, and registered — and the registry itself.
   it. A tool that holds on every axis is a tool of this house; a
   tool that holds on one vendor's axis is a guest of that vendor.
 
+## The casing rule
+
+Casing is uniform per scope, one convention each, declared here —
+because a scope keeps one meaning per word, and one face per name:
+
+- **Tools** — fused PascalCase composites: CodeCompiler,
+  SourceGround, StructuredInstructions. Two words, one binary, one
+  unbroken name.
+- **The Any' family** — Any + PascalCase axis: AnyCompiler,
+  AnyLanguage, AnyCloud; initialisms keep their capitals (AnyDB),
+  because an initialism lowercased is a different word.
+- **Primitives and lexicon terms** — sentence case: Gold standard,
+  Honest words, Trusted platform, Real time. Law reads as prose.
+- **Principles** — spaced Title Case: Config As Code. A principle
+  is a banner, not a binary.
+- **The founder's styled coinages** — exempt and verbatim, as
+  marks: Any'Thing', Any'One', Any'Way', AgentVerse, the brand
+  line. Styling is part of the mark; uniforming a mark erases it.
+
+One convention per scope, the scope named, no silent mixing — and
+the checker stays case-insensitive underneath, so the casing rule
+binds the writing, never the resolution.
+
+And beneath every scope sits the outermost one, the founder's
+ruling: use real English grammar, with the real English dictionary
+as the reference. The house writes in English as English is — real
+sentences, real grammar, no jargon-grammar — and every ordinary
+word resolves, by default, to its real dictionary meaning: the
+dictionary is the anchor of the outermost scope, the place the
+reference chain of plain language lands. The house defines a word
+only where it must sharpen or depart from the dictionary (coinage
+requires definition — that is what the lexicon is for), and
+everything it does not define means exactly what English says it
+means. So the full resolution order stands: the sentence's own
+terms, the document's, the lexicon's, the primitives' — and at the
+bottom, holding everything else up, the English language itself,
+which this house borrows whole and repays by writing it honestly.
+And anchoring to real language is what makes the whole corpus easy
+to universalize: a record written in real grammar against a real
+dictionary translates the way the proto-first skeleton renders —
+one meaning, many tongues — because every ordinary word has its
+counterpart in every dictionary on earth, and only the coinages
+(each one defined, each one source-grounded) need carrying across.
+Invent a private grammar and you must teach the world before it
+can read you; write real English over a real dictionary and the
+world's translators — human and machine — already hold the key.
+
+Or — the founder's alternative, resolved as a both rather than an
+or — we go Kubernetes-native: where the machine reads, the casing
+is already settled by the conformant world this house builds on —
+Kinds in PascalCase (KubeContainer), fields in camelCase
+(minReplicas), resources lowercase (kubecontainers), labels
+dashed — and this house keeps that convention to the letter,
+because the API surface is a contract and contracts are not
+restyled. So the two uniforms split by surface, the delivery law
+applied to casing: real English grammar with the real dictionary
+where the human reads (content to faces), Kubernetes-native casing
+where the machine reads (code to ports) — each scope uniform
+within itself, neither imposed on the other, and the same word
+crossing between them changes coat at the boundary exactly once,
+by declared convention.
+
 ## The registry
 
 One entry per tool; built tools name their command, declared tools

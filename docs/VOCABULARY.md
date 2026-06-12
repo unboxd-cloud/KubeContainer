@@ -44,7 +44,7 @@ do not edit; define terms in their source documents.
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code | `docs/PRIMITIVES.md:77` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
-| CodeCompiler | `docs/TOOLS.md:38` |
+| CodeCompiler | `docs/TOOLS.md:100` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
 | Constitution | `docs/DOCTRINE-MAP.md:50` |
 | Constraints | `docs/DOCTRINE-MAP.md:60` |
@@ -157,7 +157,9 @@ do not edit; define terms in their source documents.
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
 | Port | `docs/PRIMITIVES.md:105` |
+| Primitives and lexicon terms | `docs/TOOLS.md:44` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
+| Principles | `docs/TOOLS.md:46` |
 | Promise | `docs/PRIMITIVES.md:51` |
 | Proto-first | `docs/HEADLESS-DELIVERY.md:2293` |
 | Provenance | `docs/PRIMITIVES.md:132` |
@@ -186,14 +188,14 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
-| SourceGround | `docs/TOOLS.md:49` |
+| SourceGround | `docs/TOOLS.md:111` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
 | Standard operating procedures | `docs/AGENT-PLATFORM.md:337` |
 | Status | `docs/DESIGN.md:197` |
 | Step | `docs/PRIMITIVES.md:63` |
-| StructuredInstructions | `docs/TOOLS.md:45` |
+| StructuredInstructions | `docs/TOOLS.md:107` |
 | Surface | `docs/PRIMITIVES.md:99` |
 | Tagging | `docs/DESIGN.md:133` |
 | The Agent Economy | `docs/AGENT-PLATFORM.md:108` |
@@ -204,6 +206,7 @@ do not edit; define terms in their source documents.
 | The Platform | `docs/AGENT-PLATFORM.md:91` |
 | The Seat Theorem | `docs/AGENT-PLATFORM.md:842` |
 | The fabric is the intelligent operating system of work | `docs/FOUNDING-PRINCIPLES.md:207` |
+| The founder's styled coinages | `docs/TOOLS.md:48` |
 | The framework is the fabric | `docs/FOUNDING-PRINCIPLES.md:194` |
 | The map is additive and append-only. | `docs/DOCTRINE-MAP.md:19` |
 | The platform is the foundation | `docs/FOUNDING-PRINCIPLES.md:116` |
@@ -217,6 +220,7 @@ do not edit; define terms in their source documents.
 | Through an open partner network | `docs/AGENT-PLATFORM.md:138` |
 | Tier | `docs/DOCTRINE-MAP.md:34` |
 | Tool | `docs/AGENT-PLATFORM.md:482` |
+| Tools | `docs/TOOLS.md:38` |
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
 | Trusted platform | `docs/PRIMITIVES.md:166` |

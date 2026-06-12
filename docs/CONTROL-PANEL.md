@@ -112,3 +112,25 @@ execution (the gate-walk as a workflow that survives restart, retries
 on failure, preserves its history) — a candidate seat for the flow
 runtime, measured against the house's own loop-and-record discipline,
 recorded as a candidate the way every pick is.
+
+## The watcher and the reconciler — two seats, not one
+
+The founder splits the flow's two offices cleanly:
+
+- A watcher observes that the flow completes — a monitoring seat
+  (Cortex named as the candidate: CNCF, the horizontally-scalable
+  metrics/observability project — it watches and alerts that the
+  flow reached its end, the gates all green, the deploy served). The
+  watcher sees; it does not act.
+- The kube is the reconciler — the keeper that closes the distance
+  to the declaration, the office this whole house was built on. The
+  flow declares the desired path; the kube reconciles toward it; the
+  watcher confirms it arrived. Three roles, never confused: the flow
+  declares, the kube reconciles, the watcher witnesses.
+
+This is the loop's own anatomy mapped onto the panel: observe (the
+watcher), compare and act (the reconciler/kube), record (the
+append-only history). The panel shows all three at once — the
+declared flow, the reconciling kube, the watcher's verdict that it
+completed — so a human reads, in one nav, what was wanted, what is
+being kept, and whether it landed.

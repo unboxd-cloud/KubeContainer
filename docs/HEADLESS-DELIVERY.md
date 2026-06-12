@@ -65,6 +65,34 @@ the kube is. Code must be:
 4. *never delivered on the surface* — the surface presents, the port
    receives, the kube carries.
 
+And the check runs both ways, as the founder rules it: the software
+reserves the right to run a compatibility check on the host. The
+gauntlet checks the code for the ground; the code checks the ground
+for itself — base, OS, ports, the faces turned on, the contract
+seats filled — before it stands up, and activation in the right
+context (rule 3) is therefore a verdict the software itself
+renders, not a hope its shipper expressed. And the safety standard
+is non-negotiable, in both of its halves. First: in an incompatible
+or hostile environment, the software has the right — and the duty —
+to auto-destruct *itself*: refuse to activate, stand down if
+already standing, seal and zero its own secrets, remove its own
+copies, and report through the one channel if any channel is
+lawful — leaving the host exactly as if the delivery had never
+landed. Second: the destruction ends at the boundary of ownership,
+because every safety standard worth the name commands fail-safe,
+and fail-safe means fail *harmless*: the software may destroy only
+what it owns — its running self, its secrets, its local copies —
+and may never damage the hardware, the OS, the neighbors, or any
+thing whose contract is held by another party. The device belongs
+to the user; the silicon contract to its vendor; a safe state that
+creates a hazard is not a safe state, and a guest that burns the
+house to avoid capture has become the hostile environment it
+feared. The reason is recorded because the right to reason is law:
+self-destruction is the software keeping its own contract;
+destruction beyond the self is breaching everyone else's — the
+first is the safety standard, the second is what the safety
+standard exists to prevent.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the

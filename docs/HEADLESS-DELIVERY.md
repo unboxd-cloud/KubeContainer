@@ -332,7 +332,39 @@ whose intent was never written down cannot converge, cannot be
 audited, and cannot keep a promise it never made. Agent drift has
 its twin in the artifact: build drift — the gradual divergence of
 what ships from what was declared, unnoticed because unmeasured,
-unmeasured because undeclared. The discipline is the same one the protocols
+unmeasured because undeclared. And beneath the unrecorded spec lies
+the older absence: no one defined the logic. The program's own
+intent — what it must do, what it must never do, what true means
+for it — was never written as a thing the code could be checked
+against; the code *is* the only statement of the logic, which means
+the code can be wrong about nothing and broken about everything.
+Tests, where they exist, test what the author remembered to fear,
+not what the logic requires — because there is no logic of record
+to require anything. The whole tower of the indictment stands on
+this floor: undeclared logic, so unverifiable code, so unrecorded
+builds, so drifting artifacts, so broken promises, so regular bugs,
+so no statute worth drafting — and the doctrine's whole answer was
+always the first line of the axiom, applied at every floor: define
+the intent, record the definition, and let nothing ship that cannot
+be diffed against what it promised to be.
+
+And the working floor of the tower, where the habits live: devs use
+any version — the dependency pinned nowhere, the toolchain whatever
+the laptop had, the range resolving to something newer than what was
+tested, every machine its own private truth (this house pins its Go
+version to the exact patch release and made the pin the single
+source of truth, because the alternative was this). And no one
+guarantees testing: testing is custom, optional, self-reported —
+coverage a vanity number, the suite green on the author's machine
+and unrun anywhere else, no party who answers if the tests were
+thin, wrong, or skipped. In every statutory industry the test is
+the license — the drug trial, the type certificate, the stress
+test — performed by accountable parties under published protocols.
+In software the test is a courtesy. The gauntlet exists to end the
+courtesy: versions pinned and recorded, tests run by the path and
+not by the author's conscience, the verdict attached to the
+artifact — testing not guaranteed by anyone's promise, but by the
+gate that will not open without it. The discipline is the same one the protocols
 already prescribe for minds: pin everything, record everything,
 rebuild and compare — drift caught at the diff, every build a
 world-test of the build before it.

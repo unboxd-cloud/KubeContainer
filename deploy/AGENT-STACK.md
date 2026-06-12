@@ -95,6 +95,7 @@ machinery is the principal's act alone):
 | Research office | AGenNextHub/Agent-Converter | active code (deep-agent research, confidence-tagged); pre-release; agent machinery — the principal's |
 | Canonical primitives | AGenNextHub/Agent-Fabric | spec draft v1.0 (Entity, Relationship, Assertion, Observation, Projection, Drift, Reconciliation) — the assertion-native model; KubeContainer is a running reconciliation of exactly this shape |
 | Capability catalog | AGenNextHub/Agent-Skills | spec/early code: skill contracts, permissions, risk class; the hierarchy Skills -> Blueprint -> Team -> Runtime |
+| Channels (the chat) | AGenNextHub/Agent-Chat | working Go, v0.1.x loop spine (zero-dep, tested, headless daemon, content-addressed boxes); the native candidate for the space's channels seat, displacing the external Matrix pick when its operator ships; Apache-2.0 - a license divergence from this house's record, named for the principal |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

@@ -63,7 +63,20 @@ func main() {
 	bundle := flag.String("bundle",
 		"https://github.com/unboxd-cloud/KubeContainer/releases/download/v0.2.0/install.yaml",
 		"KubeContainer install bundle")
+	cleanSlate := flag.Bool("clean-slate", false,
+		"evict every undeclared tenant first: all Docker containers, volumes, the daemon itself, and any half-configured GitLab")
 	flag.Parse()
+
+	if *cleanSlate {
+		_ = quiet("sh", "-c", "docker rm -f $(docker ps -aq) 2>/dev/null")
+		_ = quiet("sh", "-c", "docker system prune -af --volumes 2>/dev/null")
+		_ = quiet("systemctl", "disable", "--now", "docker", "docker.socket", "containerd")
+		_ = quiet("sh", "-c", "apt-get purge -y docker-ce docker-ce-cli docker-buildx-plugin docker-compose-plugin containerd.io 2>/dev/null")
+		_ = quiet("sh", "-c", "rm -rf /var/lib/docker /var/lib/containerd /etc/docker /etc/apt/sources.list.d/docker.list")
+		_ = quiet("sh", "-c", "apt-get purge -y gitlab-ce 2>/dev/null")
+		_ = quiet("sh", "-c", "rm -rf /etc/gitlab /var/opt/gitlab /opt/gitlab")
+		verdict(!quiet("sh", "-c", "command -v docker"), "clean slate: docker gone, tenants evicted, gitlab state purged")
+	}
 
 	verdict(run("apt-get", "install", "-y", "-qq", "curl", "ca-certificates", "tzdata", "perl"),
 		"prerequisites")

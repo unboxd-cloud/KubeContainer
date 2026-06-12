@@ -171,6 +171,9 @@
       "@type": "CreativeWork",
       "citation": [
         {
+          "@id": "deploy/LEAPMICRO.md"
+        },
+        {
           "@id": "docs/AGENT-PLATFORM.md"
         },
         {

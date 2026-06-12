@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=146 edges=330
+# nodes=146 edges=331
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -23,6 +23,7 @@ AGENTS.md -> https://github.com/kubernetes/community/blob/master/contributors/de
 AGENTS.md -> https://kind.sigs.k8s.io/
 AGENTS.md -> https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
 AGENTS.md -> https://raw.githubusercontent.com/<org
+CHANGELOG.md -> deploy/LEAPMICRO.md
 CHANGELOG.md -> docs/AGENT-PLATFORM.md
 CHANGELOG.md -> docs/DESIGN.md
 CHANGELOG.md -> docs/FOUNDING-PRINCIPLES.md

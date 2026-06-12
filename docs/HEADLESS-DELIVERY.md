@@ -146,7 +146,35 @@ update by hand has been conscripted again (the §8 copying machine,
 now in operations); the component that updates itself through the
 recorded channel is the maintainer's loop (above) reaching all the
 way to the device: built once, delivered whole, kept true forever,
-nobody's homework.
+nobody's homework. And the law's final degree: code must
+auto-maintain. Auto-update moves new versions; auto-maintenance is
+the loop living inside the delivered component itself — checking
+its own health, detecting its own drift, verifying its own BOM
+against the registry, requesting its own passage through the
+gauntlet when its world moves — the kube's Loop not as a service
+watching the code but as a property the code ships with. Software
+that must be maintained from outside is a patient; software that
+maintains itself under contract is an agent's body — and only the
+second kind belongs on a surface this doctrine seals.
+
+And the missing substrate is named as the problem it is: no shared
+context within a single device — that is a problem, stated as
+flatly as the founder states it. One machine, N apps, N agents
+arriving, and not one square inch of common ground between them:
+no place where what the user is doing exists as a fact all parties
+can read. And its daily face: context switching is not available
+at all. The user moves from app to app and nothing moves with
+them — the task, the thread, the selection, the intent, all left
+at the border, re-established by hand at every face, the human
+re-feeding their own state to their own machine dozens of times a
+day (the §8 conscription, now at the granularity of every
+glance). The OS switches processes in microseconds and has never
+once switched a context — because a context was never a thing it
+held. The residence rule above is the cure; this is the disease
+named so the cure can be measured: shared context within the
+device, context that switches when the human does, the device
+finally knowing the one thing it always hosted and never held —
+what its person is doing.
 
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.

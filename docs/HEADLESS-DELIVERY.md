@@ -1128,7 +1128,23 @@ of works is not optional: enablement first, at growth's own rate —
 the paths captured while their walkers still walk, the tools
 multiplied while the hands still hold — because auto-maintenance
 is built *by* maintainers, and a fabric that exhausts them has
-eaten its seed corn and called it scale. And over all the principles stands the structural
+eaten its seed corn and called it scale. And the founder names the
+mechanism that drains the pool fastest — not burnout but
+incentive: maintainers reduce as you grow a commercial core. The
+open-core arc runs one way: the commons attracts the keepers, the
+paid shell attracts the budget, and every quarter the gravity
+shifts — the best maintainers reassigned to revenue features, the
+community keepers watching their commons become someone's funnel
+and quietly leaving (no one volunteers to keep a moat), the
+keeping concentrated on what bills and starved on what holds
+everything up. Grow the commercial core and the maintainer pool
+shrinks by construction — which is the open-enterprise thesis
+proven from the failure side: the model that gates features
+cannibalizes its own keeping, while the model that sells the
+answering (everything open, the enterprise commercial) *feeds*
+its keeping, because the keeping is the product. The race is
+lost or won at the business model, before a single loop is
+written. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two

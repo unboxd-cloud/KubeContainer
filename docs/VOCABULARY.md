@@ -6,18 +6,18 @@ do not edit; define terms in their source documents.
 
 | Term | Defined at |
 |---|---|
-| Action | `docs/PRIMITIVES.md:280` |
+| Action | `docs/PRIMITIVES.md:281` |
 | Actionable intelligence | `docs/FOUNDING-PRINCIPLES.md:1149` |
 | Actor | `docs/AGENT-PLATFORM.md:20` |
 | Adapter | `docs/AGENT-PLATFORM.md:531` |
-| Agent | `docs/PRIMITIVES.md:339` |
+| Agent | `docs/PRIMITIVES.md:340` |
 | Agent (the standard definition) | `docs/AGENT-PLATFORM.md:10` |
 | Agent Architecture | `docs/AGENT-PLATFORM.md:33` |
 | Agent Engineering | `docs/AGENT-PLATFORM.md:48` |
 | Agent Excellence | `docs/AGENT-PLATFORM.md:75` |
 | Agent Governance | `docs/AGENT-PLATFORM.md:63` |
 | Agent drift | `docs/AGENT-PLATFORM.md:596` |
-| AgentVerse | `docs/PRIMITIVES.md:462` |
+| AgentVerse | `docs/PRIMITIVES.md:463` |
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
@@ -25,14 +25,14 @@ do not edit; define terms in their source documents.
 | Assertion | `docs/AGENT-PLATFORM.md:26` |
 | Assurance as a policy | `docs/FOUNDING-PRINCIPLES.md:127` |
 | Backward compatible | `docs/AGENT-PLATFORM.md:164` |
-| Balance | `docs/PRIMITIVES.md:418` |
-| Base | `docs/PRIMITIVES.md:361` |
+| Balance | `docs/PRIMITIVES.md:419` |
+| Base | `docs/PRIMITIVES.md:362` |
 | Be conservative below, liberal above | `docs/AGENT-PLATFORM.md:455` |
 | Be stewarded like a foundation | `docs/AGENT-PLATFORM.md:459` |
 | Bear load silently | `docs/AGENT-PLATFORM.md:451` |
 | Best-in-class tools, from certified suppliers | `docs/AGENT-PLATFORM.md:132` |
-| Box | `docs/PRIMITIVES.md:337` |
-| Breach | `docs/PRIMITIVES.md:305` |
+| Box | `docs/PRIMITIVES.md:338` |
+| Breach | `docs/PRIMITIVES.md:306` |
 | Browser as server | `docs/HEADLESS-DELIVERY.md:2118` |
 | Build stage | `docs/DESIGN.md:127` |
 | Builder | `docs/PRIMITIVES.md:31` |
@@ -40,21 +40,21 @@ do not edit; define terms in their source documents.
 | Capable guard | `docs/HEADLESS-DELIVERY.md:1997` |
 | Claim | `docs/AGENT-PLATFORM.md:583` |
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
-| Code | `docs/PRIMITIVES.md:328` |
+| Code | `docs/PRIMITIVES.md:329` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
 | Context | `docs/AGENT-PLATFORM.md:488` |
 | Contract | `docs/AGENT-PLATFORM.md:24` |
 | Data as intelligence | `docs/AGENT-PLATFORM.md:369` |
 | Data is intelligence — and data is real, temporal, geospatial, | `docs/FOUNDING-PRINCIPLES.md:79` |
-| Declaration | `docs/PRIMITIVES.md:278` |
+| Declaration | `docs/PRIMITIVES.md:279` |
 | Delegation | `docs/AGENT-PLATFORM.md:496` |
 | Deliver just-in-time, from everyone qualified | `docs/FOUNDING-PRINCIPLES.md:111` |
-| Delivery | `docs/PRIMITIVES.md:404` |
+| Delivery | `docs/PRIMITIVES.md:405` |
 | Division of labor | `docs/DESIGN.md:215` |
-| Drift | `docs/PRIMITIVES.md:319` |
-| Duty | `docs/PRIMITIVES.md:304` |
-| Edge | `docs/PRIMITIVES.md:355` |
+| Drift | `docs/PRIMITIVES.md:320` |
+| Duty | `docs/PRIMITIVES.md:305` |
+| Edge | `docs/PRIMITIVES.md:356` |
 | Edge is ingress | `docs/HEADLESS-DELIVERY.md:360` |
 | Educated | `docs/FOUNDING-PRINCIPLES.md:351` |
 | Empowered | `docs/FOUNDING-PRINCIPLES.md:356` |
@@ -68,17 +68,17 @@ do not edit; define terms in their source documents.
 | Evidence | `docs/AGENT-PLATFORM.md:586` |
 | Excellent working tools | `docs/FOUNDING-PRINCIPLES.md:1154` |
 | External storage is in cloud | `docs/FOUNDING-PRINCIPLES.md:226` |
-| Fabric | `docs/PRIMITIVES.md:457` |
-| Face | `docs/PRIMITIVES.md:353` |
+| Fabric | `docs/PRIMITIVES.md:458` |
+| Face | `docs/PRIMITIVES.md:354` |
 | Federated by design | `docs/FOUNDING-PRINCIPLES.md:158` |
 | Federation is a framework of work | `docs/FOUNDING-PRINCIPLES.md:180` |
-| Field | `docs/PRIMITIVES.md:365` |
+| Field | `docs/PRIMITIVES.md:366` |
 | Five-dimension addressing | `docs/SOLID-STATE-DATABASE.md:72` |
 | Founder | `docs/PRIMITIVES.md:13` |
 | Free | `docs/AGENT-PLATFORM.md:652` |
-| Gap | `docs/PRIMITIVES.md:363` |
-| Gate | `docs/PRIMITIVES.md:318` |
-| Gold standard | `docs/PRIMITIVES.md:440` |
+| Gap | `docs/PRIMITIVES.md:364` |
+| Gate | `docs/PRIMITIVES.md:319` |
+| Gold standard | `docs/PRIMITIVES.md:441` |
 | Golden corpus | `docs/AGENT-PLATFORM.md:604` |
 | Governed by choice | `docs/FOUNDING-PRINCIPLES.md:137` |
 | Governed by design | `docs/FOUNDING-PRINCIPLES.md:169` |
@@ -97,14 +97,14 @@ do not edit; define terms in their source documents.
 | Internal memory holds the mental model of the real world | `docs/FOUNDING-PRINCIPLES.md:238` |
 | Interpretation: direction where certainty runs out | `docs/AGENT-PLATFORM.md:1079` |
 | Just-in-time | `docs/AGENT-PLATFORM.md:126` |
-| Kube | `docs/PRIMITIVES.md:342` |
+| Kube | `docs/PRIMITIVES.md:343` |
 | Kube — the soul of Any'Thing' | `docs/AGENT-PLATFORM.md:770` |
-| Loop | `docs/PRIMITIVES.md:311` |
-| Maintainer | `docs/PRIMITIVES.md:259` |
-| Maturity | `docs/PRIMITIVES.md:422` |
-| Measurement | `docs/PRIMITIVES.md:414` |
+| Loop | `docs/PRIMITIVES.md:312` |
+| Maintainer | `docs/PRIMITIVES.md:260` |
+| Maturity | `docs/PRIMITIVES.md:423` |
+| Measurement | `docs/PRIMITIVES.md:415` |
 | Memory | `docs/AGENT-PLATFORM.md:492` |
-| Message | `docs/PRIMITIVES.md:402` |
+| Message | `docs/PRIMITIVES.md:403` |
 | Metal base | `docs/HEADLESS-DELIVERY.md:49` |
 | Minimal, pinned, upstream-only dependencies. | `docs/DESIGN.md:157` |
 | Model | `docs/DESIGN.md:183` |
@@ -141,18 +141,18 @@ do not edit; define terms in their source documents.
 | P7 — Constitutional amendment (the rules change only by the rules) | `docs/AGENT-PLATFORM.md:1045` |
 | P8 — No self-building (the founder's prohibition) | `docs/AGENT-PLATFORM.md:1054` |
 | Party | `docs/PRIMITIVES.md:27` |
-| Path | `docs/PRIMITIVES.md:316` |
+| Path | `docs/PRIMITIVES.md:317` |
 | Peer communication over existing standard protocols | `docs/AGENT-PLATFORM.md:301` |
-| Platform | `docs/PRIMITIVES.md:459` |
+| Platform | `docs/PRIMITIVES.md:460` |
 | Platform Capabilities | `docs/AGENT-PLATFORM.md:144` |
 | Platform-bound orchestrator | `docs/HEADLESS-DELIVERY.md:574` |
 | Policy & authorization, out of the box | `docs/AGENT-PLATFORM.md:237` |
 | Policy-as-code surface | `docs/DESIGN.md:206` |
-| Port | `docs/PRIMITIVES.md:357` |
+| Port | `docs/PRIMITIVES.md:358` |
 | Principal | `docs/AGENT-PLATFORM.md:473` |
-| Promise | `docs/PRIMITIVES.md:301` |
+| Promise | `docs/PRIMITIVES.md:302` |
 | Proto-first | `docs/HEADLESS-DELIVERY.md:2182` |
-| Provenance | `docs/PRIMITIVES.md:409` |
+| Provenance | `docs/PRIMITIVES.md:410` |
 | Provenance is the product | `docs/AGENT-PLATFORM.md:739` |
 | Provenance-native | `docs/SOLID-STATE-DATABASE.md:69` |
 | Real-time | `docs/AGENT-PLATFORM.md:159` |
@@ -160,10 +160,10 @@ do not edit; define terms in their source documents.
 | Real-work rule | `docs/AGENT-PLATFORM.md:876` |
 | Real-world model (RWM) | `docs/AGENT-PLATFORM.md:570` |
 | Reality & drift vocabulary | `docs/AGENT-PLATFORM.md:564` |
-| Reason | `docs/PRIMITIVES.md:290` |
-| Record | `docs/PRIMITIVES.md:281` |
+| Reason | `docs/PRIMITIVES.md:291` |
+| Record | `docs/PRIMITIVES.md:282` |
 | Registry | `docs/AGENT-PLATFORM.md:612` |
-| Repair | `docs/PRIMITIVES.md:321` |
+| Repair | `docs/PRIMITIVES.md:322` |
 | Reputation | `docs/AGENT-PLATFORM.md:524` |
 | Resolution | `docs/AGENT-PLATFORM.md:609` |
 | Runtime stage | `docs/DESIGN.md:129` |
@@ -172,17 +172,17 @@ do not edit; define terms in their source documents.
 | Shipped policies | `docs/DESIGN.md:210` |
 | Signed building block | `docs/HEADLESS-DELIVERY.md:2188` |
 | Single Binary Code | `docs/HEADLESS-DELIVERY.md:29` |
-| Skeleton | `docs/PRIMITIVES.md:335` |
+| Skeleton | `docs/PRIMITIVES.md:336` |
 | Skill | `docs/AGENT-PLATFORM.md:485` |
-| Soul | `docs/PRIMITIVES.md:345` |
+| Soul | `docs/PRIMITIVES.md:346` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
 | Standard operating procedures | `docs/AGENT-PLATFORM.md:337` |
 | Status | `docs/DESIGN.md:197` |
-| Step | `docs/PRIMITIVES.md:314` |
-| Surface | `docs/PRIMITIVES.md:351` |
+| Step | `docs/PRIMITIVES.md:315` |
+| Surface | `docs/PRIMITIVES.md:352` |
 | Tagging | `docs/DESIGN.md:133` |
 | The Agent Economy | `docs/AGENT-PLATFORM.md:108` |
 | The Agent Lexicon | `docs/AGENT-PLATFORM.md:468` |
@@ -202,16 +202,16 @@ do not edit; define terms in their source documents.
 | Tool | `docs/AGENT-PLATFORM.md:482` |
 | Trusted frontier intelligence, from all providers | `docs/AGENT-PLATFORM.md:129` |
 | Trusted insights | `docs/FOUNDING-PRINCIPLES.md:1144` |
-| Truth | `docs/PRIMITIVES.md:288` |
-| Unit | `docs/PRIMITIVES.md:416` |
+| Truth | `docs/PRIMITIVES.md:289` |
+| Unit | `docs/PRIMITIVES.md:417` |
 | Verdict | `docs/AGENT-PLATFORM.md:581` |
 | Wake on events, steer by outcomes, prioritize by value | `docs/FOUNDING-PRINCIPLES.md:91` |
 | Where code is configuration | `docs/AGENT-PLATFORM.md:354` |
 | Where the Platform Is the Foundation | `docs/AGENT-PLATFORM.md:442` |
 | Why ReBAC here | `docs/DESIGN.md:192` |
 | With native-language intelligence | `docs/FOUNDING-PRINCIPLES.md:360` |
-| Work | `docs/PRIMITIVES.md:310` |
-| World | `docs/PRIMITIVES.md:359` |
+| Work | `docs/PRIMITIVES.md:311` |
+| World | `docs/PRIMITIVES.md:360` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:574` |
 | World-test | `docs/AGENT-PLATFORM.md:578` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:693` |

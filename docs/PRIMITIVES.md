@@ -515,7 +515,35 @@ richer text elaborates a primitive, the primitive governs.
   cost already says it — *optimal*, not minimal: the balanced
   point, not the cheapest corner. Scale held in balance is scale
   that lasts; scale that maximizes one axis buys a record and pays
-  for it everywhere else.
+  for it everywhere else. And the reason balance is the goal and
+  not perfection is the founder's flattest truth: perfection is an
+  illusion. There is no point where all axes sit at their extreme
+  at once — the footprint smallest *and* the cost lowest *and* the
+  friction zero *and* nothing thinned — because the axes trade
+  against each other by nature; a system claiming perfection is a
+  system hiding the axis it sacrificed. What is real is balance:
+  the resolving point, good enough on every axis and extreme on
+  none, honest about its trades because it records them. The
+  pursuit of excellence is endless precisely because perfection is
+  not a destination one arrives at but a horizon one moves toward —
+  which is why excellence was defined as a pursuit and never a
+  state. Chase perfection and you will either lie or stall; hold
+  balance and you will resolve, ship, and keep moving — and moving,
+  not arriving, was always the whole of it. But balance is not
+  surrender of standards: choose your non-negotiables. Before the
+  trading begins, name the few axes that do not bend — here, by
+  this record's own choice: security, governance, provenance, the
+  exit, the first principles of the world — and let everything else
+  flex around them. A non-negotiable is the fixed point the balance
+  is found *around*, not one more variable in the optimization;
+  balance trades the negotiable freely and the non-negotiable never.
+  The discipline is in choosing few and choosing them in advance:
+  too many non-negotiables and nothing resolves (every axis rigid
+  is no balance at all); none, and the system will trade away its
+  own soul the first hard quarter. Pick the handful you will fail
+  rather than breach, write them down before the pressure comes,
+  and balance everything else with a clear conscience — that is how
+  a system bends without breaking and holds without seizing.
 - **Trusted platform** — and the definition is this: a platform
   that has earned, by others' continuing verdict, the standing to
   be relied on without re-checking every time — the gold standard

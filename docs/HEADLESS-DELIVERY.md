@@ -113,7 +113,16 @@ whole of the law: a tamper-zeroing module is a kept promise; the
 same destruction without the registration, the contract, and the
 trusted provider is sabotage with a safety standard's vocabulary.
 Registered, contracted, honored — three conditions, all required,
-none waivable; that is what non-negotiable means.
+none waivable; that is what non-negotiable means. And the contract
+itself is conditional — an exit clause is a must: no destruct
+provision binds forever or unconditionally; the contract names the
+conditions under which the clause may fire, the conditions under
+which it may never, and the way out for every party — the user who
+sells the device, the provider who exits the market, the
+enterprise that changes its threat model. A destruct clause
+without an exit clause is not a safety provision but a trap with
+paperwork; the exit is what proves the contract was consent and
+not capture, here as everywhere in this house: exit real, always.
 
 ## 5. The OS gauntlet
 

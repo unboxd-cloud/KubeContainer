@@ -219,7 +219,51 @@ a contract that does not bend. The kernel native to its metal, the
 runtime native to its surface, the kube native to nowhere and
 therefore at home everywhere: three layers, each honest about what
 it is bonded to, which is the whole architecture of reaching every
-surface without lying that any one layer reaches them all.
+surface without lying that any one layer reaches them all. And the
+choice at each layer is the builder's, declared: pick your metal,
+pick your runtime. The fabric does not assign them — it requires
+only that they be chosen, named, and pinned: choose the hardware
+the kernel bonds to (pick your metal), choose the runtime the
+surface speaks (pick your runtime), and the kube renders onto what
+you picked. This is the openness again as configuration (more
+variables, more control to the end user): metal and runtime are
+variables set by whoever builds, not constants imposed by whoever
+ships — so a kube is portable not because it forces one metal and
+one runtime on everyone, but because it accepts whichever each
+builder picks, and asks only that the pick be on the record.
+Pick your metal, pick your runtime, declare both, pin both — and
+the same Thing runs on the ground you chose, by the contract you
+signed. The choice has a third axis and a closing instruction:
+pin your framework, and go native. Pin your framework — the
+framework is a dependency like the metal and the runtime, chosen
+and version-pinned from a versioned registry, never floating;
+pick it from the leaders, pin it to a ref, and it joins metal and
+runtime as the three declared variables a build stands on. And go
+native — once metal, runtime, and framework are picked and pinned,
+build all the way down into them: no portability shim left between
+your code and the ground, no abstraction layer hedging the bet you
+already made; you chose the metal, so speak its instructions; you
+chose the runtime, so use its primitives; you pinned the framework,
+so build in its idiom, not around it. Going native is what makes
+the pick worth picking — a chosen-but-not-committed substrate is
+the worst of both, the lock-in of a choice with none of its speed.
+Pick freely, pin honestly, then go native completely: the freedom
+is in the choosing, the excellence is in the committing. And the
+two-word instruction that closes the build: run core, distribute
+headless. Run core — the running happens at the core, native and
+bonded: the picked metal, the picked runtime, the pinned framework,
+executing where execution belongs, nothing of the run leaking onto
+the surface. Distribute headless — the distribution happens
+headless, sealed and over the wire: the typed channels, the signed
+blocks, the ports, no build pack on any surface, no execution at
+the point of delivery. The whole architecture of the day in four
+words: the core runs and the edge only receives; computation
+native at the bottom, delivery headless at the boundary, and the
+surface — between a running core it never touches and a headless
+distribution it never executes — stays exactly what the doctrine
+made it: present, minimal, unbled. Run core, distribute headless;
+everything else this house wrote is the elaboration of those two
+commands.
 
 ## Kubernetes-native casing
 

@@ -1144,7 +1144,22 @@ cannibalizes its own keeping, while the model that sells the
 answering (everything open, the enterprise commercial) *feeds*
 its keeping, because the keeping is the product. The race is
 lost or won at the business model, before a single loop is
-written. And over all the principles stands the structural
+written. And the org chart confirms what the business model
+began: an enterprise company has only owners. Every service has
+an owner, every feature an owner, every incident an owner — the
+title is everywhere and the keeping is nowhere, because owner on
+an org chart means *answerable when it breaks*, not *tending so
+it doesn't*: ownership is assigned for the postmortem, not for
+the patrol. The maintainer primitive named the difference — the
+gatekeeper who keeps, distinct from the owner who holds — and the
+enterprise built itself entirely out of the second seat: a
+company of owners is a company where everything has someone to
+blame and nothing has someone to keep it, the unheld contract
+drawn as boxes and lines. The fabric's org chart adds the missing
+row: under every owner, a keeper — human or loop — with the duty,
+the paths, and the wage of the keeping; because a company that
+is all owners is a fleet that is all captains, and the ship still
+sinks for want of a crew. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two

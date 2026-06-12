@@ -712,7 +712,7 @@ richer text elaborates a primitive, the primitive governs.
   real you on the consequence side, the edge between them the very
   line this whole doctrine guards. Were they ever in the same
   world, one of two ruins would follow — the projection mistaken
-  for the real (the surreal walking out as fact, §the demarcation),
+  for the real (the surreal walking out as fact),
   or the real flattened into the projection (consequence treated as
   rehearsal) — and both are the death of the boundary that makes
   reality protectable at all. So the separation is not a limit but

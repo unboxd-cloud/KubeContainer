@@ -120,7 +120,7 @@ fabric's own, arrived at from the factory floor: a defined desired
 state expressed in a checkable world-unit (defects per million), a
 measurement everyone accepts before counting, and a continuous
 reconciliation toward it. Software ships defect rates no other
-industry would survive (regular bugs as cadence, §the diagnosis)
+industry would survive (regular bugs shipped as cadence)
 precisely because it never declared a desired state to converge on —
 no Six Sigma, no defined target, no books that must balance. The
 bench this house keeps adopts the manufacturing posture wholesale:

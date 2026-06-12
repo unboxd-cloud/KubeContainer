@@ -247,7 +247,24 @@ editing an old one. The supply chain advances baseline by
 published baseline, every SBOM a survey marker driven into honest
 ground — so that a year on, no one argues what was shipped or who
 shipped it; the publication already settled it, in public, on a
-date no one can move.
+date no one can move. And the honest disclosure the founder makes
+plainly, because honesty names its own costs: supply-chain risk is
+the threat you plug in by adopting the fabric. To adopt the fabric
+is to take a dependency — on its components, its registries, its
+paths, its keepers — and a dependency is a supply-chain exposure
+no matter how good: the fabric is not the end of SCM risk but a new
+line in its ledger, and pretending otherwise would be the exact
+dishonesty the whole doctrine exists to refuse. What the fabric
+changes is not the existence of the risk but its *legibility*:
+adopt it and the new dependency arrives with its BOM published, its
+provenance walked, its keepers named, its baseline dated — a risk
+you can read, price, and audit, instead of one that hides in an
+unsigned wire. The trade is stated honestly: you plug in a
+dependency, and in return you get the one dependency in your stack
+whose risk is fully disclosed by construction. Adopt nothing
+blind — including this; run the same SBOM gate on the fabric that
+the fabric runs on everything else, because a fabric that asked to
+be exempt from its own law would have failed it.
 
 And inside the delivery walk itself, the founder marks where the
 same balance is struck mechanically: the supply-chain-risk step —

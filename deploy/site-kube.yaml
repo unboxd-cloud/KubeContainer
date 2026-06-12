@@ -12,7 +12,7 @@ metadata:
     fabric.unboxd.cloud/surface: edge-browser
     fabric.unboxd.cloud/function: the-face
 spec:
-  image: nginx:1.27
+  image: ghcr.io/unboxd-cloud/kubecontainer-site:v0.2.2
   port: 80
   scaling:
     replicas: 1

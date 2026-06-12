@@ -20,6 +20,7 @@ func main() {
 	gates := []gate{
 		{"compile", []string{"go", "build", "./..."}},
 		{"vet", []string{"go", "vet", "./..."}},
+		{"lint", []string{"make", "lint"}},
 		{"vocabulary", []string{"./hack/check-vocabulary.sh"}},
 	}
 	failed := 0

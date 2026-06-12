@@ -54,6 +54,16 @@ func appendOnce(path, line string) error {
 	return err
 }
 
+func waitForAptLock() {
+	for range 60 {
+		if quiet("sh", "-c", "! fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1") {
+			return
+		}
+		fmt.Println("waiting: dpkg lock held by another process...")
+		_ = exec.Command("sleep", "5").Run()
+	}
+}
+
 func main() {
 	host := flag.String("host", "git.unboxd.cloud", "GitLab external host")
 	version := flag.String("gitlab-version", "19.0.2-ce.0", "gitlab-ce pin")
@@ -80,6 +90,9 @@ func main() {
 		verdict(!quiet("sh", "-c", "command -v docker"), "clean slate: docker gone, tenants evicted, gitlab state purged")
 	}
 
+	// Field lesson: an apt lock held by an earlier run made the first
+	// field deploy report false failures. Wait for the lock, do not race it.
+	waitForAptLock()
 	verdict(run("apt-get", "install", "-y", "-qq", "curl", "ca-certificates", "tzdata", "perl"),
 		"prerequisites")
 
@@ -113,6 +126,7 @@ func main() {
 		ok = appendOnce(rb, "nginx['listen_https'] = false") == nil && ok
 	}
 	verdict(ok, "gitlab.rb declared (certless now; cert-manager issues later, DNS-01, for everything)")
+	_ = quiet("systemctl", "enable", "--now", "gitlab-runsvdir")
 	verdict(run("gitlab-ctl", "reconfigure"), "gitlab reconfigured")
 	_ = quiet("dpkg", "--configure", "-a")
 	verdict(quiet("gitlab-ctl", "status"), "gitlab services up")

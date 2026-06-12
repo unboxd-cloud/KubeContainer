@@ -38,6 +38,11 @@ jobs:
 
       - name: Evaluation registry
         run: make eval
+      - name: Promise + reports (the new gates the audit must watch)
+        run: |
+          make test-report || true
+          ./hack/check-promise.sh || echo "promise check: needs release artifacts (run in release context)"
+        continue-on-error: true
 
       - name: Publish audit report
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0

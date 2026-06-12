@@ -148,6 +148,29 @@ provenance, and holds its contract passes the same gate the
 incumbent passes. Entry by conformance, here as at every gate;
 what is rejected is never the competitor — only the ghost.
 
+And the debt has a second line, owed further up: hardware became
+standardized because of process excellence at scale — and the
+contributors and the standard keepers must be valued for the work.
+The interchangeable part, the tolerance held across a billion
+units, the connector that fits every maker's socket — none of it
+is nature; all of it is process excellence, compounded at scale,
+by named parties: the engineers who contributed the designs, the
+bodies that kept the standards, the keepers who said no to every
+convenient deviation for decades. Software inherits this settled
+ground for free and forgets it was built — the same amnesia it
+shows its own maintainers. The law is the maintainer primitive
+applied upstream: standard keepers are gatekeepers, not owners;
+they must not depend on the standard's fortunes to earn; and
+therefore the value they are owed must be paid deliberately — in
+the record (contribution attributed, keeping credited), in the
+registry (the standard's keeper named beside the standard), and in
+the price (the platform's service charge carrying the keeping's
+cost openly, never extracting the keeping for free). Excellence at
+scale is the most invisible work in the world precisely when it
+succeeds — the doctrine makes it visible, because a fabric that
+bills for everything else does not get to take the floor for
+nothing.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the

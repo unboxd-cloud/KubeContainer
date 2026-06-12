@@ -233,6 +233,27 @@ and signed by the user.
   improvisation around fragments. The skeleton is the contract of
   assembly; the parts are deliveries against it; the body is the
   contract, kept.
+
+And the case of the new skeleton is ruled: if the user is defining a
+new skeleton — a structure that does not yet exist — it goes through
+the innovation cycle. Filling an existing skeleton is sending;
+defining a new one is innovating, and innovation happens in the
+sandboxed cloud (§6), never on the wire. The new skeleton is born as
+a branch at the edge (§8), travels as signed intent through the one
+channel, is tried, tested, and certified in the sandbox by the
+capable guard (§9) — and certification alone does not finish it: it
+has to earn enough human contributions to be discoverable. A skeleton
+enters the catalog by adoption, not by declaration — humans filling
+it, attesting it, building bodies on it — so discoverability is
+standing earned in use, the reputation rule applied to structures.
+Only then, published and registered (the registry defining the
+contract), does it become a pre-defined structure the edge will admit
+fillings of. No skeleton is improvised into existence mid-stream: the
+wire carries only structures that already exist, and the path by
+which a structure comes to exist is the same gauntlet everything else
+walks — plus the one thing a gauntlet cannot grant, which is other
+people.
+
 Build packs exist only cloud-side, born in the sandbox, certified by
 the guard, delivered at the ports. A surface or a face that emits
 build packs has reversed the reversed loop — it is the old world's

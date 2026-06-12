@@ -125,3 +125,63 @@ ground, the exit kept real at every slot. A candidate becomes a pick
 by being pinned and recorded; a pick becomes a candidate again the
 day its keeper stops keeping — the scoreboard, not sentiment,
 governs both directions.
+
+## The decision record — decision intelligence 101
+
+The founder's law for this table: we are transparent about why we
+chose this stack, and a decision should justify itself based on the
+evidence — decision intelligence 101 (the discipline was on this
+house's reading list from its first day; point of reference:
+https://www.gartner.com/en/information-technology/glossary/decision-intelligence).
+The method: every pick is recorded with the evidence that produced
+it, such that anyone re-running the evidence reaches the same pick —
+and when the evidence changes, the decision re-opens by itself,
+because it was never an opinion, only a conclusion.
+
+- **OpenStack** — evidence: the licensing decision already seated it
+  as substrate default (recorded, reasoned); it is the one IaaS that
+  is open by the triple test (inspectable, implementable, leavable)
+  and self-hostable without a hyperscaler counterparty; vendor
+  neutrality is policy in this house. Re-run the evidence: same pick.
+- **Ubuntu Server LTS** — evidence: LTS cadence (dated, published
+  support windows — a pinned dependency needs a pinned lifetime),
+  cloud-init first-class on OpenStack, and the leaders' position
+  among server distributions. The dialect pin (American English /
+  K8s ecosystem) and this OS pick are the same rule: common ground.
+- **Kubernetes 1.35** — evidence: the founder-supplied scoreboard
+  (number one on the LF index, both axes) and this repository's own
+  record — envtest pins 1.35.0, the e2e gate runs it; we deploy the
+  minor we test, because a deploy target the tests never saw is a
+  claim, not a decision.
+- **containerd** — evidence: CNCF-graduated, the default runtime of
+  the certified distributions, CRI-native; the runtime the picked
+  layer above already certifies. The decision is inherited from the
+  Kubernetes pick — one piece of evidence serving two slots.
+- **Ceph (behind Cinder, via CSI/Rook)** — evidence: the leader for
+  open distributed storage on both scoreboard axes; Rook is
+  CNCF-graduated, so the cluster-side keeper is itself a kept
+  project; and the contract/body split (Cinder declares, Ceph keeps)
+  preserves the exit at the storage layer.
+- **Keystone** — evidence: it ships with the substrate already
+  picked (common ground — no second identity system where one is in
+  the box), and the doctrine's own rule placed identity outside of
+  core; the pick is the placement, the product came with the ground.
+- **protobuf + gRPC at the wire** — evidence: the proto-first law
+  was legislated before the tool was picked (the skeleton precedes
+  its filling); protobuf is the leaders' schema-first wire with the
+  widest native-language reach — the multi-language single-meaning
+  law needs exactly that.
+- **Go for the fabric's own code** — evidence: the entire picked
+  control plane (Kubernetes, containerd, etcd, this operator) is
+  written in it; one language down the control plane means no
+  translation seam — the common-ground rule, applied to ourselves
+  first.
+
+The rule of the record: a decision with its evidence attached cannot
+be relitigated by taste — only by new evidence; and each anchor
+above is living, so the evidence re-checks itself on the scoreboard
+this house already follows. Transparent because recorded; recorded
+because everyone has a right to reason; self-justifying because the
+reason travels with the choice — decision intelligence 101, kept the
+only way this house keeps anything: in the record, beside the thing
+it explains.

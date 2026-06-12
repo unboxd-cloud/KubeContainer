@@ -102,7 +102,15 @@ richer text elaborates a primitive, the primitive governs.
   on schedule; ability without trusted intent is a power no one
   should pay to stand under. The node is granted by the people who
   must rely on it, held by their continuing trust, and priced by
-  exactly that: intent they can read, delivery they can count.
+  exactly that: intent they can read, delivery they can count. So
+  the division of what can and cannot be claimed is exact: you can
+  only declare intent, and demonstrate ability — those two acts
+  are yours; the trust they earn is theirs to give, and the
+  accountability it constitutes arrives only from their side of
+  the table. Declare, demonstrate, and wait to be trusted: there
+  is no third act, and everyone who has tried to perform one was
+  manufacturing a verdict — the one thing in this fabric that can
+  never be manufactured.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

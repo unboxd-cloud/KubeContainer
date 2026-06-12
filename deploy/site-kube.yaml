@@ -1,0 +1,20 @@
+# The site, served by our own kube — the entire stack self-hosted
+# means the face lives here too: nginx pinned, content baked from the
+# repo's site/ directory via ConfigMap (small, static, surface-native).
+# Apply with: k0s kubectl apply -f deploy/site-kube.yaml
+#   then:     k0s kubectl -n default create configmap site-content \
+#               --from-file=site/ -o yaml --dry-run=client | k0s kubectl apply -f -
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: site
+  annotations:
+    fabric.unboxd.cloud/surface: edge-browser
+    fabric.unboxd.cloud/function: the-face
+spec:
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 1
+  expose:
+    type: ClusterIP

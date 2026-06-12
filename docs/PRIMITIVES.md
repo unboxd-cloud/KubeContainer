@@ -138,7 +138,18 @@ richer text elaborates a primitive, the primitive governs.
   boundary drawn before the work begins and recorded where both
   would-be claimants can read it. Disputes are not won; they are
   designed out — and a codebase that needs an ownership ruling
-  has already filed its own bug.
+  has already filed its own bug. The commandment on the consuming
+  side: do not use code without a clear owner. Not "prefer," not
+  "audit harder" — do not use: every dependency admitted is a node
+  you will someday need to resolve at, and admitting an ownerless
+  one is scheduling a concern with no address. And the supply side
+  answers it with ownership by design: the owner declared at the
+  thing's creation, in the record, at the repo — not discovered in
+  the postmortem or excavated from commit logs. The working test
+  is one sentence long: you know who owns the repo. If you can say
+  it — name, seat, term — the design did its work; if you have to
+  go find out, the ownership was not designed, and the code fails
+  the gate before a single line of it is read.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

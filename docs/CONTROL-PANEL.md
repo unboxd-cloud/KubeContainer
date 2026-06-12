@@ -250,3 +250,15 @@ walks all of them unchanged (the app constant, the ground variable —
 now per env, declared, on the record). Configurable at all levels,
 the nearest declaration winning: the same law that governs every
 variable governs the ground itself.
+
+And the resolution rule that completes it: the env decides the
+native config. The app declares intent once; each environment
+resolves that intent into its own ground's native form — the same
+declaration becomes a CloudStack service offering here, an OpenStack
+flavor there, a Juju charm relation on that estate, a hyperscaler's
+managed equivalent elsewhere. The translation is the env's job, not
+the app's: pick the env and you have picked the native rendering
+(pick your base and the tool follows — now: pick your env and the
+config follows), the panel showing both faces — the one intent and
+each env's native form of it — so the app stays portable precisely
+because it never wrote a native config itself.

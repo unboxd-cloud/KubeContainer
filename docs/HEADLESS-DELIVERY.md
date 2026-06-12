@@ -301,6 +301,42 @@ and a doctrine that makes the promise checkable (the contract, the
 verdicts, the evidence shipped with the release) is the code
 statute, self-imposed, until one exists.
 
+And the diagnosis goes one level deeper, to the scene of the crime:
+software actually gets corrupted during compile and build. The
+source is reviewable and reviewed; the binary is what ships; and
+the transformation between them is the least-watched step in the
+whole chain — the compiler trusted blindly (the trusting-trust
+problem, named in 1984 and never retired), the build host unaudited,
+the dependencies resolved at build time from wherever the resolver
+wanders, the artifact emerging unverifiable because the build was
+not reproducible. Every famous supply-chain breach lived exactly
+there: clean source, corrupted build, signed lie. Which is why the
+doctrine put its harshest requirements on precisely that step:
+deterministic code (§4 — same inputs, same binary, reproducible by
+anyone) and the OS gauntlet's deconstruct-and-reconstruct (§5) — a
+binary that cannot be rebuilt identically from its declared inputs
+is not suspicious, it is inadmissible. The build is where software
+gets corrupted; the rebuild is where it gets caught. And corruption
+is the dramatic case of a quiet law: it drifts in every build.
+Even with no attacker, no two undisciplined builds are the same
+build — timestamps embedded, paths leaked, dependency ranges
+re-resolved to whatever is newest, compiler minor-versions wandering,
+the binary a little different every time and nobody able to say
+why — because no one has recorded the spec. That is the root under
+the root: there is no declared build — no recorded statement of
+exactly which inputs, which versions, which environment, which
+steps — so there is nothing to diff the artifact against, and drift
+without a baseline is not even detectable, let alone punishable.
+The axiom was the cure all along: intent is defined — and a build
+whose intent was never written down cannot converge, cannot be
+audited, and cannot keep a promise it never made. Agent drift has
+its twin in the artifact: build drift — the gradual divergence of
+what ships from what was declared, unnoticed because unmeasured,
+unmeasured because undeclared. The discipline is the same one the protocols
+already prescribe for minds: pin everything, record everything,
+rebuild and compare — drift caught at the diff, every build a
+world-test of the build before it.
+
 And the question that ends every argument for the status quo: who
 guards user rights? The bank's customer has the central bank; the
 patient has the medical council; the passenger has the aviation

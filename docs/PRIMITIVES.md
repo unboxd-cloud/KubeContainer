@@ -165,7 +165,11 @@ richer text elaborates a primitive, the primitive governs.
   pressure nor a parent's hand. Maturity is not by age — time spent
   confers nothing by itself — and maturity is decided by others:
   no one declares themselves mature; it is a verdict rendered by
-  those outside the clan, earned in their eyes or not at all.
+  those outside the clan, earned in their eyes or not at all. And
+  maturity is contextual: it is rendered for a domain, in a moment,
+  by a community — mature here is not mature everywhere, mature
+  once is not mature forever, and every claim of it must say
+  mature at what, judged by whom, as of when.
 
 ## The grounds
 

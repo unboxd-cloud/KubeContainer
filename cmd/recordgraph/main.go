@@ -31,6 +31,7 @@ var spanRe = regexp.MustCompile("`([^`\n]+)`")
 var jsonRe = regexp.MustCompile(`[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)+`)
 var bareRe = regexp.MustCompile(`[A-Za-z0-9_-]+\.[A-Za-z0-9]+`)
 var lineRef = regexp.MustCompile(`:\d+$`)
+var urlRe = regexp.MustCompile(`https?://[^\s)>"'` + "`" + `]+`)
 
 func main() {
 	planned := plannedRefs()
@@ -61,6 +62,15 @@ func main() {
 				continue
 			}
 			edges[fmt.Sprintf("%s -> %s", n, t)] = true
+		}
+		// External links: every URL the record cites is an edge to the
+		// world outside the tree. Recorded, not liveness-checked — the
+		// desk has no network; the living-anchor test is the field's.
+		for _, u := range urlRe.FindAllString(string(raw), -1) {
+			u = strings.TrimRight(u, ".,;:")
+			if u != "" {
+				edges[fmt.Sprintf("%s -> %s", n, u)] = true
+			}
 		}
 	}
 

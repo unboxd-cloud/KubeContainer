@@ -92,6 +92,23 @@ within itself, neither imposed on the other, and the same word
 crossing between them changes coat at the boundary exactly once,
 by declared convention.
 
+Or — the third and best resolution — find the common ground: the
+casing that is already both real English and Kubernetes-native at
+once, and prefer it wherever it exists. PascalCase Kinds read as
+English proper nouns (KubeContainer is a name in both worlds);
+sentence-case prose and lowercase resources rarely collide; most
+terms have one spelling that satisfies the dictionary and the API
+alike. So the rule is not two camps holding a border but one search
+for the overlap, taken first: choose the casing both surfaces
+accept, fall to the split only where no common form exists, and
+record the few genuine forks rather than maintaining two full
+vocabularies. Common ground before compromise, compromise before
+conflict — the negotiation rule (win-win) applied to spelling, and
+the reason a single word usually serves the whole fabric without
+ever needing to change its coat at all. Or — and this is where the founder's three
+options resolve, the win-win found — we find the common ground,
+and it tur
+
 ## The registry
 
 One entry per tool; built tools name their command, declared tools

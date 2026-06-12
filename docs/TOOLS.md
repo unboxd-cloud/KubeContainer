@@ -159,7 +159,36 @@ retro-fitted with citations at review. Pin first, then code; the
 ref precedes the line it grounds, because a dependency chosen
 after the code is written is a dependency the code was bent to
 fit, and a ref pinned before is a decision the code was built to
-honor.
+honor. And the founder names the safest pin on the board, which is
+where this house already stands: Kubernetes is number one
+(point of reference: https://insights.linuxfoundation.org/project/k8s
+— founder-supplied; 403 from this environment, verified on click).
+Leading the open index on both axes at once — most stood upon and
+most actively kept — it is, by the follow-the-leaders rule, the
+safest substrate a builder can anchor to: not chosen for taste but
+read off the neutral scoreboard as the project least likely to be
+abandoned under you. This is the evidence behind the charter's
+oldest constraint, not a new claim — the operator is executable
+only on Kubernetes precisely because, by the foundation's own
+living telemetry, Kubernetes is the most maintained open ground
+there is, and a kube demands canonical ground for the same reason
+it offers canonical conduct: you anchor to the safest, or you have
+not been safe. But the founder names the honest limit in the same
+breath: Kubernetes will not cover all surfaces. It is the safest
+ground for the control plane and the cluster — but the edge
+reaches places no cluster runs: the microcontroller, the browser
+tab, the car, the card, the sensor too small to schedule. So the
+anchor is safest for what it covers and silent for what it does
+not, and the rule generalizes rather than breaks: on every
+surface, anchor to that surface's own number-one — Kubernetes
+where clusters run, the leading runtime where they do not, each
+surface's safest maintained ground read off its own scoreboard.
+One substrate cannot cover all surfaces, and pretending it does is
+how lock-in is smuggled in as safety; the discipline is to pin
+the safest ref *per surface*, not to crown one ref over surfaces
+it was never built to reach. Kubernetes is the safest where
+Kubernetes runs — and the map of where it runs is part of the
+honesty, not a footnote to it.
 
 ## Kubernetes-native casing
 

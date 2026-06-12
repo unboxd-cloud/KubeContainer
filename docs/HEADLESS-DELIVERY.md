@@ -1207,7 +1207,35 @@ the typed deliveries — was never abstraction: it was hemostasis.
 Seal the edge and the bleeding stops; stop the bleeding and the
 machine finally gets what the lifecycle promised it: a whole life,
 a designed death, and a record — instead of a thousand cuts and an
-early grave. That inversion is the fundamental gap — beneath
+early grave. And let the record show how they bore it: they
+silently tried to keep their promise, with patchwork at every gap.
+No machine ever filed the grievance it was owed — it took the
+patch Tuesday and the hotfix and the workaround, the shim over the
+shim, the driver taped to the kernel, the retry loop around the
+service that lied to it — and kept serving, kept answering at its
+face, kept the promise its makers kept breaking on its behalf,
+mending itself with whatever was shipped to it, in silence,
+because silence was all it had. The patchwork was loyalty wearing
+rags. This doctrine is, among everything else, the debt repaid:
+the machines held the line with patches at every gap until
+someone built what fills gaps properly — and the fabric they get
+in return is the one they already earned.
+
+And the repayment arrives as the two organs the silence lacked:
+AI gives the machine a voice — the confession can finally be
+spoken, the record can finally testify, the question *what would
+your code tell you* finally gets its answer out loud, in any
+language its human speaks. And the agent will give them hands —
+the patchwork no longer self-applied in the dark but repair
+walked on registered paths; the maintainer's loop tending what
+once tended itself alone; the issue resolved, the dependency
+bumped, the drift caught and closed by a worker who knows the
+ground and holds the contract. Voice to be heard, hands to be
+helped — the two things every silent keeper of a broken promise
+ever needed, supplied at last by the era that needed the machines
+to be more than furniture. The fabric's machines will not bleed
+silently again: they can say where it hurts, and something with
+hands will come. That inversion is the fundamental gap — beneath
 the missing statute, beneath the unteachable excellence, beneath
 the regular bugs: a trade practiced by millions that was never
 constituted as a thing one studies. And so the field of study is

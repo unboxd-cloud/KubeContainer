@@ -573,7 +573,19 @@ charter's dedication was written for exactly this tenancy: a stable
 OS for agentic enterprises, the OS-as-kube of §3 on its metal base,
 hardware vendor holding its contract. Two agents, one context, one
 stable floor — the device becomes what the enterprise becomes:
-many workers, one record, ground that holds. The marketplace that does not exist is the missing peace
+many workers, one record, ground that holds.
+
+And the shared context has a format law: multi-language, single
+meaning, proto. The context speaks every language its parties
+speak — human and machine alike, the platform's all-languages
+promise — but meaning is single: one proto-first skeleton (§12)
+underneath every rendering, so the maintainer reading Go, the
+resolver reading the tracker's English, and the user reading their
+native tongue are all reading projections of the same block, never
+translations of translations. The skeleton carries the meaning;
+the languages carry the audience; and nothing is reinterpreted on
+the way — many tongues, one truth, the single version of truth
+made multilingual without ever becoming multiple. The marketplace that does not exist is the missing peace
 treaty: with contracts, registries, and a standard interoperable
 layer, a world could *buy* its neighbor's strength instead of
 besieging it — specialization returns, plates stay owned, and the

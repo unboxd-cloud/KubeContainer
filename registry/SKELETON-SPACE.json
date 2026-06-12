@@ -1,0 +1,10 @@
+{
+  "skeleton": "space-declaration/v1",
+  "required": [
+    "name", "kind", "principal", "members", "channels", "drive", "bounds"
+  ],
+  "taxonomies": {
+    "kind": ["Space"]
+  },
+  "note": "Implements the Agent-Space contract (https://github.com/AGenNextHub/Agent-Space): the space owns the boundary and the references - members are humans and agents by reference (creation is the principal's act, never the space's), channels name the protocol face, drive names the file store (Agent-Drive; FileFabric is the first adapter) - and the space never owns storage, runtime execution, or identity verification. No agent operates without an explicit space. Submission appends to registry/spaces/; nothing removed, nothing duplicated."
+}

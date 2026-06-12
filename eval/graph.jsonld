@@ -1338,6 +1338,12 @@
         },
         {
           "@id": "internal/controller/testdata/compat"
+        },
+        {
+          "@id": "registry/SKELETON-SPACE.json"
+        },
+        {
+          "@id": "registry/spaces"
         }
       ],
       "name": "docs/DOCTRINE-MAP.md"
@@ -2588,6 +2594,11 @@
       "name": "registry/SKELETON-HOST.json"
     },
     {
+      "@id": "registry/SKELETON-SPACE.json",
+      "@type": "CreativeWork",
+      "name": "registry/SKELETON-SPACE.json"
+    },
+    {
       "@id": "registry/SKELETON.json",
       "@type": "CreativeWork",
       "citation": [
@@ -2652,6 +2663,11 @@
         }
       ],
       "name": "registry/blueprints/microos.json"
+    },
+    {
+      "@id": "registry/spaces",
+      "@type": "CreativeWork",
+      "name": "registry/spaces"
     },
     {
       "@id": "release/PROMISE",

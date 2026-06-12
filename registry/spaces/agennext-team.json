@@ -1,0 +1,20 @@
+{
+  "skeleton": "space-declaration/v1",
+  "name": "agennext-team",
+  "kind": "Space",
+  "principal": "the founder",
+  "members": {
+    "humans": ["the founder"],
+    "agents": []
+  },
+  "channels": {
+    "protocol": "matrix",
+    "server": "continuwuity (pinned at deployment)",
+    "door": "space.agennext.space"
+  },
+  "drive": {
+    "adapter": "FileFabric",
+    "door": "agennext.space"
+  },
+  "bounds": "the first space: the multi-agent team's virtual collaboration room. Agents enter only by the principal's hand (P8); the space holds the boundary and the references, never the runtime."
+}

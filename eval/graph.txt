@@ -1,5 +1,5 @@
 # RecordGraph — generated from the corpus; do not edit. Rebuild: make graph
-# nodes=151 edges=344
+# nodes=151 edges=346
 .custom-gcl.yml -> https://golangci-lint.run/plugins/module-plugins/
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl
 .devcontainer/post-install.sh -> https://dl.k8s.io/release/stable.txt
@@ -249,6 +249,8 @@ docs/DOCTRINE-MAP.md -> eval/harness.sh
 docs/DOCTRINE-MAP.md -> hack/deployrehearsal
 docs/DOCTRINE-MAP.md -> hack/operatorpoc
 docs/DOCTRINE-MAP.md -> internal/controller/testdata/compat
+docs/DOCTRINE-MAP.md -> registry/SKELETON-SPACE.json
+docs/DOCTRINE-MAP.md -> registry/spaces
 docs/GO-TO-MARKET.md -> docs/AGENT-PLATFORM.md
 docs/KUBE-SPEC.md -> docs/manual
 docs/TOOLS.md -> cmd/codecompiler/main.go

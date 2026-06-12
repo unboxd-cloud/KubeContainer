@@ -45,7 +45,21 @@ richer text elaborates a primitive, the primitive governs.
   keeper tends and escalates; the owner is the escalation's last
   stop — there is no party behind him to hand the concern to, and
   a concern that dies unresolved at the node is his by name in
-  the record.
+  the record. And the rule that follows for everything built on
+  anything: a codebase with no owner is not a valid point of
+  reference — what has no node where concerns resolve cannot be
+  depended on, cited, or carried in a parts list, because a
+  reference to it is a reference to no one; building on ownerless
+  code is anchoring to an empty seat. And behind every valid
+  reference stands the final guarantee, and it is human: there
+  must be someone — a human — who has the skills to make the code
+  or tool work in any condition. Loops keep the declared
+  conditions; paths repair the registered wounds; but conditions
+  arrive that no declaration foresaw, and for that hour the chain
+  must end in hands and judgment: a named person who knows the
+  thing deeply enough to make it work anyway. A tool whose last
+  skilled human is gone is already failing — it just hasn't been
+  asked the hard question yet.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

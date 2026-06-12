@@ -1026,7 +1026,31 @@ that admits the undeclared admits everything: the languages that
 let names spring into being mid-sentence shipped half a century of
 typos as production state. In the field of study, the compiler is
 the first examiner — and nothing sits the later exams that did not
-pass the first. And over all the principles stands the structural
+pass the first. The seats of the warranty divide there exactly:
+the compiler's work is to make the code work — and the platform
+holds the contract to make it work under certain conditions. The
+compiler answers for the unconditional half (this code is
+well-formed, its names resolve, its types hold: it works as
+language); the platform answers for the conditional half — *under
+these conditions*: on this base, at this version, within these
+limits, against these dependencies, the named conditions written
+into the contract and checked by the gauntlet. No one warrants
+the unconditioned: "it works" with no conditions named is the
+field of work's oldest lie, and the dual-signed build spec exists
+to replace it — the shipper's compiler having made it work, the
+platform's contract saying where, the conditions on the label
+beside the seal. And one promise is never on the label: no one
+promises infinite scalability. Infinity is not a condition — it
+is the absence of one, and a warranty with no bound is not a
+strong promise but no promise at all (nothing checkable, nothing
+breachable, nothing anyone answers for). The orchestrator twin
+gives infinite *ability* — the mechanism scales as far as the
+tiling holds — but the contract names the tested bound: scales to
+N, verified at N, priced to N, with the path to the next N
+declared. Beyond the bound is not forbidden; it is unwarranted —
+walk there with the maker, re-verify, re-sign, and the bound
+moves. The honest platform sells tested ceilings and the ladder
+between them; only the brochure sells the sky. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two

@@ -788,7 +788,18 @@ that redefines a word privately has already drifted.
   physical: the container bonded to the metal it boots from, the
   kernel-native floor (hardware-metal-native, per the stack law)
   with the kube riding immutable above it. Meta in office, metal in
-  body — one product, the pun load-bearing.
+  body — one product, the pun load-bearing — and the founder names
+  it: **The Metal Kube**. The product's name, with KubeContainer
+  Core the distribution it ships as: the kube bonded to the metal,
+  the soul flashed into the body, the edge edition wearing the
+  brand's own grammar (the kube of the metal, as the kube was the
+  soul of the Thing).
+- **The Metal Kube** — the name of the edge product: the kube
+  bonded to the metal — a device whose immutable core is the kube
+  (loop, record, contract, one signed channel) flashed onto the
+  hardware it is native to; ships as KubeContainer Core. The
+  brand's grammar extended to the ground: the kube was the soul of
+  the Thing; The Metal Kube is the soul in the body it boots from.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and

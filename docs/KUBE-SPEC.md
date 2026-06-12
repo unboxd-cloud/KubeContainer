@@ -132,7 +132,9 @@ surface around it stays headless; the core inside it runs the kube;
 delivery reaches it only at the ports — the whole edge doctrine,
 shipped as the thing you flash. Where KubeContainer runs workloads
 on clusters, KubeContainer Core *is* the workload-keeper a device
-boots: edge with kube at its core, in the catalog.
+boots: edge with kube at its core, in the catalog — and its name,
+given by the founder, is **The Metal Kube**: KubeContainer Core is
+what it ships as; The Metal Kube is what it is.
 
 ## 9. The brand
 

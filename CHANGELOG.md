@@ -7,6 +7,27 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-06-12
+### Added
+- HomeSetup binary (`-clean-slate`) shipped as a release asset — one
+  download converges a VPS (eviction, GitLab, k0s, operator, kube).
+- Release now ships test-report.json, security-report.json, SHA256SUMS.
+### Fixed
+- HomeSetup field-hardened: waits for apt locks, enables
+  gitlab-runsvdir before reconfigure (the wedge seen on first deploy).
+
+## [0.2.0] - 2026-06-12
+### Added
+- The Personal doctrine, the agent contract and flow, the registry
+  (skeleton + blueprints), the tools (CodeCompiler, StructuredInstructions).
+- The instruction manual (contracts, licenses, FAQ, how-to-use).
+- The Primitives, the Doctrine Map, the deploy stack and references.
+- release/PROMISE and the promise check: "promise delivered" is now a
+  verdict the pipeline renders, never a flourish.
+### Changed
+- License of record: KubeContainer Research and Community Source License v1.0.
+
+
 ### Changed
 
 - Organization renamed: unboxd-cloud → **unboxd-agency**. The reason,

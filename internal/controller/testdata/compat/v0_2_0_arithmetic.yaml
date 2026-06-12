@@ -1,0 +1,16 @@
+# Golden compatibility manifest — frozen at v0.2.0. DO NOT EDIT.
+# The contract release's own declaration: the arithmetic kube.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v020-arithmetic
+  annotations:
+    fabric.unboxd.cloud/surface: edge-browser
+    fabric.unboxd.cloud/function: transaction-formula
+spec:
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 1
+  expose:
+    type: ClusterIP

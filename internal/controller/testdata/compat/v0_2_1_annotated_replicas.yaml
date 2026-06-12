@@ -1,0 +1,14 @@
+# Golden compatibility manifest — frozen at v0.2.1. DO NOT EDIT.
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: compat-v021-annotated
+  annotations:
+    fabric.unboxd.cloud/surface: edge-browser
+spec:
+  image: nginx:1.27
+  port: 8080
+  scaling:
+    replicas: 2
+  healthCheck:
+    path: /healthz

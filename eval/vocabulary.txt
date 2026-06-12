@@ -201,6 +201,7 @@ truth
 unboxd cloud platform
 unit
 verdict
+verse
 wake on events, steer by outcomes, prioritize by value
 where code is configuration
 where the platform is the foundation

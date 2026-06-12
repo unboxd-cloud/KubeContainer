@@ -17,7 +17,7 @@ do not edit; define terms in their source documents.
 | Agent Excellence | `docs/AGENT-PLATFORM.md:75` |
 | Agent Governance | `docs/AGENT-PLATFORM.md:63` |
 | Agent drift | `docs/AGENT-PLATFORM.md:596` |
-| AgentVerse | `docs/PRIMITIVES.md:599` |
+| AgentVerse | `docs/PRIMITIVES.md:627` |
 | All languages, all speaker pairs | `docs/AGENT-PLATFORM.md:282` |
 | Always on | `docs/AGENT-PLATFORM.md:149` |
 | An agent acts for a principal, where the principal isn't, or after the | `docs/FOUNDING-PRINCIPLES.md:67` |
@@ -208,6 +208,7 @@ do not edit; define terms in their source documents.
 | Truth | `docs/PRIMITIVES.md:289` |
 | Unit | `docs/PRIMITIVES.md:429` |
 | Verdict | `docs/AGENT-PLATFORM.md:581` |
+| Verse | `docs/PRIMITIVES.md:639` |
 | Wake on events, steer by outcomes, prioritize by value | `docs/FOUNDING-PRINCIPLES.md:91` |
 | Where code is configuration | `docs/AGENT-PLATFORM.md:354` |
 | Where the Platform Is the Foundation | `docs/AGENT-PLATFORM.md:442` |

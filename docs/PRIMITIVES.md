@@ -636,6 +636,26 @@ richer text elaborates a primitive, the primitive governs.
   the fabric at its destination — the Internet of Agents grown to
   cosmology — and it is entered the only way this list permits:
   one Thing ensouled at a time.
+- **Verse** — every 'verse' is a perception of the world, with the
+  anchor as its actor — its twin. A verse is not a separate
+  reality but a *view* of the one real world, rendered from the
+  standpoint of one actor: the actor is the anchor, the fixed
+  origin the whole perception is drawn around, and the verse is
+  that actor's twin — the world as it appears, is known, and is
+  acted upon from exactly there. There are as many verses as
+  there are anchors, and they overlay one real world without
+  multiplying it (the multi-context law: many views, one truth;
+  the multiverse is only in the mind). The actor's verse is its
+  digital twin grown to a worldview: not a second world to escape
+  into but a lens to act through, and every verse resolves back to
+  the single real world the way every image resolves back to the
+  one canonical kube. So the AgentVerse is the verse of an actor
+  whose anchor is an agent; a human's verse is anchored at the
+  human; and the fabric's gift is that these verses, each true to
+  its anchor, share one world underneath — uniform but unique,
+  perceived from everywhere, real in only one place. Name the
+  anchor and you name the verse; lose the anchor and the verse was
+  never a world, only a daydream with no one home.
 
 ## The counsel
 

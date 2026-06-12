@@ -94,6 +94,7 @@ Each body is named with its tier(s); the document stays where it is.
 | `Makefile`, `hack/*.sh`, `.github/workflows/*` | Harness | The gauntlet, vocab check, eval registry, drift audit, CI. |
 | `internal/controller/testdata/compat/` | Harness + Constraints | The frozen golden corpus; the backward-compatibility constraint, mechanically enforced. |
 | `eval/corpus/`, `eval/harness.sh` | Harness | The world-tests and the runner. |
+| `docs/DOCTRINE-MAP.md` (this file) | Constitution + Harness | Constitution: it governs how the whole record is read, amendable only by process. Harness: it is the classifier itself — the index that catches orphans, including, now, its own. |
 
 Where a row carries two tiers, the stricter binds the passage in
 question: a Theory paragraph inside a Constitution document is still

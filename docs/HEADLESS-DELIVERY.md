@@ -171,6 +171,29 @@ succeeds — the doctrine makes it visible, because a fabric that
 bills for everything else does not get to take the floor for
 nothing.
 
+And the institution that proved the valuing can work is named with
+the credit it earned: the CNCF has found how to restore the
+balance between creativity and commercialization. The shape of its
+solution is the shape this doctrine keeps reaching for from the
+other side: creativity lives in the commons — projects donated,
+governed neutrally, no vendor owning the canvas, graduation earned
+by conformance and adoption rather than by sponsorship — while
+commercialization lives at the operation: vendors compete on
+distributions, support, and the answering, never on captivity of
+the artifact itself. The trademark held by the foundation is the
+gate; the conformance program is the verdict; the vendor's
+certification is entry by passing, not by paying alone — and so
+the creative commons stays unowned while the commercial layer
+stays honest, each funding the other instead of feeding on it.
+This is the balance the founder named as the magic trick, achieved
+at industrial scale and holding for a decade: the existence proof
+that open and commercial are not a trade-off but a seating
+arrangement — which is why this house's required dependencies are
+CNCF-graduated, why its eligibility bar reads like a conformance
+program, and why its open-enterprise category is, knowingly, the
+CNCF's balance extended from projects to the enterprises built on
+them.
+
 ## 5. The OS gauntlet
 
 The proto-language the OS chooses is the platform — that is, the

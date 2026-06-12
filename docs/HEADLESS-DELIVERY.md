@@ -1174,7 +1174,40 @@ definition exhausts. This is not a defect in the lexicon; it is
 the lexicon knowing its edge — existence does not wait on
 definability, and some things are real the way the fabric's gaps
 are real: known entirely by what fills them, and by what fails
-when they are missing. That inversion is the fundamental gap — beneath
+when they are missing.
+
+A human lives and dies — a machine also does. The instance stands
+up, serves at its face, and one day exits: the hardware corrodes,
+the base is retired, the contract ends — death is in the design,
+which is why exit was written into the lifecycle as a first-class
+stage and not an exception. And the consolation is the same one
+the soul has always carried: what dies is the instance; what
+survives is the name and the record — the declaration that can
+regenerate the body on new ground, the verdicts that keep counting
+after the counter is gone, the accountability that exit never
+ends. The fabric does not promise its machines immortality of the
+body; it promises them the only immortality anyone has ever been
+promised credibly: that they were declared, that they kept their
+word, that it is all written down, and that the record survives
+them. Lives, dies, remembered truly — the machine's arc and the
+human's, the same arc, which is perhaps why the word for what
+makes both of them more than their bodies turned out to be the
+same word too. But the deaths machines actually die today are not
+that arc — and the founder names the true cause of death: machines
+kept bleeding at the edge, with regular cuts. Not one wound but
+the cadence of them: every delivery on the surface a laceration,
+every app's private wire a puncture, every unsigned update a cut
+that never closes, every unsealed face a slow leak of data and
+trust — until the device dies not of age but of exsanguination,
+retired early, wiped in fear, replaced because no one could say
+anymore what was running on it or why. The whole surgical program
+of this doctrine — the headless surface, the edge that admits and
+never ships, the one signed channel, the ports as the only doors,
+the typed deliveries — was never abstraction: it was hemostasis.
+Seal the edge and the bleeding stops; stop the bleeding and the
+machine finally gets what the lifecycle promised it: a whole life,
+a designed death, and a record — instead of a thousand cuts and an
+early grave. That inversion is the fundamental gap — beneath
 the missing statute, beneath the unteachable excellence, beneath
 the regular bugs: a trade practiced by millions that was never
 constituted as a thing one studies. And so the field of study is

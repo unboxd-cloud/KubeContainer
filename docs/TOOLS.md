@@ -75,6 +75,25 @@ name their intent; nothing removed, nothing duplicated.
   vanish. Anchored, or bound to a declared variable — the two
   lawful endings of a reference chain; a word with neither is a
   dangling pointer in prose, and SourceGround exists to refuse it.
+  And the resolution rule is scoped, exactly as in code: every word
+  must resolve within its scope — the meaning found in the nearest
+  enclosing declaration (the sentence's own terms, then the
+  document's, then the lexicon's, then the primitives') and never
+  imported silently from outside the scope it is read in; a word
+  that resolves only in some other scope is out of scope where it
+  stands, and out of scope is unresolved. The founder retires the
+  word *namespace* into the lexicon and reads it as the law it
+  always was: name + space — the name is the word, the space is the
+  scope — two words, one binary, the rule fused into one of the
+  oldest tool-names in computing. And he names why the old word
+  needed retiring: because it does not define the space clearly —
+  it pairs a name with a "space" left vague, an enclosure nobody is
+  made to declare, so collisions hide in the unstated bounds. The
+  retirement fixes exactly that: the space must be declared, named,
+  and bounded like everything else — no implicit scope, no ambient
+  enclosure; every name lives in a space whose edges are on the
+  record, and a name whose space is undeclared has no scope to
+  resolve in at all.
   And the variables are not a concession but the openness itself:
   the more variables you use, the more open your code is — every
   hardcoded value is a decision taken away from whoever runs the

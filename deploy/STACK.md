@@ -95,3 +95,33 @@ and the placements answer his questions on the record:
   OpenStack under the estate — one conformant contract at every
   rung, which is why the same declaration walks all four without
   changing a line.
+
+## Candidates per slot
+
+The founder's order: the pick is a choice only if the alternatives
+are on the record. Each slot, its pick, and the other candidates a
+builder may lawfully swap in — entry by conformance, never by this
+house's leave; candidates listed are the leaders of each slot's own
+scoreboard, and a swap is a re-pin, not a rebellion.
+
+| Slot | Picked | Other candidates |
+|---|---|---|
+| Metal / ISA | builder's pick | x86-64 (Intel/AMD) · Arm64 (the edge's favorite) · RISC-V (the open ISA, rising) |
+| IaaS substrate | OpenStack | Apache CloudStack (the house once weighed it) · bare conformant cloud (any hyperscaler, by the exit law) · no IaaS at all (metal straight to K8s, for the small estate) |
+| Node OS | Ubuntu Server LTS | Debian (the upstream elder) · Flatcar (immutable, container-first) · Ubuntu Core (weighed for the edge, snap-sealed) · Talos (API-only, no shell — the K8s-native extreme) |
+| Kubernetes rung | upstream 1.35 / k3s / minikube | k0s (single-binary sibling) · kind (CI's own rung, already in the e2e gate) · any certified distribution (the conformance list is the menu) |
+| Container runtime | containerd | CRI-O (the Kubernetes-purist sibling) · Kata (VM-isolated containers, when the tenant boundary must be hardware) |
+| Storage body | Ceph (behind Cinder, via CSI/Rook) | Longhorn (CNCF, the lightweight estate) · OpenEBS (CNCF sandbox lineage) · the substrate's native volumes (small grounds) |
+| Identity | Keystone (in-OpenStack) | Dex (CNCF, OIDC federation) · Keycloak (the self-hosted elder) · any OIDC provider (the protocol is the seat, the product is swappable) |
+| Wire / skeleton | protobuf + gRPC | JSON Schema (the registry's current declarations speak it) · CBOR/CDDL (the constrained edge) · FlatBuffers (zero-copy, when parse cost is the path) |
+| Events | CloudEvents | — the seat is the standard itself; candidates compete beneath it as transports (HTTP, MQTT, NATS) |
+| Memory runtime (vacant) | FabricDB (declared) | until built, the candidates holding the floor: etcd (the cluster's own record) · PostgreSQL (the durable elder) · SQLite (the device-local floor) — each measured against the four properties: durable, indexed, replicated, meta-modeled |
+| Surface engine | the user's browser | every engine the user already runs is admissible — the face is theirs, not ours to pick |
+
+The rule of the table: the pick column is what this house stands on
+and answers for; the candidates column is what any builder may pin
+instead without leaving the fabric — same declaration, different
+ground, the exit kept real at every slot. A candidate becomes a pick
+by being pinned and recorded; a pick becomes a candidate again the
+day its keeper stops keeping — the scoreboard, not sentiment,
+governs both directions.

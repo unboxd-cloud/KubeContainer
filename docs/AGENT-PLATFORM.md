@@ -800,6 +800,17 @@ that redefines a word privately has already drifted.
   hardware it is native to; ships as KubeContainer Core. The
   brand's grammar extended to the ground: the kube was the soul of
   the Thing; The Metal Kube is the soul in the body it boots from.
+  And the founder closes the naming the way the canon law demands:
+  The Metal Kube, MetaKube, KubeContainer Core — and at the bottom,
+  Kube — all resolve to the same. Many names, one canon: each name
+  a scoped rendering (The Metal Kube on the metal, MetaKube in the
+  meta office, KubeContainer Core on the SKU line), every one an
+  image resolving home to the one canonical referent — the kube —
+  exactly as every image resolves to the canonical kube and every
+  verse to the one world. The registry holds the mapping; no name
+  is a second self; and a buyer who asks which product this is gets
+  the only answer the fabric ever gives: the kube, by whichever of
+  its names your scope speaks.
 - **The Edge (definition)** — the edge is the surface where representation
   meets reality: the one boundary in the stack that cannot be forked,
   paused, rolled back, or apologized to. Below it everything is mind and

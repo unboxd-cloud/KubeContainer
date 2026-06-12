@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# The desk gate, enforced: nothing red leaves this machine.
+./hack/check-vocabulary.sh || { echo "pre-push: vocabulary red — push refused"; exit 1; }
+go build ./... || { echo "pre-push: compile red — push refused"; exit 1; }

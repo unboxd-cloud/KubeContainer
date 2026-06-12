@@ -44,7 +44,7 @@ do not edit; define terms in their source documents.
 | Claims become evidence | `docs/FOUNDING-PRINCIPLES.md:70` |
 | Code | `docs/PRIMITIVES.md:77` |
 | Code is configuration | `docs/FOUNDING-PRINCIPLES.md:74` |
-| CodeCompiler | `docs/TOOLS.md:203` |
+| CodeCompiler | `docs/TOOLS.md:416` |
 | Compliance by the path | `docs/AGENT-PLATFORM.md:864` |
 | Constitution | `docs/DOCTRINE-MAP.md:50` |
 | Constraints | `docs/DOCTRINE-MAP.md:60` |
@@ -188,14 +188,14 @@ do not edit; define terms in their source documents.
 | Skill | `docs/AGENT-PLATFORM.md:485` |
 | Soul | `docs/PRIMITIVES.md:93` |
 | Soul (of a Thing) | `docs/AGENT-PLATFORM.md:760` |
-| SourceGround | `docs/TOOLS.md:214` |
+| SourceGround | `docs/TOOLS.md:427` |
 | Sovereign | `docs/FOUNDING-PRINCIPLES.md:148` |
 | Sovereign & federated | `docs/SOLID-STATE-DATABASE.md:77` |
 | Stable substance, stable state | `docs/FOUNDING-PRINCIPLES.md:98` |
 | Standard operating procedures | `docs/AGENT-PLATFORM.md:337` |
 | Status | `docs/DESIGN.md:197` |
 | Step | `docs/PRIMITIVES.md:63` |
-| StructuredInstructions | `docs/TOOLS.md:210` |
+| StructuredInstructions | `docs/TOOLS.md:423` |
 | Surface | `docs/PRIMITIVES.md:99` |
 | Tagging | `docs/DESIGN.md:133` |
 | The Agent Economy | `docs/AGENT-PLATFORM.md:108` |
@@ -238,4 +238,7 @@ do not edit; define terms in their source documents.
 | World | `docs/PRIMITIVES.md:107` |
 | World model (internal) | `docs/AGENT-PLATFORM.md:574` |
 | World-test | `docs/AGENT-PLATFORM.md:578` |
+| merge | `docs/TOOLS.md:503` |
+| push | `docs/TOOLS.md:499` |
+| release | `docs/TOOLS.md:506` |
 | unboxd Cloud Platform | `docs/AGENT-PLATFORM.md:693` |

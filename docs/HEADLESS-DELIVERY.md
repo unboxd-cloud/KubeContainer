@@ -1081,7 +1081,20 @@ state but a pursuit, the only excellent artifact is the one that
 carries its own pursuit inside it. The marketing site said the
 loop keeps the promise; the doctrine's last equation says what
 that keeping is worth: the loop *is* the excellence — everything
-else is just a good day. And over all the principles stands the structural
+else is just a good day. And the founder maps where the equation
+points: auto-anything at scale is the frontier. Auto-maintenance,
+auto-correction, auto-learning, auto-update, auto-assembly,
+auto-conformance — each one easy at quantity one (a demo), honest
+only at quantity N (a discipline), and the frontier is exactly
+the crossing: making *auto* survive *scale* — the loop that still
+closes at ten million instances, the path that still walks
+identically on the millionth device, the learning that still
+deposits cleanly when a thousand keepers write the one record.
+That is where the open problems live (the research grade of the
+curriculum), where the eligibility bar will move next, and where
+this fabric has chosen to work: not auto, not scale — auto at
+scale, the two words that are trivial apart and the entire
+frontier together. And over all the principles stands the structural
 law, four words and absolute: if it overlaps anywhere — it will
 never scale. Two owners of one fact, two writers of one field, two
 services on one port, two loops keeping one declaration, two

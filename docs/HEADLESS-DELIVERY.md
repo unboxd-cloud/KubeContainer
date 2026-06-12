@@ -191,6 +191,57 @@ this doctrine needs it. We adopt the kernel's refusal as our verdict
 and add only the record: which service, which port, whose contract —
 so that what the OS enforces, the registry can answer for.
 
+But the assignment itself is never the service's to improvise: the
+registry must define the port — or the address should be a URL. Two
+lawful ways to be reachable, and only two. Either the port is
+registered — declared in the registry that defines the contract, the
+way the old world's IANA well-known ports were settled by an
+international body rather than by squatters — or the service is
+addressed by name: a URL, resolved through the resolution layers
+(the registry holding the name-to-place mapping, the way the domain
+registry holds the mapping and no domain self-declares its IP). A
+service that hardcodes its own unregistered number has claimed land
+without a deed; the kernel may let it bind, but the record will not
+let it answer. Reachability is either registered or resolvable —
+never assumed. And which of the two applies is not a style choice:
+the content is the difference. What humans consume is addressed by
+name — the URL, resolvable, served by the browser-as-server, because
+names are the address form a human can hold. What machines activate —
+code, sealed packages — is addressed by registered port, because
+numbers settled in a registry are the address form a kernel can
+enforce. Same device, same edge, two address forms, and the type of
+the delivery decides between them: the split by type (§10) reaching
+all the way down into how a thing is found.
+
+And content delivery is named for what it really is: content
+delivery is all experience. What travels to a face is never mere
+data — it is the experience itself: converted to the user's skill
+profile (§7), presented at their face, uniform but unique. The
+content channel does not ship files that become an experience later;
+the delivery *is* the experience, assembled for that human at that
+surface — which is why it belongs to names and faces while code
+belongs to ports and kernels: experiences are had by someone, and
+the address of an experience is the person.
+
+And this is where AI's creative power should shine: the experience
+channel is the licensed home of the surreal. The division of labor
+already in law — the LLM optimizes creativity, the agent optimizes
+outcome — gets its geography here: on the code channel, determinism,
+verdicts, and the gauntlet, no creativity in the binary; on the
+content channel, create surreal experience — vivid, generative,
+astonishing, tuned to the one human at the face — because content
+cannot execute (§10) and so the surreal can run free without ever
+touching the real. The split by type is what makes the boldness
+safe: dream at the faces, because the ports are sober. And the
+dreaming is grounded the house way: the surreal is created from
+complete context — the experience is generated from the whole
+record (who this human is, their skill profile, their world, their
+moment — the five dimensions assembled), never from fragments or
+guesses. Complete context is what separates a surreal experience
+from a hallucinated one: both astonish, but one resolves — every
+element traceable back to the context it was woven from. The skeleton
+rule again, at the canvas: full structure first, then the art.
+
 ## 11. Browser as server
 
 - **Browser as server** — the service built native on the surface:

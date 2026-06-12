@@ -158,3 +158,25 @@ Built (Orkes), executed (Temporal), kept (the kube), witnessed
 them. Each candidate enters by conformance and is swappable; the kube
 is the only seat this house fills itself, because reconciliation is
 its founding craft.
+
+## Two decisions, delegated and made
+
+The runtime under the panel: k3s. The founder left the call ("could
+be k3s — up to you") and the reasons decide it: the panel stack needs
+ingress, storage, and Helm-handling out of the box, and k3s ships all
+three built in (Traefik, local-path, the Helm controller) where k0s
+ships bare. k0s stays the leaner candidate for headless edge nodes;
+k3s takes the home — the panel's ground needs the batteries, the
+edge does not. Both conformant; the declaration walks both unchanged.
+
+Crossplane: useful — yes, at one seat, without unseating OpenTofu.
+Crossplane is the kube's own model applied to infrastructure
+(continuous reconciliation of external resources as CRDs — DNS,
+instances, buckets kept, not just applied), which fits this house's
+loop-law better than plan/apply once a long-lived cluster exists. But
+it cannot bootstrap itself: you need a cluster before Crossplane can
+run. So the seating is sequential, no overlap: OpenTofu for day-0
+(the ground bootstrapped, plan/apply), Crossplane for steady state
+(the ground reconciled from inside the cluster, drift reverted like
+any kube child). Bootstrap by tofu, keep by Crossplane, both
+declared, the exit real at each.

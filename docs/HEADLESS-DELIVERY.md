@@ -140,6 +140,36 @@ multi-mode, across the many bases. Concurrency is a delivery
 property, not a code property — which is what Single Binary Code
 means in motion.
 
+And the split has its criterion: the delivery is split by the type.
+Channels are not balanced by load or sharded by chance — each type
+(each kind of skeleton, each declared structure) gets its own
+delivery channel to its own right port, so a channel carries one
+shape and a port expects one contract. Type is the unit of
+parallelism: add a type, gain a channel; retire a type, close one —
+and no channel ever has to guess what it is carrying, because the
+split itself is the routing and the routing is in the record.
+
+The first and deepest split: content delivery and code delivery are
+different. Content goes to faces — converted to the user's skill
+profile (§7), streamed multi-channel, presented by the browser-as-
+server, consumed where it lands. Code goes to ports — sealed in the
+kube, image-form, gauntlet-checked, activated only in its right
+context (§4), executed where no face can touch it. Two deliveries,
+two channels, two destinations, two trust regimes — and the wound
+named in §6 is exactly what happens when a system lets them blur:
+content that executes is an attack, and code that is consumed as
+content is a leak. The type split keeps them strangers.
+
+And there is package delivery — the third kind, distinct from both:
+the delivery of the whole sealed box. Not content (nobody reads a
+package), not bare code (nobody executes a package) — the kube
+entire: artifact, BOM, contract, and provenance under one lid,
+delivered intact, integrity-checked at the port, and unboxed only by
+the end user — because unboxing before the end user makes the
+contract invalid. Content is consumed, code is activated, packages
+are unboxed; three deliveries, three verbs, three channels, and the
+box doctrine riding the wire it was always destined for.
+
 ## 11. Browser as server
 
 - **Browser as server** — the service built native on the surface:

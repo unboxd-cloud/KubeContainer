@@ -45,3 +45,37 @@ list is there for show. Lightweight check: one VPS carries it; the
 only always-on residents are k0s, the operator, zot, the site, and
 GitLab — five, each earning its memory. Complete and light is a
 balance, and this is where it resolves.
+
+## Consider the edge — the stack folds smaller
+
+The founder's law: the same stack must fold to the edge, where weight
+is not a preference but a wall (a sensor, a card, a browser tab, a
+microcontroller cannot carry GitLab, cannot carry a VPS's worth of
+residents). So the stack has two readings, one declaration:
+
+- **The home (estate/VPS)** — the full table above: source, CI,
+  registry, runtime, site, all resident, GitLab the heavy guest.
+- **The edge** — only the kube at the core: The Metal Kube
+  (KubeContainer Core) — loop, record, contract, one signed channel,
+  the surface-native runtime, and nothing else aboard. No GitLab, no
+  zot, no full control plane on the device: the edge pulls signed
+  declarations from the home through the one channel, runs the kube,
+  and serves its face. Source, CI, registry, build all live at the
+  home; the edge receives the product, never the toolchain.
+
+The seam between them is the headless-delivery doctrine, exact: the
+home is where it is built, certified, registered (the cloud side, the
+capable guard); the edge is where it is delivered and run (the ports,
+the surface). What folds away at the edge is everything that builds;
+what remains is everything that keeps. The stack is complete at the
+home, minimal at the edge, and one declaration spans both — because
+the difference between home and edge is count and resident, not kind:
+the kube is the same kube; only its company changes.
+
+The lightweight rule, edge-stated: at the edge, the only resident is
+the kube. Everything else is the home's, reached over the one
+channel, never installed on the device whose surface must stay
+headless. Consider the edge, and the stack does not grow a second
+architecture — it sheds, down to the one resident the edge was always
+for.
+

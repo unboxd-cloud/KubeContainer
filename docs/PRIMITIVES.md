@@ -38,7 +38,13 @@ richer text elaborates a primitive, the primitive governs.
   same concern — the thing, kept true — divided between two parties
   so that each can check the other; concerns divide inside the
   work, duties divide between the parties, and confusing the two
-  produces both monoliths and monarchs.
+  produces both monoliths and monarchs. The maintainer may be one
+  or many; they must not depend on the tool to earn — a keeper paid
+  by the kept thing will bend its gate, so the living comes from
+  the keeping's quality, never from the thing's fortunes; and they
+  are the gatekeepers, not the owners of the code — they hold the
+  gate and answer for what passes, while the thing belongs to
+  whoever holds its contract.
 
 ## The statements
 

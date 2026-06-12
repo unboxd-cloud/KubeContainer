@@ -488,7 +488,34 @@ richer text elaborates a primitive, the primitive governs.
   kube: the unit to deliver, the gap to fill, the shortest
   sustainable route to the declared outcome. Every clause of this
   definition is a law defined elsewhere in this record; the
-  platform is where they all hold at once.
+  platform is where they all hold at once. And the standard the
+  scaling is held to, named so it cannot drift into mere bigness:
+  scalable without a built-in ceiling, with minimal footprint,
+  optimal cost, and frictionless operations. Scale is not bought
+  with bulk — minimal footprint (the smallest binary, the fewest
+  moving parts, no sidecar zoo, no idle weight), optimal cost (the
+  critical-path-finding loop solving for value density, more stops
+  more cost, the cheapest sustainable route — never the cheapest
+  unsustainable one), and frictionless operations (declare and it
+  converges; no tickets, no toil, no human in the keeping loop —
+  auto-maintenance, auto-update, auto-correct doing the running).
+  Cheap, light, and quiet at any size: a platform that scales by
+  growing heavier has not scaled, it has swollen — true scale adds
+  reach without adding friction, capacity without adding weight,
+  and load without adding cost per unit. That is the only scaling
+  this house calls scaling. And the three are not a wish-list to
+  maximize but a balance to hold: minimal footprint, optimal cost,
+  and frictionless operations pull against each other — shrink the
+  footprint too far and operations gain friction; chase frictionless
+  too hard and cost climbs; drive cost to its floor and something
+  load-bearing thins. The platform does not maximize any one; it
+  finds the balance among all three, the framework that resolves
+  even when no single axis is at its extreme (balance is the
+  framework; balance maintains the fabric's stable state). Optimal
+  cost already says it — *optimal*, not minimal: the balanced
+  point, not the cheapest corner. Scale held in balance is scale
+  that lasts; scale that maximizes one axis buys a record and pays
+  for it everywhere else.
 - **Trusted platform** — and the definition is this: a platform
   that has earned, by others' continuing verdict, the standing to
   be relied on without re-checking every time — the gold standard

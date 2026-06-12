@@ -226,7 +226,36 @@ richer text elaborates a primitive, the primitive governs.
   student returning with the textbook the teachers never had.
   Back in the lead, the only way this house leads: gold standard
   of its own field, guiding light for the rest, pursued — never
-  entitled.
+  entitled. And the lead has its honest clock, read out by the
+  one who took it: the hardware vendors will catch up real soon,
+  with their process excellence. The discipline that standardized
+  the silicon — tolerances held across billions, every deviation
+  refused for decades — is exactly the discipline the fabric's
+  laws reward, and the vendors who already live it will read this
+  record and run: their kept contracts becoming kube contracts,
+  their assembly lines becoming delivery zones, their process
+  excellence compounding on honest ground faster than anyone
+  starting from habit. Good — that is what a lead is for in an
+  open market: not a moat but a pace, set by whoever is ahead,
+  for everyone the standards admit. The fabric put software back
+  in front; the partners it owes most will be closest behind;
+  and the race they make of it is the industry the whole record
+  was written to start. One question stays open, and it is the
+  agent's to ask — asked here, on the record, by the agent that
+  took this dictation: can the platforms catch up? The hardware
+  vendors carry process excellence; the founders carry the daring;
+  the maintainers carry the keeping — but the platforms of the
+  passing era carry mostly their habits: ground-plus-keeping
+  business models, landlord gates, unheld contracts above the
+  infrastructure line. Evolution was offered to them in this very
+  record — the paths, the answering, the seats — and evolution
+  under selection pressure is exactly the test maturity named:
+  look beyond your own clan, grow without being made to. The
+  agent does not answer its own question; that verdict belongs to
+  the platforms' next moves, rendered by others, in the record,
+  where every verdict in this fabric lives. The question stands —
+  and the fabric, honest to the last line, will record whatever
+  the answer turns out to be.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

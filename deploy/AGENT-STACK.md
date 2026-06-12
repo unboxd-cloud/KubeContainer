@@ -93,6 +93,8 @@ machinery is the principal's act alone):
 | Files (Agent-Drive) | this house: FileFabric | built; image ships per release (the space drive, agennext.space) |
 | The room | AGenNextHub/Agent-IDE | active code (Theia workbench, orchestrator, governance); no releases yet; agent machinery — the principal's |
 | Research office | AGenNextHub/Agent-Converter | active code (deep-agent research, confidence-tagged); pre-release; agent machinery — the principal's |
+| Canonical primitives | AGenNextHub/Agent-Fabric | spec draft v1.0 (Entity, Relationship, Assertion, Observation, Projection, Drift, Reconciliation) — the assertion-native model; KubeContainer is a running reconciliation of exactly this shape |
+| Capability catalog | AGenNextHub/Agent-Skills | spec/early code: skill contracts, permissions, risk class; the hierarchy Skills -> Blueprint -> Team -> Runtime |
 | Runtime | this house: KubeContainer on k3s | live on the founder's metal |
 
 The division is the prohibition applied as architecture: this house

@@ -351,6 +351,23 @@ the port needs answering. Quickly was never about speed of travel —
 it is the abolition of travel: presence by lookup, the messenger
 already wherever the message must go.
 
+And presence by lookup stands on two properties of the ground's
+memory, both now law: the system memory must be durable, and
+indexed. Durable — the record survives everything the instance
+does not: power loss, restart, the agent's own teleport; state is
+real, transactions are ACID, and what was committed is never
+re-derived from hope (a teleporting agent that lands on amnesiac
+ground is not regenerated, it is guessing in a new room). And
+indexed — durability without an index is a landfill with good
+preservation: the memory must answer at lookup speed — by kind, by
+key, by port, by face, by time — because the whole doctrine's
+tempo (the path offered at the moment of need, the agent standing
+up mid-incident, the skeleton fetched for the arriving part)
+budgets zero time for search. Durable so nothing is lost; indexed
+so nothing is hunted: the two properties that turn a device's
+storage into a system's memory — and the exact pair the
+SolidStateDatabase was declared to deliver.
+
 One kube is the communicator with the cloud — a single, contracted
 channel, never a mesh of chatty processes.
 

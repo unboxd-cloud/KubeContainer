@@ -72,6 +72,45 @@ numbers. These are declared as future world-tests, not implied:
 When each lands it gets a measured row above and, where it can run in
 CI, a task in the eval registry so the number can never silently rot.
 
+## The law of the bench
+
+The founder's rule, governing every row above and every row ever
+added: software must benchmark itself against real-world metrics —
+not invent metrics and call it a bench. An invented metric is a
+mirror angled to flatter: the suite that times itself on inputs it
+chose, the score normalized to its own baseline, the percentile of
+a distribution nobody else can observe — self-graded homework
+wearing instrumentation. A real-world metric is one the world
+already keeps and anyone can check against it: wall-clock time on
+named hardware, bytes on disk, requests answered with live traffic,
+a release published end to end, money metered in a currency, a
+date on a calendar. The test for every metric in this file is the
+world-test rule applied to measurement itself: if the number's
+meaning depends on trusting its author, it is not a benchmark —
+it is a claim with decimals. Rows that cannot cite a real-world
+unit do not enter; the not-yet-benchmarked list exists precisely
+so that what we cannot yet measure honestly is declared rather
+than invented.
+
+And the source of honest metrics is named: software must look at
+the other industries — at how they have matured. Every grown
+industry built its bench from the world's units, under an
+accountable body: the automobile is measured in crash-test stars,
+emissions per kilometer, and recalls per million — not in
+"engine-elegance scores" the maker invented; aviation counts
+incidents per departure; medicine counts outcomes per
+intervention; manufacturing counts defects per million
+opportunities; finance closes books that must balance to the
+cent. Each of those metrics was once resisted as unfair,
+external, reductive — and each is precisely why its industry is
+trusted with lives and money. Software's maturity will be
+measured the same way: time-to-converged on declared hardware,
+defects escaped per release, promises kept per promises made,
+provenance resolvable per artifact shipped — the world's units,
+kept by parties who do not profit from the grade. The industries
+that grew up have already drawn the curriculum; software's only
+original contribution would be refusing to enroll.
+
 ## Methodology
 
 Numbers are reproduced, not trusted: every row names the command;

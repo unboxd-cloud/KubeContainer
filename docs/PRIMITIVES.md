@@ -79,7 +79,17 @@ richer text elaborates a primitive, the primitive governs.
   Thing's working stands Any'One' — or Many — things ensouled
   without exception, people qualified without permission, every
   seat resolving to someone at work, and no thing left with no
-  one.
+  one. And the node's two last facts, one duty and one reward: the
+  owner holds the contract — the thing's promises live at his
+  node, signed in his name, every clause his to keep or answer
+  for — and the owner earns the right to earn, because
+  accountability earns the right: the one entitlement in this
+  list, and even it is not granted but earned — the answering is
+  what the market lawfully pays for, so the party who owes the
+  answering is the party entitled to charge for it. Revenue
+  follows accountability or it is rent; the owner's earnings are
+  the price of the node, paid because when it breaks, someone
+  named already owed the fixing.
 - **Maintainer** — the party who keeps a thing true after it is
   built; the one who builds must not maintain — the hands that made
   a thing will forgive it, and keeping requires hands that won't.

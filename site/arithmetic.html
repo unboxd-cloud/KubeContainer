@@ -74,10 +74,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer><div class="wrap">
   <span>Simplification at its innovative best — computed at the edge; the function is the service. Kept by KubeContainer.</span>
-  <span>Canvas: Fabric.js 7.4.0, pinned.</span>
+  <span>The value is the service — computed first, the picture optional.</span>
 </div></footer>
 
-<script src="https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"></script>
 <script>
 "use strict";
 // The canonical transaction formula — one function, the whole service.
@@ -86,67 +85,60 @@ function value(qty, unit, svc, tax) { return qty * unit + svc + tax; }
 const ids = ["qty", "unit", "svc", "tax"];
 const out = document.getElementById("out");
 const box = document.getElementById("resultBox");
+const read = () => ids.map(i => Number(document.getElementById(i).value) || 0);
 
-function read() { return ids.map(i => Number(document.getElementById(i).value) || 0); }
-
-// ----- the fabric, rendered by Fabric (graceful without it) -----
-let draw = () => {};
-(function initCanvas() {
-  if (typeof fabric === "undefined") return; // the function never depends on the picture
-  const f = fabric;
-  const canvas = new f.Canvas("flow", { selection: false, renderOnAddRemove: false });
-  const ink = "#161616", blue = "#0f62fe", mut = "#525252", line = "#c6c6c6";
-  const mono = '"IBM Plex Mono", monospace';
-
-  function node(x, y, label, color) {
-    const r = new f.Rect({ left: x, top: y, width: 130, height: 46, rx: 2, ry: 2,
-      fill: "#fff", stroke: color, strokeWidth: 1.5, originX: "center", originY: "center" });
-    const t = new f.Textbox(label, { left: x, top: y, width: 126, fontSize: 13.5,
-      fontFamily: mono, fill: ink, textAlign: "center", originX: "center", originY: "center" });
-    const g = new f.Group([r, t], { left: x, top: y, originX: "center", originY: "center",
-      selectable: false, evented: false });
-    canvas.add(g);
-    return g;
-  }
-  function wire(a, b) {
-    const l = new f.Line([a.left + 65, a.top, b.left - 65, b.top],
-      { stroke: line, strokeWidth: 1.5, selectable: false, evented: false });
-    canvas.add(l); canvas.sendObjectToBack(l);
-  }
-  const nQty  = node(110,  60, "qty", mut);
-  const nUnit = node(110, 150, "unit", mut);
-  const nSvc  = node(110, 250, "service", mut);
-  const nTax  = node(110, 340, "taxes", mut);
-  const nMul  = node(320, 105, "×", blue);
-  const nSum  = node(450, 200, "+", blue);
-  const nVal  = node(560, 200, "value", "#198038");
-  wire(nQty, nMul); wire(nUnit, nMul); wire(nMul, nSum);
-  wire(nSvc, nSum); wire(nTax, nSum); wire(nSum, nVal);
-
-  function setText(group, s) { group.item(1).set("text", s); }
-  draw = function (q, u, s, t, v, ok) {
-    setText(nQty,  "qty " + q);
-    setText(nUnit, "unit " + u.toFixed(2));
-    setText(nSvc,  "svc " + s.toFixed(2));
-    setText(nTax,  "tax " + t.toFixed(2));
-    setText(nMul,  "× " + (q * u).toFixed(2));
-    setText(nSum,  "+ " + v.toFixed(2));
-    setText(nVal,  ok ? "value " + v.toFixed(2) : "refused");
-    nVal.item(0).set("stroke", ok ? "#198038" : "#da1e28");
-    canvas.requestRenderAll();
-  };
-})();
-
+// The value is computed first and unconditionally — it never depends on the picture.
 function render() {
   const [q, u, s, t] = read();
   const ok = Number.isInteger(q) && q >= 0;
   const v = value(q, u, s, t);
   if (ok) { out.textContent = v.toFixed(2); box.classList.remove("bad"); }
   else { out.textContent = "inadmissible: whole units only"; box.classList.add("bad"); }
-  draw(q, u, s, t, ok ? v : 0, ok);
+  try { drawDiagram(q, u, s, t, ok ? v : 0, ok); } catch (e) { /* the picture is optional */ }
 }
 ids.forEach(i => document.getElementById(i).addEventListener("input", render));
 render();
+
+// ----- the picture: the computation drawn live, raw canvas, no dependency -----
+function drawDiagram(q, u, s, t, v, ok) {
+  const cv = document.getElementById("flow");
+  if (!cv || !cv.getContext) return;
+  const ctx = cv.getContext("2d");
+  const W = cv.width, H = cv.height;
+  const ink = "#161616", blue = "#0f62fe", mut = "#8d8d8d", green = "#198038", red = "#da1e28";
+  ctx.clearRect(0, 0, W, H);
+  ctx.font = '13px "IBM Plex Mono", ui-monospace, monospace';
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+
+  const N = {
+    qty:  { x: 90,  y: 60,  c: mut },
+    unit: { x: 90,  y: 150, c: mut },
+    svc:  { x: 90,  y: 250, c: mut },
+    tax:  { x: 90,  y: 340, c: mut },
+    mul:  { x: 320, y: 105, c: blue },
+    sum:  { x: 450, y: 200, c: blue },
+    val:  { x: 575, y: 200, c: ok ? green : red }
+  };
+  function edge(a, b) {
+    ctx.strokeStyle = "#d0d0d6"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(N[a].x + 62, N[a].y); ctx.lineTo(N[b].x - 62, N[b].y); ctx.stroke();
+  }
+  function box(n, label) {
+    const w = 124, h = 42, x = n.x - w / 2, y = n.y - h / 2;
+    ctx.fillStyle = "#fff"; ctx.strokeStyle = n.c; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.rect(x, y, w, h); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = ink; ctx.fillText(label, n.x, n.y);
+  }
+  edge("qty", "mul"); edge("unit", "mul"); edge("mul", "sum");
+  edge("svc", "sum"); edge("tax", "sum"); edge("sum", "val");
+  box(N.qty,  "qty " + q);
+  box(N.unit, "unit " + u.toFixed(2));
+  box(N.svc,  "svc " + s.toFixed(2));
+  box(N.tax,  "tax " + t.toFixed(2));
+  box(N.mul,  "× " + (q * u).toFixed(2));
+  box(N.sum,  "+ " + v.toFixed(2));
+  box(N.val,  ok ? "value " + v.toFixed(2) : "refused");
+}
 </script>
 </body>
 </html>

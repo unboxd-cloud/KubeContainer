@@ -918,6 +918,9 @@
           "@id": "https://www.gartner.com/en"
         },
         {
+          "@id": "https://www.gartner.com/peer-insights/home"
+        },
+        {
           "@id": "https://www.redhat.com/en"
         },
         {
@@ -1845,6 +1848,16 @@
       "name": "go.sum"
     },
     {
+      "@id": "hack/bind-repo.sh",
+      "@type": "CreativeWork",
+      "citation": [
+        {
+          "@id": "https://github.com/org/repo"
+        }
+      ],
+      "name": "hack/bind-repo.sh"
+    },
+    {
       "@id": "hack/boilerplate.go.txt",
       "@type": "CreativeWork",
       "citation": [
@@ -2346,6 +2359,11 @@
       "name": "https://github.com/opentofu/opentofu"
     },
     {
+      "@id": "https://github.com/org/repo",
+      "@type": "CreativeWork",
+      "name": "https://github.com/org/repo"
+    },
+    {
       "@id": "https://github.com/unboxd-agency/KubeContainer",
       "@type": "CreativeWork",
       "name": "https://github.com/unboxd-agency/KubeContainer"
@@ -2674,6 +2692,11 @@
       "@id": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence",
       "@type": "CreativeWork",
       "name": "https://www.gartner.com/en/information-technology/glossary/decision-intelligence"
+    },
+    {
+      "@id": "https://www.gartner.com/peer-insights/home",
+      "@type": "CreativeWork",
+      "name": "https://www.gartner.com/peer-insights/home"
     },
     {
       "@id": "https://www.iana.org/assignments/service-names-port-numbers/",
@@ -3072,6 +3095,31 @@
         }
       ],
       "name": "site-autonomyx/index.html"
+    },
+    {
+      "@id": "site-autonomyx/whitepapers/chapter-1.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/whitepapers/chapter-1.html"
+    },
+    {
+      "@id": "site-autonomyx/whitepapers/chapter-2.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/whitepapers/chapter-2.html"
+    },
+    {
+      "@id": "site-autonomyx/whitepapers/chapter-3.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/whitepapers/chapter-3.html"
+    },
+    {
+      "@id": "site-autonomyx/whitepapers/chapter-4.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/whitepapers/chapter-4.html"
+    },
+    {
+      "@id": "site-autonomyx/whitepapers/index.html",
+      "@type": "CreativeWork",
+      "name": "site-autonomyx/whitepapers/index.html"
     },
     {
       "@id": "site/CNAME.example",

@@ -1,0 +1,27 @@
+# The Publications face. Apply after its image is built & pushed to GHCR.
+# Pin :TAG to the release. SurrealDB sibling provides the backend
+# (embedded mode keeps the no-extra-DB-pod law for evaluation).
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: publications
+spec:
+  image: ghcr.io/openautonomyx/publications:TAG
+  port: 80
+  expose:
+    type: Ingress
+    host: publications.openautonomyx.com
+    tls: true
+---
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: publications-db
+spec:
+  image: surrealdb/surrealdb:latest   # pin at deployment, per the pin-before-code law
+  port: 8000
+  expose:
+    type: ClusterIP
+  storage:
+    size: 5Gi
+    path: /data

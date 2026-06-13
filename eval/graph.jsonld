@@ -2091,11 +2091,6 @@
       "name": "https://cdn.jsdelivr.net/npm/@cosmos.gl/graph@2.6.4/+esm"
     },
     {
-      "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js",
-      "@type": "CreativeWork",
-      "name": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"
-    },
-    {
       "@id": "https://cloudevents.io/",
       "@type": "CreativeWork",
       "name": "https://cloudevents.io/"
@@ -3369,9 +3364,6 @@
       "@id": "site/arithmetic.html",
       "@type": "CreativeWork",
       "citation": [
-        {
-          "@id": "https://cdn.jsdelivr.net/npm/fabric@7.4.0/dist/index.min.js"
-        },
         {
           "@id": "https://kubecontainer.xyz"
         },

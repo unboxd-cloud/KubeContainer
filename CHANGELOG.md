@@ -7,6 +7,19 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.15] - 2026-06-13
+### Added
+- The manifesto, the founder's dictation complete - fourteen
+  sentences from "the agent is stable" to the belief ("a platform
+  fills the gaps - the fabrics of worlds"), closing on the Agent
+  Constitution. The glossary begins, starting from scope.
+
+## [0.2.14] - 2026-06-13
+### Added
+- The foundations on the platform door, the founder's dictation: ten
+  cards sealed by the closing line; the arithmetic epigraph and
+  footer; bind-repo.sh (any repo to a book, one URL).
+
 ## [0.2.13] - 2026-06-13
 ### Changed
 - The platform door dressed (category anchor, copy, white papers).

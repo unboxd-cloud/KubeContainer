@@ -7,6 +7,16 @@ file summarizes — the git history remains the record.
 
 ## [Unreleased]
 
+## [0.2.16] - 2026-06-13
+### Added
+- The shifts: fifteen from-to transformations, software-as-a-service
+  to solution-as-a-service through features-are-standards.
+- Category drill-down: six category pages, all information
+  category-wise, each category carrying its own model; the anchor
+  cards are the doors.
+- The peers' seat (reviews as verified evidence, earned never
+  written) and the closing arc's ecosystem links.
+
 ## [0.2.15] - 2026-06-13
 ### Added
 - The manifesto, the founder's dictation complete - fourteen

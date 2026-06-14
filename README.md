@@ -102,12 +102,15 @@ spec:
 | Read | For |
 |---|---|
 | [KUBE-LANDSCAPE.md](docs/KUBE-LANDSCAPE.md) | FabriKube, KubeApp, KubeStore, KubeBrowser, KubePipeline, KubeStack, and MetaKube placement |
+| [KUBENODE.md](docs/KUBENODE.md) | Cloud, desk, edge, AI, gateway, and MetaKube node placement contracts |
 | [KUBE-APPLICATION-LIFECYCLE.md](docs/KUBE-APPLICATION-LIFECYCLE.md) | KubeApp lifecycle management, automation, cost optimization, and identity/access management |
 | [FABRIKUBE-CAPABILITY-FABRICS.md](docs/FABRIKUBE-CAPABILITY-FABRICS.md) | Identity Fabric, Data Fabric, Experience Management, and Personalized Learning |
 | [FABRIKUBE-CLOUDS-AND-SAFETY.md](docs/FABRIKUBE-CLOUDS-AND-SAFETY.md) | App Cloud, Image Cloud, AI Cloud, Skill Cloud, safety guarantees, and data-on-desk rule |
 | [KUBEAPP-FINE-GRAINED-CONTROL.md](docs/KUBEAPP-FINE-GRAINED-CONTROL.md) | Fine-grained control for every app action, scope, policy, reason, and verdict |
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
-| [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with OpenSearch for records, evidence, app metadata, and experience search |
+| [KUBEATLAS-DATA-GOVERNANCE.md](docs/KUBEATLAS-DATA-GOVERNANCE.md) | Apache Atlas-style metadata, classification, lineage, and stewardship governance |
+| [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with Apache Solr and OpenSearch for records, evidence, app metadata, and experience search |
+| [KUBEANSWER-KNOWLEDGE.md](docs/KUBEANSWER-KNOWLEDGE.md) | Apache Answer-style Q&A, help center, tags, reputation, and governed knowledge |
 | [KUBE-SKILL-TOOL-LIFECYCLE.md](docs/KUBE-SKILL-TOOL-LIFECYCLE.md) | Learn, build, showcase, and monetize any skill or tool the Kubernetes way |
 | [AIRAVATA-FABRIKUBE-ALIGNMENT.md](docs/AIRAVATA-FABRIKUBE-ALIGNMENT.md) | Apache Airavata-style workflow and gateway alignment for distributed compute |
 | [MACH-FABRIC.md](docs/MACH-FABRIC.md) | MACH as accountable Fabric architecture |

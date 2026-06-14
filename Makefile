@@ -232,6 +232,14 @@ metakube-prometheus: ## Deploy the local Prometheus witness into Minikube.
 metakube-observe: ## Observe the local proof gates and print the MetaKube verdict.
 	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh observe
 
+.PHONY: metakube-search
+metakube-search: ## Print the optional MetaKube search contract path.
+	@echo "search_ready=false"
+	@echo "search_contract=docs/KUBESEARCH-OPENSEARCH.md"
+	@echo "location_search_contract=docs/KUBESEARCH-LOCATION-MODEL-FIT.md"
+	@echo "image_search_contract=docs/KUBEIMAGE-PROCESSING-MAP.md"
+	@echo "verdict=SEARCH_CONTRACT_DECLARED"
+
 .PHONY: metakube-verify
 metakube-verify: ## Run the complete local MetaKube proof loop with Minikube.
 	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh verify

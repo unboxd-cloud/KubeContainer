@@ -2,180 +2,65 @@
 
 **Kube — the soul of Any'Thing'.**
 
-An intelligent operating system of work: declared outcomes, kept by
-autonomous loops, woven from contracts, with provenance attached to
-everything it delivers. The fabric is built from kubes — whole,
-indivisible units of kept promises — and this repository contains its
-first one, plus the constitution the whole weave answers to.
+An intelligent operating system of work: declared outcomes, kept by autonomous loops, woven from contracts, with provenance attached to everything it delivers. The fabric is built from kubes — whole, indivisible units of kept promises — and this repository contains its first one, plus the constitution the whole weave answers to.
 
-**KubeContainer** is that first kube: a Kubernetes operator where twelve
-lines of YAML become a running, scaled, exposed, self-healing workload —
-the reference implementation of the
-[Kube product specification](docs/KUBE-SPEC.md), governed by the
-[founding principles](docs/FOUNDING-PRINCIPLES.md). You declare what you
-want; the kube makes it true, keeps it true, proves it was true, and
-answers for it.
+**KubeContainer** is that first kube: a Kubernetes operator where twelve lines of YAML become a running, scaled, exposed, self-healing workload — the reference implementation of the [Kube product specification](docs/KUBE-SPEC.md), governed by the [founding principles](docs/FOUNDING-PRINCIPLES.md). You declare what you want; the kube makes it true, keeps it true, proves it was true, and answers for it.
 
-And KubeContainer is the box — the plain, graspable thing every
-metaphor here reduces to. A declared boundary with work inside it,
-whole and indivisible, stackable and packable, opaque about its
-internals and contractual at its surface. The shipping container
-organized the physical economy by making every cargo the same shape to
-every crane; the KubeContainer does the same for work — one schema to
-every fabric, one contract to every operator. unboxd, because the value
-was never the box: it is what declaring the box sets free. And the box
-is real: v0.1.0 ships it — an actual image, with digests, carrying its
-own evidence — work that crossed the surface and held. Yet the box
-alone is meaningless: an empty container moves nothing, and a full one
-unmanifested is just freight nobody can claim. The box means something
-only woven in — declared to a fabric, kept by a loop, answering at a
-face, owed to a principal. The container needed the shipping system;
-the kube needs the weave; the box is the unit, never the point. But the
-unit is how value is counted — like a box of chocolates, worth derives
-from what the box holds and the size you choose: the kind says what is
-inside, the class says how fine, the count says how much, and the meter
-prices exactly that. And the meter reads to the piece: each
-chocolate is priced — every task, every outcome, every unit of work
-inside the box carries its own metered cost and its own receipt, so the
-bill is itemized to the same grain as the evidence, and paying for the
-box never means paying blind for what it holds. With one improvement on
-the proverb: with this box, you always know what you are going to get —
-it is declared on the lid, checked at the gate, evidenced on delivery,
-and priced by the piece.
+## MACH Fabric
 
-That is the whole value equation: the box with its spec plus the real
-product inside. Spec without product is a brochure; product without
-spec is freight no one can trust, price, or claim. Value lives in the
-pairing — the declaration on the lid and the work inside it matching,
-verdict-checked, every time. That pairing is what a kube is, and v0.1.0
-is the first one on the shelf. Said most plainly: the box is the
-packaging method — not the product, not the value, but the *way* value
-is made carriable: how work is bounded, labeled, stacked, shipped,
-priced, and claimed. Methods are judged by what they make possible, and
-this one makes work tradable the way the container made cargo tradable:
-same shape to every crane, every fabric, every buyer. And boxing is
-what adds the three things raw work can never carry loose: provenance
-(the manifest — where it came from, who touched it, every crossing
-stamped), protection (the walls — sealed against tampering, isolated
-from its neighbors, dry in any weather), and assurance (the
-underwriting — a box that cleared the gate is a box someone stands
-behind, with consequences priced in advance). Unboxed work is just
-effort; boxed, it becomes an asset — locatable, defensible, insurable,
-and therefore sellable. And unboxing belongs to the end user alone: the
-box travels sealed — opaque to every carrier, crane, and intermediary,
-including the platform itself, which stewards what it carries and owns
-nothing it serves — and only the principal it is addressed to may open
-it. Sovereignty at the seam: the addressee holds the keys, the manifest
-proves the journey, and the seal proves no one else looked. And the seal is contractual, not
-decorative: unboxing before delivery voids the contract — a box opened
-by anyone but its addressee is a breach the moment it happens, the
-chain of custody is broken, the assurance is forfeit by the breacher
-and owed to the customer, and the breach itself is recorded evidence
-(a broken seal cannot be hidden from the manifest). Tamper-evidence is
-the enforcement: the contract does not ask intermediaries to be good;
-it makes their interference visible, attributable, and expensive. And so every box carries one question
-on its lid, asked before anything else and answered by proof, not by
-assertion: *are you the end user?* It is the first question because it
-gates all the others — what is inside, what it cost, what it promises —
-and it is answered the only way this system answers anything: identity
-resolved, authorization checked, the relation verified against the one
-graph. Answer it rightly and the box opens to its owner; answer it
-wrongly and the box stays sealed and remembers being asked. For the box
-streams events — sealed about its contents, talkative about its
-conduct: admitted, converging, ready, serving, scaled, touched, asked,
-breached, exited — every transition emitted as it happens, in the open
-standard for the purpose (CloudEvents, CNCF graduated), so any
-authorized listener can follow the box's journey in real time without
-ever seeing inside it. The manifest is the history; the stream is the
-present tense; and both speak a wire anyone can subscribe to and no one
-had to invent. The box has identity — its own name, unique and
-independently resolvable, borrowed from no parent and surrendered to no
-carrier: the name on the manifest, the subject of every event, the
-party to its contract, the bearer of its reputation — and the name
-survives the box, because the record remembers what the fabric has
-released. And the box has bridges — it is not a cell but a port: every
-opening in its walls is a declared crossing with a keeper — the face
-where it serves, the stream where it speaks, the gate where it is
-asked, the seam where it is unboxed — so that being sealed and being
-connected are the same discipline: nothing crosses except over a
-bridge, and every bridge is on the manifest.
+MACH makes software composable. Fabric makes composable software accountable.
 
-And in the end, the box is an agent — the one who closes the loop. Not
-a package containing an agent: the package *as* agent — it acts for a
-principal (the addressee), where the principal is not (in transit, in
-the cluster, at the edge), keeping a contract autonomously the whole
-way. Watch its conduct and the identity is plain: it asks before it
-opens, speaks as it travels, guards its own seam, converges to its
-declaration, proves what it did, and exits leaving its name in the
-record. "Closes the loop" in both senses at once: it runs the loop —
-observe, compare, act, record — until declared and actual meet; and it
-closes the loop with its principal — delivered, evidenced, accounted,
-done only by verdict. The box and the agent were one subject all along:
-an agent is a promise that can act; a box is a promise that can ship;
-a kube is both — who reconciles to desired state: that is the whole
-definition in five words, and the answer to "who does the work" at
-every scale. The box reconciles its contents to its lid; the operator
-reconciles the cluster to the declaration; the fabric reconciles the
-worlds to the record; and each of them is the same answer to the same
-question — not "what is it" but "who keeps it true." And desired state
-is defined by the operator: the principal declares the *intent* — what
-they want, in their own terms, on the lid; the operator defines the
-*desired state* — the full concrete rendering of that intent into the
-world's terms (every child, every default, every invariant the
-declaration implies), which is exactly the expertise the operator
-packages and the reason it exists. Three offices, cleanly split: the
-principal declares, the operator defines, the loop converges — intent
-is yours, its rendering is the operator's craft, and its keeping is
-the loop's job. And the word "operator" carries two offices that must
-never be confused: the software operator (the kube's keeper, defining
-and converging desired state) and the human operator — and the human
-operator is the end user. The box is the agent; the person at the helm
-is who it serves: the addressee who answers the box's first question
-rightly, the one the seal protects, the one the promise educates,
-enables, and empowers, the only one entitled to the unboxing. The
-software works for the human; the agent answers to the end user; the
-box exists for the moment its owner opens it. And the box works only
-when a human is operator: this is the system's deepest safety property,
-not a limitation — a box with no human at the helm has no addressee,
-no one to answer its first question, no principal for its agent, no
-owner for its unboxing, and therefore no contract to keep: it is
-freight to nowhere, and the fabric does not carry it. Every delegation
-chain terminates in a mind; every box, however autonomous its journey,
-is addressed to someone; intent originates in humans and evidence
-returns to them — the loop is only closed when it closes with a person.
-Operated by a non-human, the box is just an artifact: still real, still
-sealed, still streaming — but demoted from agent to object, because
-agency was never in the box; it was in the chain from a human's intent
-through the box's keeping back to a human's hands. Machines may carry,
-route, schedule, and even subcontract boxes — positionally, agents to
-agents — but a chain of machines all the way around is a loop that
-closes on no one: motion without a mission, evidence without a witness,
-an artifact in transit between artifacts. The box becomes an agent the
-moment a human is in the loop, and returns to being a thing the moment
-none is — which is why the fabric's first and last question, like the
-box's, is always: *whose is this?* The arithmetic of which is one
-equation: the box is always an artifact, and artifact + identity =
-agent. Identity is the promoting term — not the name alone but
-everything the name resolves to: the addressee, the contract, the
-delegation chain terminating in a human, the answerability. An
-artifact with identity acts for someone and answers to someone, and
-that is the whole definition of an agent; strip the identity and the
-same artifact is freight — intact, capable, and nobody's. And the equation has its
-completion: artifact + governance = agent. Identity says whose it is;
-governance says under what law it acts — the policy at its gates, the
-audit on its conduct, the bounds on its autonomy, the consequences it
-answers to. Identity without governance is a named thing running wild;
-governance without identity is law with no subject. The full formula:
-artifact + identity + governance = agent — a thing, owned by someone,
-acting under rules — which is just the charter compressed to
-arithmetic. Agency is not built into things; it is conferred by
-resolution and bounded by law — which is why the graph must resolve,
-why every box is named and gated, and why the question on the lid is
-the question that makes the product possible at all. That is the
-product. The
-unboxing is the customer's moment, and no one else's — which is the
-name, completed: unboxd is not what we do to the box; it is what only
-you can do to yours.
+```text
+MACH = Microservices + API-first + Cloud-native + Headless
+Fabric = Identity + Relation + Governance + Trust + Evidence + Provenance + Repair
+```
+
+KubeContainer is the deployable MACH unit. MetaKube is the local proving fabric. Prometheus is the witness. Cortex is the long-term evidence store. Observance turns evidence into verdicts.
+
+```text
+Microservice -> KubeContainer
+API contract -> declared face
+Cloud-native -> Kubernetes + Prometheus + OCI + operator reconciliation
+Headless -> UI independent from runtime and governance
+Fabric -> trust, evidence, identity, provenance, market, repair
+```
+
+## MetaKube local build
+
+MetaKube turns Minikube into the local fabric for building and proving KubeContainers.
+
+```sh
+make metakube-up
+make metakube-sample
+make metakube-observe
+```
+
+Or run the full local proof loop:
+
+```sh
+make metakube-verify
+```
+
+The expected verdict is:
+
+```text
+PROMISE_KEPT
+```
+
+## Proof, not promises
+
+Nothing here asks to be believed; everything names its verdict:
+
+| Claim | Check it |
+|---|---|
+| It ships | Release artifacts, images, install bundles, and digests |
+| It works locally | `make metakube-verify` creates a Minikube fabric, deploys the operator, applies a sample KubeContainer, and emits an Observance verdict |
+| It works in real clusters | The e2e gate: a declared workload must converge and serve HTTP 200 in a live cluster |
+| It will not break its word | The golden compatibility corpus under `internal/controller/testdata/compat/` keeps era manifests valid |
+| It carries evidence | MetaKube reports and eval reports bind outcomes to proof |
+| It is governed | The charter, lexicon, protocols, and vocabulary checks keep doctrine from drifting |
+
+## Example
 
 ```yaml
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
@@ -196,111 +81,37 @@ spec:
     path: /healthz
 ```
 
-## Proof, not promises
-
-Nothing here asks to be believed; everything names its verdict:
-
-| Claim | Check it |
-|---|---|
-| It ships | [Release v0.1.0](https://github.com/unboxd-agency/KubeContainer/releases/tag/v0.1.0) — image, install bundle, sha256 digests |
-| It works in real clusters | The e2e gate: a declared workload must converge and serve HTTP 200 in a live cluster — every push, in CI |
-| It will not break its word | The [golden compatibility corpus](internal/controller/testdata/compat/): era manifests must stay valid forever, CI-enforced |
-| It carries its evidence | `eval-report.json` ships as a release asset — the [evaluation registry](eval/README.md)'s verdicts, attached |
-| It is governed | The [charter](docs/FOUNDING-PRINCIPLES.md), the [lexicon and protocols](docs/AGENT-PLATFORM.md), and a vocabulary check that has already caught its own authors |
-
 ## The document map
 
 | Read | For |
 |---|---|
+| [MACH-FABRIC.md](docs/MACH-FABRIC.md) | MACH as accountable Fabric architecture |
+| [METAKUBE-STACK.md](docs/METAKUBE-STACK.md) | Core, Store, Operations, Governance, evidence stack |
+| [PROMETHEUS-AS-WITNESS.md](docs/PROMETHEUS-AS-WITNESS.md) | Prometheus as witness; alerts as testimony; metrics as evidence |
+| [METAKUBE-TELEMETRY.md](docs/METAKUBE-TELEMETRY.md) | Telemetry and Prometheus scrape model |
+| [METAKUBE-LIVE-STREAM.md](docs/METAKUBE-LIVE-STREAM.md) | Real-time evidence stream |
 | [KUBE-SPEC.md](docs/KUBE-SPEC.md) | What a kube is — anatomy, guarantees, conformance |
 | [DESIGN.md](docs/DESIGN.md) | The operator architecture and roadmap |
-| [FOUNDING-PRINCIPLES.md](docs/FOUNDING-PRINCIPLES.md) | The constitution: 24 principles, axiom, promise |
+| [FOUNDING-PRINCIPLES.md](docs/FOUNDING-PRINCIPLES.md) | The constitution: principles, axiom, promise |
 | [AGENT-PLATFORM.md](docs/AGENT-PLATFORM.md) | The agent ladder, lexicon, anti-drift protocols |
-| [GO-TO-MARKET.md](docs/GO-TO-MARKET.md) | What is sold and to whom (provenance is the product) |
+| [GO-TO-MARKET.md](docs/GO-TO-MARKET.md) | What is sold and to whom |
 | [PRIMITIVES.md](docs/PRIMITIVES.md) | Every word, one self-explanatory statement |
-| [DOCTRINE-MAP.md](docs/DOCTRINE-MAP.md) | The tiers: what binds, what argues, what checks |
-| [HEADLESS-DELIVERY.md](docs/HEADLESS-DELIVERY.md) | The delivery doctrine: surface, edge, ports |
-| [BENCHMARKS.md](docs/BENCHMARKS.md) | Published numbers and the law of the bench |
-| [TOOLS.md](docs/TOOLS.md) | The tool law and registry: CodeCompiler, StructuredInstructions, SourceGround |
-| [PERSONAL.md](docs/PERSONAL.md) | The fabric at quantity one: the agent's contract and the flow |
-| [docs/manual/](docs/manual/) | The instruction manual: contracts, licenses, FAQ, how-to-use |
-| [deploy/](deploy/) | The stack deconstructed: picks, seams, references, decisions |
-| [CHANGELOG.md](CHANGELOG.md) | What shipped, when |
 
 ## Features
 
-- **One CRD for the common case** — Deployment + Service + optional
-  Ingress/HPA from a dozen lines of YAML.
-- **Self-healing** — drift in any managed child is reverted by the reconcile
-  loop; deleting the CR garbage-collects everything via owner references.
-- **Safe scaling semantics** — fixed `replicas` or an `autoscale` block
-  (mutually exclusive, enforced by CEL validation); under autoscaling the HPA
-  owns the replica count and the operator never fights it.
-- **Observable** — `Ready`/`Progressing`/`Degraded` conditions, events on
-  every child change, and a computed `endpoint` in status:
-
-  ```
-  $ kubectl get kubecontainers
-  NAME     IMAGE                     AVAILABLE   READY   ENDPOINT
-  my-app   ghcr.io/acme/my-app:1.4.2 2           True    my-app.example.com
-  ```
+- **One CRD for the common case** — Deployment + Service + optional Ingress/HPA from a dozen lines of YAML.
+- **Self-healing** — drift in any managed child is reverted by the reconcile loop; deleting the CR garbage-collects everything via owner references.
+- **Safe scaling semantics** — fixed `replicas` or an `autoscale` block, mutually exclusive and enforced by validation.
+- **Observable and witnessed** — `Ready`/`Progressing`/`Degraded` conditions, Kubernetes events, controller-runtime metrics, and Prometheus-backed evidence.
+- **Headless by default** — runtime and governance are decoupled from UI, console, site, and marketplace.
 
 ## Quickstart
 
-Prerequisites: a Kubernetes v1.30+ cluster, `kubectl`, and (to build) Go and
-Docker.
+Prerequisites: Kubernetes v1.30+, `kubectl`, Go, and Docker.
 
 ```sh
-# Install CRDs and deploy the operator
 make docker-build docker-push IMG=<registry>/kubecontainer:v0.1.0
 make deploy IMG=<registry>/kubecontainer:v0.1.0
-
-# Run a workload
 kubectl apply -k config/samples/
 kubectl get kubecontainers
-
-# Tear down
-kubectl delete -k config/samples/
-make undeploy
 ```
-
-Or install from the prebuilt bundle (CRDs, RBAC, and manager in one file):
-
-```sh
-kubectl apply -f dist/install.yaml
-```
-
-Notes:
-
-- `expose.type: Ingress` requires an ingress controller in the cluster;
-  `scaling.autoscale` requires metrics-server. Everything else works on any
-  conformant cluster — the operator uses only stable upstream APIs.
-- HPA scaling decisions need CPU `resources.requests` on the workload.
-
-## Development
-
-```sh
-make build      # generate, fmt, vet, compile
-make test       # envtest-based unit/integration suite
-make lint       # golangci-lint
-make run        # run the manager locally against your kubeconfig
-
-go build ./cmd/codecompiler && ./codecompiler
-                # the desk gate: does the code compile, and does it conform
-go build ./cmd/structuredinstructions
-                # the flow's gate: validate and register agent declarations
-```
-
-See [CLAUDE.md](CLAUDE.md) for conventions and
-[docs/DESIGN.md](docs/DESIGN.md) for the architecture. Run `make help` for all
-targets.
-
-## License
-
-KubeContainer Research and Community Source License, Version 1.0 —
-see [LICENSE](LICENSE) (the authoritative text) and the
-[licenses manual](docs/manual/LICENSES.md) (the summary). Source-
-available, honestly labeled: research, education, evaluation,
-security review, and contribution are granted; commercial rights are
-reserved to unboxd agency. Open is not free — seeing is the code's
-nature, using is a grant from its contract. Copyright 2026.

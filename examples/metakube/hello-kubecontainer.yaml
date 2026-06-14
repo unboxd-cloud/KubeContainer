@@ -1,0 +1,17 @@
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: hello-metakube
+  namespace: default
+  labels:
+    fabric.unboxd.cloud/layer: metakube
+    fabric.unboxd.cloud/promise: hello
+spec:
+  image: nginx:1.27-alpine
+  port: 80
+  scaling:
+    replicas: 1
+  expose:
+    type: ClusterIP
+  healthCheck:
+    path: /

@@ -109,6 +109,7 @@ spec:
 | [KUBEAPP-FINE-GRAINED-CONTROL.md](docs/KUBEAPP-FINE-GRAINED-CONTROL.md) | Fine-grained control for every app action, scope, policy, reason, and verdict |
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
 | [KUBEATLAS-DATA-GOVERNANCE.md](docs/KUBEATLAS-DATA-GOVERNANCE.md) | Apache Atlas-style metadata, classification, lineage, and stewardship governance |
+| [KUBEANALYTICS-CALCITE.md](docs/KUBEANALYTICS-CALCITE.md) | Apache Calcite-style SQL analytics, query planning, adapters, and governed insights |
 | [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with Apache Solr and OpenSearch for records, evidence, app metadata, and experience search |
 | [KUBEANSWER-KNOWLEDGE.md](docs/KUBEANSWER-KNOWLEDGE.md) | Apache Answer-style Q&A, help center, tags, reputation, and governed knowledge |
 | [KUBE-SKILL-TOOL-LIFECYCLE.md](docs/KUBE-SKILL-TOOL-LIFECYCLE.md) | Learn, build, showcase, and monetize any skill or tool the Kubernetes way |

@@ -1,0 +1,34 @@
+apiVersion: fabric.unboxd.cloud/v1alpha1
+kind: KubeApp
+metadata:
+  name: sample-kubeapp
+spec:
+  stack:
+    components:
+      - name: web
+        kind: KubeContainer
+        image: nginx:1.27
+        port: 80
+        dependsOn: []
+      - name: store
+        kind: KubeStore
+        engine: postgres
+        storage:
+          size: 20Gi
+  sync:
+    mode: declared
+    cadence: continuous
+  operator:
+    type: juju-style
+    hooks:
+      - install
+      - config-changed
+      - start
+      - upgrade
+      - stop
+  face:
+    browser: kube-browser
+    host: sample.local
+  evidence:
+    witness: prometheus
+    requiredVerdict: PROMISE_KEPT

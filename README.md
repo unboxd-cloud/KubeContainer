@@ -101,8 +101,10 @@ spec:
 
 | Read | For |
 |---|---|
+| [CNCF-LANDSCAPE-ALIGNMENT.md](docs/CNCF-LANDSCAPE-ALIGNMENT.md) | CNCF Landscape category alignment and cloud-native adoption rules |
 | [KUBE-LANDSCAPE.md](docs/KUBE-LANDSCAPE.md) | FabriKube, KubeApp, KubeStore, KubeBrowser, KubePipeline, KubeStack, and MetaKube placement |
 | [KUBENODE.md](docs/KUBENODE.md) | Cloud, desk, edge, AI, gateway, and MetaKube node placement contracts |
+| [KUBEDEVICEOS-LINEAGE.md](docs/KUBEDEVICEOS-LINEAGE.md) | LineageOS-style open device OS contracts for desk, mobile, edge, and appliance nodes |
 | [KUBE-APPLICATION-LIFECYCLE.md](docs/KUBE-APPLICATION-LIFECYCLE.md) | KubeApp lifecycle management, automation, cost optimization, and identity/access management |
 | [FABRIKUBE-CAPABILITY-FABRICS.md](docs/FABRIKUBE-CAPABILITY-FABRICS.md) | Identity Fabric, Data Fabric, Experience Management, and Personalized Learning |
 | [FABRIKUBE-CLOUDS-AND-SAFETY.md](docs/FABRIKUBE-CLOUDS-AND-SAFETY.md) | App Cloud, Image Cloud, AI Cloud, Skill Cloud, safety guarantees, and data-on-desk rule |
@@ -110,12 +112,14 @@ spec:
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
 | [KUBEATLAS-DATA-GOVERNANCE.md](docs/KUBEATLAS-DATA-GOVERNANCE.md) | Apache Atlas-style metadata, classification, lineage, and stewardship governance |
 | [KUBEDATA-COMPUTE-ENGINES.md](docs/KUBEDATA-COMPUTE-ENGINES.md) | Apache Airflow, SeaTunnel, Spark, Pinot, Calcite, Avatica, and Scala engine placement |
+| [KUBEOBSERVABILITY-CLICKSTACK.md](docs/KUBEOBSERVABILITY-CLICKSTACK.md) | ClickStack-style logs, metrics, traces, sessions, and OpenTelemetry-scale observability |
 | [KUBEANALYTICS-CALCITE.md](docs/KUBEANALYTICS-CALCITE.md) | Apache Calcite-style SQL analytics, query planning, adapters, and governed insights |
 | [KUBEARITHMETIC-PLATFORM.md](docs/KUBEARITHMETIC-PLATFORM.md) | Accountable formulas, measurements, scoring, pricing, billing, and optimization math |
 | [KUBEMATH-META-MODELS.md](docs/KUBEMATH-META-MODELS.md) | Mathematical meta models for formulas, constraints, units, optimization goals, and proofs |
 | [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with Apache Solr and OpenSearch for records, evidence, app metadata, and experience search |
 | [KUBEANSWER-KNOWLEDGE.md](docs/KUBEANSWER-KNOWLEDGE.md) | Apache Answer-style Q&A, help center, tags, reputation, and governed knowledge |
 | [KUBEAGENT-RUNTIME-MINDSHUB.md](docs/KUBEAGENT-RUNTIME-MINDSHUB.md) | MindsHub-style open-agent runtime, model routing, credentials, tools, memory, and artifacts |
+| [KUBEAI-OBSERVABILITY-MLFLOW-LANGFUSE.md](docs/KUBEAI-OBSERVABILITY-MLFLOW-LANGFUSE.md) | MLflow and Langfuse-style AI lifecycle, model registry, prompts, traces, evals, and experiments |
 | [KUBE-SKILL-TOOL-LIFECYCLE.md](docs/KUBE-SKILL-TOOL-LIFECYCLE.md) | Learn, build, showcase, and monetize any skill or tool the Kubernetes way |
 | [AIRAVATA-FABRIKUBE-ALIGNMENT.md](docs/AIRAVATA-FABRIKUBE-ALIGNMENT.md) | Apache Airavata-style workflow and gateway alignment for distributed compute |
 | [MACH-FABRIC.md](docs/MACH-FABRIC.md) | MACH as accountable Fabric architecture |

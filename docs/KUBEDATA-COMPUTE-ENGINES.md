@@ -1,24 +1,66 @@
 # KubeData Compute Engines
 
-FabriKube uses Apache data and compute engines as reference patterns for integration, compute, query planning, query access, and real-time analytics.
+FabriKube uses Apache data and compute engines as reference patterns for orchestration, integration, compute, query planning, query access, and real-time analytics.
 
 ```text
+Airflow = workflow authoring, scheduling, and monitoring
 SeaTunnel = data integration and sync
 Spark = distributed data engineering, data science, SQL, streaming, and ML compute
 Pinot = real-time user-facing and agent-facing OLAP analytics
 Calcite = SQL planning, validation, adapters, and optimization
 Avatica = database-driver wire API and query access face
+Scala = typed, scalable language for Spark, services, and mathematical model implementations
 ```
 
 ## Engine placement
 
 | Engine | Kube role | Primary office |
 |---|---|---|
+| Apache Airflow | programmatically author, schedule, and monitor workflows | KubeOrchestrator |
 | Apache SeaTunnel | batch, real-time, full, and incremental data integration | KubeDataSync |
 | Apache Spark | large-scale data engineering, data science, streaming, SQL, and ML | KubeCompute |
 | Apache Pinot | real-time OLAP analytics for users and AI agents | KubeRealtimeAnalytics |
 | Apache Calcite | SQL parser, validator, relational algebra, cost optimizer, adapters | KubeAnalytics |
 | Apache Calcite Avatica | HTTP/JDBC/JSON/Protobuf query-driver face | KubeQueryFace |
+| Scala | expressive typed language for distributed compute and model-heavy services | KubeLanguage |
+
+## KubeOrchestrator with Airflow
+
+Apache Airflow is the reference pattern for workflows: programmatically author, schedule, and monitor pipelines, with extensible operators and a UI for observing workflow state.
+
+```yaml
+apiVersion: fabric.unboxd.cloud/v1alpha1
+kind: KubeOrchestrator
+metadata:
+  name: fabric-airflow-orchestrator
+spec:
+  engine: airflow
+  workflows:
+    - data-sync
+    - analytics-refresh
+    - model-evaluation
+    - cost-optimization
+    - marketplace-settlement
+    - learning-path-update
+  authoring:
+    language: python
+    dynamicPipelines: true
+  scheduling:
+    required: true
+  monitoring:
+    required: true
+  governance:
+    identityFabric: required
+    purposeRequired: true
+    runRecordRequired: true
+    retryPolicyRequired: true
+  evidence:
+    requiredVerdicts:
+      - WORKFLOW_DECLARED
+      - WORKFLOW_SCHEDULED
+      - WORKFLOW_RUN_RECORDED
+      - WORKFLOW_OBSERVED
+```
 
 ## KubeCompute with Spark
 
@@ -59,6 +101,38 @@ spec:
       - JOB_RECORDED
       - COST_BOUNDED
       - LINEAGE_RECORDED
+```
+
+## KubeLanguage with Scala
+
+Scala is the typed language placement for Spark-native jobs, model-heavy services, and high-confidence arithmetic or analytics implementations.
+
+```yaml
+apiVersion: fabric.unboxd.cloud/v1alpha1
+kind: KubeLanguage
+metadata:
+  name: scala
+spec:
+  language: scala
+  runtimes:
+    - jvm
+    - javascript
+    - native
+  useCases:
+    - spark-jobs
+    - typed-services
+    - mathematical-meta-models
+    - distributed-systems
+    - data-validation
+  governance:
+    buildPipelineRequired: true
+    testsRequired: true
+    provenanceRequired: true
+  evidence:
+    requiredVerdicts:
+      - LANGUAGE_BOUND
+      - BUILD_RECORDED
+      - TESTS_PASSED
 ```
 
 ## KubeRealtimeAnalytics with Pinot
@@ -180,12 +254,14 @@ The engine map keeps the sovereignty rule intact.
 Everything in cloud, data on desk.
 ```
 
+- Airflow schedules and observes the governed workflows.
 - SeaTunnel moves only what governance allows.
 - Spark computes where policy permits.
 - Pinot serves live analytics from governed ingested data.
 - Calcite plans across sources before moving data.
 - Avatica exposes query access with identity and records.
+- Scala implements typed jobs and model-heavy services where that helps safety.
 
 ## Rule
 
-No engine bypasses the fabric. Every job, query, sync, ingest, and result must carry identity, purpose, policy, lineage, cost, and verdict.
+No engine bypasses the fabric. Every workflow, job, query, sync, ingest, and result must carry identity, purpose, policy, lineage, cost, and verdict.

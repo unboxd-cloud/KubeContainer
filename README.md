@@ -6,6 +6,22 @@ An intelligent operating system of work: declared outcomes, kept by autonomous l
 
 **KubeContainer** is that first kube: a Kubernetes operator where twelve lines of YAML become a running, scaled, exposed, self-healing workload — the reference implementation of the [Kube product specification](docs/KUBE-SPEC.md), governed by the [founding principles](docs/FOUNDING-PRINCIPLES.md). You declare what you want; the kube makes it true, keeps it true, proves it was true, and answers for it.
 
+## FabriKube
+
+FabriKube is the product family above KubeContainer: application lifecycle management for apps, tools, skills, data, identity, experience, AI, images, and monetization, all governed by kube contracts.
+
+```text
+Learn, build, showcase, and monetize any skill or any tool, your way, the Kubernetes way.
+```
+
+The center is **KubeApp**: declared application lifecycle management from declare to retire, with automation, cost optimization, identity and access management, data sync, governance, fine-grained controls, safety guarantees, and evidence.
+
+The sovereignty rule is simple:
+
+```text
+Everything in cloud, data on desk.
+```
+
 ## MACH Fabric
 
 MACH makes software composable. Fabric makes composable software accountable.
@@ -85,6 +101,14 @@ spec:
 
 | Read | For |
 |---|---|
+| [KUBE-LANDSCAPE.md](docs/KUBE-LANDSCAPE.md) | FabriKube, KubeApp, KubeStore, KubeBrowser, KubePipeline, KubeStack, and MetaKube placement |
+| [KUBE-APPLICATION-LIFECYCLE.md](docs/KUBE-APPLICATION-LIFECYCLE.md) | KubeApp lifecycle management, automation, cost optimization, and identity/access management |
+| [FABRIKUBE-CAPABILITY-FABRICS.md](docs/FABRIKUBE-CAPABILITY-FABRICS.md) | Identity Fabric, Data Fabric, Experience Management, and Personalized Learning |
+| [FABRIKUBE-CLOUDS-AND-SAFETY.md](docs/FABRIKUBE-CLOUDS-AND-SAFETY.md) | App Cloud, Image Cloud, AI Cloud, Skill Cloud, safety guarantees, and data-on-desk rule |
+| [KUBEAPP-FINE-GRAINED-CONTROL.md](docs/KUBEAPP-FINE-GRAINED-CONTROL.md) | Fine-grained control for every app action, scope, policy, reason, and verdict |
+| [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
+| [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with OpenSearch for records, evidence, app metadata, and experience search |
+| [KUBE-SKILL-TOOL-LIFECYCLE.md](docs/KUBE-SKILL-TOOL-LIFECYCLE.md) | Learn, build, showcase, and monetize any skill or tool the Kubernetes way |
 | [MACH-FABRIC.md](docs/MACH-FABRIC.md) | MACH as accountable Fabric architecture |
 | [METAKUBE-STACK.md](docs/METAKUBE-STACK.md) | Core, Store, Operations, Governance, evidence stack |
 | [PROMETHEUS-AS-WITNESS.md](docs/PROMETHEUS-AS-WITNESS.md) | Prometheus as witness; alerts as testimony; metrics as evidence |

@@ -1,0 +1,64 @@
+name: MetaKube Verify
+
+on:
+  pull_request:
+  push:
+    branches:
+      - claude/dreamy-darwin-wcepfb
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  metakube-verify:
+    name: MetaKube local proof gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Install kubectl
+        uses: azure/setup-kubectl@v4
+
+      - name: Install Minikube
+        run: |
+          curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+          chmod +x minikube
+          sudo install minikube /usr/local/bin/minikube
+
+      - name: Prepare MetaKube scripts
+        run: chmod +x hack/metakube/*.sh
+
+      - name: Run MetaKube proof loop
+        env:
+          METAKUBE_CLUSTER: metakube-ci
+          METAKUBE_DRIVER: docker
+          IMG: kubecontainer-controller:metakube-ci
+        run: ./hack/metakube/verify.sh
+
+      - name: Upload MetaKube evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: metakube-evidence
+          path: |
+            dist/metakube-report.txt
+          if-no-files-found: warn
+
+      - name: Cleanup MetaKube
+        if: always()
+        env:
+          METAKUBE_CLUSTER: metakube-ci
+        run: ./hack/metakube/down.sh || true

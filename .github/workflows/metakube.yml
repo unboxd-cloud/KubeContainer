@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   metakube-verify:
-    name: MetaKube local proof gate
+    name: MetaKube local proof and SLA gate
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -41,12 +41,12 @@ jobs:
       - name: Prepare MetaKube scripts
         run: chmod +x hack/metakube/*.sh
 
-      - name: Run MetaKube proof loop
+      - name: Run MetaKube proof and SLA loop
         env:
           METAKUBE_CLUSTER: metakube-ci
           METAKUBE_DRIVER: docker
           IMG: kubecontainer-controller:metakube-ci
-        run: ./hack/metakube/verify.sh
+        run: ./hack/metakube/verify-sla.sh
 
       - name: Upload MetaKube evidence
         if: always()
@@ -55,6 +55,7 @@ jobs:
           name: metakube-evidence
           path: |
             dist/metakube-report.txt
+            dist/metakube-score.json
           if-no-files-found: warn
 
       - name: Cleanup MetaKube

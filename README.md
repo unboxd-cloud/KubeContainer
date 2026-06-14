@@ -102,12 +102,14 @@ spec:
 | Read | For |
 |---|---|
 | [CNCF-LANDSCAPE-ALIGNMENT.md](docs/CNCF-LANDSCAPE-ALIGNMENT.md) | CNCF Landscape category alignment and cloud-native adoption rules |
+| [KUBECLOUD-STACK.md](docs/KUBECLOUD-STACK.md) | Complete KubeCloud Stack map across app, data, AI, skill, observability, storage, ledger, build, and edge layers |
 | [KUBE-LANDSCAPE.md](docs/KUBE-LANDSCAPE.md) | FabriKube, KubeApp, KubeStore, KubeBrowser, KubePipeline, KubeStack, and MetaKube placement |
 | [KUBENODE.md](docs/KUBENODE.md) | Cloud, desk, edge, AI, gateway, and MetaKube node placement contracts |
 | [KUBEDEVICEOS-LINEAGE.md](docs/KUBEDEVICEOS-LINEAGE.md) | LineageOS-style open device OS contracts for desk, mobile, edge, and appliance nodes |
 | [KUBE-APPLICATION-LIFECYCLE.md](docs/KUBE-APPLICATION-LIFECYCLE.md) | KubeApp lifecycle management, automation, cost optimization, and identity/access management |
 | [FABRIKUBE-CAPABILITY-FABRICS.md](docs/FABRIKUBE-CAPABILITY-FABRICS.md) | Identity Fabric, Data Fabric, Experience Management, and Personalized Learning |
 | [FABRIKUBE-CLOUDS-AND-SAFETY.md](docs/FABRIKUBE-CLOUDS-AND-SAFETY.md) | App Cloud, Image Cloud, AI Cloud, Skill Cloud, safety guarantees, and data-on-desk rule |
+| [KUBEIMAGE-PROCESSING-MAP.md](docs/KUBEIMAGE-PROCESSING-MAP.md) | Creative image generation, editing, transformation, storage, provenance, search, and monetization map |
 | [KUBEAPP-FINE-GRAINED-CONTROL.md](docs/KUBEAPP-FINE-GRAINED-CONTROL.md) | Fine-grained control for every app action, scope, policy, reason, and verdict |
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
 | [KUBEATLAS-DATA-GOVERNANCE.md](docs/KUBEATLAS-DATA-GOVERNANCE.md) | Apache Atlas-style metadata, classification, lineage, and stewardship governance |
@@ -120,6 +122,7 @@ spec:
 | [KUBEARITHMETIC-PLATFORM.md](docs/KUBEARITHMETIC-PLATFORM.md) | Accountable formulas, measurements, scoring, pricing, billing, and optimization math |
 | [KUBEMATH-META-MODELS.md](docs/KUBEMATH-META-MODELS.md) | Mathematical meta models for formulas, constraints, units, optimization goals, and proofs |
 | [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with Apache Solr and OpenSearch for records, evidence, app metadata, and experience search |
+| [KUBESEARCH-LOCATION-MODEL-FIT.md](docs/KUBESEARCH-LOCATION-MODEL-FIT.md) | Location-aware search, region policy, model-fit scoring, and explainable ranking |
 | [KUBEANSWER-KNOWLEDGE.md](docs/KUBEANSWER-KNOWLEDGE.md) | Apache Answer-style Q&A, help center, tags, reputation, and governed knowledge |
 | [KUBEAGENT-RUNTIME-MINDSHUB.md](docs/KUBEAGENT-RUNTIME-MINDSHUB.md) | MindsHub-style open-agent runtime, model routing, credentials, tools, memory, and artifacts |
 | [KUBEAI-OBSERVABILITY-MLFLOW-LANGFUSE.md](docs/KUBEAI-OBSERVABILITY-MLFLOW-LANGFUSE.md) | MLflow and Langfuse-style AI lifecycle, model registry, prompts, traces, evals, and experiments |

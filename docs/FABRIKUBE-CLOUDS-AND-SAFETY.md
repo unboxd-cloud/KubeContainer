@@ -3,10 +3,19 @@
 FabriKube can surface as specialized clouds, each governed by the same kube rule and safety guarantee.
 
 ```text
+App Cloud = application lifecycle management for every KubeApp.
 Image Cloud = image generation, storage, provenance, search, and delivery.
 AI Cloud = model, agent, inference, evaluation, and automation lifecycle.
 Skill Cloud = learn, build, showcase, monetize, and personalize skills.
 ```
+
+The sovereignty line:
+
+```text
+Everything in cloud, data on desk.
+```
+
+Cloud runs the lifecycle, automation, AI, image, skill, showcase, and monetization loops. Data remains owner-bound, portable, classed, and recoverable at the user's desk unless a declared policy explicitly permits movement.
 
 ## Complete safety guarantee
 
@@ -29,6 +38,75 @@ Safety guarantee = nothing acts without identity, scope, policy, reason, and rec
 | Skill | Every learning or monetized skill has outcome evidence | SKILL_GUARDED |
 | Experience | Every surface records impact and owner | EXPERIENCE_GUARDED |
 | Evidence | Every claim names the verdict that proves it | EVIDENCE_ATTACHED |
+
+## App Cloud
+
+App Cloud is the core offering: application lifecycle management for every KubeApp.
+
+```yaml
+apiVersion: fabric.unboxd.cloud/v1alpha1
+kind: KubeAppCloud
+metadata:
+  name: fabric-app-cloud
+spec:
+  lifecycle:
+    - declare
+    - admit
+    - build
+    - release
+    - run
+    - observe
+    - optimize
+    - repair
+    - upgrade
+    - rollback
+    - retire
+  controls:
+    identityFabric: required
+    accessManagement: required
+    costOptimization: required
+    dataFabric: required
+    experienceManagement: required
+  automation:
+    mode: governed-autonomous
+  evidence:
+    requiredVerdicts:
+      - APP_LIFECYCLE_MANAGED
+      - POLICY_PASSED
+      - COST_BOUNDED
+      - PROMISE_KEPT
+```
+
+## Data on desk
+
+Data on desk means the user or owning organization keeps control of data location, retention, portability, and permitted movement.
+
+```yaml
+apiVersion: fabric.unboxd.cloud/v1alpha1
+kind: KubeDeskData
+metadata:
+  name: owner-desk-data
+spec:
+  location:
+    default: owner-desk
+    allowedCloudCopies: policy-bound
+  movement:
+    requireConsent: true
+    requirePurpose: true
+    requireLineage: true
+    requireReturnOrDelete: true
+  access:
+    identityFabric: required
+    searchFiltered: true
+  portability:
+    exportRequired: true
+    restoreRequired: true
+  verdicts:
+    required:
+      - DATA_GUARDED
+      - LINEAGE_RECORDED
+      - OWNER_CONTROL_HELD
+```
 
 ## Image Cloud
 
@@ -157,4 +235,5 @@ No budget, no autonomous spend.
 No eval, no AI release.
 No provenance, no image delivery.
 No evidence, no monetized claim.
+No owner control, no data movement.
 ```

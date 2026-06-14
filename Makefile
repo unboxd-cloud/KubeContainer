@@ -211,6 +211,35 @@ deploy: manifests kustomize ## Deploy controller to the K8s cluster specified in
 undeploy: kustomize ## Undeploy controller from the K8s cluster specified in ~/.kube/config. Call with ignore-not-found=true to ignore resource not found errors during deletion.
 	"$(KUSTOMIZE)" build config/default | "$(KUBECTL)" delete --ignore-not-found=$(ignore-not-found) -f -
 
+##@ MetaKube
+
+METAKUBE_PROFILE ?= metakube
+MINIKUBE ?= minikube
+
+.PHONY: metakube-up
+metakube-up: ## Start Minikube, build/load the operator image, and deploy KubeContainer.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh up
+
+.PHONY: metakube-sample
+metakube-sample: ## Apply the sample KubeContainer and wait for it to become available.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh sample
+
+.PHONY: metakube-prometheus
+metakube-prometheus: ## Deploy the local Prometheus witness into Minikube.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh prometheus
+
+.PHONY: metakube-observe
+metakube-observe: ## Observe the local proof gates and print the MetaKube verdict.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh observe
+
+.PHONY: metakube-verify
+metakube-verify: ## Run the complete local MetaKube proof loop with Minikube.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh verify
+
+.PHONY: metakube-down
+metakube-down: ## Delete the local MetaKube Minikube profile.
+	IMG=$(IMG) KUBECTL=$(KUBECTL) MINIKUBE=$(MINIKUBE) METAKUBE_PROFILE=$(METAKUBE_PROFILE) bash hack/metakube-minikube.sh down
+
 ##@ Dependencies
 
 ## Location to install dependencies to

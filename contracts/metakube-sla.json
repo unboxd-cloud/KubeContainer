@@ -1,0 +1,21 @@
+{
+  "sla": "MetaKube Proof Gate",
+  "version": "0.1.0",
+  "scope": "Meta Platform v0.1.0",
+  "threshold": 0.9,
+  "providerConfidence": 1.0,
+  "uncertainty": 0.0,
+  "slos": [
+    { "name": "ClusterReady", "metric": "cluster_ready", "weight": 0.15, "expected": "Ready" },
+    { "name": "OperatorReady", "metric": "operator_ready", "weight": 0.20, "expected": "Ready" },
+    { "name": "KubeContainerReady", "metric": "kubecontainer_ready", "weight": 0.20, "expectedAny": ["True", "Present"] },
+    { "name": "MetricsServicePresent", "metric": "metrics_service_present", "weight": 0.15, "expected": "ServicePresent" },
+    { "name": "EvidenceArtifactWritten", "metric": "evidence_artifact_written", "weight": 0.20, "expected": "Written" },
+    { "name": "ReleaseVerdictKept", "metric": "release_verdict", "weight": 0.10, "expected": "PROMISE_KEPT" }
+  ],
+  "criticalCaps": [
+    { "name": "OperatorNotReady", "metric": "operator_ready", "notExpected": "Ready", "cap": 0.5 },
+    { "name": "NoEvidenceArtifact", "metric": "evidence_artifact_written", "notExpected": "Written", "cap": 0.7 },
+    { "name": "PromiseBroken", "metric": "release_verdict", "expected": "PROMISE_BROKEN", "cap": 0.5 }
+  ]
+}

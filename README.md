@@ -111,6 +111,9 @@ spec:
 | [KUBEAPP-FINE-GRAINED-CONTROL.md](docs/KUBEAPP-FINE-GRAINED-CONTROL.md) | Fine-grained control for every app action, scope, policy, reason, and verdict |
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
 | [KUBEATLAS-DATA-GOVERNANCE.md](docs/KUBEATLAS-DATA-GOVERNANCE.md) | Apache Atlas-style metadata, classification, lineage, and stewardship governance |
+| [KUBELEDGER-BOOKKEEPER.md](docs/KUBELEDGER-BOOKKEEPER.md) | Apache BookKeeper-style durable ledgers, append-only records, entries, and evidence history |
+| [KUBEOBJECTSTORE-RUSTFS.md](docs/KUBEOBJECTSTORE-RUSTFS.md) | RustFS-style S3-compatible object storage for artifacts, images, models, evidence, and archives |
+| [KUBEBUILD-BUILDSTREAM.md](docs/KUBEBUILD-BUILDSTREAM.md) | Apache BuildStream-style declarative build graphs, integration, artifacts, and reproducibility |
 | [KUBEDATA-COMPUTE-ENGINES.md](docs/KUBEDATA-COMPUTE-ENGINES.md) | Apache Airflow, SeaTunnel, Spark, Pinot, Calcite, Avatica, and Scala engine placement |
 | [KUBEOBSERVABILITY-CLICKSTACK.md](docs/KUBEOBSERVABILITY-CLICKSTACK.md) | ClickStack-style logs, metrics, traces, sessions, and OpenTelemetry-scale observability |
 | [KUBEANALYTICS-CALCITE.md](docs/KUBEANALYTICS-CALCITE.md) | Apache Calcite-style SQL analytics, query planning, adapters, and governed insights |

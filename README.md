@@ -107,6 +107,8 @@ spec:
 | [KUBENODE.md](docs/KUBENODE.md) | Cloud, desk, edge, AI, gateway, and MetaKube node placement contracts |
 | [KUBEDEVICEOS-LINEAGE.md](docs/KUBEDEVICEOS-LINEAGE.md) | LineageOS-style open device OS contracts for desk, mobile, edge, and appliance nodes |
 | [KUBE-APPLICATION-LIFECYCLE.md](docs/KUBE-APPLICATION-LIFECYCLE.md) | KubeApp lifecycle management, automation, cost optimization, and identity/access management |
+| [KUBEMESSAGEBUS-ARTEMIS.md](docs/KUBEMESSAGEBUS-ARTEMIS.md) | Apache Artemis-style asynchronous message bus, queues, topics, commands, and delivery records |
+| [KUBEUSER-MESSAGING.md](docs/KUBEUSER-MESSAGING.md) | User-to-user messaging, collaboration, support, marketplace conversations, consent, and delivery proof |
 | [FABRIKUBE-CAPABILITY-FABRICS.md](docs/FABRIKUBE-CAPABILITY-FABRICS.md) | Identity Fabric, Data Fabric, Experience Management, and Personalized Learning |
 | [FABRIKUBE-CLOUDS-AND-SAFETY.md](docs/FABRIKUBE-CLOUDS-AND-SAFETY.md) | App Cloud, Image Cloud, AI Cloud, Skill Cloud, safety guarantees, and data-on-desk rule |
 | [KUBEIMAGE-PROCESSING-MAP.md](docs/KUBEIMAGE-PROCESSING-MAP.md) | Creative image generation, editing, transformation, storage, provenance, search, and monetization map |

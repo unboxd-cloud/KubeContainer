@@ -109,6 +109,7 @@ spec:
 | [DATA-SYNC-GOVERNANCE-TUNNEL.md](docs/DATA-SYNC-GOVERNANCE-TUNNEL.md) | Data sync, governance, seat tunnel, and Calico-style network policy |
 | [KUBESEARCH-OPENSEARCH.md](docs/KUBESEARCH-OPENSEARCH.md) | KubeSearch with OpenSearch for records, evidence, app metadata, and experience search |
 | [KUBE-SKILL-TOOL-LIFECYCLE.md](docs/KUBE-SKILL-TOOL-LIFECYCLE.md) | Learn, build, showcase, and monetize any skill or tool the Kubernetes way |
+| [AIRAVATA-FABRIKUBE-ALIGNMENT.md](docs/AIRAVATA-FABRIKUBE-ALIGNMENT.md) | Apache Airavata-style workflow and gateway alignment for distributed compute |
 | [MACH-FABRIC.md](docs/MACH-FABRIC.md) | MACH as accountable Fabric architecture |
 | [METAKUBE-STACK.md](docs/METAKUBE-STACK.md) | Core, Store, Operations, Governance, evidence stack |
 | [PROMETHEUS-AS-WITNESS.md](docs/PROMETHEUS-AS-WITNESS.md) | Prometheus as witness; alerts as testimony; metrics as evidence |

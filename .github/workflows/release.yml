@@ -130,6 +130,10 @@ jobs:
               exit 1
             fi
             printf '%s@%s\n' "${image%:*}" "$digest" >> dist/OCI-DIGESTS
+            env_key="${name^^}"
+            env_key="${env_key//-/_}"
+            echo "PINNED_${env_key}=${image%:*}@$digest" >> "$GITHUB_ENV"
+            echo "DIGEST_${env_key}=$digest" >> "$GITHUB_ENV"
           done
           cat dist/OCI-DIGESTS
           operator_image="$(head -n 1 dist/OCI-DIGESTS)"
@@ -164,6 +168,156 @@ jobs:
           sbom-path: dist/kubecontainer.spdx.json
           push-to-registry: true
 
+      - name: Generate kubecontainer-site SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_KUBECONTAINER_SITE }}
+          format: spdx-json
+          output-file: dist/kubecontainer-site.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest kubecontainer-site image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/kubecontainer-site
+          subject-digest: ${{ env.DIGEST_KUBECONTAINER_SITE }}
+          push-to-registry: true
+
+      - name: Attest kubecontainer-site image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/kubecontainer-site
+          subject-digest: ${{ env.DIGEST_KUBECONTAINER_SITE }}
+          sbom-path: dist/kubecontainer-site.spdx.json
+          push-to-registry: true
+
+      - name: Generate filefabric SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_FILEFABRIC }}
+          format: spdx-json
+          output-file: dist/filefabric.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest filefabric image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/filefabric
+          subject-digest: ${{ env.DIGEST_FILEFABRIC }}
+          push-to-registry: true
+
+      - name: Attest filefabric image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/filefabric
+          subject-digest: ${{ env.DIGEST_FILEFABRIC }}
+          sbom-path: dist/filefabric.spdx.json
+          push-to-registry: true
+
+      - name: Generate agentregistry SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_AGENTREGISTRY }}
+          format: spdx-json
+          output-file: dist/agentregistry.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest agentregistry image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/agentregistry
+          subject-digest: ${{ env.DIGEST_AGENTREGISTRY }}
+          push-to-registry: true
+
+      - name: Attest agentregistry image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/agentregistry
+          subject-digest: ${{ env.DIGEST_AGENTREGISTRY }}
+          sbom-path: dist/agentregistry.spdx.json
+          push-to-registry: true
+
+      - name: Generate openautonomyx-site SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_OPENAUTONOMYX_SITE }}
+          format: spdx-json
+          output-file: dist/openautonomyx-site.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest openautonomyx-site image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/openautonomyx-site
+          subject-digest: ${{ env.DIGEST_OPENAUTONOMYX_SITE }}
+          push-to-registry: true
+
+      - name: Attest openautonomyx-site image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/openautonomyx-site
+          subject-digest: ${{ env.DIGEST_OPENAUTONOMYX_SITE }}
+          sbom-path: dist/openautonomyx-site.spdx.json
+          push-to-registry: true
+
+      - name: Generate arithmetic-platform SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_ARITHMETIC_PLATFORM }}
+          format: spdx-json
+          output-file: dist/arithmetic-platform.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest arithmetic-platform image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/arithmetic-platform
+          subject-digest: ${{ env.DIGEST_ARITHMETIC_PLATFORM }}
+          push-to-registry: true
+
+      - name: Attest arithmetic-platform image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/arithmetic-platform
+          subject-digest: ${{ env.DIGEST_ARITHMETIC_PLATFORM }}
+          sbom-path: dist/arithmetic-platform.spdx.json
+          push-to-registry: true
+
+      - name: Generate fabric-browser SPDX SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
+        with:
+          image: ${{ env.PINNED_FABRIC_BROWSER }}
+          format: spdx-json
+          output-file: dist/fabric-browser.spdx.json
+          syft-version: v1.54.0
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Attest fabric-browser image build provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/fabric-browser
+          subject-digest: ${{ env.DIGEST_FABRIC_BROWSER }}
+          push-to-registry: true
+
+      - name: Attest fabric-browser image SPDX SBOM
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/fabric-browser
+          subject-digest: ${{ env.DIGEST_FABRIC_BROWSER }}
+          sbom-path: dist/fabric-browser.spdx.json
+          push-to-registry: true
+
       - name: Attest install bundle provenance
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
         with:
@@ -174,8 +328,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
-          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 OCI-DIGESTS kubecontainer.spdx.json > SHA256SUMS && cd ..
-          gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/kubecontainer.spdx.json dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
+          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 OCI-DIGESTS kubecontainer.spdx.json kubecontainer-site.spdx.json filefabric.spdx.json agentregistry.spdx.json openautonomyx-site.spdx.json arithmetic-platform.spdx.json fabric-browser.spdx.json > SHA256SUMS && cd ..
+          gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/kubecontainer.spdx.json dist/kubecontainer-site.spdx.json dist/filefabric.spdx.json dist/agentregistry.spdx.json dist/openautonomyx-site.spdx.json dist/arithmetic-platform.spdx.json dist/fabric-browser.spdx.json dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \
             --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $PINNED_IMG. The eval report is the release's evidence record."

@@ -348,16 +348,31 @@ jobs:
             echo "::error::Installer is not pinned to the attested operator image digest"
             exit 1
           }
-          echo "All seven image digests, SPDX SBOMs, and digest-pinned installer are present."
+          test -s dist/e2e-release-evidence.json || {
+            echo "::error::Missing live E2E release evidence"
+            exit 1
+          }
+          jq -e '
+            .httpStatus == 200 and
+            .driftRecovered == true and
+            .verdict == "PROMISE_KEPT" and
+            (.endpoint | type == "string" and length > 0) and
+            (.observedGeneration != null) and
+            (.conditions | type == "array" and length > 0)
+          ' dist/e2e-release-evidence.json >/dev/null || {
+            echo "::error::Live E2E release evidence is incomplete"
+            exit 1
+          }
+          echo "All seven image digests, SPDX SBOMs, digest-pinned installer, and live runtime evidence are present."
 
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
-          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 OCI-DIGESTS kubecontainer.spdx.json kubecontainer-site.spdx.json filefabric.spdx.json agentregistry.spdx.json openautonomyx-site.spdx.json arithmetic-platform.spdx.json fabric-browser.spdx.json > SHA256SUMS && cd ..
+          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json e2e-release-evidence.json homesetup-linux-amd64 OCI-DIGESTS kubecontainer.spdx.json kubecontainer-site.spdx.json filefabric.spdx.json agentregistry.spdx.json openautonomyx-site.spdx.json arithmetic-platform.spdx.json fabric-browser.spdx.json > SHA256SUMS && cd ..
           (cd dist && sha256sum --check SHA256SUMS)
-          gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/kubecontainer.spdx.json dist/kubecontainer-site.spdx.json dist/filefabric.spdx.json dist/agentregistry.spdx.json dist/openautonomyx-site.spdx.json dist/arithmetic-platform.spdx.json dist/fabric-browser.spdx.json dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
+          gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/kubecontainer.spdx.json dist/kubecontainer-site.spdx.json dist/filefabric.spdx.json dist/agentregistry.spdx.json dist/openautonomyx-site.spdx.json dist/arithmetic-platform.spdx.json dist/fabric-browser.spdx.json dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/e2e-release-evidence.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \
             --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $PINNED_IMG. The eval report is the release's evidence record."

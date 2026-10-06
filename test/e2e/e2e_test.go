@@ -344,6 +344,40 @@ spec:
 				g.Expect(logs).To(Equal("200"), "endpoint should answer HTTP 200")
 			}
 			Eventually(verifyServing, 3*time.Minute).Should(Succeed())
+
+			By("deleting the managed Deployment to prove reconciliation repairs drift")
+			cmd = exec.Command("kubectl", "delete", "deployment", workload,
+				"-n", "default", "--wait=true")
+			_, err = utils.Run(cmd)
+			Expect(err).NotTo(HaveOccurred(), "Failed to delete the managed Deployment")
+
+			By("waiting for the operator to recreate the Deployment and restore readiness")
+			verifyRecovered := func(g Gomega) {
+				cmd := exec.Command("kubectl", "get", "deployment", workload,
+					"-n", "default", "-o", "jsonpath={.status.availableReplicas}")
+				output, err := utils.Run(cmd)
+				g.Expect(err).NotTo(HaveOccurred(), "operator should recreate the Deployment")
+				g.Expect(output).To(Equal("1"), "recreated Deployment should have an available replica")
+			}
+			Eventually(verifyRecovered, 5*time.Minute, time.Second).Should(Succeed())
+			Eventually(verifyReady, 2*time.Minute, time.Second).Should(Succeed())
+
+			By("deleting the KubeContainer and verifying owned resources are garbage-collected")
+			cmd = exec.Command("kubectl", "delete", "kubecontainer", workload,
+				"-n", "default", "--wait=true")
+			_, err = utils.Run(cmd)
+			Expect(err).NotTo(HaveOccurred(), "Failed to delete the KubeContainer")
+
+			verifyGarbageCollected := func(g Gomega) {
+				for _, kind := range []string{"deployment", "service"} {
+					cmd := exec.Command("kubectl", "get", kind, workload,
+						"-n", "default", "--ignore-not-found", "-o", "name")
+					output, err := utils.Run(cmd)
+					g.Expect(err).NotTo(HaveOccurred())
+					g.Expect(strings.TrimSpace(output)).To(BeEmpty(), "%s should be garbage-collected", kind)
+				}
+			}
+			Eventually(verifyGarbageCollected, 3*time.Minute, time.Second).Should(Succeed())
 		})
 	})
 })

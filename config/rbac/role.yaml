@@ -53,19 +53,9 @@ rules:
   resources:
   - kubecontainers
   verbs:
-  - create
-  - delete
   - get
   - list
-  - patch
-  - update
   - watch
-- apiGroups:
-  - kubecontainer.unboxd.cloud
-  resources:
-  - kubecontainers/finalizers
-  verbs:
-  - update
 - apiGroups:
   - kubecontainer.unboxd.cloud
   resources:

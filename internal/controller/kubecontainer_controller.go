@@ -49,9 +49,8 @@ type KubeContainerReconciler struct {
 	Recorder events.EventRecorder
 }
 
-// +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers,verbs=get;list;watch
 // +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers/status,verbs=get;update;patch
-// +kubebuilder:rbac:groups=kubecontainer.unboxd.cloud,resources=kubecontainers/finalizers,verbs=update
 // +kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups="",resources=services,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups="",resources=persistentvolumeclaims,verbs=get;list;watch;create;update;patch;delete

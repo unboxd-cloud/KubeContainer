@@ -47,6 +47,17 @@ jobs:
           fi
           TAG="${TAG:-${{ github.ref_name }}}"
           TARGET="${TARGET:-${{ github.sha }}}"
+          # Prevent publishing artifacts built from this checkout under a tag
+          # pointing to another commit. Workflow dispatch and REQUEST cannot
+          # override the source revision without a matching checkout.
+          if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$ ]]; then
+            echo "::error::Release tag must be a valid v-prefixed semantic version"
+            exit 1
+          fi
+          if [ "$TARGET" != "${{ github.sha }}" ]; then
+            echo "::error::Release target $TARGET differs from checked-out commit ${{ github.sha }}"
+            exit 1
+          fi
           { echo "TAG=$TAG"; echo "TARGET=$TARGET";
             echo "IMG=ghcr.io/${{ github.repository_owner }}/kubecontainer:$TAG"; } >> "$GITHUB_ENV"
 

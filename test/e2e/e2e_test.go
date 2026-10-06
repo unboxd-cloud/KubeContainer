@@ -379,6 +379,140 @@ spec:
 			}
 			Eventually(verifyGarbageCollected, 3*time.Minute, time.Second).Should(Succeed())
 		})
+
+		It("should reject malformed, invalid, and policy-denied KubeContainer requests safely", func() {
+			invalidCases := []struct {
+				name     string
+				manifest string
+			}{
+				{
+					name: "unknown field",
+					manifest: `
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: invalid-unknown
+  namespace: default
+spec:
+  image: nginx:1.27
+  port: 80
+  unexpectedField: rejected
+`,
+				},
+				{
+					name: "conflicting scaling modes",
+					manifest: `
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: invalid-scaling
+  namespace: default
+spec:
+  image: nginx:1.27
+  port: 80
+  scaling:
+    replicas: 1
+    autoscale:
+      minReplicas: 1
+      maxReplicas: 2
+`,
+				},
+				{
+					name: "ingress without host",
+					manifest: `
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: invalid-ingress
+  namespace: default
+spec:
+  image: nginx:1.27
+  port: 80
+  expose:
+    type: Ingress
+`,
+				},
+				{
+					name: "invalid port",
+					manifest: `
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: invalid-port
+  namespace: default
+spec:
+  image: nginx:1.27
+  port: 70000
+`,
+				},
+			}
+
+			for _, tc := range invalidCases {
+				By("proving the API server rejects " + tc.name)
+				cmd := exec.Command("kubectl", "apply", "-f", "-")
+				cmd.Stdin = strings.NewReader(tc.manifest)
+				output, err := cmd.CombinedOutput()
+				Expect(err).To(HaveOccurred(), "invalid request must be rejected: %s", tc.name)
+				Expect(strings.TrimSpace(string(output))).NotTo(BeEmpty())
+			}
+
+			By("installing a native Kubernetes admission policy that denies a workload image")
+			policy := `
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: kubecontainer-e2e-deny-image
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+    - apiGroups: ["kubecontainer.unboxd.cloud"]
+      apiVersions: ["v1alpha1"]
+      operations: ["CREATE", "UPDATE"]
+      resources: ["kubecontainers"]
+  validations:
+  - expression: "object.spec.image != 'forbidden.example/denied:latest'"
+    message: "image denied by e2e admission policy"
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: kubecontainer-e2e-deny-image
+spec:
+  policyName: kubecontainer-e2e-deny-image
+  validationActions: [Deny]
+`
+			cmd := exec.Command("kubectl", "apply", "-f", "-")
+			cmd.Stdin = strings.NewReader(policy)
+			output, err := cmd.CombinedOutput()
+			Expect(err).NotTo(HaveOccurred(), "failed to install admission policy: %s", string(output))
+			DeferCleanup(func() {
+				_, _ = utils.Run(exec.Command("kubectl", "delete",
+					"validatingadmissionpolicybinding", "kubecontainer-e2e-deny-image",
+					"--ignore-not-found"))
+				_, _ = utils.Run(exec.Command("kubectl", "delete",
+					"validatingadmissionpolicy", "kubecontainer-e2e-deny-image",
+					"--ignore-not-found"))
+			})
+
+			By("proving a policy-denied KubeContainer request fails closed")
+			denied := `
+apiVersion: kubecontainer.unboxd.cloud/v1alpha1
+kind: KubeContainer
+metadata:
+  name: policy-denied
+  namespace: default
+spec:
+  image: forbidden.example/denied:latest
+  port: 80
+`
+			cmd = exec.Command("kubectl", "apply", "-f", "-")
+			cmd.Stdin = strings.NewReader(denied)
+			output, err = cmd.CombinedOutput()
+			Expect(err).To(HaveOccurred(), "policy-denied request must fail")
+			Expect(string(output)).To(ContainSubstring("image denied by e2e admission policy"))
+		})
+
 	})
 })
 

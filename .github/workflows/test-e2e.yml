@@ -39,5 +39,5 @@ jobs:
 
       - name: Running Test e2e
         run: |
-          go mod tidy
+          go mod verify
           make test-e2e

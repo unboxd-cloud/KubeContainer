@@ -1,2 +1,3 @@
 tag=v0.2.23
 target=
+# retry=govulncheck-v1.7.0

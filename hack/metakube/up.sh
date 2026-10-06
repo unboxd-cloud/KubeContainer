@@ -25,9 +25,11 @@ fi
 
 kubectl config use-context "$CLUSTER_NAME"
 
-echo "Building operator image inside MetaKube Docker daemon: $IMAGE"
-eval "$(minikube -p "$CLUSTER_NAME" docker-env)"
+echo "Building operator image with host Docker: $IMAGE"
 docker build -t "$IMAGE" .
+
+echo "Loading operator image into MetaKube: $IMAGE"
+minikube -p "$CLUSTER_NAME" image load "$IMAGE"
 
 echo "Installing CRDs"
 make install KUBECTL=kubectl

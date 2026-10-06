@@ -362,6 +362,33 @@ spec:
 			Eventually(verifyRecovered, 5*time.Minute, time.Second).Should(Succeed())
 			Eventually(verifyReady, 2*time.Minute, time.Second).Should(Succeed())
 
+			By("writing structured runtime evidence before cleanup")
+			cmd = exec.Command("kubectl", "get", "kubecontainer", workload,
+				"-n", "default", "-o", "json")
+			resourceJSON, err := cmd.Output()
+			Expect(err).NotTo(HaveOccurred())
+
+			var resource map[string]any
+			Expect(json.Unmarshal(resourceJSON, &resource)).To(Succeed())
+			status, ok := resource["status"].(map[string]any)
+			Expect(ok).To(BeTrue(), "status should be present in live evidence")
+
+			evidence := map[string]any{
+				"apiVersion":         "evidence.kubecontainer.unboxd.cloud/v1alpha1",
+				"kind":               "KubeContainerReleaseEvidence",
+				"workload":           workload,
+				"httpStatus":         200,
+				"driftRecovered":     true,
+				"observedGeneration": status["observedGeneration"],
+				"endpoint":           status["endpoint"],
+				"conditions":         status["conditions"],
+				"verdict":            "PROMISE_KEPT",
+			}
+			evidenceJSON, err := json.MarshalIndent(evidence, "", "  ")
+			Expect(err).NotTo(HaveOccurred())
+			Expect(os.MkdirAll("dist", 0o755)).To(Succeed())
+			Expect(os.WriteFile("dist/e2e-release-evidence.json", evidenceJSON, 0o644)).To(Succeed())
+
 			By("deleting the KubeContainer and verifying owned resources are garbage-collected")
 			cmd = exec.Command("kubectl", "delete", "kubecontainer", workload,
 				"-n", "default", "--wait=true")

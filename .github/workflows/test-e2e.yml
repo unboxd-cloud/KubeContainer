@@ -41,3 +41,11 @@ jobs:
         run: |
           go mod verify
           make test-e2e
+
+      - name: Upload live E2E evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kubecontainer-e2e-evidence
+          path: dist/e2e-release-evidence.json
+          if-no-files-found: warn

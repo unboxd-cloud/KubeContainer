@@ -114,16 +114,34 @@ jobs:
           docker build -t "ghcr.io/${{ github.repository_owner }}/fabric-browser:$TAG" -f Dockerfile.fabric .
           docker push "ghcr.io/${{ github.repository_owner }}/fabric-browser:$TAG"
 
-      - name: Build install bundle pinned to the tag
-        run: make build-installer IMG="$IMG"
+      - name: Capture immutable OCI digests
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          : > dist/OCI-DIGESTS
+          for name in kubecontainer kubecontainer-site filefabric agentregistry openautonomyx-site arithmetic-platform fabric-browser; do
+            image="ghcr.io/${{ github.repository_owner }}/${name}:$TAG"
+            digest="$(docker buildx imagetools inspect "$image" | awk '/^Digest:/ { print $2; exit }')"
+            if [[ ! "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]; then
+              echo "::error::Missing or malformed digest for $image"
+              exit 1
+            fi
+            printf '%s@%s\n' "${image%:*}" "$digest" >> dist/OCI-DIGESTS
+          done
+          cat dist/OCI-DIGESTS
+          operator_image="$(head -n 1 dist/OCI-DIGESTS)"
+          echo "PINNED_IMG=$operator_image" >> "$GITHUB_ENV"
+
+      - name: Build install bundle pinned to immutable image digest
+        run: make build-installer IMG="$PINNED_IMG"
 
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
-          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 > SHA256SUMS && cd ..
-          gh release create "$TAG" dist/SHA256SUMS dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
+          cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 OCI-DIGESTS > SHA256SUMS && cd ..
+          gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \
-            --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $IMG. The eval report is the release's evidence record."
+            --notes "See CHANGELOG.md for this release. Install: kubectl apply -f install.yaml — image: $PINNED_IMG. The eval report is the release's evidence record."

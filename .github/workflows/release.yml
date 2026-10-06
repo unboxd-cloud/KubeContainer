@@ -65,6 +65,24 @@ jobs:
           make security-report
           ./hack/check-promise.sh
 
+      # Release must prove workload convergence in a real Kubernetes control plane,
+      # not only envtest/unit-level behavior. A failed gate stops publication.
+      - name: Install pinned kind for release e2e gate
+        env:
+          KIND_VERSION: v0.32.0
+        run: |
+          curl -fsSLo ./kind "https://github.com/kubernetes-sigs/kind/releases/download/${KIND_VERSION}/kind-linux-$(go env GOARCH)"
+          chmod +x ./kind
+          sudo mv ./kind /usr/local/bin/kind
+          kind version
+
+      - name: Verify deployment, traffic, recovery, and cleanup in kind
+        env:
+          CERT_MANAGER_INSTALL_SKIP: "true"
+        run: |
+          go mod verify
+          make test-e2e
+
       - name: Log in to GHCR
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
 

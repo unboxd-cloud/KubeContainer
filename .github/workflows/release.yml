@@ -323,12 +323,40 @@ jobs:
         with:
           subject-path: dist/install.yaml
 
+      - name: Verify release evidence before publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected=(kubecontainer kubecontainer-site filefabric agentregistry openautonomyx-site arithmetic-platform fabric-browser)
+          test "$(wc -l < dist/OCI-DIGESTS)" -eq "${#expected[@]}"
+          for name in "${expected[@]}"; do
+            image="ghcr.io/${{ github.repository_owner }}/$name"
+            matches="$(grep -Ec "^$image@sha256:[a-f0-9]{64}$" dist/OCI-DIGESTS || true)"
+            if [ "$matches" -ne 1 ]; then
+              echo "::error::Expected exactly one valid OCI digest for $image"
+              exit 1
+            fi
+            file="dist/$name.spdx.json"
+            if [ ! -s "$file" ] || ! jq -e --arg n "$name" '
+              .spdxVersion | startswith("SPDX-2.")
+            ' "$file" >/dev/null; then
+              echo "::error::Missing or invalid SPDX SBOM for $name"
+              exit 1
+            fi
+          done
+          grep -Fq "$PINNED_IMG" dist/install.yaml || {
+            echo "::error::Installer is not pinned to the attested operator image digest"
+            exit 1
+          }
+          echo "All seven image digests, SPDX SBOMs, and digest-pinned installer are present."
+
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           GOOS=linux GOARCH=amd64 go build -o dist/homesetup-linux-amd64 ./cmd/homesetup
           cd dist && sha256sum install.yaml eval-report.json test-report.json security-report.json homesetup-linux-amd64 OCI-DIGESTS kubecontainer.spdx.json kubecontainer-site.spdx.json filefabric.spdx.json agentregistry.spdx.json openautonomyx-site.spdx.json arithmetic-platform.spdx.json fabric-browser.spdx.json > SHA256SUMS && cd ..
+          (cd dist && sha256sum --check SHA256SUMS)
           gh release create "$TAG" dist/SHA256SUMS dist/OCI-DIGESTS dist/kubecontainer.spdx.json dist/kubecontainer-site.spdx.json dist/filefabric.spdx.json dist/agentregistry.spdx.json dist/openautonomyx-site.spdx.json dist/arithmetic-platform.spdx.json dist/fabric-browser.spdx.json dist/install.yaml dist/eval-report.json dist/test-report.json dist/security-report.json dist/homesetup-linux-amd64 \
             --target "$TARGET" \
             --title "$TAG" \

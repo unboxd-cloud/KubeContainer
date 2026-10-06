@@ -137,6 +137,7 @@ spec:
 | [METAKUBE-LIVE-STREAM.md](docs/METAKUBE-LIVE-STREAM.md) | Real-time evidence stream |
 | [KUBE-SPEC.md](docs/KUBE-SPEC.md) | What a kube is — anatomy, guarantees, conformance |
 | [DESIGN.md](docs/DESIGN.md) | The operator architecture and roadmap |
+| [COMPATIBILITY.md](docs/COMPATIBILITY.md) | Verified Kubernetes versions, upgrade procedure, and rollback policy |
 | [FOUNDING-PRINCIPLES.md](docs/FOUNDING-PRINCIPLES.md) | The constitution: principles, axiom, promise |
 | [AGENT-PLATFORM.md](docs/AGENT-PLATFORM.md) | The agent ladder, lexicon, anti-drift protocols |
 | [GO-TO-MARKET.md](docs/GO-TO-MARKET.md) | What is sold and to whom |
@@ -155,8 +156,8 @@ spec:
 Prerequisites: Kubernetes v1.30+, `kubectl`, Go, and Docker.
 
 ```sh
-make docker-build docker-push IMG=<registry>/kubecontainer:v0.1.0
-make deploy IMG=<registry>/kubecontainer:v0.1.0
+make docker-build docker-push IMG=<registry>/kubecontainer:v0.2.24
+make deploy IMG=<registry>/kubecontainer:v0.2.24
 kubectl apply -k config/samples/
 kubectl get kubecontainers
 ```

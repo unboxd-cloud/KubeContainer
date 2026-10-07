@@ -93,8 +93,20 @@ setup-test-e2e: ## Set up a Kind cluster for e2e tests if it does not exist
 		*"$(KIND_CLUSTER)"*) \
 			echo "Kind cluster '$(KIND_CLUSTER)' already exists. Skipping creation." ;; \
 		*) \
-			echo "Creating Kind cluster '$(KIND_CLUSTER)'..."; \
-			$(KIND) create cluster --name $(KIND_CLUSTER) ;; \
+			echo "Creating Kind cluster '$(KIND_CLUSTER)' with native admission-policy enforcement..."; \
+			tmp_config="$$(mktemp)"; \
+			printf '%s\n' \
+				'kind: Cluster' \
+				'apiVersion: kind.x-k8s.io/v1alpha4' \
+				'kubeadmConfigPatches:' \
+				'- |' \
+				'  kind: ClusterConfiguration' \
+				'  apiServer:' \
+				'    extraArgs:' \
+				'      enable-admission-plugins: "ValidatingAdmissionPolicy"' \
+				> "$$tmp_config"; \
+			$(KIND) create cluster --name $(KIND_CLUSTER) --config "$$tmp_config"; \
+			rm -f "$$tmp_config" ;; \
 	esac
 
 .PHONY: test-e2e

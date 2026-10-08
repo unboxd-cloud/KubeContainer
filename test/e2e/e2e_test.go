@@ -34,107 +34,65 @@ import (
 	"github.com/unboxd-cloud/kubecontainer/test/utils"
 )
 
-// namespace where the project is deployed in
 const namespace = "kubecontainer-system"
-
-// serviceAccountName created for the project
 const serviceAccountName = "kubecontainer-controller-manager"
-
-// metricsServiceName is the name of the metrics service of the project
 const metricsServiceName = "kubecontainer-controller-manager-metrics-service"
-
-// metricsRoleBindingName is the name of the RBAC that will be created to allow get the metrics data
 const metricsRoleBindingName = "kubecontainer-metrics-binding"
 
 var _ = Describe("Manager", Ordered, func() {
 	var controllerPodName string
 
-	// Before running the tests, set up the environment by creating the namespace,
-	// enforce the restricted security policy to the namespace, installing CRDs,
-	// and deploying the controller.
 	BeforeAll(func() {
 		By("creating manager namespace")
-		cmd := exec.Command("kubectl", "create", "ns", namespace)
-		_, err := utils.Run(cmd)
+		_, err := utils.Run(exec.Command("kubectl", "create", "ns", namespace))
 		Expect(err).NotTo(HaveOccurred(), "Failed to create namespace")
 
 		By("labeling the namespace to enforce the restricted security policy")
-		cmd = exec.Command("kubectl", "label", "--overwrite", "ns", namespace,
-			"pod-security.kubernetes.io/enforce=restricted")
-		_, err = utils.Run(cmd)
+		_, err = utils.Run(exec.Command("kubectl", "label", "--overwrite", "ns", namespace,
+			"pod-security.kubernetes.io/enforce=restricted"))
 		Expect(err).NotTo(HaveOccurred(), "Failed to label namespace with restricted policy")
 
 		By("installing CRDs")
-		cmd = exec.Command("make", "install")
-		_, err = utils.Run(cmd)
+		_, err = utils.Run(exec.Command("make", "install"))
 		Expect(err).NotTo(HaveOccurred(), "Failed to install CRDs")
 
 		By("deploying the controller-manager")
-		cmd = exec.Command("make", "deploy", fmt.Sprintf("IMG=%s", managerImage))
-		_, err = utils.Run(cmd)
+		_, err = utils.Run(exec.Command("make", "deploy", fmt.Sprintf("IMG=%s", managerImage)))
 		Expect(err).NotTo(HaveOccurred(), "Failed to deploy the controller-manager")
 	})
 
-	// After all tests have been executed, clean up by undeploying the controller, uninstalling CRDs,
-	// and deleting the namespace.
 	AfterAll(func() {
-		By("cleaning up the curl pod for metrics")
-		cmd := exec.Command("kubectl", "delete", "pod", "curl-metrics", "-n", namespace)
-		_, _ = utils.Run(cmd)
-
-		By("undeploying the controller-manager")
-		cmd = exec.Command("make", "undeploy")
-		_, _ = utils.Run(cmd)
-
-		By("uninstalling CRDs")
-		cmd = exec.Command("make", "uninstall")
-		_, _ = utils.Run(cmd)
-
-		By("removing manager namespace")
-		cmd = exec.Command("kubectl", "delete", "ns", namespace)
-		_, _ = utils.Run(cmd)
+		_, _ = utils.Run(exec.Command("kubectl", "delete", "pod", "curl-metrics", "-n", namespace, "--ignore-not-found"))
+		_, _ = utils.Run(exec.Command("make", "undeploy"))
+		_, _ = utils.Run(exec.Command("make", "uninstall"))
+		_, _ = utils.Run(exec.Command("kubectl", "delete", "ns", namespace, "--ignore-not-found"))
 	})
 
-	// After each test, check for failures and collect logs, events,
-	// and pod descriptions for debugging.
 	AfterEach(func() {
-		specReport := CurrentSpecReport()
-		if specReport.Failed() {
+		if !CurrentSpecReport().Failed() {
+			return
+		}
+
+		if controllerPodName != "" {
 			By("Fetching controller manager pod logs")
-			cmd := exec.Command("kubectl", "logs", controllerPodName, "-n", namespace)
-			controllerLogs, err := utils.Run(cmd)
-			if err == nil {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Controller logs:\n %s", controllerLogs)
-			} else {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Failed to get Controller logs: %s", err)
-			}
-
-			By("Fetching Kubernetes events")
-			cmd = exec.Command("kubectl", "get", "events", "-n", namespace, "--sort-by=.lastTimestamp")
-			eventsOutput, err := utils.Run(cmd)
-			if err == nil {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Kubernetes events:\n%s", eventsOutput)
-			} else {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Failed to get Kubernetes events: %s", err)
-			}
-
-			By("Fetching curl-metrics logs")
-			cmd = exec.Command("kubectl", "logs", "curl-metrics", "-n", namespace)
-			metricsOutput, err := utils.Run(cmd)
-			if err == nil {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Metrics logs:\n %s", metricsOutput)
-			} else {
-				_, _ = fmt.Fprintf(GinkgoWriter, "Failed to get curl-metrics logs: %s", err)
+			if controllerLogs, err := utils.Run(exec.Command("kubectl", "logs", controllerPodName, "-n", namespace)); err == nil {
+				_, _ = fmt.Fprintf(GinkgoWriter, "Controller logs:\n%s", controllerLogs)
 			}
 
 			By("Fetching controller manager pod description")
-			cmd = exec.Command("kubectl", "describe", "pod", controllerPodName, "-n", namespace)
-			podDescription, err := utils.Run(cmd)
-			if err == nil {
-				fmt.Println("Pod description:\n", podDescription)
-			} else {
-				fmt.Println("Failed to describe controller pod")
+			if podDescription, err := utils.Run(exec.Command("kubectl", "describe", "pod", controllerPodName, "-n", namespace)); err == nil {
+				_, _ = fmt.Fprintf(GinkgoWriter, "Pod description:\n%s", podDescription)
 			}
+		}
+
+		By("Fetching Kubernetes events")
+		if eventsOutput, err := utils.Run(exec.Command("kubectl", "get", "events", "-A", "--sort-by=.lastTimestamp")); err == nil {
+			_, _ = fmt.Fprintf(GinkgoWriter, "Kubernetes events:\n%s", eventsOutput)
+		}
+
+		By("Fetching curl-metrics logs")
+		if metricsOutput, err := utils.Run(exec.Command("kubectl", "logs", "curl-metrics", "-n", namespace)); err == nil {
+			_, _ = fmt.Fprintf(GinkgoWriter, "Metrics logs:\n%s", metricsOutput)
 		}
 	})
 
@@ -143,18 +101,12 @@ var _ = Describe("Manager", Ordered, func() {
 
 	Context("Manager", func() {
 		It("should run successfully", func() {
-			By("validating that the controller-manager pod is running as expected")
 			verifyControllerUp := func(g Gomega) {
 				By("getting the name of the controller-manager pod")
 				cmd := exec.Command("kubectl", "get",
 					"pods", "-l", "control-plane=controller-manager",
-					"-o", "go-template={{ range .items }}"+
-						"{{ if not .metadata.deletionTimestamp }}"+
-						"{{ .metadata.name }}"+
-						"{{ \"\\n\" }}{{ end }}{{ end }}",
-					"-n", namespace,
-				)
-
+					"-o", "go-template={{ range .items }}{{ if not .metadata.deletionTimestamp }}{{ .metadata.name }}{{ \"\\n\" }}{{ end }}{{ end }}",
+					"-n", namespace)
 				podOutput, err := utils.Run(cmd)
 				g.Expect(err).NotTo(HaveOccurred(), "Failed to retrieve controller-manager pod information")
 				podNames := utils.GetNonEmptyLines(podOutput)
@@ -163,11 +115,8 @@ var _ = Describe("Manager", Ordered, func() {
 				g.Expect(controllerPodName).To(ContainSubstring("controller-manager"))
 
 				By("validating the pod's status")
-				cmd = exec.Command("kubectl", "get",
-					"pods", controllerPodName, "-o", "jsonpath={.status.phase}",
-					"-n", namespace,
-				)
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "pods", controllerPodName,
+					"-o", "jsonpath={.status.phase}", "-n", namespace))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(output).To(Equal("Running"), "Incorrect controller-manager pod status")
 			}
@@ -176,16 +125,13 @@ var _ = Describe("Manager", Ordered, func() {
 
 		It("should ensure the metrics endpoint is serving metrics", func() {
 			By("creating a ClusterRoleBinding for the service account to allow access to metrics")
-			cmd := exec.Command("kubectl", "create", "clusterrolebinding", metricsRoleBindingName,
+			_, err := utils.Run(exec.Command("kubectl", "create", "clusterrolebinding", metricsRoleBindingName,
 				"--clusterrole=kubecontainer-metrics-reader",
-				fmt.Sprintf("--serviceaccount=%s:%s", namespace, serviceAccountName),
-			)
-			_, err := utils.Run(cmd)
+				fmt.Sprintf("--serviceaccount=%s:%s", namespace, serviceAccountName)))
 			Expect(err).NotTo(HaveOccurred(), "Failed to create ClusterRoleBinding")
 
 			By("validating that the metrics service is available")
-			cmd = exec.Command("kubectl", "get", "service", metricsServiceName, "-n", namespace)
-			_, err = utils.Run(cmd)
+			_, err = utils.Run(exec.Command("kubectl", "get", "service", metricsServiceName, "-n", namespace))
 			Expect(err).NotTo(HaveOccurred(), "Metrics service should exist")
 
 			By("getting the service account token")
@@ -195,9 +141,8 @@ var _ = Describe("Manager", Ordered, func() {
 
 			By("ensuring the controller pod is ready")
 			verifyControllerPodReady := func(g Gomega) {
-				cmd := exec.Command("kubectl", "get", "pod", controllerPodName, "-n", namespace,
-					"-o", "jsonpath={.status.conditions[?(@.type=='Ready')].status}")
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "pod", controllerPodName, "-n", namespace,
+					"-o", "jsonpath={.status.conditions[?(@.type=='Ready')].status}"))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(output).To(Equal("True"), "Controller pod not ready")
 			}
@@ -205,55 +150,40 @@ var _ = Describe("Manager", Ordered, func() {
 
 			By("verifying that the controller manager is serving the metrics server")
 			verifyMetricsServerStarted := func(g Gomega) {
-				cmd := exec.Command("kubectl", "logs", controllerPodName, "-n", namespace)
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "logs", controllerPodName, "-n", namespace))
 				g.Expect(err).NotTo(HaveOccurred())
-				g.Expect(output).To(ContainSubstring("Serving metrics server"),
-					"Metrics server not yet started")
+				g.Expect(output).To(ContainSubstring("Serving metrics server"), "Metrics server not yet started")
 			}
 			Eventually(verifyMetricsServerStarted, 3*time.Minute, time.Second).Should(Succeed())
 
-			// +kubebuilder:scaffold:e2e-metrics-webhooks-readiness
-
 			By("creating the curl-metrics pod to access the metrics endpoint")
-			cmd = exec.Command("kubectl", "run", "curl-metrics", "--restart=Never",
-				"--namespace", namespace,
-				"--image=curlimages/curl:latest",
-				"--overrides",
-				fmt.Sprintf(`{
-					"spec": {
-						"containers": [{
-							"name": "curl",
-							"image": "curlimages/curl:latest",
-							"command": ["/bin/sh", "-c"],
-							"args": [
-								"for i in $(seq 1 30); do curl -v -k -H 'Authorization: Bearer %s' https://%s.%s.svc.cluster.local:8443/metrics && exit 0 || sleep 2; done; exit 1"
-							],
-							"securityContext": {
-								"readOnlyRootFilesystem": true,
-								"allowPrivilegeEscalation": false,
-								"capabilities": {
-									"drop": ["ALL"]
-								},
-								"runAsNonRoot": true,
-								"runAsUser": 1000,
-								"seccompProfile": {
-									"type": "RuntimeDefault"
-								}
-							}
-						}],
-						"serviceAccountName": "%s"
-					}
-				}`, token, metricsServiceName, namespace, serviceAccountName))
-			_, err = utils.Run(cmd)
+			overrides := fmt.Sprintf(`{
+				"spec": {
+					"containers": [{
+						"name": "curl",
+						"image": "curlimages/curl:latest",
+						"command": ["/bin/sh", "-c"],
+						"args": ["for i in $(seq 1 30); do curl -v -k -H 'Authorization: Bearer %s' https://%s.%s.svc.cluster.local:8443/metrics && exit 0 || sleep 2; done; exit 1"],
+						"securityContext": {
+							"readOnlyRootFilesystem": true,
+							"allowPrivilegeEscalation": false,
+							"capabilities": {"drop": ["ALL"]},
+							"runAsNonRoot": true,
+							"runAsUser": 1000,
+							"seccompProfile": {"type": "RuntimeDefault"}
+						}
+					}],
+					"serviceAccountName": "%s"
+				}
+			}`, token, metricsServiceName, namespace, serviceAccountName)
+			_, err = utils.Run(exec.Command("kubectl", "run", "curl-metrics", "--restart=Never",
+				"--namespace", namespace, "--image=curlimages/curl:latest", "--overrides", overrides))
 			Expect(err).NotTo(HaveOccurred(), "Failed to create curl-metrics pod")
 
-			By("waiting for the curl-metrics pod to complete.")
+			By("waiting for the curl-metrics pod to complete")
 			verifyCurlUp := func(g Gomega) {
-				cmd := exec.Command("kubectl", "get", "pods", "curl-metrics",
-					"-o", "jsonpath={.status.phase}",
-					"-n", namespace)
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "pods", "curl-metrics",
+					"-o", "jsonpath={.status.phase}", "-n", namespace))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(output).To(Equal("Succeeded"), "curl pod in wrong status")
 			}
@@ -269,11 +199,6 @@ var _ = Describe("Manager", Ordered, func() {
 			Eventually(verifyMetricsAvailable, 2*time.Minute).Should(Succeed())
 		})
 
-		// +kubebuilder:scaffold:e2e-webhooks-checks
-
-		// The real-world gate: a declared workload must converge to Ready in a
-		// live cluster — real Deployment controller, real pods, real image
-		// pull, real traffic — before any change is considered proven.
 		It("should reconcile a declared workload to Ready and serve traffic", func() {
 			workload := "e2e-workload"
 
@@ -297,65 +222,49 @@ spec:
 			_, err := utils.Run(cmd)
 			Expect(err).NotTo(HaveOccurred(), "Failed to apply KubeContainer manifest")
 			DeferCleanup(func() {
-				cmd := exec.Command("kubectl", "delete", "kubecontainer", workload,
-					"-n", "default", "--ignore-not-found")
-				_, _ = utils.Run(cmd)
-				cmd = exec.Command("kubectl", "delete", "pod", "curl-workload",
-					"-n", "default", "--ignore-not-found")
-				_, _ = utils.Run(cmd)
+				_, _ = utils.Run(exec.Command("kubectl", "delete", "kubecontainer", workload, "-n", "default", "--ignore-not-found"))
+				_, _ = utils.Run(exec.Command("kubectl", "delete", "pod", "curl-workload", "-n", "default", "--ignore-not-found"))
 			})
 
 			By("waiting for the KubeContainer to report Ready=True")
 			verifyReady := func(g Gomega) {
-				cmd := exec.Command("kubectl", "get", "kubecontainer", workload,
-					"-n", "default",
-					"-o", "jsonpath={.status.conditions[?(@.type=='Ready')].status}")
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "kubecontainer", workload,
+					"-n", "default", "-o", "jsonpath={.status.conditions[?(@.type=='Ready')].status}"))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(output).To(Equal("True"), "workload should converge to Ready")
 			}
 			Eventually(verifyReady, 5*time.Minute).Should(Succeed())
 
 			By("verifying the reported endpoint serves real traffic")
-			cmd = exec.Command("kubectl", "get", "kubecontainer", workload,
-				"-n", "default", "-o", "jsonpath={.status.endpoint}")
-			endpoint, err := utils.Run(cmd)
+			endpoint, err := utils.Run(exec.Command("kubectl", "get", "kubecontainer", workload,
+				"-n", "default", "-o", "jsonpath={.status.endpoint}"))
 			Expect(err).NotTo(HaveOccurred())
 			Expect(endpoint).NotTo(BeEmpty(), "status.endpoint should be populated")
 
-			cmd = exec.Command("kubectl", "run", "curl-workload",
+			_, err = utils.Run(exec.Command("kubectl", "run", "curl-workload",
 				"--restart=Never", "-n", "default",
 				"--image=curlimages/curl:latest", "--",
-				"curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
-				fmt.Sprintf("http://%s/", endpoint))
-			_, err = utils.Run(cmd)
+				"curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", fmt.Sprintf("http://%s/", endpoint)))
 			Expect(err).NotTo(HaveOccurred(), "Failed to create curl-workload pod")
 
 			verifyServing := func(g Gomega) {
-				cmd := exec.Command("kubectl", "get", "pod", "curl-workload",
-					"-n", "default", "-o", "jsonpath={.status.phase}")
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "pod", "curl-workload", "-n", "default", "-o", "jsonpath={.status.phase}"))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(output).To(Equal("Succeeded"))
-
-				cmd = exec.Command("kubectl", "logs", "curl-workload", "-n", "default")
-				logs, err := utils.Run(cmd)
+				logs, err := utils.Run(exec.Command("kubectl", "logs", "curl-workload", "-n", "default"))
 				g.Expect(err).NotTo(HaveOccurred())
 				g.Expect(logs).To(Equal("200"), "endpoint should answer HTTP 200")
 			}
 			Eventually(verifyServing, 3*time.Minute).Should(Succeed())
 
 			By("deleting the managed Deployment to prove reconciliation repairs drift")
-			cmd = exec.Command("kubectl", "delete", "deployment", workload,
-				"-n", "default", "--wait=true")
-			_, err = utils.Run(cmd)
+			_, err = utils.Run(exec.Command("kubectl", "delete", "deployment", workload, "-n", "default", "--wait=true"))
 			Expect(err).NotTo(HaveOccurred(), "Failed to delete the managed Deployment")
 
 			By("waiting for the operator to recreate the Deployment and restore readiness")
 			verifyRecovered := func(g Gomega) {
-				cmd := exec.Command("kubectl", "get", "deployment", workload,
-					"-n", "default", "-o", "jsonpath={.status.availableReplicas}")
-				output, err := utils.Run(cmd)
+				output, err := utils.Run(exec.Command("kubectl", "get", "deployment", workload,
+					"-n", "default", "-o", "jsonpath={.status.availableReplicas}"))
 				g.Expect(err).NotTo(HaveOccurred(), "operator should recreate the Deployment")
 				g.Expect(output).To(Equal("1"), "recreated Deployment should have an available replica")
 			}
@@ -363,9 +272,7 @@ spec:
 			Eventually(verifyReady, 2*time.Minute, time.Second).Should(Succeed())
 
 			By("writing structured runtime evidence before cleanup")
-			cmd = exec.Command("kubectl", "get", "kubecontainer", workload,
-				"-n", "default", "-o", "json")
-			resourceJSON, err := cmd.Output()
+			resourceJSON, err := exec.Command("kubectl", "get", "kubecontainer", workload, "-n", "default", "-o", "json").Output()
 			Expect(err).NotTo(HaveOccurred())
 
 			var resource map[string]any
@@ -390,16 +297,12 @@ spec:
 			Expect(os.WriteFile("dist/e2e-release-evidence.json", evidenceJSON, 0o644)).To(Succeed())
 
 			By("deleting the KubeContainer and verifying owned resources are garbage-collected")
-			cmd = exec.Command("kubectl", "delete", "kubecontainer", workload,
-				"-n", "default", "--wait=true")
-			_, err = utils.Run(cmd)
+			_, err = utils.Run(exec.Command("kubectl", "delete", "kubecontainer", workload, "-n", "default", "--wait=true"))
 			Expect(err).NotTo(HaveOccurred(), "Failed to delete the KubeContainer")
 
 			verifyGarbageCollected := func(g Gomega) {
 				for _, kind := range []string{"deployment", "service"} {
-					cmd := exec.Command("kubectl", "get", kind, workload,
-						"-n", "default", "--ignore-not-found", "-o", "name")
-					output, err := utils.Run(cmd)
+					output, err := utils.Run(exec.Command("kubectl", "get", kind, workload, "-n", "default", "--ignore-not-found", "-o", "name"))
 					g.Expect(err).NotTo(HaveOccurred())
 					g.Expect(strings.TrimSpace(output)).To(BeEmpty(), "%s should be garbage-collected", kind)
 				}
@@ -407,14 +310,12 @@ spec:
 			Eventually(verifyGarbageCollected, 3*time.Minute, time.Second).Should(Succeed())
 		})
 
-		It("should reject malformed, invalid, and policy-denied KubeContainer requests safely", func() {
+		It("should reject malformed, invalid, and unauthorized KubeContainer requests safely", func() {
 			invalidCases := []struct {
 				name     string
 				manifest string
 			}{
-				{
-					name: "unknown field",
-					manifest: `
+				{name: "unknown field", manifest: `
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
 metadata:
@@ -424,11 +325,8 @@ spec:
   image: nginx:1.27
   port: 80
   unexpectedField: rejected
-`,
-				},
-				{
-					name: "conflicting scaling modes",
-					manifest: `
+`},
+				{name: "conflicting scaling modes", manifest: `
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
 metadata:
@@ -442,11 +340,8 @@ spec:
     autoscale:
       minReplicas: 1
       maxReplicas: 2
-`,
-				},
-				{
-					name: "ingress without host",
-					manifest: `
+`},
+				{name: "ingress without host", manifest: `
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
 metadata:
@@ -457,11 +352,8 @@ spec:
   port: 80
   expose:
     type: Ingress
-`,
-				},
-				{
-					name: "invalid port",
-					manifest: `
+`},
+				{name: "invalid port", manifest: `
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
 metadata:
@@ -470,8 +362,7 @@ metadata:
 spec:
   image: nginx:1.27
   port: 70000
-`,
-				},
+`},
 			}
 
 			for _, tc := range invalidCases {
@@ -483,69 +374,31 @@ spec:
 				Expect(strings.TrimSpace(string(output))).NotTo(BeEmpty())
 			}
 
-			By("installing a native Kubernetes admission policy that denies a workload image")
-			policy := `
-apiVersion: admissionregistration.k8s.io/v1
-kind: ValidatingAdmissionPolicy
-metadata:
-  name: kubecontainer-e2e-deny-image
-spec:
-  failurePolicy: Fail
-  matchConstraints:
-    resourceRules:
-    - apiGroups: ["kubecontainer.unboxd.cloud"]
-      apiVersions: ["v1alpha1"]
-      operations: ["CREATE", "UPDATE"]
-      resources: ["kubecontainers"]
-  validations:
-  - expression: "object.spec.image != 'forbidden.example/denied:latest'"
-    message: "image denied by e2e admission policy"
----
-apiVersion: admissionregistration.k8s.io/v1
-kind: ValidatingAdmissionPolicyBinding
-metadata:
-  name: kubecontainer-e2e-deny-image
-spec:
-  policyName: kubecontainer-e2e-deny-image
-  validationActions: [Deny]
-`
-			cmd := exec.Command("kubectl", "apply", "-f", "-")
-			cmd.Stdin = strings.NewReader(policy)
-			output, err := cmd.CombinedOutput()
-			Expect(err).NotTo(HaveOccurred(), "failed to install admission policy: %s", string(output))
-			DeferCleanup(func() {
-				_, _ = utils.Run(exec.Command("kubectl", "delete",
-					"validatingadmissionpolicybinding", "kubecontainer-e2e-deny-image",
-					"--ignore-not-found"))
-				_, _ = utils.Run(exec.Command("kubectl", "delete",
-					"validatingadmissionpolicy", "kubecontainer-e2e-deny-image",
-					"--ignore-not-found"))
-			})
-
-			By("proving a policy-denied KubeContainer request fails closed")
-			denied := `
+			By("proving Kubernetes RBAC denies an unauthorized KubeContainer create before reconciliation")
+			unauthorized := `
 apiVersion: kubecontainer.unboxd.cloud/v1alpha1
 kind: KubeContainer
 metadata:
-  name: policy-denied
+  name: unauthorized-rbac
   namespace: default
 spec:
-  image: forbidden.example/denied:latest
+  image: nginx:1.27
   port: 80
 `
-			cmd = exec.Command("kubectl", "apply", "-f", "-")
-			cmd.Stdin = strings.NewReader(denied)
-			output, err = cmd.CombinedOutput()
-			Expect(err).To(HaveOccurred(), "policy-denied request must fail")
-			Expect(string(output)).To(ContainSubstring("image denied by e2e admission policy"))
-		})
+			cmd := exec.Command("kubectl", "apply", "--as=system:serviceaccount:default:kubecontainer-denied", "-f", "-")
+			cmd.Stdin = strings.NewReader(unauthorized)
+			output, err := cmd.CombinedOutput()
+			Expect(err).To(HaveOccurred(), "unauthorized request must fail before reconciliation")
+			Expect(string(output)).To(ContainSubstring("cannot create resource"))
+			Expect(string(output)).To(ContainSubstring("kubecontainers"))
 
+			created, err := utils.Run(exec.Command("kubectl", "get", "kubecontainer", "unauthorized-rbac", "-n", "default", "--ignore-not-found", "-o", "name"))
+			Expect(err).NotTo(HaveOccurred())
+			Expect(strings.TrimSpace(created)).To(BeEmpty(), "unauthorized KubeContainer must not persist")
+		})
 	})
 })
 
-// serviceAccountToken returns a token for the specified service account in the given namespace.
-// It uses the Kubernetes TokenRequest API to generate a token by directly sending a request
-// and parsing the resulting token from the API response.
 func serviceAccountToken() (string, error) {
 	const tokenRequestRawString = `{
 		"apiVersion": "authentication.k8s.io/v1",
@@ -555,8 +408,7 @@ func serviceAccountToken() (string, error) {
 	By("creating temporary file to store the token request")
 	secretName := fmt.Sprintf("%s-token-request", serviceAccountName)
 	tokenRequestFile := filepath.Join("/tmp", secretName)
-	err := os.WriteFile(tokenRequestFile, []byte(tokenRequestRawString), os.FileMode(0o644))
-	if err != nil {
+	if err := os.WriteFile(tokenRequestFile, []byte(tokenRequestRawString), os.FileMode(0o644)); err != nil {
 		return "", err
 	}
 
@@ -564,35 +416,25 @@ func serviceAccountToken() (string, error) {
 	verifyTokenCreation := func(g Gomega) {
 		By("executing kubectl command to create the token")
 		cmd := exec.Command("kubectl", "create", "--raw", fmt.Sprintf(
-			"/api/v1/namespaces/%s/serviceaccounts/%s/token",
-			namespace,
-			serviceAccountName,
-		), "-f", tokenRequestFile)
-
+			"/api/v1/namespaces/%s/serviceaccounts/%s/token", namespace, serviceAccountName), "-f", tokenRequestFile)
 		output, err := cmd.CombinedOutput()
 		g.Expect(err).NotTo(HaveOccurred())
 
 		By("parsing the JSON output to extract the token")
 		var token tokenRequest
-		err = json.Unmarshal(output, &token)
-		g.Expect(err).NotTo(HaveOccurred())
-
+		g.Expect(json.Unmarshal(output, &token)).To(Succeed())
 		out = token.Status.Token
 	}
 	Eventually(verifyTokenCreation).Should(Succeed())
 
-	return out, err
+	return out, nil
 }
 
-// getMetricsOutput retrieves and returns the logs from the curl pod used to access the metrics endpoint.
 func getMetricsOutput() (string, error) {
 	By("getting the curl-metrics logs")
-	cmd := exec.Command("kubectl", "logs", "curl-metrics", "-n", namespace)
-	return utils.Run(cmd)
+	return utils.Run(exec.Command("kubectl", "logs", "curl-metrics", "-n", namespace))
 }
 
-// tokenRequest is a simplified representation of the Kubernetes TokenRequest API response,
-// containing only the token field that we need to extract.
 type tokenRequest struct {
 	Status struct {
 		Token string `json:"token"`
